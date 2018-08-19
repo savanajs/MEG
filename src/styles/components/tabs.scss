@@ -1,0 +1,57 @@
+.meg-c-tab {
+    position: relative;
+    margin: 0px 0px;
+    .meg-c-tabs {
+        display: flex;
+    }
+    .meg-c-tab__painel {
+        margin-bottom: 0px;
+        .meg-c-tab__nav {
+            cursor: pointer;
+            font-size: 1.4rem;
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 1px;
+            box-sizing: border-box;
+            border: 1px solid transparent;
+            text-decoration: none;
+            color: $color-font;
+        }
+    }
+    .meg-c-tab__contents {
+        &:last-child .meg-c-tab__nav {
+            margin-right: 0px;
+        }
+    }
+    .meg-c-tab__nav:hover,
+    .meg-c-tab__nav.actived {
+        background-color: $color-lt-bg-content;
+        color: $color-font;
+        border-top: 1px solid $color-border;
+        border-left: 1px solid $color-border;
+        border-right: 1px solid $color-border;
+        z-index: 1;
+        position: relative;
+        font-weight: bold;
+    }
+    .meg-c-tab__inner {
+        background: $color-lt-bg-content;
+        margin-top: -1px;
+        padding: 20px;
+        border: 1px solid $color-border;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-y: auto;
+        display: none;
+    }
+    .meg-c-tab__inner.actived {
+        display: block;
+    }
+}
+
+// Mobile
+@media screen and (max-width: $responsive-mobile) {
+    .meg-c-tab__inner {
+        padding: 20px 0px;
+    }
+}

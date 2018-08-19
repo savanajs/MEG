@@ -1,0 +1,31 @@
+.meg-c-progress-bar {
+    color: #fff;
+    background-color: $color-lt-bg-light;
+    margin-bottom: 10px;
+    overflow: hidden;
+    @include border-radius(50px);
+    .meg-c-progress-bar__inner {
+        text-align: center !important;
+        padding: 1px;
+        color: rgba(255, 255, 255, .8);
+        font-size: 1em;
+        &.meg-c-progress-bar__inner--success {
+            background-color: $success;
+        }
+        &.meg-c-progress-bar__inner--primary {
+            background-color: $primary;
+        }
+        &.meg-c-progress-bar__inner--warning {
+            background-color: $warning;
+        }
+        &.meg-c-progress-bar__inner--info {
+            background-color: $info;
+        }
+        &.meg-c-progress-bar__inner--cancel {
+            background-color: $cancel;
+        }
+        &.meg-c-progress-bar__inner--dark {
+            background-color: #333;
+        }
+    }
+}

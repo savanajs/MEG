@@ -1,0 +1,49 @@
+.meg-el-hgroup {
+    margin-bottom: 20px;
+}
+
+.meg-js-visibled {
+    opacity: 1;
+    transition: .9s opacity;
+}
+
+.meg-o-acessibility {
+    img[alt=""],
+    img:not([alt]) {
+        border: 2px solid red !important;
+    }
+    a[alt=""],
+    a:not([title]) {
+        border: 2px solid blue !important;
+    }
+    .meg-e-btn:not([role="button"]),
+    .meg-e-btn:not([role]) {
+        border: 2px solid rgb(0, 102, 255) !important;
+    }
+    label[for=""],
+    label:not([for]) {
+        border: 2px solid orangered !important;
+    }
+    header:not([role]),
+    nav:not([role]),
+    article:not([role]),
+    footer:not([role]) {
+        border: 2px solid greenyellow !important;
+    }
+}
+
+.meg-o-text-ellipsis-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.meg-o-text-ellipsis-block {
+    -webkit-line-clamp: 2; /* bullets in 2º line */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    width: 100%;
+}

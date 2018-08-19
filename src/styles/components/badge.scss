@@ -1,0 +1,27 @@
+.meg-c-badge {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    @extend .meg-u-radius--50;
+
+    z-index: 2;
+    text-align: center;
+    font-size: .7em;
+    line-height: 0em;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+// Device (Mobile)
+@media screen and (max-width: $responsive-mobile) {
+    .meg-el-btn {
+        .meg-c-badge {
+            top: -8px;
+            right: -8px; 
+        }
+    }
+}

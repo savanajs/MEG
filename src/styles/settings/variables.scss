@@ -1,0 +1,56 @@
+
+// Geral
+$font-pixel-base: 18;
+$font-calc-base: (13 / $font-pixel-base);
+$font-size-base: 1.2em; //12px
+$line-height-base: 1.5em;
+$shell: 1280px;
+$shell-max-width: 1920px;
+$shell-gutter: 15px;
+$font-family: 'Roboto Condensed', sans-serif;
+$strong-weight: 500;
+$margin-top: 10px;
+$margin-bottom: 10px;
+$margin-right: 10px;
+$margin-left: 10px;
+
+// Form input
+$border_radius_primary: 10px;
+$border_radius_input: 10px;
+$border_radius_button: 10px;
+$margin-bottom-field: 20px;
+
+// Padding
+$padding-top: 10px;
+$padding-bottom: 10px;
+$padding-right: 10px;
+$padding-left: 10px;
+$padding: $padding-top $padding-right $padding-bottom $padding-left;
+
+// Buttons
+$padding-top-button: 5px;
+$padding-bottom-button: 5px;
+$padding-right-button: 12px;
+$padding-left-button: 12px;
+$margin-bottom-button: 10px;
+$margin-left-button: 10px;
+
+// Heading
+$margin-bottom-heading: 20px;
+$line-height-heading: 1.2em;
+
+// HR line
+$hr-height: 1px;
+$hr-margin: $margin-top 0px $margin-bottom 0px;
+
+// List
+$margin-bottom-list: 10px;
+
+// Radius
+$radius: 5px 5px 5px 5px;
+
+// Responsives max.
+$responsive-device: 1024px; // Mobile end tablet
+$responsive-mobile: 767px; // Mobile only
+$responsive-tablet: 1024px; // Tablet only
+$responsive-desktop: 5000px; // Desktop only

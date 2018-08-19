@@ -1,0 +1,103 @@
+
+/**
+  * ESLINT.
+  * http://eslint.org/docs/rules/
+  * Run: gulp watch-eslint ou gulp eslint ou gulp testcode.
+  * Editor: http://dillinger.io/
+  {
+        "extends": "standard"
+    }
+
+*/
+
+{
+    "env": {
+      "browser": true,
+      "es6": true // Habilita metodos do ES6
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "eslint:recommended", // eslint:recommended
+    "rules": {
+      "wrap-iife": 0, // Aceita funções anonimas
+      "func-names": 0, // Aceita funções anonimas sem nome
+      "space-before-function-paren": 1, // Necessita ter um espaço antes dos "()" dos "function ()" nas funções
+      "space-before-blocks": 1, // Necessita ter um espaço antes dos "{}" dos "() {}"" nas funções
+      "no-undef": 0, // Aceita variaveis indefinidas
+      "indent": [
+        1,
+        2
+      ], // Indentação de uma tab no bloco
+      "id-length": 0, // Não necessita de tamanho minimo de nomes de variaveis
+      "prefer-arrow-callback": 0, // Não obriga o uso de setas não funções =>
+      "max-statements": 0, // Não limita um numero máximo de declarações em funções
+      "no-magic-numbers": 0, //Aceita numeros magicos nas variaveis
+      "quotes": [
+        2,
+        "double"
+      ], // Obriga o uso da aspas simples nas atribuições de variaveis
+      "max-len": 0, // Não limita um maximo de caracters em linha
+      "no-var": 0, // Aceita declarações de var
+      "vars-on-top": 0, // Não obriga o uso de variaveis "var"" fora do escopo de funções
+      "no-unused-vars": 2, // Mostra erro em variaveis declaradas mas não usadas
+      "one-var": 0, // Não obriga o uso de uma declaração "var". Ex: var a,b,c;
+      "prefer-const": 1,
+      "init-declarations": 0, // Não obriga atribuir um valor na variavel na sua declaração
+      "no-console": 1,
+      "no-mixed-spaces-and-tabs": 1,
+      "no-trailing-spaces": 0,
+      "padded-blocks": 2, // Obriga o uso de linhas de espaco dentro de blocos {}
+      "curly": 2, // Obriga o fechamento de {} nos ifs
+      "no-empty-func": 0,
+      "no-empty-function": 2, // Não aceita funções vazias
+      "brace-style": 0, // Aceita que os blocks {} começem na proxima linha
+      "no-label-var": 2,
+      "func-style": 0, // Aceita function declarations (var f = function () {}) ou function expressions (function f () {})
+      "require-jsdoc": [
+        1,
+        {
+          "require": {
+            "FunctionDeclaration": true,
+            "MethodDefinition": true,
+            "ClassDeclaration": true
+          }
+        }
+      ], // Comentario de documentação da função
+      "no-extra-semi": 2,
+      "no-plusplus": 0,
+      "object-curly-spacing": 0, // Sem espaços em objetos JSON ex: { pos: 1 }
+      "dot-notation": 1,
+      "quote-props": 2, // Obriga a ter (') em propriedades {'pos': 1}
+      "eol-last": 0,
+      "semi": 2, // Obriga o uso de ; no final de variaveis.
+      "no-alert": 0,
+      "space-in-parens": 2, // Não aceita espacos dentro de fn( 1 );
+      "linebreak-style": [
+        0,
+        "unix"
+      ],
+      "camelcase": 0, // Objeto literal em bloco
+      "comma-spacing": 2, // Obriga o espaço depois da virgula
+      "sort-keys": 0,
+      "object-shorthand": 0,
+      "prefer-template": 0,
+      "no-array-constructor": 0,
+      "keyword-spacing": 2,
+      "comma-dangle": 0,
+      "strict": 1,
+      "newline-after-var": 2, // Obriga uma nova linha depois da ultima declaração var
+      "newline-before-return": 2,
+      "newline-per-chained-call": 0,
+      "object-property-newline": 2,
+      "object-curly-newline": 1,
+      "dot-location": 2,
+      "key-spacing": [
+        2,
+        {
+          "beforeColon": false,
+          "afterColon": true
+        }
+      ],
+    }
+  }

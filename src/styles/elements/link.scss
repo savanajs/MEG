@@ -1,0 +1,8 @@
+.meg-el-link {
+    padding: 0px;
+    text-decoration: none;
+    &:hover,
+    &.meg-e-link--actived {
+        text-decoration: underline;
+    }
+}

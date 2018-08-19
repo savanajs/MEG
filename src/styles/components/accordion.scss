@@ -1,0 +1,45 @@
+.meg-c-accordion {
+    position: relative;
+    margin: 20px 0px;
+    display: block;
+    .meg-c-accordion__painel {
+        margin-bottom: 5px;
+        .meg-c-accordion__nav {
+            cursor: pointer;
+            font-size: 1.4rem;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border: 1px solid transparent;
+            display: block;
+            background-color: $layout-secondary;
+        }
+        input {
+            display: none;
+        }
+    }
+    .meg-c-accordion__nav:hover,
+    .meg-c-accordion__open:checked + .meg-c-accordion__nav {
+        background-color: $primary;
+        color: #fff;
+        border: 1px solid $color-border;
+        z-index: 2;
+        position: relative;
+        font-weight: bold;
+    }
+    .meg-c-accordion__inner {
+        opacity: 0;
+        transition: opacity .1s;
+        visibility: hidden;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1;
+        display: none;
+    }
+    .meg-c-accordion__open:checked ~ .meg-c-accordion__inner {
+        opacity: 100;
+        visibility: visible;
+        transition: opacity .6 ease;
+        display: block;
+    }
+}

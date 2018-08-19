@@ -1,0 +1,386 @@
+.meg-c-form {
+    input[type=password],
+    input[type=email],
+    input[type=url],
+    input[type=date],
+    input[type=month],
+    input[type=time],
+    input[type=datetime],
+    input[type=datetime-local],
+    input[type=week],
+    input[type=tel],
+    input[type=color],
+    input[type=number],
+    input[type=search],
+    input[type=text],
+    input[type=search],
+    select,
+    textarea {
+        padding: .5em .6em;
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        border-radius: $border_radius_input;
+    } 
+    .meg-c-fieldset__lengend {
+        margin-bottom: 10px;
+    }
+    .meg-c-form__label {
+        > .meg-c-form__required {
+            display: inline-block;
+        }
+        > .meg-c-label__text {
+            flex: 1 1 auto;
+        }
+        > .meg-c-label__small {
+            font-size: .9em;
+        }
+        &.meg-c-form__label--checkbox {
+            position: relative;
+            cursor: pointer;
+            padding-left: 24px !important;
+            .meg-c-checkbox {
+                display: none;
+                &:checked + .meg-c-checkbox_fake {
+                    background-color: $primary;
+                }
+            }
+            .meg-c-checkbox_fake {
+                width: 15px;
+                height: 15px;
+                background-color: $color-input;
+                border: 1px solid $color-input-border;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 1px;
+                box-shadow: 0 -2px 1px rgba(0, 0, 0, .1) inset;
+            }
+        }
+        &.meg-c-form__label--radio {
+            position: relative;
+            cursor: pointer;
+            padding-left: 24px !important;
+            .meg-c-radio {
+                display: none;
+                &:checked + .meg-c-radio_fake {
+                    background-color: $primary;
+                }
+            }
+            .meg-c-radio_fake {
+                width: 15px;
+                height: 15px;
+                box-shadow: 0 -2px 1px rgba(0, 0, 0, .1) inset;
+                border-radius: $border_radius_input;
+                background-color: $color-input;
+                border: 1px solid $color-input-border;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 1px;
+            }
+        }
+        &.meg-c-form__label--full {
+            width: 100% !important;
+            flex: 0 1 100% !important;
+            text-align: left !important;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+    }
+    .meg-c-field {
+        background-color: $color-input;
+        color: $color-input-text;
+        border: 1px solid $color-border;
+        &::placeholder {
+            color: $color-font;
+        }
+    }
+    .meg-c-field:disabled {
+        cursor: not-allowed;
+        background-color: $color-input-disabled;
+    }
+    .meg-c-field:readonly {
+        cursor: not-allowed;
+        background-color: $color-input-disabled;
+    }
+    .meg-c-field:required:focus:invalid {
+        border-color: $cancel;
+        background: url("../img/error.png") no-repeat 97% center;
+    }
+    .meg-c-field:required:valid {
+        border-color: $success;
+        background: url("../img/checked.png") no-repeat 97% center;
+    }
+    .meg-lt-row {
+        justify-content: space-between;
+    }
+    .meg-c-form__field {
+        &.meg-c-form__field--group {
+            display: flex;
+            .meg-el-btn {
+                margin-left: 0px;
+            }
+            .meg-c-form__icon {
+                background-color: $color-input;
+                color: $color-font;
+                padding: .5em .6em;
+                border-top-left-radius: $border_radius_input;
+                border-bottom-left-radius: $border_radius_input;
+            }
+            .meg-c-form__icon:not(.meg-c-form__icon--join-field) {
+                background-color: $color-input;
+            }
+            .meg-c-form__icon:first-child {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-left: 1px solid $color-border;
+                border-top: 1px solid $color-border;
+                border-bottom: 1px solid $color-border;
+                & + .meg-c-field {
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                }
+            }
+        }
+        &.meg-c-form__field--action {
+            .meg-c-field {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .meg-el-btn {
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: $border_radius_input;
+                border-bottom-right-radius: $border_radius_input;
+            }
+        }
+        &:not(.meg-c-form__field--group) {
+            .meg-c-field {
+                font-size: 1.1em;
+            }
+            .meg-c-form__label {
+                margin-right: 2%;
+                font-size: 1.1em;
+            }
+        }
+
+        width: 100%;
+        .meg-c-field {
+            &.meg-c-field--25 {
+                width: 25%;
+                flex: 0 1 25%;
+            }
+            &.meg-c-field--50 {
+                width: 50%;
+                flex: 0 1 50%;
+            }
+            &.meg-c-field--75 {
+                width: 75%;
+                flex: 0 1 75%;
+            }
+            &.meg-c-field--full {
+                width: 100%;
+                flex: 0 1 100%;
+            }
+            &.meg-c-field--auto {
+                width: auto;
+                flex: 1 1 auto;
+            }
+        }
+    }
+    .meg-c-form__field:not(.meg-c-form__field--input-medium) {
+        .meg-c-field {
+            padding: .5em .6em;
+        }
+    }
+    .meg-c-form__field.meg-c-form__field--input-medium {
+        .meg-c-field {
+            padding: .8em .6em;
+            font-size: $font-size-base - .2;
+        }
+        .meg-c-form__icon {
+            font-size: $font-size-base;
+        }
+        .meg-el-btn {
+            font-size: $font-size-base - .2;
+        }
+    }
+    .meg-c-form__field.meg-c-form__field--input-large {
+        .meg-c-field {
+            padding: 1.2em .8em;
+            font-size: $font-size-base - .2;
+        }
+        .meg-c-form__icon {
+            font-size: $font-size-base;
+        }
+        .meg-el-btn {
+            font-size: $font-size-base - .2;
+        }
+    }
+    .meg-c-form__field.meg-c-form__field--input-medium,
+    .meg-c-form__field.meg-c-form__field--input-large {
+        .meg-c-form__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+    &.meg-c-form-block {
+        .meg-c-field {
+            margin-right: 0px !important;
+        }
+        .meg-c-form__label {
+            text-align: left;
+            margin-bottom: 10px;
+            width: 100%;
+            flex: 1 1 100%;
+            display: flex;
+        }
+        .meg-c-field__message {
+            padding: .5em 0em;
+            width: 100%;
+            display: block;
+        }
+        .meg-c-form__actions {
+            > .meg-c-form__field {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &.meg-c-form-aligned {
+        .meg-c-form__label {
+            display: block;
+        }
+        .meg-c-field__message {
+            padding: .5em 0em;
+        }
+        .meg-c-form__actions {
+            margin-left: 17%;
+            > .meg-c-form__field {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .meg-c-form__actions {
+        width: 100%;
+    }
+    .meg-c-switch {
+        width: 64px;
+    }
+    .meg-c-switch__input {
+        display: none;
+    }
+    .meg-c-switch__input + .meg-c-switch__label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+        padding: 2px;
+        width: 60px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, .1);
+        border-radius: 50px;
+    }
+    .meg-c-switch__input + .meg-c-switch__label::before,
+    .meg-c-switch__input + .meg-c-switch__label::after {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        bottom: 1px;
+        content: "";
+    }
+    .meg-c-switch__input + .meg-c-switch__label::before {
+        right: 1px;
+        background-color: rgba(0, 0, 0, .05);
+        border-radius: 50px;
+        transition: background 0.4s;
+    }
+    .meg-c-switch__input + .meg-c-switch__label::after {
+        width: 30px;
+        background-color: $color-input;
+        border-radius: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s;
+    }
+    .meg-c-switch__input:checked + .meg-c-switch__label::before {
+        background-color: darken($success, 20%);
+    }
+    .meg-c-switch__input:checked + .meg-c-switch__label::after {
+        transform: translateX(29px);
+    }
+}
+
+.meg-c-field--select-fake {
+    position: relative;
+    select.meg-c-field {
+        appearance: none;
+    }
+    &::after {
+        content: "\f078";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: $primary;
+    }
+}
+
+select.meg-c-field {
+    appearance: none;
+    background: red;
+    &::after {
+        content: "\f054";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+// Device (Mobile and tablet)
+@media screen and (max-width: $responsive-tablet) {
+    .meg-c-form {
+        .meg-lt-row {
+            justify-content: flex-start;
+        }
+        .meg-c-form__field {
+            width: 100%;
+            flex-wrap: nowrap;
+        }
+        .meg-c-field__message {
+            display: block;
+        }
+        .meg-c-form__actions {
+            margin-left: 0px !important;
+        }
+    }
+}
+
+@media screen and (max-width: $responsive-mobile) {
+    .meg-c-form__label {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+        text-align: left;
+    }
+
+    .meg-el-btn {
+        &.meg-el-btn--full-md {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+    .meg-c-form.meg-c-form-aligned {
+        .meg-c-field__message {
+            padding: 0px;
+        }
+    }
+}

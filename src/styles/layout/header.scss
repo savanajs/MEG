@@ -1,0 +1,38 @@
+.meg-lt-header {
+    .meg-lt-header__content {
+        display: flex;
+        position: relative;
+    }
+    .meg-lt-logo {
+        .meg-lt-logo__link {
+            display: block;
+        }
+    }
+}
+
+// Device (Tablet)
+@media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
+
+    .meg-lt-header {
+        .meg-lt-logo {
+            width: 200px;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+// Device (Mobile)
+@media screen and (max-width: $responsive-mobile) {
+
+    .meg-lt-header {
+        .meg-lt-logo {
+            width: 140px;
+            margin: 0 auto;
+            b {
+                display: none;
+            }
+        }
+    }
+
+}

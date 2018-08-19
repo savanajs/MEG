@@ -1,0 +1,60 @@
+// Images
+
+$logo: "";
+$image-gif-loading-primary: "../img/meg-before-loading-white.gif";
+$image-gif-loading-secondary: "../img/meg-loading-bar.gif";
+
+// Colors
+
+$dark-primary: #212121;
+$dark-secondary: #2a2a2b;
+$dark-tertiary: #343435;
+
+$primary: #00cc99;
+$secondary: #f69311;
+$tertiary: #4996c5;
+$quaternary: #c54958;
+$success: #49c5b6;
+$cancel: #c54958;
+$warning: #ffcc00;
+$info: #4996c5;
+$black: #000;
+$white: #fff;
+$gray: #c5c5c5;
+$light: $dark-tertiary;
+
+// Layout colors
+
+$layout-primary: $dark-primary;
+$layout-secondary: $dark-secondary;
+$layout-tertiary: $dark-tertiary;
+
+// Colors defined
+
+$color-font: #999;
+$color-font-o: $white;
+$color-column: transparent;
+$color-input: $layout-tertiary;
+$color-input-text: $color-font;
+$color-input-disabled: darken($layout-tertiary, 5%);
+$color-input-border: $layout-primary;
+$color-border: $layout-primary;
+$color-link: $primary;
+$color-strong: $color-font;
+$pre-background: $gray;
+$hr-background: $gray;
+$code-background: $light;
+
+// Colors for theme
+
+$background: $layout-primary;
+$color-lt-primary: $layout-primary;
+$color-lt-secondary: $layout-secondary; 
+$color-lt-tertiary: $layout-tertiary;
+$color-lt-bg-hover: $layout-tertiary;
+$color-lt-bg-scrolling: $layout-tertiary;
+$color-lt-bg-bar: $primary;
+$color-lt-bg-light: $layout-tertiary;
+$color-lt-bg-content: $layout-secondary;
+$color-lt-bg-content-placeholder-primary: darken($layout-tertiary, 5%);
+$color-lt-bg-content-placeholder-secondary: $layout-tertiary;

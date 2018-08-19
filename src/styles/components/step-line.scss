@@ -1,0 +1,72 @@
+.meg-c-steps-line {
+    counter-reset: step;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.meg-c-steps-line .meg-c-steps-line__list {
+    display: flex;
+    align-content: space-between;
+}
+
+.meg-c-steps-line .meg-c-steps-line__list .meg-c-step {
+    list-style-type: none;
+    font-size: $font-size-base;
+    position: relative;
+    text-align: center;
+    color: lighten($color-font, 40%);
+    flex: 1 1 20%;
+    a {
+        color: lighten($color-font, 40%);
+    }
+}
+
+.meg-c-steps-line .meg-c-step::before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: $line-height-base;
+    border: 2px solid lighten($color-font, 40%);
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: $layout-secondary;
+    z-index: 2;
+    position: relative;
+}
+
+.meg-c-steps-line .meg-c-step::after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: lighten($color-font, 40%);
+    top: 15px;
+    left: -50%;
+    z-index: 1;
+}
+
+.meg-c-steps-line .meg-c-step:first-child::after {
+    content: none;
+}
+
+.meg-c-steps-line .meg-c-step.meg-active {
+    color: $success;    
+    a {
+        color: $success;
+    }
+}
+
+.meg-c-steps-line .meg-c-step.meg-active::before {
+    border-color: $success;
+}
+
+.meg-c-steps-line .meg-c-step.meg-active + .meg-c-step::after {
+    background-color: $success;
+}
+
+.meg-c-steps-line .meg-c-step.meg-active + .meg-c-step:not(.meg-active)::after {
+    background-color: #7d7d7d;
+}

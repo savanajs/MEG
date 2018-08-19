@@ -1,0 +1,104 @@
+.meg-c-slidebox__input {
+    display: none;
+}
+
+.meg-c-slidebox__label {
+    cursor: pointer;
+}
+
+.meg-c-slidebox__overlay {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    cursor: pointer;
+    display: none;
+}
+
+.meg-c-slidebox {
+    background: $color-lt-secondary;
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    width: 400px;
+    height: 100%;
+    .meg-c-slidebox__header {
+        padding: 0px 10px;
+        border-bottom: 1px solid $color_border;
+        height: 7vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .meg-c-slidebox__close {
+            color: #c54958;
+            cursor: pointer;
+            font-size: 2em;
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            text-decoration: none;
+        }
+    }
+    .meg-c-slidebox__content {
+        height: 53vh;
+        overflow-y: auto;
+
+        &:not(.meg-c-slidebox__content--no-padding) {
+            padding: 10px;
+        }
+    }
+    .meg-c-slidebox__footer {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    &.meg-c-slidebox--left {
+        transition: left .15s;
+        left: -110%;
+        box-shadow: 2px 0px 5px rgba(0, 0, 0, .2);
+    }
+    &.meg-c-slidebox--right {
+        transition: right .15s;
+        right: -110%;
+        box-shadow: -2px 0px 5px rgba(0, 0, 0, .2);
+    }
+}
+
+.meg-c-slidebox__input:checked + .meg-c-slidebox__overlay {
+    background: rgba(0, 0, 0, .6);
+    transition: background .6s;
+    z-index: 5;
+    display: block;
+}
+
+.meg-c-slidebox__input:checked + .meg-c-slidebox__overlay + .meg-c-slidebox.meg-c-slidebox--left {
+    transition: left .3s;
+    left: 0px;
+}
+
+.meg-c-slidebox__input:checked + .meg-c-slidebox__overlay + .meg-c-slidebox.meg-c-slidebox--right {
+    transition: right .3s;
+    right: 0px;
+}
+
+.wrap-loader {
+    .meg-c-slidebox__overlay,
+    .meg-c-slidebox {
+        position: absolute !important;
+    }
+}
+
+@media screen and (max-width: $responsive-mobile) {
+
+    .meg-c-slidebox {
+        width: 100%;
+    }
+
+}

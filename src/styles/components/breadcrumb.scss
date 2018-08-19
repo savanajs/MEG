@@ -1,0 +1,25 @@
+.meg-c-breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    .meg-c-breadcrumb__item {
+        display: inline;
+        font-size: $font-size-base - .2;
+        .meg-c-item__link {
+            color: lighten($color-font, 10%);
+            text-decoration: none;
+        }
+        .meg-c-item__link:hover {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+    .meg-c-breadcrumb__item + .meg-c-breadcrumb__item::before {
+        padding: 8px;
+        color: $color-font;
+        content: "/\00a0";
+    }
+    .meg-c-breadcrumb__item.meg-c-breadcrumb__current .meg-c-item__link {
+        font-weight: bold;
+        color: lighten($color-font, 0%);
+    }
+}

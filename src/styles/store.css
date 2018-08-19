@@ -1,0 +1,13 @@
+html{
+    overflow-x: hidden;
+}
+.meg-lt-sidebar__main{
+    height: 100vh;
+    overflow-y: auto;
+}
+.meg-lt-logo__link{
+    width: 100%;
+}
+.meg-lt-logo__link img{
+    width: 100%;
+}

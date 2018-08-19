@@ -1,0 +1,25 @@
+.md-c-ribbon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    > .md-c-ribbon__discount,
+    > .md-c-ribbon__off {
+        flex: 1 1 100%;
+        display: block;
+        color: #fff;
+        line-height: 1em;
+    }
+    > .md-c-ribbon__discount {
+        font-size: .9em;
+    }
+    > .md-c-ribbon__off {
+        font-size: 1.1em;
+    }
+}

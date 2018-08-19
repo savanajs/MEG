@@ -1,0 +1,5 @@
+.meg-lt-aside {
+    &:not(.meg-lt-aside--no-margin-bottom) {
+        margin-bottom: $margin-bottom;
+    }
+}

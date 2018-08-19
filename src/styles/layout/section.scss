@@ -1,0 +1,5 @@
+.meg-lt-section {
+    &:not(.meg-lt-section--no-margin-bottom) {
+        margin-bottom: $margin-bottom;
+    }
+}

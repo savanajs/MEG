@@ -1,0 +1,146 @@
+.meg-li-shelf {
+    &.meg-li-shelf--inline {
+        display: flex;
+        flex-wrap: wrap;
+        &.meg-li-shelf--no-margin-left-item-1:nth-child(1n + 0) {
+            margin-left: 0px;
+        }
+        &.meg-li-shelf--no-margin-left-item-2n-1-lg > .meg-li-shelf__item:nth-child(2n+1),
+        &.meg-li-shelf--no-margin-left-item-3n-1-lg > .meg-li-shelf__item:nth-child(3n+1),
+        &.meg-li-shelf--no-margin-left-item-4n-1-lg > .meg-li-shelf__item:nth-child(4n+1) {
+            margin-left: 0px;
+        }
+        > .meg-li-shelf__item {
+            color: $color-font;
+
+            > .meg-li-shelf__figure {
+                margin-bottom: 10px;
+            }
+        }
+        &.meg-li-shelf-5-items > .meg-li-shelf__item {
+            flex: 0 1 20%;
+        }
+        &.meg-li-shelf-4-items > .meg-li-shelf__item {
+            flex: 0 1 25%;
+        }
+    }
+    &.meg-li-shelf--block {
+        display: block;
+        > .meg-li-shelf__item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            > .meg-li-shelf__figure,
+            > .meg-li-shelf__actions {
+                flex: 1 1 20%;
+            }
+            > .meg-li-shelf__infos {
+                flex: 1 1 60%;
+                padding-right: 2%;
+                padding-left: 2%;
+            }
+        }
+    }
+    > .meg-li-shelf__item {
+        padding: 10px;
+        box-sizing: border-box;
+        > .meg-li-shelf__infos {
+            > .meg-li-shelf__title {
+                margin-bottom: 10px;
+                > .meg-li-shelf__link {
+                    text-decoration: none;
+                    font-size: 1.2em;
+                }
+            }
+            > .meg-li-shelf__description {
+                margin-bottom: 10px;
+            }
+        }
+        > .meg-li-shelf__figure {
+            a {
+                display: block;
+                > img {
+                    width: 100%;
+                }
+            }
+        }
+        > .meg-li-shelf__actions {
+            > .meg-li-shelf__list-price {
+                margin-bottom: 10px;
+                display: block;
+                text-decoration: line-through;
+            }
+            > .meg-li-shelf__best-price {
+                font-size: 2.0em;
+                font-weight: 900;
+                margin-bottom: 10px;
+                > span {
+                    display: inline-block;
+                }
+            }
+            > .meg-li-shelf__installment {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+// Tablet
+@media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
+    .meg-li-shelf {
+        &.meg-li-shelf--inline {
+            > .meg-li-shelf__item {
+                width: 25%;
+                flex: 0 1 25% !important;
+            }
+        }
+        &.meg-li-shelf--block {
+            > .meg-li-shelf__item {
+                > .meg-li-shelf__actions {
+                    flex: 1 1 30%;
+                }
+                > .meg-li-shelf__figure {
+                    flex: 1 1 20%;
+                    a {
+                        display: block;
+                        > img {
+                            width: 100%;
+                        }
+                    }
+                }
+                > .meg-li-shelf__infos {
+                    flex: 1 1 50%;
+                }
+            }
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: $responsive-mobile) {
+    .meg-li-shelf {
+        &.meg-li-shelf--inline {
+            > .meg-li-shelf__item {
+                width: 49%;
+                flex: 0 1 49% !important;
+                > .meg-li-shelf__figure {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &.meg-li-shelf--block {
+            > .meg-li-shelf__item {
+                flex-wrap: wrap;
+                > .meg-li-shelf__actions,
+                > .meg-li-shelf__figure,
+                > .meg-li-shelf__infos {
+                    flex: 0 1 100%;
+                    padding: 0px;
+                }
+                > .meg-li-shelf__figure {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

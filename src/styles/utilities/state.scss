@@ -1,0 +1,59 @@
+/*
+Camada responsável pela maior especificidade de todas, 
+inclusive aqui é plausível o uso de !important
+
+Estado é um Modificador
+Estilos de "Estado" em SMACSS servem para ​incrementar/sobrescrever outros estilos.
+- Pode subscreever estilo de elementos
+- Por conversão é utilizado o prefixo is-
+*/
+
+.meg-s-is-hidden {
+    display: none;
+}
+
+.meg-s-is-show {
+    display: block;
+}
+
+.meg-s-is-clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+// Desktop 
+@media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
+    .meg-s-is-visible-lg {
+        display: inline-block;
+    }
+    .meg-s-is-hidden-lg,
+    .meg-s-is-visible-md,
+    .meg-s-is-visible-sm {
+        display: none;
+    }
+}
+
+// Tablet
+@media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
+    .meg-s-is-visible-md {
+        display: inline-block;
+    }
+    .meg-s-is-visible-lg,
+    .meg-s-is-hidden-md,
+    .meg-s-is-visible-sm {
+        display: none;
+    }
+}
+
+// Mobile
+@media screen and (max-width: $responsive-mobile) {
+    .meg-s-is-visible-sm {
+        display: inline-block;
+    }
+    .meg-s-is-visible-lg,
+    .meg-s-is-hidden-sm,
+    .meg-s-is-visible-md {
+        display: none;
+    }
+}
