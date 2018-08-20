@@ -30,12 +30,15 @@ function generateHtmlPlugins(templateDir) {
         //const extension = parts[1]
         
         return new HtmlWebpackPlugin({
+            environment: process.env.NODE_ENV,
             filename: `${name}.html`,
             template: resolvePath('src/' + name + '.html'),
-            favicon: './src/img/favicon.ico',
+            title: 'Custom template',
+            favicon: './src/favicon.ico',
             xhtml: true,
             hash: true,
-            minify: false
+            minify: false,
+
         })
         
     })
@@ -168,9 +171,11 @@ module.exports = (env, options) => {
                     include: [resolvePath('src')],
                     exclude: /node_modules/,
                     use: [{
-                        loader: 'html-loader',
+                        loader: 'html-loader?interpolate=require',
                         options: {
+                            attrs:[':data-src'],
                             minimize: false,
+                            conservativeCollapse: false,
                             interpolate: true
                         }
                     }]

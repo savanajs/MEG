@@ -14,7 +14,10 @@
     "docs": "webpack -p",
     "start": "webpack-dev-server --content-base src --inline --mode development --port 3000"
   },
-  "keywords": ["framework","css"],
+  "keywords": [
+    "framework",
+    "css"
+  ],
   "author": "Rafael Cruz",
   "license": "The MIT License (MIT)",
   "entry": "js",
@@ -37,8 +40,10 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin-template-vars": "^2.28.2",
     "htmllint-loader": "^2.1.4",
     "image-webpack-loader": "^4.3.1",
+    "inject-variable-html-webpack-plugin": "^1.0.2",
     "jquery": "^3.3.1",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
@@ -57,6 +62,8 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.7.0",
     "prismjs": "^1.15.0"
   }
 }
