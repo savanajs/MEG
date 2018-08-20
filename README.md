@@ -25,7 +25,7 @@ npm start
 Build
 
 ```sh
-npm run build
+npm run docs
 ```
 
 ## Server
