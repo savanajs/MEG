@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     .meg-el-btn {
+        align-self: center;
         &:not(.meg-el-btn--no-margin-bottom) {
             margin-bottom: $margin-bottom-button;
         }

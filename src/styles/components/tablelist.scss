@@ -22,7 +22,8 @@
                 display: block;
             }
             .md-c-list-item__sub-title {
-                font-size: .8;
+                font-size: .9em;
+                color: lighten($color-font, 20%);
             }
         }
         .md-c-list-item__actions {

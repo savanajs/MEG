@@ -99,6 +99,15 @@
 
     .meg-c-slidebox {
         width: 100%;
+        overflow-y: auto;
+    }
+
+    .meg-c-slidebox__footer {
+        position: relative !important;
+    }
+
+    .meg-c-slidebox .meg-c-slidebox__header {
+        height: 60px;
     }
 
 }
