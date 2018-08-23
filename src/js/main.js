@@ -60,6 +60,57 @@ Prism.highlightAll();
     }
   };
 
+  var Tpl = {
+      "data": {
+          "dark": "meg-dark.min.css",
+          "light": "meg.min.css",
+      },
+      "link": function(file){
+
+        if (!file) {
+            
+            return;
+
+        }
+
+        var date = new Date();
+
+        $("head > link[rel=stylesheet]").attr("href", file + "?v=" + date.getTime());
+
+        return true;
+
+      },
+      "events": function() {
+
+        var self = this;
+
+        $("#switch-tpl").on("change", function(){
+
+            if ($(this).is(":checked")) {
+
+                self.link(self.data.light);
+
+            } else {
+
+                self.link(self.data.dark);
+
+            }
+
+        });
+
+        return true;
+
+      },
+      "init": function() {
+
+        this.events();
+
+        return true;
+
+      }
+  };
+
   Code.init();
+  Tpl.init();
 
 })($);

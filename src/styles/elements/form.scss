@@ -17,7 +17,7 @@
     select,
     textarea {
         padding: .5em .6em;
-        display: inline-block;
+        display: block;
         vertical-align: middle;
         box-sizing: border-box;
         border-radius: $border_radius_input;
@@ -301,13 +301,13 @@
     }
     .meg-c-switch__input + .meg-c-switch__label::after {
         width: 30px;
-        background-color: $color-input;
+        background-color: $white;
         border-radius: 100%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         transition: all 0.4s;
     }
     .meg-c-switch__input:checked + .meg-c-switch__label::before {
-        background-color: darken($success, 20%);
+        background-color: #00cc99;
     }
     .meg-c-switch__input:checked + .meg-c-switch__label::after {
         transform: translateX(29px);

@@ -89,7 +89,6 @@ module.exports = (env, options) => {
     }
 
     return {
-        watch: true,
         mode: options.mode,
         entry: {
             "app": resolvePath(entry_path),
@@ -171,9 +170,8 @@ module.exports = (env, options) => {
                     include: [resolvePath('src')],
                     exclude: /node_modules/,
                     use: [{
-                        loader: 'html-loader?interpolate=require',
+                        loader: 'html-loader',
                         options: {
-                            attrs:[':data-src'],
                             minimize: false,
                             conservativeCollapse: false,
                             interpolate: true

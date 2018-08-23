@@ -1,11 +1,5 @@
 .meg-el-image {
-    &:not(.meg-el-image--block) {
-        display: inline-block;
-    }
-    &.meg-el-image--block {
-        display: block;
-    }
-
+    display: block;
     background: url($image-gif-loading-primary) no-repeat center center;
     .meg-el-image__caption {
         padding: $padding;

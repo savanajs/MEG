@@ -23,11 +23,17 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
+    word-wrap: break-word;
 }
 
 p {
     margin-top: 0px;
     padding: 0;
+    word-wrap: break-word;
+}
+
+div {
+    word-wrap: break-word;
 }
 
 h1,
@@ -62,7 +68,6 @@ html {
     box-sizing: border-box;
 }
 
-*,
 *::before,
 *::after {
     box-sizing: inherit;
@@ -91,4 +96,9 @@ td,
 th {
     padding: 0;
     text-align: left;
+    word-wrap: break-word;
+}
+
+a {
+    word-wrap: break-word;
 }

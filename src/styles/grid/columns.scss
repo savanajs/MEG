@@ -6,7 +6,6 @@
         flex: 0 1 auto;
         width: 100%;
         flex-direction: row;
-        justify-content: flex-start;
         flex-wrap: wrap;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -52,6 +51,11 @@
         .meg-lt-row,
         .meg-lt-col {
             box-sizing: border-box;
+        }
+
+        .meg-lt-col {
+            box-sizing: border-box;
+            flex: 0 0 auto;
         }
 
         .meg-lt-col:not(.meg-c-form__actions):not(.meg-lt-col--no-padding-top) {
@@ -106,75 +110,51 @@
             }
 
             .meg-lt-col--1-lg {
-                flex: 0 1 8.33333333%;
                 width: 8.33333333%;
-                flex-basis: 8.33333333%;
             }
 
             .meg-lt-col--2-lg {
-                flex: 0 1 16.66666667%;
                 width: 16.66666667%;
-                flex-basis: 16.66666667%;
             }
 
             .meg-lt-col--3-lg {
-                flex: 0 1 25%;
                 width: 25%;
-                flex-basis: 25%;
             }
 
             .meg-lt-col--4-lg {
-                flex: 0 1 33.33333333%;
                 width: 33.33333333%;
-                flex-basis: 33.33333333%;
             }
 
             .meg-lt-col--5-lg {
-                flex: 0 1 41.66666667%;
                 width: 41.66666667%;
-                flex-basis: 41.66666667%;
             }
 
             .meg-lt-col--6-lg {
-                flex: 0 1 50%;
                 width: 50%;
-                flex-basis: 50%;
             }
 
             .meg-lt-col--7-lg {
-                flex: 0 1 58.33333333%;
                 width: 58.33333333%;
-                flex-basis: 58.33333333%;
             }
 
             .meg-lt-col--8-lg {
-                flex: 0 1 66.66666667%;
                 width: 66.66666667%;
-                flex-basis: 66.66666667%;
             }
 
             .meg-lt-col--9-lg {
-                flex: 0 1 75%;
                 width: 75%;
-                flex-basis: 75%;
             }
 
             .meg-lt-col--10-lg {
-                flex: 0 1 83.33333333%;
                 width: 83.33333333%;
-                flex-basis: 83.33333333%;
             }
 
             .meg-lt-col--11-lg {
-                flex: 0 1 91.66666667%;
                 width: 91.66666667%;
-                flex-basis: 91.66666667%;
             }
 
             .meg-lt-col--12-lg {
-                flex: 0 1 100%;
                 width: 100%;
-                flex-basis: 100%;
             }
 
             &.meg-lt-row--no-margin-left-cols-1:nth-child(1n + 0) {
@@ -212,75 +192,51 @@
             }
 
             .meg-lt-col--1-md {
-                flex: 0 1 8.33333333%;
                 width: 8.33333333%;
-                flex-basis: 8.33333333%;
             }
 
             .meg-lt-col--2-md {
-                flex: 0 1 16.66666667%;
                 width: 16.66666667%;
-                flex-basis: 16.66666667%;
             }
 
             .meg-lt-col--3-md {
-                flex: 0 1 25%;
                 width: 25%;
-                flex-basis: 25%;
             }
 
             .meg-lt-col--4-md {
-                flex: 0 1 33.33333333%;
                 width: 33.33333333%;
-                flex-basis: 33.33333333%;
             }
 
             .meg-lt-col--5-md {
-                flex: 0 1 41.66666667%;
                 width: 41.66666667%;
-                flex-basis: 41.66666667%;
             }
 
             .meg-lt-col--6-md {
-                flex: 0 1 50%;
                 width: 50%;
-                flex-basis: 50%;
             }
 
             .meg-lt-col--7-md {
-                flex: 0 1 58.33333333%;
                 width: 58.33333333%;
-                flex-basis: 58.33333333%;
             }
 
             .meg-lt-col--8-md {
-                flex: 0 1 66.66666667%;
                 width: 66.66666667%;
-                flex-basis: 66.66666667%;
             }
 
             .meg-lt-col--9-md {
-                flex: 0 1 75%;
                 width: 75%;
-                flex-basis: 75%;
             }
 
             .meg-lt-col--10-md {
-                flex: 0 1 83.33333333%;
                 width: 83.33333333%;
-                flex-basis: 83.33333333%;
             }
 
             .meg-lt-col--11-md {
-                flex: 0 1 91.66666667%;
                 width: 91.66666667%;
-                flex-basis: 91.66666667%;
             }
 
             .meg-lt-col--12-md {
-                flex: 0 1 100%;
                 width: 100%;
-                flex-basis: 100%;
             }
 
             &.meg-lt-row--no-margin-left-cols-2n-1-md > .meg-lt-col:nth-child(2n+1),
@@ -312,75 +268,51 @@
             flex-wrap: wrap;
 
             .meg-lt-col--1-sm {
-                flex: 0 1 8.33333333%;
                 width: 8.33333333%;
-                flex-basis: 8.33333333%;
             }
 
             .meg-lt-col--2-sm {
-                flex: 0 1 16.66666667%;
                 width: 16.66666667%;
-                flex-basis: 16.66666667%;
             }
 
             .meg-lt-col--3-sm {
-                flex: 0 1 25%;
                 width: 25%;
-                flex-basis: 25%;
             }
 
             .meg-lt-col--4-sm {
-                flex: 0 1 33.33333333%;
                 width: 33.33333333%;
-                flex-basis: 33.33333333%;
             }
 
             .meg-lt-col--5-sm {
-                flex: 0 1 41.66666667%;
                 width: 41.66666667%;
-                flex-basis: 41.66666667%;
             }
 
             .meg-lt-col--6-sm {
-                flex: 0 1 50%;
                 width: 50%;
-                flex-basis: 50%;
             }
 
             .meg-lt-col--7-sm {
-                flex: 0 1 58.33333333%;
                 width: 58.33333333%;
-                flex-basis: 58.33333333%;
             }
 
             .meg-lt-col--8-sm {
-                flex: 0 1 66.66666667%;
                 width: 66.66666667%;
-                flex-basis: 66.66666667%;
             }
 
             .meg-lt-col--9-sm {
-                flex: 0 1 75%;
                 width: 75%;
-                flex-basis: 75%;
             }
 
             .meg-lt-col--10-sm {
-                flex: 0 1 83.33333333%;
                 width: 83.33333333%;
-                flex-basis: 83.33333333%;
             }
 
             .meg-lt-col--11-sm {
-                flex: 0 1 91.66666667%;
                 width: 91.66666667%;
-                flex-basis: 91.66666667%;
             }
 
             .meg-lt-col--12-sm {
-                flex: 0 1 100%;
                 width: 100%;
-                flex-basis: 100%;
             }
 
             .meg-lt-col--12-sm + .meg-lt-col--12-sm {
