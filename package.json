@@ -8,7 +8,7 @@
     "ie > 8",
     "last 5 version"
   ],
-  "is_style_loader": true,
+  "is_style_loader": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs": "webpack -p",
