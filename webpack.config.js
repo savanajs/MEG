@@ -30,15 +30,13 @@ function generateHtmlPlugins(templateDir) {
         //const extension = parts[1]
         
         return new HtmlWebpackPlugin({
-            environment: process.env.NODE_ENV,
             filename: `${name}.html`,
             template: resolvePath('src/' + name + '.html'),
-            title: 'Custom template',
             favicon: './src/favicon.ico',
             xhtml: true,
             hash: true,
             minify: false,
-
+            showErrors: false
         })
         
     })
@@ -116,18 +114,18 @@ module.exports = (env, options) => {
                 {
                     enforce: "pre",
                     test: /\.html$/,
-                    include: [resolvePath('src'), resolvePath('src/**/*')],
+                    include: [resolvePath('src'), resolvePath('src/includes')],
                     exclude: /node_modules/,
-                    use: [
-                        {
-                            loader: 'htmllint-loader',
-                            options: {
-                                config: '.htmllintrc',
-                                failOnError: true,
-                                failOnWarning: false,
-                            }
-                        }
-                    ]
+                    // use: [
+                    //     {
+                    //         loader: 'htmllint-loader',
+                    //         options: {
+                    //             config: '.htmllintrc',
+                    //             failOnError: true,
+                    //             failOnWarning: false,
+                    //         }
+                    //     }
+                    // ]
                 },
                 {
                     test: /\.js$/,

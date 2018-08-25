@@ -226,9 +226,9 @@ Aqui ficam os mixins e funções necessárias para a construção do layout.
 /// @param {String} $eotFileSrc ['myFont.eot'] - Eot File Source
 /// @param {String} $woffFileSrc ['myFont.woff'] - Woff File Source
 /// @param {String} $ttfFileSrc ['myFont.ttf'] - Ttf File Source
-/// @param {String} $svgFileSrc ['myFont.svg'] - Svg File Source
+/// @param {String} $svgFileSrc ['myFont.png'] - Svg File Source
 
-@mixin font-face($fontFamily: myFont, $eotFileSrc: 'myFont.eot', $woffFileSrc: 'myFont.woff', $ttfFileSrc: 'myFont.ttf', $svgFileSrc: 'myFont.svg', $svgFontID: '#myFont') {
+@mixin font-face($fontFamily: myFont, $eotFileSrc: 'myFont.eot', $woffFileSrc: 'myFont.woff', $ttfFileSrc: 'myFont.ttf', $svgFileSrc: 'myFont.png', $svgFontID: '#myFont') {
     font-family: $fontFamily;
     src: url($eotFileSrc) format('eot'), url($woffFileSrc) format('woff'), url($ttfFileSrc) format('truetype'), url($svgFileSrc + $svgFontID) format('svg');
 }

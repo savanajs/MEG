@@ -30,7 +30,8 @@
             display: inline-block;
         }
         > .meg-c-label__text {
-            flex: 1 1 auto;
+            width: auto;
+            margin-right: 10px;
         }
         > .meg-c-label__small {
             font-size: .9em;
@@ -82,7 +83,6 @@
         }
         &.meg-c-form__label--full {
             width: 100% !important;
-            flex: 0 1 100% !important;
             text-align: left !important;
             padding-top: 0px !important;
             padding-bottom: 0px !important;
@@ -92,6 +92,7 @@
         background-color: $color-input;
         color: $color-input-text;
         border: 1px solid $color-border;
+        font-size: 1.1em;
         &::placeholder {
             color: $color-font;
         }
@@ -111,9 +112,6 @@
     .meg-c-field:required:valid {
         border-color: $success;
         background: url("../img/checked.png") no-repeat 97% center;
-    }
-    .meg-lt-row {
-        justify-content: space-between;
     }
     .meg-c-form__field {
         &.meg-c-form__field--group {
@@ -155,37 +153,23 @@
                 border-bottom-right-radius: $border_radius_input;
             }
         }
-        &:not(.meg-c-form__field--group) {
-            .meg-c-field {
-                font-size: 1.1em;
-            }
-            .meg-c-form__label {
-                margin-right: 2%;
-                font-size: 1.1em;
-            }
-        }
 
         width: 100%;
         .meg-c-field {
             &.meg-c-field--25 {
                 width: 25%;
-                flex: 0 1 25%;
             }
             &.meg-c-field--50 {
                 width: 50%;
-                flex: 0 1 50%;
             }
             &.meg-c-field--75 {
                 width: 75%;
-                flex: 0 1 75%;
             }
             &.meg-c-field--full {
                 width: 100%;
-                flex: 0 1 100%;
             }
             &.meg-c-field--auto {
                 width: auto;
-                flex: 1 1 auto;
             }
         }
     }
@@ -235,7 +219,6 @@
             text-align: left;
             margin-bottom: 10px;
             width: 100%;
-            flex: 1 1 100%;
             display: flex;
         }
         .meg-c-field__message {
@@ -368,7 +351,6 @@ select.meg-c-field {
 @media screen and (max-width: $responsive-mobile) {
     .meg-c-form__label {
         width: 100% !important;
-        flex: 1 1 100% !important;
         text-align: left;
     }
 

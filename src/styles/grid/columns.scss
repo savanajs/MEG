@@ -10,6 +10,7 @@
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -webkit-box-flex: 0;
+        justify-content: flex-start;
     }
 
     .meg-lt-skeletron {
@@ -55,7 +56,6 @@
 
         .meg-lt-col {
             box-sizing: border-box;
-            flex: 0 0 auto;
         }
 
         .meg-lt-col:not(.meg-c-form__actions):not(.meg-lt-col--no-padding-top) {
@@ -256,6 +256,10 @@
                 overflow: hidden;
             }
         }
+        .meg-lt-col.meg-lt-col--12-md .meg-lt-col.meg-lt-col--12-md {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
     }
 }
 
@@ -336,6 +340,10 @@
                 height: 0;
                 overflow: hidden;
             }
+        }
+        .meg-lt-col.meg-lt-col--12-sm .meg-lt-col.meg-lt-col--12-sm:not(.meg-u-border) {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
         }
     }
 }
