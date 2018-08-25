@@ -86,7 +86,147 @@ module.exports = (env, options) => {
 
     }
 
+    var rules = [
+        {
+            enforce: "pre",
+            test: /\.js$/,
+            include: [resolvePath('src/js')],
+            exclude: /node_modules/,
+            use: [
+                {
+                    loader: 'eslint-loader'
+                }
+            ]
+        },
+        {
+            enforce: "pre",
+            test: /\.html$/,
+            include: [resolvePath('src'), resolvePath('src/includes')],
+            exclude: /node_modules/,
+            // use: [
+            //     {
+            //         loader: 'htmllint-loader',
+            //         options: {
+            //             config: '.htmllintrc',
+            //             failOnError: true,
+            //             failOnWarning: false,
+            //         }
+            //     }
+            // ]
+        },
+        {
+            test: /\.js$/,
+            include: [resolvePath('src/js')],
+            exclude: /node_modules/,
+            use: [
+                {
+                    loader: 'babel-loader'
+                }
+            ]
+        },
+        {
+            test: /\.tsx?$/,
+            include: [resolvePath('src/ts')],
+            exclude: /node_modules/,
+            use: 'ts-loader'
+        },
+        {
+            test: /\.s(a|c)ss?$/,
+            include: [resolvePath('src/styles'), resolvePath('src/styles/**/*')],
+            use: [
+                { loader: (devMode || pkg.is_style_loader) ? "style-loader" : MiniCssExtractPlugin.loader },
+                { loader: "css-loader" },
+                { loader: "postcss-loader" },
+                { loader: "sass-loader" }
+
+            ]
+        },
+        {
+            test: /\.css?$/,
+            include: [resolvePath('src/styles'), resolvePath('src/styles/**/*'), resolvePath('node_modules')],
+            use: [
+                { loader: 'style-loader' },
+                { loader: "css-loader" }
+
+            ]
+        },
+        {
+            test: /\.(html)$/,
+            include: [resolvePath('src')],
+            exclude: /node_modules/,
+            use: [{
+                loader: 'html-loader',
+                options: {
+                    minimize: false,
+                    conservativeCollapse: false,
+                    interpolate: true
+                }
+            }]
+        }
+
+    ];
+
+    if (!devMode) {
+
+        rules.push({
+            test: /\.(png|jpe?g|svg|gif|ico|icon)$/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'img/',
+                        publicPath: 'img/'
+                    }
+                },
+                {
+                    loader: 'image-webpack-loader',
+                    options: {
+                        mozjpeg: {
+                            progressive: true,
+                            quality: 65
+                        },
+                        // optipng.enabled: false will disable optipng
+                        optipng: {
+                            enabled: false,
+                        },
+                        pngquant: {
+                            quality: '65-90',
+                            speed: 4
+                        },
+                        gifsicle: {
+                            interlaced: false,
+                        },
+                        // the webp option will enable WEBP
+                        webp: {
+                            quality: 75
+                        }
+                    }
+                }
+            ]
+        });
+
+    } else {
+
+        rules.push({
+            test: /\.(png|jpe?g|svg|gif|ico|icon)$/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'img/',
+                        publicPath: 'img/'
+                    }
+                }
+            ]
+        });
+
+    }
+
     return {
+        context: __dirname,
+        devtool: devMode ? "inline-sourcemap": null,
         mode: options.mode,
         entry: {
             "app": resolvePath(entry_path),
@@ -99,122 +239,7 @@ module.exports = (env, options) => {
         },
         devtool: 'source-map',
         module: {
-            rules: [
-                {
-                    enforce: "pre",
-                    test: /\.js$/,
-                    include: [resolvePath('src/js')],
-                    exclude: /node_modules/,
-                    use: [
-                        {
-                            loader: 'eslint-loader'
-                        }
-                    ]
-                },
-                {
-                    enforce: "pre",
-                    test: /\.html$/,
-                    include: [resolvePath('src'), resolvePath('src/includes')],
-                    exclude: /node_modules/,
-                    // use: [
-                    //     {
-                    //         loader: 'htmllint-loader',
-                    //         options: {
-                    //             config: '.htmllintrc',
-                    //             failOnError: true,
-                    //             failOnWarning: false,
-                    //         }
-                    //     }
-                    // ]
-                },
-                {
-                    test: /\.js$/,
-                    include: [resolvePath('src/js')],
-                    exclude: /node_modules/,
-                    use: [
-                        {
-                            loader: 'babel-loader'
-                        }
-                    ]
-                },
-                {
-                    test: /\.tsx?$/,
-                    include: [resolvePath('src/ts')],
-                    exclude: /node_modules/,
-                    use: 'ts-loader'
-                },
-                {
-                    test: /\.s(a|c)ss?$/,
-                    include: [resolvePath('src/styles'), resolvePath('src/styles/**/*')],
-                    use: [
-                        { loader: (devMode || pkg.is_style_loader) ? "style-loader" : MiniCssExtractPlugin.loader },
-                        { loader: "css-loader" },
-                        { loader: "postcss-loader" },
-                        { loader: "sass-loader" }
-
-                    ]
-                },
-                {
-                    test: /\.css?$/,
-                    include: [resolvePath('src/styles'), resolvePath('src/styles/**/*'), resolvePath('node_modules')],
-                    use: [
-                        { loader: 'style-loader' },
-                        { loader: "css-loader" }
-
-                    ]
-                },
-                {
-                    test: /\.(html)$/,
-                    include: [resolvePath('src')],
-                    exclude: /node_modules/,
-                    use: [{
-                        loader: 'html-loader',
-                        options: {
-                            minimize: false,
-                            conservativeCollapse: false,
-                            interpolate: true
-                        }
-                    }]
-                },
-                {
-                    test: /\.(png|jpe?g|svg|gif|ico|icon)$/,
-                    use: [
-                        {
-                            loader: 'file-loader',
-                            options: {
-                                name: '[name].[ext]',
-                                outputPath: 'img/',
-                                publicPath: 'img/'
-                            }
-                        },
-                        {
-                            loader: 'image-webpack-loader',
-                            options: {
-                                mozjpeg: {
-                                    progressive: true,
-                                    quality: 65
-                                },
-                                // optipng.enabled: false will disable optipng
-                                optipng: {
-                                    enabled: false,
-                                },
-                                pngquant: {
-                                    quality: '65-90',
-                                    speed: 4
-                                },
-                                gifsicle: {
-                                    interlaced: false,
-                                },
-                                // the webp option will enable WEBP
-                                webp: {
-                                    quality: 75
-                                }
-                            }
-                        }
-                    ]
-                }
-
-            ]
+            rules: rules
         },
         resolve: {
             extensions: ['.webpack.js', '.web.js', '.js', '.ts', '.scss', '.sass'],
