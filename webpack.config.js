@@ -35,7 +35,7 @@ function generateHtmlPlugins(templateDir) {
             favicon: './src/favicon.ico',
             xhtml: true,
             hash: true,
-            minify: false,
+            minify: name == "index" ? false : true,
             showErrors: false
         })
         
@@ -157,7 +157,7 @@ module.exports = (env, options) => {
             use: [{
                 loader: 'html-loader',
                 options: {
-                    minimize: false,
+                    minimize: true,
                     conservativeCollapse: false,
                     interpolate: true
                 }
