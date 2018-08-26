@@ -157,7 +157,8 @@ module.exports = (env, options) => {
             use: [{
                 loader: 'html-loader',
                 options: {
-                    minimize: true,
+                    minimize: false,
+                    removeComments: true,
                     conservativeCollapse: false,
                     interpolate: true
                 }
