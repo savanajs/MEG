@@ -10,7 +10,9 @@
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -webkit-box-flex: 0;
-        justify-content: flex-start;
+        &:not([class*=meg-u-align-]) {
+            justify-content: flex-start;
+        }
     }
 
     .meg-lt-skeletron {

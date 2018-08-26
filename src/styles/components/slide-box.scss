@@ -102,6 +102,11 @@
         overflow-y: auto;
     }
 
+    .meg-c-slidebox__content {
+        height: auto !important;
+        overflow-y: none;
+    }
+
     .meg-c-slidebox__footer {
         position: relative !important;
     }

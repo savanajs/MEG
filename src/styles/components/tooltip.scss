@@ -41,7 +41,7 @@
         margin-left: 10px;
         left: 0%;
         top: 110%;
-        margin-top: 5px;
+        margin-top: 3px;
     }
     &.meg-c-tooltip--left::after {
         bottom: 95%;
@@ -62,7 +62,7 @@
         opacity: 0;
         position: absolute;
         left: 15px;
-        margin-top: -14px;
+        margin-top: -16px;
     }
     &.meg-c-tooltip--right::before {
         content: "";

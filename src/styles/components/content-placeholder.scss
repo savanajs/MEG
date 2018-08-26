@@ -1,16 +1,48 @@
 .meg-c-cp-loading .meg-cp {
     position: relative;
     overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: placeHolderShimmer;
+        animation-name: placeHolderShimmer;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        background: linear-gradient(to right, $color-lt-bg-content-placeholder-secondary 8%, $color-lt-bg-content-placeholder-primary 18%, $color-lt-bg-content-placeholder-secondary 33%);
+        -webkit-background-size: 800px 104px;
+        display: block;
+        text-indent: -999px;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    &.meg-c-cp--radius {
+        border-radius: 50px;
+    }
 }
 
-.meg-c-cp-loading .meg-cp::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
+.meg-c-cp-loading .meg-cp--line {
+    &.meg-cp--full {
+        width: 100%;
+    }
+    &.meg-cp--middle {
+        width: 50%;
+    }
+    &.meg-cp--small {
+        width: 20%;
+    }
+    &.meg-cp--small-x {
+        width: 35%;
+    }
+
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
@@ -23,6 +55,21 @@
     animation-timing-function: linear;
     background: linear-gradient(to right, $color-lt-bg-content-placeholder-secondary 8%, $color-lt-bg-content-placeholder-primary 18%, $color-lt-bg-content-placeholder-secondary 33%);
     -webkit-background-size: 800px 104px;
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    & + .meg-cp--line:last-child {
+        width: 70%;
+        margin-bottom: 0px;
+    }
+}
+
+.meg-c-cp-loading {
+    .meg-cp__text {
+        .meg-cp--line {
+            margin-bottom: 3px;
+        }
+    }
 }
 
 @-webkit-keyframes placeHolderShimmer {

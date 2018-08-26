@@ -3,6 +3,8 @@
     margin: 0px 0px;
     .meg-c-tabs {
         display: flex;
+        border: 1px solid $color-border;
+        background-color: $layout-tertiary;
     }
     .meg-c-tab__painel {
         margin-bottom: 0px;
@@ -11,9 +13,8 @@
             font-size: 1.4rem;
             display: inline-block;
             padding: 10px 20px;
-            margin-right: 1px;
+            margin-right: 0px;
             box-sizing: border-box;
-            border: 1px solid transparent;
             text-decoration: none;
             color: $color-font;
         }
@@ -25,14 +26,21 @@
     }
     .meg-c-tab__nav:hover,
     .meg-c-tab__nav.actived {
-        background-color: $color-lt-bg-content;
-        color: $color-font;
-        border-top: 1px solid $color-border;
-        border-left: 1px solid $color-border;
-        border-right: 1px solid $color-border;
+        background-color: $primary;
+        color: white;
         z-index: 1;
         position: relative;
-        font-weight: bold;
+    }
+    .meg-c-tab__nav.actived::before {
+        content: "";
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $color-lt-bg-content;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        margin-left: -10px;
     }
     .meg-c-tab__inner {
         background: $color-lt-bg-content;
