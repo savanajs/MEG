@@ -153,11 +153,11 @@ module.exports = (env, options) => {
         {
             test: /\.(html)$/,
             include: [resolvePath('src')],
-            exclude: /node_modules/,
+            exclude: [/node_modules/, resolvePath('src/index.html')],
             use: [{
                 loader: 'html-loader',
                 options: {
-                    minimize: false,
+                    minimize: true,
                     removeComments: true,
                     conservativeCollapse: false,
                     interpolate: true
