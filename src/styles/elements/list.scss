@@ -70,7 +70,7 @@
         &:not(.meg-el-list__item--featured):hover {
             background-color: rgba($color-lt-bg-hover, .8);
         }
-        i {
+        i:not(.no-margin-right) {
             margin-right: 10px;
         }
         .meg-el-item__link {

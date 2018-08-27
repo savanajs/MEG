@@ -35,7 +35,7 @@ function generateHtmlPlugins(templateDir) {
             favicon: './src/favicon.ico',
             xhtml: true,
             hash: true,
-            minify: name == "index" ? false : true,
+            minify: pkg.minify.html,
             showErrors: false
         })
         
@@ -153,11 +153,11 @@ module.exports = (env, options) => {
         {
             test: /\.(html)$/,
             include: [resolvePath('src')],
-            exclude: [/node_modules/, resolvePath('src/index.html')],
+            exclude: pkg.minify.exclude ? [/node_modules/, resolvePath(pkg.minify.exclude)] : [/node_modules/],
             use: [{
                 loader: 'html-loader',
                 options: {
-                    minimize: true,
+                    minimize: pkg.minify.html,
                     removeComments: true,
                     conservativeCollapse: false,
                     interpolate: true

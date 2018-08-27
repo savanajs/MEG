@@ -64,15 +64,15 @@
             padding-top: $padding-top;
         }
 
-        .meg-lt-col:not(.meg-c-form__actions):not(.meg-lt-col--padding-right) {
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-lt-col--no-padding-right) {
             padding-right: $padding-right;
         }
 
-        .meg-lt-col:not(.meg-c-form__actions):not(.meg-lt-col--padding-bottom) {
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-lt-col--no-padding-bottom) {
             padding-bottom: $padding-bottom;
         }
 
-        .meg-lt-col:not(.meg-c-form__actions):not(.meg-lt-col--padding-left) {
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-lt-col--no-padding-left) {
             padding-left: $padding-left;
         }
 
