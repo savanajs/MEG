@@ -36,6 +36,7 @@
 
     .meg-lt-shell {
         width: $shell;
+        max-width: $shell-max-width;
         margin: 0 auto;
         padding: 0 $padding-right 0 $padding-left;
     }
@@ -44,7 +45,7 @@
         width: 100%;
         max-width: $shell-max-width;
         margin: 0 auto;
-        padding: $padding-top $padding-right $padding-bottom $padding-left;
+        padding: 0 $padding-right 0 $padding-left;
     }
 
     .meg-lt-shell,
