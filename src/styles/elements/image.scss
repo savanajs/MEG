@@ -1,6 +1,11 @@
 .meg-el-image {
     display: inline-block;
     background: url($image-gif-loading-primary) no-repeat center center;
+    &.meg-el-image--slider {
+        img {
+            width: 100%;
+        }
+    }
     .meg-el-image__caption {
         padding: $padding;
         border-left: 1px solid $color-border;
@@ -56,6 +61,7 @@
 
 .meg-el-image--aligning {
     display: flex;
+    -js-display: flex;
     flex-wrap: nowrap;
 }
 

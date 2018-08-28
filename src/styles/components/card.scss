@@ -3,6 +3,7 @@
     background: $color-lt-bg-content;
     &.meg-c-card--image-left {
         display: flex;
+        -js-display: flex;
         .meg-c-card__image {
             order: 0;
             flex: 0 1 50%;
@@ -16,6 +17,7 @@
     }
     &.meg-c-card--image-right {
         display: flex;
+        -js-display: flex;
         .meg-c-card__image {
             order: 1;
             flex: 0 1 50%;
@@ -29,6 +31,7 @@
     }
     &.meg-c-card--image-bottom {
         display: flex;
+        -js-display: flex;
         flex-wrap: wrap;
         .meg-c-card__image {
             order: 1;
@@ -43,6 +46,7 @@
     }
     &.meg-c-card--image-middle {
         display: flex;
+        -js-display: flex;
         flex-wrap: wrap;
         .meg-c-card__image {
             order: 1;
@@ -64,6 +68,7 @@
     }
     .meg-c-content__media {
         display: flex;
+        -js-display: flex;
         align-items: center;
         margin-bottom: 10px;
         padding: 15px 15px 0px 15px;

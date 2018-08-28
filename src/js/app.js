@@ -1,5 +1,6 @@
 import "styles/meg";
 import "babel-polyfill";
+import flexibility from "./flexibility";
 
 (function ($) {
 
@@ -634,6 +635,8 @@ import "babel-polyfill";
     this.scrolling().init();
 
   };
+
+  flexibility(document.documentElement);
 
   $doc.ready(function () {
 

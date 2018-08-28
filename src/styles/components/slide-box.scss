@@ -30,6 +30,7 @@
         border-bottom: 1px solid $color_border;
         height: 6vh;
         display: flex;
+        -js-display: flex;
         flex-wrap: wrap;
         align-items: center;
         .meg-c-slidebox__close {
@@ -53,6 +54,7 @@
     .meg-c-slidebox__footer {
         padding: 10px;
         display: flex;
+        -js-display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
         position: absolute;

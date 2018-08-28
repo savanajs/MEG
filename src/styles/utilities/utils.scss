@@ -23,6 +23,10 @@
  * SOFTWARE
  */
 
+.meg-u-cursor-pointer {
+    cursor: pointer;
+}
+
 /* Order */
 
 .meg-u-order-first {
@@ -193,6 +197,7 @@
 
 .meg-u-flex {
     display: flex;
+    -js-display: flex;
 }
 
 .meg-u-inline {
@@ -213,6 +218,7 @@
 
 .meg-u-is-hidden {
     display: flex;
+    -js-display: flex;
 }
 
 .meg-u-overflow-y-visible {

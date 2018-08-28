@@ -3,11 +3,13 @@
 
     .md-c-pitbar {
         display: flex;
+        -js-display: flex;
         align-content: space-around;
         margin-bottom: 5px;
         > .md-c-pitbar__item {
             flex: 1 1 auto;
             display: flex;
+            -js-display: flex;
             align-items: center;
             padding: 10px 20px;
             background-color: $color-lt-bg-content;
@@ -53,6 +55,7 @@
 
     .md-c-pitbar {
         display: flex;
+        -js-display: flex;
         align-content: space-around;
         margin-bottom: 5px;
         > .md-c-pitbar__item {

@@ -113,6 +113,7 @@
     }
     .meg-c-loader__waiting {
         display: flex;
+        -js-display: flex;
         align-items: center;
         top: 50%;
         left: 50%;

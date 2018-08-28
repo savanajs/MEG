@@ -1,6 +1,7 @@
 .end-el-wrap-btns {
     width: 100%;
     display: flex;
+    -js-display: flex;
     .meg-el-btn {
         align-self: center;
         &:not(.meg-el-btn--no-margin-bottom) {
@@ -19,6 +20,7 @@
 .end-el-group-btns {
     width: 100%; 
     display: flex;
+    -js-display: flex;
     flex-wrap: wrap;
 }
  
@@ -89,6 +91,7 @@
         &.meg-el-btn--circle {
             width: 42px;
             height: 42px;
+            display: block;
             @extend .meg-u-radius--50;
         }
     }
@@ -97,6 +100,7 @@
         &.meg-el-btn--circle {
             width: 62px;
             height: 62px;
+            display: block;
             @extend .meg-u-radius--50;
         }
     }

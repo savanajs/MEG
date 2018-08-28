@@ -116,6 +116,7 @@
     .meg-c-form__field {
         &.meg-c-form__field--group {
             display: flex;
+            -js-display: flex;
             .meg-el-btn {
                 margin-left: 0px;
             }
@@ -206,6 +207,7 @@
     .meg-c-form__field.meg-c-form__field--input-large {
         .meg-c-form__icon {
             display: flex;
+            -js-display: flex;
             align-items: center;
             justify-content: center;
             align-content: center;
@@ -220,6 +222,7 @@
             margin-bottom: 10px;
             width: 100%;
             display: flex;
+            -js-display: flex;
         }
         .meg-c-field__message {
             padding: .5em 0em;
@@ -301,6 +304,13 @@
     position: relative;
     select.meg-c-field {
         appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+    select.meg-c-field::-ms-expand {
+        display: none;
     }
     &::after {
         content: "\f078";

@@ -1,6 +1,7 @@
 .meg-li-shelf {
     &.meg-li-shelf--inline {
         display: flex;
+        -js-display: flex;
         flex-wrap: wrap;
         &.meg-li-shelf--no-margin-left-item-1:nth-child(1n + 0) {
             margin-left: 0px;
@@ -31,6 +32,7 @@
         > .meg-li-shelf__item {
             width: 100%;
             display: flex;
+            -js-display: flex;
             align-items: center;
             > .meg-li-shelf__figure,
             > .meg-li-shelf__actions {

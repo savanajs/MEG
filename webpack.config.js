@@ -91,7 +91,7 @@ module.exports = (env, options) => {
             enforce: "pre",
             test: /\.js$/,
             include: [resolvePath('src/js')],
-            exclude: /node_modules/,
+            exclude: [/node_modules/, resolvePath('src/js/flexibility.js')],
             use: [
                 {
                     loader: 'eslint-loader'

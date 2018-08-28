@@ -8,6 +8,7 @@
     }
     > .meg-c-stores__list {
         display: flex;
+        -js-display: flex;
         overflow-y: auto;
         width: 100%;
         > .meg-c-store {

@@ -32,6 +32,7 @@
     }
     > .meg-c-notification-box__header {
         display: flex;
+        -js-display: flex;
         padding: 10px;
         border-bottom: 1px solid $color-border;
         font-size: 1.2em;
@@ -62,6 +63,7 @@
 
 .meg-c-box-notification {
     display: flex;
+    -js-display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-start;

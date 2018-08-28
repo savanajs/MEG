@@ -6,6 +6,7 @@
 
 .meg-c-steps-line .meg-c-steps-line__list {
     display: flex;
+    -js-display: flex;
     align-content: space-between;
 }
 
@@ -76,7 +77,7 @@
     line-height: 2; 
     background-color: darken($layout-tertiary, 5%);
     margin: 0 1.5em 0.5em 0; 
-    padding: 0.28em 0.25em 0.28em 0.5em; 
+    padding: 0.28em 0em 0.27em 0.4em; 
     position: relative;
     display: inline-block;
     color: $color-font;

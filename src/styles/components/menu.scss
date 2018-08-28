@@ -54,6 +54,7 @@
     .meg-c-menu {
         &.meg-c-menu--inline {
             display: flex;
+            -js-display: flex;
             flex-wrap: nowrap;
             align-content: space-between;
             position: relative;
