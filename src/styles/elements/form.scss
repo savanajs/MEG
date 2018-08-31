@@ -91,10 +91,18 @@
     .meg-c-field {
         background-color: $color-input;
         color: $color-input-text;
-        border: 1px solid $color-border;
+        border: $border-size solid $color-border;
         font-size: 1.1em;
+        &:required:invalid {
+            background: url("../img/checked-disabled.png") no-repeat 99% center;
+        }
         &::placeholder {
-            color: $color-font;
+            color: lighten($color-font, 50%);
+        }
+        &:focus {
+            outline: 0;
+            border-color: darken($color-border, 25%);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
         }
     }
     .meg-c-field:disabled {
@@ -107,11 +115,11 @@
     }
     .meg-c-field:required:focus:invalid {
         border-color: $cancel;
-        background: url("../img/error.png") no-repeat 97% center;
+        background: url("../img/error.png") no-repeat 99% center;
     }
     .meg-c-field:required:valid {
         border-color: $success;
-        background: url("../img/checked.png") no-repeat 97% center;
+        background: url("../img/checked.png") no-repeat 99% center;
     }
     .meg-c-form__field {
         &.meg-c-form__field--group {

@@ -25,13 +25,15 @@
         ${require('./includes/header.html')}
 
         <div class="main" role="main">
-            <div class="meg-lt-shell">
+            <div class="meg-lt-shell--flex">
 
                 <div class="meg-lt-row meg-lt-row--sm-childs-full">
 
                     ${require('./includes/sidebar.html')}
 
-                    <section class="meg-lt-section meg-lt-col meg-lt-col--10-lg meg-lt-col--12-md meg-lt-col--12-sm">
+                    <div class="meg-lt-section meg-lt-col meg-lt-col--1-lg meg-s-is-visible-lg"></div>
+
+                    <section class="meg-lt-section meg-lt-col meg-lt-col--8-lg meg-lt-col--12-md meg-lt-col--12-sm">
 
                         <article role="article" class="meg-lt-article content">
 
@@ -301,7 +303,7 @@
                                             </td>
                                             <td class="text-success meg-u-text-center">
                                                 <span class="meg-c-text meg-c-text--success">
-                                                    <i class="fa fa-check-circle" aria-hidden="true"> (10, 11)</i>
+                                                    <i class="fa fa-check-circle" aria-hidden="true"> IE9+</i>
                                                 </span>
                                             </td>
                                         </tr>
@@ -445,7 +447,7 @@
                                     <h3 id="shell" class="meg-el-heading meg-el-heading--1">
                                         Shell
                                     </h3>
-                                    <p>To leave your content in the middle of the page use the class meg-lt-shell or meg-lt-shell--flex</p>
+                                    <p>To leave your content in the middle of the page use the class meg-lt-shell--flex or meg-lt-shell--flex--flex</p>
                                 </hgroup>
 
                                 <div class="code meg-u-margin-bottom">
@@ -460,12 +462,12 @@
 
                                 <div class="preview meg-lt-skeletron dinamic">
                                     <!-- size: 1280px -->
-                                    <div class="meg-lt-shell">
+                                    <div class="meg-lt-shell--flex">
                                         ...
                                     </div>
 
                                     <!-- size: full and max: 1920px -->
-                                    <div class="meg-lt-shell--flex">
+                                    <div class="meg-lt-shell--flex--flex">
                                         ...
                                     </div>
                                 </div>
@@ -7181,7 +7183,7 @@ meg.loading().hideBeforeLoading();
                                 <div class="wrap-loader" style="background: #ccc; overflow: hidden; width: 100%; height: 600px; position: relative">
                                     <div class="preview dinamic">
                                         <header class="meg-lt-header meg-u-bg-white meg-u-align-items-center meg-u-no-bottom-margin meg-u-box-shadow" role="banner">
-                                            <div class="meg-lt-shell--flex">
+                                            <div class="meg-lt-shell--flex--flex">
                                                 <div class="meg-lt-row meg-lt-row--no-margin-bottom meg-u-align-items-center meg-u-no-bottom-margin">
                                                     <div class="meg-lt-col meg-lt-col--1-lg meg-lt-col--1-md meg-lt-col--1-sm meg-u-no-bottom-margin">
                                                         <label for="meg-c-slidebox__menu" class="meg-c-slidebox__label">
@@ -9366,6 +9368,9 @@ meg.loading().hideBeforeLoading();
                         </article>
 
                     </section>
+
+                    <div class="meg-lt-section meg-lt-col meg-lt-col--1-lg meg-s-is-visible-lg"></div>
+
                 </div>
 
             </div>
