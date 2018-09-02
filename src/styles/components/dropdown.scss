@@ -1,45 +1,72 @@
-.meg-lt-arrow__button {
-    position: absolute;
-    top: -5px;
-    right: 0px;
-    cursor: pointer;
-
-    > i {
-        transform: rotate(90deg);
-        margin-right: 5px;
-        margin-top: 10px;
-    }
-
-    &.meg-lt-arrow__button--large {
-        font-size: 1.6em;
-    }
-}
-
-.meg-lt-arrow__checkbox {
-    display: none;
-}
-
-.meg-lt-arrow__header {
+.meg-c-dropdown {
     position: relative;
 }
 
-.meg-lt-arrow__checkbox:checked + .meg-lt-arrow__header {
-    .meg-lt-arrow__button > i {
-        transform: rotate(-90deg);
+.meg-c-dropdown-box__open:checked + .meg-c-dropdown-box {
+    display: block;
+}
+
+.meg-c-dropdown-box {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
+    position: absolute;
+    z-index: 5;
+    display: none;
+    margin-top: 10px;
+    width: 300px;
+    border-radius: $border_radius_primary;
+    text-align: left;
+    &:not(.meg-c-dropdown-box--right) {
+        left: 0;
+    }
+    &--right {
+        right: 0;
+    }
+    > .meg-c-dropdown-box__header {
+        display: flex;
+        -js-display: flex;
+        padding: 10px;
+        border-bottom: 1px solid $color-border;
+        font-size: 1.2em;
+        left: 0;
+        .meg-c-header--notification,
+        .meg-c-header--actions {
+            flex: 0 1 50%;
+        }
+        .meg-c-header--actions {
+            text-align: right;
+            i {
+                cursor: pointer;
+            }
+        }
+    }
+    > .meg-c-dropdown-box__content {
+        padding: $padding;
     }
 }
 
-.meg-lt-arrow__checkbox--force:not(:checked) + .meg-lt-arrow__header + .meg-lt-arrow__target {
-    display: none;
+.meg-c-box-notification {
+    display: flex;
+    -js-display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 10px;
 }
 
-.meg-lt-arrow__checkbox:checked + .meg-lt-arrow__header + .meg-lt-arrow__target {
-    display: block;
-    height: auto;
-}
-
-@media screen and (max-width: $responsive-tablet) {
-    .meg-lt-arrow__target {
-        display: none;
+@media screen and (max-width: $responsive-mobile) {
+    .meg-c-dropdown-box {
+        width: 100% !important;
+        left: 0;
+    }
+    .meg-c-box-notification {
+        flex-wrap: wrap;
+        .meg-el-list__item {
+            width: 100%;
+            > label {
+                width: 100%;
+                display: block;
+            }
+        }
     }
 }

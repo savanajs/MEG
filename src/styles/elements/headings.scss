@@ -1,10 +1,10 @@
 .meg-el-heading {
     line-height: $line-height-heading;
-    &:not(.meg-el-heading--no-strong-weight) {
+    &:not(.meg-no-strong-weight) {
         font-weight: $strong-weight;
     }
     
-    &:not(.meg-el-heading--no-margin-bottom) {
+    &:not(.meg-no-margin-bottom) {
         margin-bottom: $margin-bottom-heading / 2;
     }
 
@@ -38,7 +38,7 @@
 }
 
 .meg-lt--sub-heading {
-    &.meg-lt--sub-heading--no-margin-bottom {
+    &.meg-no-margin-bottom {
         margin-bottom: 0px !important;
     }   
 }

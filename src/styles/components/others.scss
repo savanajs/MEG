@@ -177,7 +177,7 @@
 
     .meg-o-logo {
         > b {
-            line-height: 1.8em;
+            line-height: 1.4em;
         }
     }
 
@@ -218,6 +218,12 @@
         line-height: 1.4em;
         > b {
             line-height: 1.35em;
+        }
+    }
+
+    .meg-o-logo {
+        > span {
+            display: none;
         }
     }
 

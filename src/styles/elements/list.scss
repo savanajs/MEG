@@ -1,6 +1,8 @@
 .meg-el-list {
-    margin-bottom: $margin-bottom-list;
-    &:not(.meg-el-list--no-negative-margin) {
+    &:not(.meg-no-margin-bottom) {
+        margin-bottom: $margin-bottom-list;
+    }
+    &:not(.meg-no-negative-margin) {
         margin-left: $padding-left * -1;
     }
     &.meg-el-list--inline {
@@ -18,7 +20,10 @@
         }
     }
     > .meg-el-list__item {
-        color: $color-font;
+        &:not([class*=meg-u-color]) {
+            color: $color-font;
+        }
+
         padding: $padding-top $padding-right $padding-bottom $padding-left;
         position: relative;
         &.meg-el-list__item--not-actions {
@@ -70,13 +75,20 @@
             }
         }
         &:not(.meg-el-list__item--featured):hover {
-            background-color: rgba($color-lt-bg-hover, .8);
+            background-color: rgba($color-lt-bg-hover, .4);
+            border-radius: $border_radius_primary;
+            > a {
+                text-decoration: none;
+            }
         }
         i:not(.no-margin-right) {
             margin-right: 10px;
         }
         .meg-el-item__link {
-            color: $color-font;
+            &:not([class*=meg-u-color]) {
+                color: $color-font;
+            }
+
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
@@ -179,7 +191,9 @@
         cursor: pointer;
         a.meg-el-list-normal__link {
             text-decoration: none;
-            color: $color-font;
+            &:not([class*=meg-u-color]) {
+                color: $color-font;
+            }
             &:hover {
                 text-decoration: underline;
             }
@@ -188,7 +202,7 @@
             margin-right: 5px;
         }
     }
-    &:not(.meg-el-list--no-margin-bottom) {
+    &:not(.meg-no-margin-bottom) {
         .meg-el-list-normal__item {
             margin-bottom: 10px;
         }
@@ -202,7 +216,10 @@
         text-align: center;
         margin-bottom: 10px;
         > .meg-el-item__link {
-            color: $color-font;
+            &:not([class*=meg-u-color]) {
+                color: $color-font;
+            }
+
             text-decoration: none;
             display: block;
             .meg-el-link__title {
@@ -222,18 +239,12 @@
 // Device (Mobile and tablet)
 @media screen and (max-width: $responsive-tablet) {
 
-    .meg-el-list.meg-el-list--horizontal:not(.meg-el-list--icons):not(.meg-el-list--no-margin-bottom) {
+    .meg-el-list.meg-el-list--horizontal:not(.meg-el-list--icons):not(.meg-no-margin-bottom) {
         flex-direction: column;
     }
 
     .meg-el-list-normal__list--inline {
         flex-wrap: wrap;
-        &:not(.meg-el-list--no-margin-bottom) {
-            flex-direction: column;
-        }
-        > .meg-el-list-normal__item {
-            margin-left: 0px !important;
-        }
     }
 
 }

@@ -47,7 +47,7 @@
         height: 53vh;
         overflow-y: auto;
 
-        &:not(.meg-c-slidebox__content--no-padding) {
+        &:not(.meg-no-padding) {
             padding: 10px;
         }
     }

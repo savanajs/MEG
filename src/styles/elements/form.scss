@@ -26,6 +26,7 @@
         margin-bottom: 10px;
     }
     .meg-c-form__label {
+        font-size: $font-size-base;
         > .meg-c-form__required {
             display: inline-block;
         }
@@ -36,52 +37,59 @@
         > .meg-c-label__small {
             font-size: .9em;
         }
-        &.meg-c-form__label--checkbox {
+        &--checkbox {
             position: relative;
             cursor: pointer;
             padding-left: 24px !important;
             .meg-c-checkbox {
                 display: none;
-                &:checked + .meg-c-checkbox_fake {
-                    background-color: $primary;
+                &:checked + .meg-c-checkbox_fake::before {
+                    content: "\f14a";
+                    color: $primary;
                 }
             }
-            .meg-c-checkbox_fake {
-                width: 15px;
-                height: 15px;
-                background-color: $color-input;
-                border: 1px solid $color-input-border;
+            .meg-c-checkbox_fake::before {
+                content: "\f0c8";
+                font-family: "FontAwesome"; 
                 display: block;
                 position: absolute;
                 left: 0;
-                top: 1px;
-                box-shadow: 0 -2px 1px rgba(0, 0, 0, .1) inset;
+                top: 0px;
+                color: $color-input-border;
+            }
+            &:hover {
+                .meg-c-checkbox_fake::before {
+                    content: "\f14a";
+                }
             }
         }
-        &.meg-c-form__label--radio {
+        &--radio {
             position: relative;
             cursor: pointer;
             padding-left: 24px !important;
             .meg-c-radio {
                 display: none;
-                &:checked + .meg-c-radio_fake {
-                    background-color: $primary;
+                &:checked + .meg-c-radio_fake::before {
+                    content: "\f192";
+                    color: $primary;
                 }
             }
-            .meg-c-radio_fake {
-                width: 15px;
-                height: 15px;
-                box-shadow: 0 -2px 1px rgba(0, 0, 0, .1) inset;
-                border-radius: $border_radius_input;
-                background-color: $color-input;
-                border: 1px solid $color-input-border;
+            .meg-c-radio_fake::before {
+                content: "\f10c";
+                font-family: "FontAwesome";            
                 display: block;
                 position: absolute;
-                left: 0;
-                top: 1px;
+                left: 0px;
+                top: 0px;
+                color: $color-input-border;
+            }
+            &:hover {
+                .meg-c-radio_fake::before {
+                    content: "\f192";
+                }
             }
         }
-        &.meg-c-form__label--full {
+        &--full {
             width: 100% !important;
             text-align: left !important;
             padding-top: 0px !important;
@@ -91,17 +99,19 @@
     .meg-c-field {
         background-color: $color-input;
         color: $color-input-text;
-        border: $border-size solid $color-border;
-        font-size: 1.1em;
+        border: $border-size solid $color-input-border;
+        font-size: $font-size-base;
         &:required:invalid {
-            background: url("../img/checked-disabled.png") no-repeat 99% center;
+            background-image: url("../img/checked-disabled.png");
+            background-repeat: no-repeat;
+            background-position: 98% center;
         }
         &::placeholder {
             color: lighten($color-font, 50%);
         }
         &:focus {
             outline: 0;
-            border-color: darken($color-border, 25%);
+            border-color: darken($color-input-border, 25%);
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
         }
     }
@@ -115,14 +125,18 @@
     }
     .meg-c-field:required:focus:invalid {
         border-color: $cancel;
-        background: url("../img/error.png") no-repeat 99% center;
+        background-image: url("../img/error.png");
+        background-repeat: no-repeat;
+        background-position: 98% center;
     }
     .meg-c-field:required:valid {
         border-color: $success;
-        background: url("../img/checked.png") no-repeat 99% center;
+        background-image: url("../img/checked.png");
+        background-repeat: no-repeat;
+        background-position: 98% center;
     }
     .meg-c-form__field {
-        &.meg-c-form__field--group {
+        &--group {
             display: flex;
             -js-display: flex;
             .meg-el-btn {
@@ -134,6 +148,8 @@
                 padding: .5em .6em;
                 border-top-left-radius: $border_radius_input;
                 border-bottom-left-radius: $border_radius_input;
+                font-size: $font-size-base;
+                line-height: $line-height-base;
             }
             .meg-c-form__icon:not(.meg-c-form__icon--join-field) {
                 background-color: $color-input;
@@ -141,16 +157,16 @@
             .meg-c-form__icon:first-child {
                 border-top-right-radius: 0px;
                 border-bottom-right-radius: 0px;
-                border-left: 1px solid $color-border;
-                border-top: 1px solid $color-border;
-                border-bottom: 1px solid $color-border;
+                border-left: 1px solid $color-input-border;
+                border-top: 1px solid $color-input-border;
+                border-bottom: 1px solid $color-input-border;
                 & + .meg-c-field {
                     border-top-left-radius: 0px;
                     border-bottom-left-radius: 0px;
                 }
             }
         }
-        &.meg-c-form__field--action {
+        &--action {
             .meg-c-field {
                 border-top-right-radius: 0px;
                 border-bottom-right-radius: 0px;
@@ -165,19 +181,19 @@
 
         width: 100%;
         .meg-c-field {
-            &.meg-c-field--25 {
+            &--25 {
                 width: 25%;
             }
-            &.meg-c-field--50 {
+            &--50 {
                 width: 50%;
             }
-            &.meg-c-field--75 {
+            &--75 {
                 width: 75%;
             }
-            &.meg-c-field--full {
+            &--full {
                 width: 100%;
             }
-            &.meg-c-field--auto {
+            &--auto {
                 width: auto;
             }
         }
@@ -189,26 +205,20 @@
     }
     .meg-c-form__field.meg-c-form__field--input-medium {
         .meg-c-field {
-            padding: .8em .6em;
-            font-size: $font-size-base - .2;
-        }
-        .meg-c-form__icon {
-            font-size: $font-size-base;
+            padding: .6em .7em;
+            font-size: $font-size-base + .2;
         }
         .meg-el-btn {
-            font-size: $font-size-base - .2;
+            font-size: $font-size-base + .1;
         }
     }
     .meg-c-form__field.meg-c-form__field--input-large {
         .meg-c-field {
-            padding: 1.2em .8em;
-            font-size: $font-size-base - .2;
-        }
-        .meg-c-form__icon {
-            font-size: $font-size-base;
+            padding: .7em .6em;
+            font-size: $font-size-base + .3;
         }
         .meg-el-btn {
-            font-size: $font-size-base - .2;
+            font-size: $font-size-base + .3;
         }
     }
     .meg-c-form__field.meg-c-form__field--input-medium,
@@ -221,7 +231,7 @@
             align-content: center;
         }
     }
-    &.meg-c-form-block {
+    &--block {
         .meg-c-field {
             margin-right: 0px !important;
         }
@@ -243,7 +253,7 @@
             }
         }
     }
-    &.meg-c-form-aligned {
+    &--aligned {
         .meg-c-form__label {
             display: block;
         }
@@ -287,6 +297,20 @@
         bottom: 1px;
         content: "";
     }
+    .meg-c-switch__input:checked + .meg-c-switch__label::before {
+        content: attr(data-on);
+        text-align: left;
+        color: #fff;
+        padding: 5px 5px 5px 5px;
+        font-size: $font-size-base - .3;
+    }
+    .meg-c-switch__input:not(:checked) + .meg-c-switch__label::before {
+        content: attr(data-off);
+        text-align: right;
+        color: #fff;
+        padding: 5px 5px 5px 5px;
+        font-size: $font-size-base - .3;
+    }
     .meg-c-switch__input + .meg-c-switch__label::before {
         right: 1px;
         background-color: rgba(0, 0, 0, .05);
@@ -329,8 +353,9 @@
         -webkit-font-smoothing: antialiased;
         position: absolute;
         right: 10px;
-        top: 10px;
         color: $primary;
+        top: 50%;
+        margin-top: -6px;
     }
 }
 
@@ -373,12 +398,12 @@ select.meg-c-field {
     }
 
     .meg-el-btn {
-        &.meg-el-btn--full-md {
+        &--full-md {
             width: 100%;
             margin-left: 0px;
         }
     }
-    .meg-c-form.meg-c-form-aligned {
+    .meg-c-form.meg-c-form--aligned {
         .meg-c-field__message {
             padding: 0px;
         }

@@ -1,10 +1,11 @@
 .end-el-wrap-btns {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     -js-display: flex;
     .meg-el-btn {
         align-self: center;
-        &:not(.meg-el-btn--no-margin-bottom) {
+        &:not(.meg-no-margin-bottom) {
             margin-bottom: $margin-bottom-button;
         }
     }
@@ -25,10 +26,10 @@
 }
  
 .meg-el-btn {
-    &.meg-el-btn--glass {
+    &--glass {
         overflow: hidden;
     }
-    &.meg-el-btn--glass::before {
+    &--glass::before {
         content: "";
         width: 110%;
         height: 110%;
@@ -51,7 +52,7 @@
 
     position: relative;
     box-sizing: border-box;
-    padding: $padding-top-button $padding-right-button $padding-bottom-button $padding-left-button;
+    padding: $padding-button;
     text-decoration: none;
     zoom: 1;
     white-space: nowrap;
@@ -59,15 +60,14 @@
     text-align: center;
     align-items: center;
     cursor: pointer;
-    line-height: $line-height-base;
     user-select: none;
     opacity: 1;
-    border-radius: $border_radius_button;
     font-size: $font-size-base;
+    display: inline-block;
     &:not(.meg-el-btn--o) {
         border: 1px solid transparent;
     }
-    &.meg-el-btn--o {
+    &--o {
         border-width: 1px;
         border-style: solid;
         background: transparent;
@@ -82,75 +82,35 @@
             background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .2) 100%);
         }
     }
-    &.meg-el-btn--full {
+    &--full {
         display: block;
         width: 100%;
     }
-    &.meg-el-btn--medium {
-        padding: 7px 15px;
-        &.meg-el-btn--circle {
-            width: 42px;
-            height: 42px;
-            display: block;
-            @extend .meg-u-radius--50;
-        }
-    }
-    &.meg-el-btn--large {
-        padding: 10px 15px;
-        &.meg-el-btn--circle {
-            width: 62px;
-            height: 62px;
-            display: block;
-            @extend .meg-u-radius--50;
-        }
-    }
     &:disabled,
-    &.meg-el-btn--disabled {
+    &--disabled {
         opacity: .4;
     }
     &:not(.meg-el-btn--circle) > i {
         margin-right: 4px;
     }
-    &.meg-el-btn--icon i {
+    &--icon i {
         margin: 0px;
     }
-    &.meg-el-btn--sized {
+    &--sized {
         min-width: 90px;
     }
-}
-
-// Desktop 
-@media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
-    .meg-el-btn {
-        &.meg-el-btn--full-lg {
-            display: block;
-            width: 100%;
-        }
+    &--circle {
+        line-height: $line-height-base;
     }
-    &.meg-el-btn--small {
-        font-size: $font-size-base - .1;
-        &.meg-el-btn--circle {
-            font-size: $font-size-base - .1;
-        }
-    }
-    &.meg-el-btn--large {
-        font-size: $font-size-base + .2;
-        &.meg-el-btn--circle {
-            font-size: $font-size-base + .7;
-        }
-    }
-    &.meg-el-btn--medium {
-        font-size: $font-size-base;
-        &.meg-el-btn--circle {
-            font-size: $font-size-base;
-        }
+    &:not(.meg-el-btn--circle) {
+        border-radius: $border_radius_button;
     }
 }
 
 .end-el-join-btns {
     display: flex;
     align-content: space-between;
-    &.end-el-join-btns--full {
+    &--full {
         width: 100%;
     }
     > .meg-el-btn {
@@ -168,7 +128,7 @@
         border-radius: 0px 5px 5px 0px;
         border-left: none;
     }
-    &.end-el-join-btns--primary {
+    &--primary {
         .meg-el-btn {
             border-color: $primary;
             color: $primary;
@@ -178,7 +138,7 @@
             }
         }
     }
-    &.end-el-join-btns--secondary {
+    &--secondary {
         .meg-el-btn {
             border-color: $secondary;
             color: $secondary;
@@ -188,7 +148,7 @@
             }
         }
     }
-    &.end-el-join-btns--tertiary {
+    &--tertiary {
         .meg-el-btn {
             border-color: $tertiary;
             color: $tertiary;
@@ -198,7 +158,7 @@
             }
         }
     }
-    &.end-el-join-btns--quaternary {
+    &--quaternary {
         .meg-el-btn {
             border-color: $quaternary;
             color: $quaternary;
@@ -208,7 +168,7 @@
             }
         }
     }
-    &.end-el-join-btns--success {
+    &--success {
         .meg-el-btn {
             border-color: $success;
             color: $success;
@@ -218,7 +178,7 @@
             }
         }
     }
-    &.end-el-join-btns--warning {
+    &--warning {
         .meg-el-btn {
             border-color: $warning;
             color: $warning;
@@ -228,7 +188,7 @@
             }
         }
     }
-    &.end-el-join-btns--info {
+    &--info {
         .meg-el-btn {
             border-color: $info;
             color: $info;
@@ -238,7 +198,7 @@
             }
         }
     }
-    &.end-el-join-btns--cancel {
+    &--cancel {
         .meg-el-btn {
             border-color: $cancel;
             color: $cancel;
@@ -248,7 +208,7 @@
             }
         }
     }
-    &.end-el-join-btns--black {
+    &--black {
         .meg-el-btn {
             border-color: $black;
             color: $black;
@@ -258,7 +218,7 @@
             }
         }
     }
-    &.end-el-join-btns--white {
+    &--white {
         .meg-el-btn {
             border-color: $white;
             color: $white;
@@ -270,10 +230,42 @@
     }
 }
 
+.meg-el-btn {
+
+    &--small:not(.meg-el-btn--circle) {
+        font-size: $font-size-base - .2;
+    }
+    &--medium:not(.meg-el-btn--circle) {
+        font-size: $font-size-base  + .2;
+    }
+    &--large:not(.meg-el-btn--circle) {
+        font-size: $font-size-base + .6;
+    }
+    &--circle {
+        width: 62px;
+        height: 62px;
+        display: block;
+        @extend .meg-u-radius--50;
+
+        font-size: $font-size-base + .55;
+    }
+
+}
+
+// Desktop 
+@media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
+    .meg-el-btn {
+        &--full-lg {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
 // Tablet
 @media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
     .meg-el-btn {
-        &.meg-el-btn--full-md {
+        &--full-md {
             display: block;
             width: 100%;
         }
@@ -283,34 +275,9 @@
 // Mobile
 @media screen and (max-width: $responsive-mobile) {
     .meg-el-btn {
-        &.meg-el-btn--full-sm {
+        &--full-sm {
             display: block;
             width: 100%;
-        }
-    }
-}
-
-// Device (Mobile and tablet)
-@media screen and (max-width: $responsive-tablet) {
-    .end-el-wrap-btns {
-        flex-wrap: wrap;
-    }
-    &.meg-el-btn--small {
-        font-size: $font-size-base - .3;
-        &.meg-el-btn--circle {
-            font-size: $font-size-base - .3;
-        }
-    }
-    &.meg-el-btn--medium {
-        font-size: $font-size-base;
-        &.meg-el-btn--circle {
-            font-size: $font-size-base;
-        }
-    }
-    &.meg-el-btn--large {
-        font-size: 1.4em;
-        &.meg-el-btn--circle {
-            font-size: $font-size-base + .7;
         }
     }
 }

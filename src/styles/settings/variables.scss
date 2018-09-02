@@ -30,12 +30,14 @@ $padding-left: 10px;
 $padding: $padding-top $padding-right $padding-bottom $padding-left;
 
 // Buttons
-$padding-top-button: 5px;
-$padding-bottom-button: 5px;
-$padding-right-button: 12px;
-$padding-left-button: 12px;
+$padding-top-button: .5em;
+$padding-bottom-button: .5em;
+$padding-right-button: .7em;
+$padding-left-button: .7em;
 $margin-bottom-button: 10px;
 $margin-left-button: 10px;
+
+$padding-button: $padding-top-button $padding-right-button $padding-bottom-button $padding-left-button;
 
 // Heading
 $margin-bottom-heading: 20px;

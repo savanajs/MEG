@@ -1,5 +1,5 @@
 .meg-lt-article {
-    &:not(.meg-lt-article--no-margin-bottom) {
+    &:not(.meg-no-margin-bottom) {
         margin-bottom: $margin-bottom;
     }
 }
