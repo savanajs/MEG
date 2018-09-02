@@ -1,5 +1,5 @@
 .meg-el-tags {
-    &.meg-el-tags--inline {
+    &--inline {
         margin-bottom: 10px;
         display: flex;
         -js-display: flex;
@@ -25,16 +25,16 @@
     &:last-child {
         margin-right: 0px !important;
     }
-    &.meg-el-tag--small {
+    &--small {
         @extend .meg-el-btn--small;
     }
-    &.meg-el-tag--medium {
+    &--medium {
         @extend .meg-el-btn--medium;
     }
-    &.meg-el-tag--large {
+    &--large {
         @extend .meg-el-btn--large;
     }
-    &.meg-el-tag--actions {
+    &--actions {
         margin-bottom: 10px;
         display: flex;
         -js-display: flex;

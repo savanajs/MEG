@@ -1,7 +1,7 @@
 .meg-el-image {
     display: inline-block;
     background: url($image-gif-loading-primary) no-repeat center center;
-    &.meg-el-image--slider {
+    &--slider {
         img {
             width: 100%;
         }
@@ -37,13 +37,13 @@
         display: block;
         position: relative;
     }
-    &.meg-el-image--responsive {
+    &--responsive {
         img {
             width: 100%;
             height: auto;
         }
     }
-    &.meg-el-image--thumb {
+    &--thumb {
         width: auto;
         height: auto;
         display: inline-block;
@@ -52,7 +52,7 @@
             padding: 2px;
         }
     }
-    &.meg-el-image--radius {
+    &--radius {
         img {
             border-radius: 50%;
         }

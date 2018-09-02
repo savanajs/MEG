@@ -16,29 +16,27 @@
         &:hover {
             text-decoration: underline;
         }
-        &.meg-el-heading__link--font-color {
+        &--font-color {
             color: $color-font;
         }
     }
-    &.meg-el-heading--1 {
+    &--1 {
         font-size: $font-size-base + 1.2;
     }
-    &.meg-el-heading--2 {
+    &--2 {
         font-size: $font-size-base + .8;
     }
-    &.meg-el-heading--3 {
+    &--3 {
         font-size: $font-size-base + .6;
     }
-    &.meg-el-heading--4 {
+    &--4 {
         font-size: $font-size-base + .4;
     }
-    &.meg-el-heading--5 {
+    &--5 {
         font-size: $font-size-base;
     }
 }
 
 .meg-lt--sub-heading {
-    &.meg-no-margin-bottom {
-        margin-bottom: 0px !important;
-    }   
+    margin-bottom: 0px !important; 
 }

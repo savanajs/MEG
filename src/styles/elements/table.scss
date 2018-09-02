@@ -3,7 +3,7 @@
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    &.meg-el-table--center {
+    &--center {
         text-align: center;
         th {
             text-align: center;
@@ -22,18 +22,18 @@
         padding: $padding;
         vertical-align: middle;
     }
-    &.meg-el-table--bordered {
+    &--bordered {
         th,
         td {
             border: 1px solid $color-border;
         }
     }
-    &.meg-el-table--striped {
+    &--striped {
         tbody tr:nth-child(2n+1) {
             background-color: lighten($color-font, 20%);
         }
     }
-    &.meg-el-table--lighted {
+    &--lighted {
         thead {
             background: transparent !important;
         }

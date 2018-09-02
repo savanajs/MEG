@@ -1,7 +1,7 @@
 .meg-c-card {
     border: 1px solid $color-border;
     background: $color-lt-bg-content;
-    &.meg-c-card--image-left {
+    &--image-left {
         display: flex;
         -js-display: flex;
         .meg-c-card__image {
@@ -15,7 +15,7 @@
             width: 50%;
         }
     }
-    &.meg-c-card--image-right {
+    &--image-right {
         display: flex;
         -js-display: flex;
         .meg-c-card__image {
@@ -29,7 +29,7 @@
             width: 50%;
         }
     }
-    &.meg-c-card--image-bottom {
+    &--image-bottom {
         display: flex;
         -js-display: flex;
         flex-wrap: wrap;
@@ -44,7 +44,7 @@
             width: 100%;
         }
     }
-    &.meg-c-card--image-middle {
+    &--image-middle {
         display: flex;
         -js-display: flex;
         flex-wrap: wrap;
@@ -107,7 +107,7 @@
 
 @media screen and (max-width: $responsive-tablet) {
     .meg-c-card {
-        &.meg-c-card--image-left {
+        &--image-left {
             flex-wrap: wrap;
             .meg-c-card__image {
                 flex: 0 1 100%;
@@ -118,7 +118,7 @@
                 width: 100%;
             }
         }
-        &.meg-c-card--image-right {
+        &--image-right {
             flex-wrap: wrap;
             .meg-c-card__image {         
                 flex: 0 1 100%;

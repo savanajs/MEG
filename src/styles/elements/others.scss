@@ -1,5 +1,7 @@
 .meg-el-hgroup {
-    margin-bottom: 20px;
+    &:not(.meg-no-margin-bottom) {
+        margin-bottom: $margin-bottom;
+    }
 }
 
 .meg-js-visibled {

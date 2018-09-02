@@ -8,8 +8,7 @@ MEG is an open source HTML, CSS and JS development kit based on Flexbox. Develop
 Webpack
 
 ```sh
-npm install --global webpack
-npm install --global webpack-dev-server
+npm install
 ```
 
 ## Server to developer

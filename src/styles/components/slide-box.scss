@@ -61,12 +61,12 @@
         bottom: 0;
         width: 100%;
     }
-    &.meg-c-slidebox--left {
+    &--left {
         transition: left .15s;
         left: -110%;
         box-shadow: 2px 0px 5px rgba(0, 0, 0, .2);
     }
-    &.meg-c-slidebox--right {
+    &--right {
         transition: right .15s;
         right: -110%;
         box-shadow: -2px 0px 5px rgba(0, 0, 0, .2);

@@ -1,9 +1,9 @@
 .meg-c-loader__overlay {
     display: none;
-    &.meg-c-loader__overlay--absolute {
+    &--absolute {
         position: absolute;
     }
-    &.meg-c-loader__overlay--fixed {
+    &--fixed {
         position: fixed;
     }
 
@@ -24,40 +24,40 @@
     border-radius: 50%;
     animation: spin .6s linear infinite;
     display: inline-block;
-    &.meg-c-loader--small {
+    &--small {
         border: 3px solid $color-lt-bg-light;
         border-top: 3px solid transparent;
         width: 20px;
         height: 20px;
     }
-    &.meg-c-loader--medium {
+    &--medium {
         border: 6px solid $color-lt-bg-light;
         border-top: 6px solid transparent;
         width: 40px;
         height: 40px;
     }
-    &.meg-c-loader--large {
+    &--large {
         border: 8px solid $color-lt-bg-light;
         border-top: 8px solid transparent;
         width: 80px;
         height: 80px;
     }
-    &.meg-c-loader--primary {
+    &--primary {
         border-top-color: $primary;
     }
-    &.meg-c-loader--success {
+    &--success {
         border-top-color: $success;
     }
-    &.meg-c-loader--dark {
+    &--dark {
         border-top-color: #333;
     }
-    &.meg-c-loader--warning {
+    &--warning {
         border-top-color: $warning;
     }
-    &.meg-c-loader--info {
+    &--info {
         border-top-color: $info;
     }
-    &.meg-c-loader--cancel {
+    &--cancel {
         border-top-color: $cancel;
     }
 }
@@ -77,22 +77,22 @@
         height: 4px;
         animation: loading 2s linear infinite;
     }
-    &.meg-c-loader-bar--primary::before {
+    &--primary::before {
         background-color: $primary;
     }
-    &.meg-c-loader-bar--success::before {
+    &--success::before {
         background-color: $success;
     }
-    &.meg-c-loader-bar--warning::before {
+    &--warning::before {
         background-color: $warning;
     }
-    &.meg-c-loader-bar--cancel::before {
+    &--cancel::before {
         background-color: $cancel;
     }
-    &.meg-c-loader-bar--info::before {
+    &--info::before {
         background-color: $info;
     }
-    &.meg-c-loader-bar--dark::before {
+    &--dark::before {
         background-color: #333;
     }
 }
@@ -105,10 +105,10 @@
     height: 100%;
     z-index: 4;
     display: none;
-    &.meg-c-loader__waiting-overlay--absolute {
+    &--absolute {
         position: absolute;
     }
-    &.meg-c-loader__waiting-overlay--fixed {
+    &--fixed {
         position: fixed;
     }
     .meg-c-loader__waiting {
@@ -158,7 +158,7 @@
 
 .meg-loading {
     .meg-c-loader__overlay {
-        &.meg-c-loader__overlay--open {
+        &--open {
             display: flex !important;
         }
     }
@@ -166,7 +166,7 @@
 
 .meg-wait-loading {
     .meg-c-loader__waiting-overlay {
-        &.meg-c-loader__waiting-overlay--open {
+        &--open {
             display: block;
         }
     }

@@ -1,13 +1,12 @@
 .meg-lt-arrow__button {
     position: absolute;
-    top: -5px;
+    top: 0px;
     right: 0px;
     cursor: pointer;
 
     > i {
         transform: rotate(90deg);
         margin-right: 5px;
-        margin-top: 10px;
     }
 
     &.meg-lt-arrow__button--large {

@@ -14,6 +14,7 @@
         .meg-lt-sidebar__main {
             height: 100vh;
             overflow-y: auto;
+            overflow-x: hidden;
         }
     </style>
 </head>
@@ -230,7 +231,7 @@
                                         Customize
                                     </h2>
                                     <p>
-                                        Modify and customize your behavior variables before using MEG in <b>meg/src/styles/utilities</b>.
+                                        Modify and customize your behavior variables before using MEG.
                                     </p>
                                 </hgroup>
 
@@ -239,7 +240,7 @@
                                         <b>Colors</b>             
                                     </h3>
                                     <p>
-                                        Edit the file colors.sass
+                                        Edit the file <b>meg/src/styles/utilities/colors.scss</b>
                                     </p>
                                 </hgroup>
 
@@ -248,7 +249,16 @@
                                         <b>Styles</b>            
                                     </h3>
                                     <p>
-                                        Edit the file variables.sass
+                                        Edit the file <b>meg/src/styles/utilities/variables.scss</b>
+                                    </p>
+                                </hgroup>
+
+                                <hgroup class="meg-el-hgroup">
+                                    <h3 id="customize--styles" class="meg-el-heading meg-el-heading--5">
+                                        <b>Default</b>            
+                                    </h3>
+                                    <p>
+                                        Put your custom css in <b>meg/src/styles/themes/default.scss</b>
                                     </p>
                                 </hgroup>
 
@@ -7053,29 +7063,8 @@ meg.loading().hideBeforeLoading();
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <p>Success</p>
                                     <div class="meg-c-progress-bar">
-                                        <div class="meg-c-progress-bar__inner meg-c-progress-bar__inner--success" style="width:20%">20%</div>
-                                    </div>
-                                    <p>Primary</p>
-                                    <div class="meg-c-progress-bar">
-                                        <div class="meg-c-progress-bar__inner meg-c-progress-bar__inner--primary" style="width:20%">20%</div>
-                                    </div>
-                                    <p>Dark</p>
-                                    <div class="meg-c-progress-bar">
-                                        <div class="meg-c-progress-bar__inner meg-c-progress-bar__inner--dark" style="width:20%">20%</div>
-                                    </div>
-                                    <p>Cancel</p>
-                                    <div class="meg-c-progress-bar">
-                                        <div class="meg-c-progress-bar__inner meg-c-progress-bar__inner--cancel" style="width:20%">20%</div>
-                                    </div>
-                                    <p>Info</p>
-                                    <div class="meg-c-progress-bar">
-                                        <div class="meg-c-progress-bar__inner meg-c-progress-bar__inner--info" style="width:20%">20%</div>
-                                    </div>
-                                    <p>Warning</p>
-                                    <div class="meg-c-progress-bar">
-                                        <div class="meg-c-progress-bar__inner meg-c-progress-bar__inner--warning" style="width:20%">20%</div>
+                                        <div class="meg-c-progress-bar__inner meg-u-bg-success" style="width:20%">20%</div>
                                     </div>
                                 </div>
 
@@ -7380,7 +7369,7 @@ meg.loading().hideBeforeLoading();
 
                                         <input class="meg-lt-arrow__checkbox meg-lt-arrow__checkbox--force" id="menu-dropdow" type="checkbox" />
 
-                                        <div class="meg-lt-arrow__header">
+                                        <div class="meg-lt-arrow__header meg-u-margin-bottom-xx">
                                             <h4 class="meg-el-heading meg-el-heading--3">
                                                 Navigation
                                             </h4>
@@ -8834,7 +8823,7 @@ meg.loading().hideBeforeLoading();
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <ul class="meg-li-shelf meg-li-shelf--inline meg-li-shelf--no-margin-left-item-4n-1-lg">
+                                    <ul class="meg-li-shelf meg-li-shelf-4-items meg-li-shelf--inline meg-li-shelf--no-margin-left-item-4n-1-lg">
                                         <li class="meg-li-shelf__item">
                                             <figure class="meg-li-shelf__figure">
                                                 <a class="meg-li-shelf__link" href="single.html" title="Image">
@@ -9202,7 +9191,7 @@ meg.loading().hideBeforeLoading();
                                     <h3 id="ui-step-line" class="meg-el-heading meg-el-heading--3">
                                         Step line
                                     </h3>
-                                    <p>Boxes of grid</p>
+                                    <p>Simple CSS for step line</p>
                                 </hgroup>
 
                                 <div class="code meg-u-margin-bottom">
@@ -9354,7 +9343,7 @@ meg.loading().hideBeforeLoading();
                                     <div class="meg-c-cp-loading">
                                         <ul class="meg-li-shelf meg-li-shelf-4-items meg-li-shelf--inline meg-li-shelf--no-margin-left-item-4n-1-lg">
                                             <li class="meg-li-shelf__item">
-                                                <figure class="meg-li-shelf__figure meg-cp">
+                                                <figure class="meg-li-shelf__figure meg-c-cp">
                                                     <a class="meg-li-shelf__link" href="single.html" title="Iamage">
                                                         <img class="meg-li-shelf__image" src="https://via.placeholder.com/227x227" alt="Image" />
                                                     </a>
@@ -9362,31 +9351,31 @@ meg.loading().hideBeforeLoading();
                                                 </figure>
                                                 <div class="meg-li-shelf__infos">
                                                     <h3 class="meg-li-shelf__title">
-                                                        <a class="meg-li-shelf__link meg-cp__text" href="#" title="Titulo do produto">
-                                                            <span class="meg-cp--line meg-cp--full">a</span>
-                                                            <span class="meg-cp--line meg-cp--full">a</span>
+                                                        <a class="meg-li-shelf__link meg-c-cp__text" href="#" title="Titulo do produto">
+                                                            <span class="meg-c-cp--line meg-c-cp--full">a</span>
+                                                            <span class="meg-c-cp--line meg-c-cp--full">a</span>
                                                         </a>
                                                     </h3>
-                                                    <div class="meg-li-shelf__description meg-cp__text">
-                                                            <span class="meg-cp--line meg-cp--full">a</span>
-                                                            <span class="meg-cp--line meg-cp--full">a</span>
-                                                            <span class="meg-cp--line meg-cp--full">a</span>
+                                                    <div class="meg-li-shelf__description meg-c-cp__text">
+                                                            <span class="meg-c-cp--line meg-c-cp--full">a</span>
+                                                            <span class="meg-c-cp--line meg-c-cp--full">a</span>
+                                                            <span class="meg-c-cp--line meg-c-cp--full">a</span>
                                                     </div>
                                                 </div>
                                                 <div class="meg-li-shelf__actions">
                                                     <span class="meg-li-shelf__list-price">
-                                                        <span class="meg-cp--line meg-cp--small">R$ 99.99</span>
+                                                        <span class="meg-c-cp--line meg-c-cp--small">R$ 99.99</span>
                                                     </span>
                                                     <div class="meg-li-shelf__best-price">
-                                                        <span class="meg-cp--line meg-cp--small-x">R$ 89.99</span>
+                                                        <span class="meg-c-cp--line meg-c-cp--small-x">R$ 89.99</span>
                                                     </div>
                                                     <div class="meg-li-shelf__installment">
-                                                        <span class="meg-cp--line meg-cp--middle">ou
+                                                        <span class="meg-c-cp--line meg-c-cp--middle">ou
                                                             <strong>...</strong> de
                                                             <strong>........</strong> sem juros
                                                         </span>
                                                     </div>
-                                                    <a role="button" class="meg-el-btn meg-el-btn--success meg-el-btn--medium meg-el-btn--full meg-cp" title="Buy">
+                                                    <a role="button" class="meg-el-btn meg-el-btn--success meg-el-btn--medium meg-el-btn--full meg-c-cp" title="Buy">
                                                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                                         Buy
                                                     </a>

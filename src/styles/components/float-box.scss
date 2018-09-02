@@ -3,20 +3,11 @@
     display: none;
     position: absolute;
     z-index: 3;
-    right: -10px;
+    right: 0px;
     margin-top: 0px;
-    &.meg-c-float-box--small {
-        width: 150px;
-    }
-    &.meg-c-float-box--medium {
-        width: 300px;
-    }
-    &.meg-c-float-box--full {
-        width: 100%;
-    }
     .meg-c-floatbox--inner {
         color: $color-font;
-        width: 100%;
+        width: 300px;
         padding-top: $padding-top * 2;
         padding-right: $padding-right * 2;
         padding-bottom: $padding-bottom * 2;

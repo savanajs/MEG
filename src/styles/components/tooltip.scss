@@ -25,32 +25,32 @@
         height: 30px;
         width: auto;
     }
-    &.meg-c-tooltip--top::after {
+    &--top::after {
         bottom: 130%;
         left: 0;
     }
-    &.meg-c-tooltip--right::after {
+    &--right::after {
         bottom: 95%;
         margin-left: 12px;
         left: 95%;
         top: 0;
         margin-top: 0px;
     }
-    &.meg-c-tooltip--bottom::after {
+    &--bottom::after {
         bottom: 95%;
         margin-left: 10px;
         left: 0%;
         top: 110%;
         margin-top: 3px;
     }
-    &.meg-c-tooltip--left::after {
+    &--left::after {
         bottom: 95%;
         margin-left: 12px;
         right: 120%;
         top: 0;
         margin-top: 0px;
     }
-    &.meg-c-tooltip--top::before {
+    &--top::before {
         content: "";
         display: block;
         width: 0px;
@@ -64,7 +64,7 @@
         left: 15px;
         margin-top: -16px;
     }
-    &.meg-c-tooltip--right::before {
+    &--right::before {
         content: "";
         display: block;
         width: 0px;
@@ -78,7 +78,7 @@
         top: 9px;
         left: 95%;
     }
-    &.meg-c-tooltip--bottom::before {
+    &--bottom::before {
         content: "";
         display: block;
         width: 0px;
@@ -92,7 +92,7 @@
         left: 35%;
         top: 85%;
     }
-    &.meg-c-tooltip--left::before {
+    &--left::before {
         content: "";
         display: block;
         width: 0px;

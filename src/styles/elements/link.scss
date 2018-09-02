@@ -2,7 +2,7 @@
     padding: 0px;
     text-decoration: none;
     &:hover,
-    &.meg-e-link--actived {
+    &--actived {
         text-decoration: underline;
     }
 }

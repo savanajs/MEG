@@ -9,7 +9,7 @@
         display: flex;
         -js-display: flex;
     }
-    &.meg-el-list--actions {
+    &--actions {
         > .meg-el-list__item {
             display: flex;
             -js-display: flex;
@@ -95,20 +95,22 @@
             }
         }
     }
-    &.meg-el-list--horizontal {
+    &--horizontal {
         display: flex;
         -js-display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: flex-start;
         align-items: stretch;
-        margin-bottom: 10px;
+        &:not(.meg-no-margin-bottom) {
+            margin-bottom: 10px;
+        }
         &.meg-el-list--avatar {
             img {
                 width: 100%;
             }
         }
-        &.meg-el-list--horizontal--auto {
+        &--auto {
             > .meg-el-list__item {
                 flex: 1 1 auto;
             }
@@ -165,7 +167,7 @@
 }
 
 .meg-el-list-normal__list {
-    &.meg-el-list-normal__list--inline {
+    &--inline {
         display: flex;
         -js-display: flex;
         width: 100%;
@@ -228,7 +230,7 @@
             i {
                 font-size: 2em;
             }
-            &.meg-el-item__link--actived,
+            &--actived,
             &:hover {
                 color: $primary;
             }

@@ -5,12 +5,12 @@
 // Desktop 
 @media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
     .meg-lt-nav {
-        &.meg-lt-nav--transparent {
+        &--transparent {
             .meg-c-menu {
                 .meg-c-menu__item {
                     text-align: left;
                     > .meg-el-item__link {
-                        color: rgba(255, 255, 255, .9);
+                        color: rgba(255, 255, 255, .9) !important;
                         &:hover {
                             border-bottom-color: #fff;
                             color: #fff;
@@ -52,7 +52,7 @@
         }
     }
     .meg-c-menu {
-        &.meg-c-menu--inline {
+        &--inline {
             display: flex;
             -js-display: flex;
             flex-wrap: nowrap;
@@ -115,7 +115,7 @@
                 display: none;
             }
         }
-        &.meg-c-menu--block {
+        &--block {
             .meg-c-menu__item {
                 display: block;
                 flex: 1 1 auto;

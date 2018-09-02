@@ -9,7 +9,7 @@
         color: $color-font;
         border: 1px solid $color-border;
         &:hover,
-        &.meg-c-pagination__item--active {
+        &--active {
             background-color: $primary;
             color: #fff;
             border: 1px solid $primary;
