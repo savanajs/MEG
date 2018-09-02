@@ -62,7 +62,7 @@
     cursor: pointer;
     user-select: none;
     opacity: 1;
-    font-size: $font-size-base;
+    font-size: $font-size-base - .1;
     display: inline-block;
     &:not(.meg-el-btn--o) {
         border: 1px solid transparent;

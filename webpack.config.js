@@ -163,6 +163,19 @@ module.exports = (env, options) => {
                     interpolate: true
                 }
             }]
+        },
+        {
+            test: /\.(ttf|eot|woff|woff2|svg|otf)$/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'fonts/',
+                        publicPath: 'fonts/'
+                    }
+                }
+            ]
         }
 
     ];
