@@ -39,14 +39,12 @@
         width: $shell;
         max-width: $shell-max-width;
         margin: 0 auto;
-        padding: 0 $padding-right 0 $padding-left;
     }
 
     .meg-lt-shell--flex {
         width: 100%;
         max-width: $shell-max-width;
         margin: 0 auto;
-        padding: 0 $padding-right 0 $padding-left;
     }
 
     .meg-lt-shell,
@@ -60,22 +58,6 @@
 
         .meg-lt-col {
             box-sizing: border-box;
-        }
-
-        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-top) {
-            padding-top: $padding-top;
-        }
-
-        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-right) {
-            padding-right: $padding-right;
-        }
-
-        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-bottom) {
-            padding-bottom: $padding-bottom;
-        }
-
-        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-left) {
-            padding-left: $padding-left;
         }
 
         .meg-lt-col__box {
@@ -178,6 +160,36 @@
 
     }
 
+    .meg-lt-shell,
+    .meg-lt-shell--flex {
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-top-lg) {
+            padding-top: $padding-top;
+        }
+
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-right-lg) {
+            padding-right: $padding-right;
+        }
+
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-bottom-lg) {
+            padding-bottom: $padding-bottom;
+        }
+
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-left-lg) {
+            padding-left: $padding-left;
+        }
+    }
+
+    .meg-lt-shell,
+    .meg-lt-shell--flex {
+        &:not(.meg-no-padding-right-lg) {
+            padding-right: $padding-right;
+        }
+
+        &:not(.meg-no-padding-left-lg) {
+            padding-left: $padding-left;
+        }
+    }
+
 }
 
 // Tablet
@@ -265,6 +277,36 @@
             padding-right: 0 !important;
         }
     }
+
+    .meg-lt-shell,
+    .meg-lt-shell--flex {
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-top-md) {
+            padding-top: $padding-top;
+        }
+
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-right-md) {
+            padding-right: $padding-right;
+        }
+
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-bottom-md) {
+            padding-bottom: $padding-bottom;
+        }
+
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-left-md) {
+            padding-left: $padding-left;
+        }
+    }
+
+    .meg-lt-shell,
+    .meg-lt-shell--flex {
+        &:not(.meg-no-padding-right-md) {
+            padding-right: $padding-right;
+        }
+        
+        &:not(.meg-no-padding-left-md) {
+            padding-left: $padding-left;
+        }
+    }
 }
 
 // Mobile
@@ -348,6 +390,36 @@
         .meg-lt-col.meg-lt-col--12-sm .meg-lt-col.meg-lt-col--12-sm:not(.meg-u-border) {
             padding-left: 0 !important;
             padding-right: 0 !important;
+        }
+    }
+
+    .meg-lt-shell,
+    .meg-lt-shell--flex {
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-top-sm) {
+            padding-top: $padding-top;
+        }
+
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-right-sm) {
+            padding-right: $padding-right;
+        }
+
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-bottom-sm) {
+            padding-bottom: $padding-bottom;
+        }
+
+        .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-left-sm) {
+            padding-left: $padding-left;
+        }
+    }
+
+    .meg-lt-shell,
+    .meg-lt-shell--flex {
+        &:not(.meg-no-padding-right-sm) {
+            padding-right: $padding-right;
+        }
+        
+        &:not(.meg-no-padding-left-sm) {
+            padding-left: $padding-left;
         }
     }
 }
