@@ -972,25 +972,37 @@
         margin-bottom: $margin-bottom;
     }
     .meg-u-margin-top-lg {
-        margin-bottom: $margin-top;
+        margin-top: $margin-top;
     }
     .meg-u-margin-left-lg {
-        margin-bottom: $margin-left;
+        margin-left: $margin-left;
     }
     .meg-u-margin-right-lg {
-        margin-bottom: $margin-right;
+        margin-right: $margin-right;
+    }
+    .meg-u-margin-bottom-half-lg {
+        margin-bottom: $margin-bottom / 2;
+    }
+    .meg-u-margin-top-half-lg {
+        margin-top: $margin-top / 2;
+    }
+    .meg-u-margin-left-half-lg {
+        margin-left: $margin-left / 2;
+    }
+    .meg-u-margin-right-half-lg {
+        margin-right: $margin-right / 2;
     }
     .meg-u-padding-bottom-lg {
         padding-bottom: $margin-bottom;
     }
     .meg-u-padding-top-lg {
-        padding-bottom: $margin-top;
+        padding-top: $margin-top;
     }
     .meg-u-padding-left-lg {
-        padding-bottom: $margin-left;
+        padding-left: $margin-left;
     }
     .meg-u-padding-right-lg {
-        padding-bottom: $margin-right;
+        padding-right: $margin-right;
     }
     .meg-u-full-width-lg {
         width: 100%;
@@ -1166,6 +1178,19 @@
     .meg-u-margin-right-md {
         margin-right: $margin-right;
     }
+    .meg-u-margin-bottom-half-md {
+        margin-bottom: $margin-bottom / 2;
+    }
+    .meg-u-margin-top-half-md {
+        margin-top: $margin-top / 2;
+    }
+    .meg-u-margin-left-half-md {
+        margin-left: $margin-left / 2;
+    }
+    .meg-u-margin-right-half-md {
+        margin-right: $margin-right / 2;
+    }
+
     .meg-u-padding-bottom-md {
         padding-bottom: $margin-bottom;
     }
@@ -1356,6 +1381,18 @@
     }
     .meg-u-margin-right-sm {
         margin-right: $margin-right;
+    }
+    .meg-u-margin-bottom-half-sm {
+        margin-bottom: $margin-bottom / 2;
+    }
+    .meg-u-margin-top-half-sm {
+        margin-top: $margin-top / 2;
+    }
+    .meg-u-margin-left-half-sm {
+        margin-left: $margin-left / 2;
+    }
+    .meg-u-margin-right-half-sm {
+        margin-right: $margin-right / 2;
     }
     .meg-u-padding-bottom-sm {
         padding-bottom: $margin-bottom;
