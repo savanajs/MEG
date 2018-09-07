@@ -557,12 +557,6 @@ import "babel-polyfill";
 
       },
 
-      "remove": function () {
-
-        $(".meg-o-notify").remove();
-
-      },
-
       "hide": function () {
 
         $(".meg-o-notify").removeClass("meg-o-notify--open");
@@ -581,6 +575,18 @@ import "babel-polyfill";
 
       },
 
+      "insertText": function (text, type) {
+
+        if (!type || !text) {
+
+          return;
+
+        }
+
+        return this.getMessage(text, type);
+
+      },
+
       "show": function (text, type, callback, time) {
 
         if (!type || !text) {
@@ -594,9 +600,7 @@ import "babel-polyfill";
 
         time = time || 5000;
 
-        this.remove();
-
-        $("body").append(`<div class="meg-o-notify">${this.getMessage(text, type)}</div>`);
+        $(".meg-o-notify").html(this.insertText(text, type));
 
         setTimeout(function () {
 
@@ -618,6 +622,22 @@ import "babel-polyfill";
 
         return true;
 
+      },
+
+      "add": function () {
+
+        $("body").append("<div class='meg-o-notify'></div>");
+
+        return true;
+
+      },
+
+      "init": function() {
+
+        this.add();
+
+        return true;
+
       }
 
     };
@@ -632,13 +652,13 @@ import "babel-polyfill";
     this.alert.init();
     this.loading().init();
     this.scrolling().init();
+    this.notify().init();
 
   };
 
   $doc.ready(function () {
 
     window.meg = new Meg();
-    meg.init();
 
     $("body").on("click", ".trigger-notify", function (e) {
 
@@ -648,21 +668,19 @@ import "babel-polyfill";
 
     });
 
+    $("body").on("click", "a.meg-js-redirect", function () {
+
+      $("body").removeClass("meg-js-visibled");
+
+    });
+
   });
-
-  // $doc.on("ConfirmCallback", function (event, response) {
-
-  // });
 
   $win.load(function () {
 
+    meg.init();
+
     setTimeout(() => {
-
-      $("body").on("click", "a.meg-js-redirect", function () {
-
-        $("body").removeClass("meg-js-visibled");
-
-      });
 
       $("body").addClass("meg-js-visibled");
 

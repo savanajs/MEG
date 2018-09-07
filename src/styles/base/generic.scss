@@ -16,6 +16,13 @@ html {
     text-size-adjust: 100%;
 }
 
+body:not(.meg-js-visibled) {
+    transition: opacity .5s;
+    opacity: 0;
+    background: url($image-gif-loading-primary) no-repeat center center $layout-primary;
+    height: 100vh;
+}
+
 body {
     background-color: $background;
     font-size: $font-size-base;
@@ -23,13 +30,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: $line-height-base;
-}
-
-body:not(.meg-js-visibled) {
-    transition: .5s opacity;
-    opacity: .1;
-    background: url($image-gif-loading-primary) no-repeat center center $layout-primary;
-    height: 100vh;
+    opacity: 1;
 }
 
 html * {

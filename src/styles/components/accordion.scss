@@ -27,8 +27,6 @@
         font-weight: bold;
     }
     .meg-c-accordion__inner {
-        opacity: 0;
-        transition: opacity .1s;
         visibility: hidden;
         padding: 20px;
         width: 100%;
@@ -37,9 +35,7 @@
         display: none;
     }
     .meg-c-accordion__open:checked ~ .meg-c-accordion__inner {
-        opacity: 100;
         visibility: visible;
-        transition: opacity .6 ease;
         display: block;
     }
 }

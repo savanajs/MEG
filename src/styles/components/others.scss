@@ -104,21 +104,22 @@
 }
 
 .meg-o-notify {
+    transition: transform .2s;
+    will-change: transform;
+    transform: translateY(100%);
+    bottom: 0;
     box-sizing: border-box;
     width: 40%;
     position: fixed;
-    bottom: -50%;
     right: 0px;
-    z-index: 5;
-    transition: all .7s;
-    opacity: 0;
+    opacity: .8;
     padding: 0px 10px;
+    z-index: 6;
 }
 
 .meg-o-notify {
     &.meg-o-notify--open {
-        bottom: 0;
-        opacity: .8;
+        transform: translateY(0);
     }
 }
 

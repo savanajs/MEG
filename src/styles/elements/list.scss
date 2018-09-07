@@ -101,9 +101,6 @@
         flex-wrap: nowrap;
         flex-direction: row;
         align-items: stretch;
-        &:not(.meg-no-margin-bottom) {
-            margin-bottom: 10px;
-        }
         &.meg-el-list--avatar {
             img {
                 width: 100%;

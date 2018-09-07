@@ -297,6 +297,11 @@
         bottom: 1px;
         content: "";
     }
+    .meg-c-switch__input + .meg-c-switch__label::after {
+        transition: transform .200s;
+        will-change: transform;
+        transform: translateX(0);
+    }
     .meg-c-switch__input:checked + .meg-c-switch__label::before {
         content: attr(data-on);
         text-align: left;
@@ -315,14 +320,12 @@
         right: 1px;
         background-color: rgba(0, 0, 0, .05);
         border-radius: 50px;
-        transition: background 0.4s;
     }
     .meg-c-switch__input + .meg-c-switch__label::after {
         width: 30px;
         background-color: $white;
         border-radius: 100%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        transition: all 0.4s;
     }
     .meg-c-switch__input:checked + .meg-c-switch__label::before {
         background-color: #00cc99;

@@ -5,6 +5,9 @@
     &:not(&--block) {
         display: inline-block;
     }
+    &--full {
+        width: 100%;
+    }
     
     display: inline-block;
     background: url($image-gif-loading-primary) no-repeat center center;

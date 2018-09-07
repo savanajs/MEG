@@ -2,6 +2,10 @@
     display: none;
 }
 
+body:not(.meg-js-visibled) .meg-lt-nav {
+    left: -100%;
+}
+
 // Desktop 
 @media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
     .meg-lt-nav {
@@ -180,13 +184,15 @@
         display: block;
     }
     .meg-c-menu__input:checked + .meg-c-nav__overlay + .meg-lt-nav {
-        left: 0px;
+        transform: translateX(0);
     }
     .meg-lt-nav {
         overflow-y: auto;
-        transition: left .3s;
+        left: 0px;
+        transition: transform .3s;
+        will-change: transform;
+        transform: translateX(-100%);
         position: fixed;
-        left: -310px;
         top: 0;
         background-color: $layout-secondary;
         width: 300px;
