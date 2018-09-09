@@ -1,18 +1,20 @@
 .meg-el-list {
-    &:not(.meg-no-margin-bottom) {
-        margin-bottom: $margin-bottom-list;
-    }
     &:not(.meg-no-negative-margin) {
         margin-left: $padding-left * -1;
     }
     &.meg-el-list--inline {
         display: flex;
-        -js-display: flex;
+    }
+    &.meg-el-list--inline-block {
+        display: flex;
+        flex-wrap: wrap;
+        > .meg-el-list__item {
+            width: 33%;
+        }
     }
     &--actions {
         > .meg-el-list__item {
             display: flex;
-            -js-display: flex;
             flex-wrap: nowrap;
             flex-direction: row;
             justify-content: space-between;
@@ -97,7 +99,6 @@
     }
     &--horizontal {
         display: flex;
-        -js-display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
         align-items: stretch;
@@ -116,16 +117,13 @@
 
 .meg-el-list--icon-desc {
     display: flex;
-    -js-display: flex;
     > .meg-el-list--icon__item {
         padding: $padding;
         position: relative;
         .meg-el-list--item__link {
             display: flex;
-            -js-display: flex;
             align-items: center;
             .meg-el-list--icon {
-                margin-right: 10px;
                 font-size: 2.5em;
                 line-height: 1.3em;
             }
@@ -138,7 +136,7 @@
                 a {
                     text-decoration: none;
                     &:hover {
-                        text-decoration: underline !important;
+                        text-decoration: underline;
                     }
                 }
             }
@@ -165,7 +163,6 @@
 .meg-el-list-normal__list {
     &--inline {
         display: flex;
-        -js-display: flex;
         width: 100%;
         flex: 0 1 100%;
         .meg-el-list-normal__item {
@@ -234,8 +231,17 @@
     }
 }
 
+// Device (Desktop)
+@media (min-width: $responsive-tablet) {
+
+    .meg-el-list--icon {
+        margin-right: 10px;
+    }
+
+}
+
 // Device (Mobile and tablet)
-@media screen and (max-width: $responsive-tablet) {
+@media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
 
     .meg-el-list.meg-el-list--horizontal:not(.meg-el-list--icons):not(.meg-no-margin-bottom) {
         flex-direction: column;
@@ -243,6 +249,10 @@
 
     .meg-el-list-normal__list--inline {
         flex-wrap: wrap;
+    }
+
+    .meg-el-list--icon {
+        margin-right: 10px;
     }
 
 }
@@ -254,7 +264,18 @@
     }
 
     .meg-el-list--icon {
-        margin-right: 0px !important;
+        margin-right: 0px;
+    }
+
+    .meg-el-list {
+        &.meg-el-list--inline-block {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            > .meg-el-list__item {
+                width: 100%;
+            }
+        }
     }
 
 }

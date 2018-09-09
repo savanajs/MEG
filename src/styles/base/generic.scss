@@ -1,12 +1,3 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .05);
-}
-
 html {
     font-size: $font-calc-base + em;
     line-height: $font-calc-base + em;
@@ -29,12 +20,17 @@ body {
     color: $color-font;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: $line-height-base;
     opacity: 1;
+    letter-spacing: $letter-spacing;
 }
 
 html * {
     font-family: $font-family;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .05);
+    line-height: $line-height-base;
 }
 
 strong {
@@ -126,6 +122,6 @@ fieldset {
     border: none;
 }
 
-p {
+p:not(.meg-lt--sub-heading) {
     margin-bottom: 10px;
 }

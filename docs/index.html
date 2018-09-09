@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meg | Make more layouts, write less css</title>
-    <meta http-equiv="expires" content="Tue, 05 Jan 2019 12:12:12 GMT"><meta http-equiv="cache-control" content="public"><meta http-equiv="Pragma" content="public">
+    <meta http-equiv="expires" content="Tue, 05 Jan 2019 12:12:12 GMT"><meta http-equiv="cache-control" content="public"><meta http-equiv="Pragma" content="public"><link rel="preload" as="font" href="../fonts/RobotoCondensed-Regular.ttf" type="font/ttf" crossorigin>
     <style>
         html {
             overflow-x: hidden;
@@ -17,14 +17,74 @@
             overflow-y: auto;
             overflow-x: hidden;
         }
-    </style>
-<link rel="shortcut icon" href="favicon.ico"><link href="meg.min.css?7ca1767a0a5820c7a05a" rel="stylesheet"></head>
 
-<body class="meg-o-acessibility">
+        pre[class*="language-"]:before, pre[class*="language-"]:after,
+        :not(pre) > code[class*="language-"]:after, pre[class*="language-"]:after {
+            display: none!important;
+        }
+
+        pre[class*="language-"] > code {
+            border-left-color: #00cc99!important;
+            box-shadow: -1px 0px 0px 0px #00cc99, 0px 0px 0px 1px #dfdfdf!important;
+        }
+
+        .presentation .meg-el-heading {
+            text-shadow: 5px 4px 0 rgba(0,0,0,0.15);
+        }
+
+        @media (min-width: 1025px) {
+            
+            .presentation .meg-el-heading {
+                font-size: 90px;
+            }
+
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            
+            .presentation .meg-el-heading {
+                font-size: 50px;
+            }
+
+        }
+
+        @media (max-width: 767px) {
+            
+            .presentation .meg-el-heading {
+                font-size: 40px;
+            }
+
+        }
+
+    </style>
+<link rel="shortcut icon" href="favicon.ico"><link href="meg.min.css?334f3c78a7bd44aa72ce" rel="stylesheet"></head>
+
+<body>
     <div style="display:none">https://savanajs.github.io/MEG</div>
     <div class="meg-lt-wrap">
 
-        <header class="meg-lt-header meg-u-align-items-center meg-u-no-bottom-margin meg-u-bg-light meg-u-border-bottom" role="banner" aria-label=""><div class="meg-lt-header__content"><div class="meg-lt-shell--flex"><div class="meg-lt-row meg-lt-row--no-margin-bottom meg-u-align-items-center meg-u-no-bottom-margin"><div class="meg-lt-col meg-lt-col--2-lg meg-lt-col--2-md meg-lt-col--12-sm meg-u-no-bottom-margin"><h4 class="meg-lt-logo meg-u-no-bottom-margin"><a href="https://savanajs.github.io/MEG" class="meg-lt-logo__link meg-js-redirect" title="MEG CSS Framework"><span class="meg-lt-link__main"><span class="meg-o-logo"><b>M</b>MEG</span></span></a></h4></div><div class="meg-lt-col meg-lt-col--7-lg meg-lt-col--8-md meg-lt-col--12-sm meg-u-no-bottom-margin meg-s-is-visible-lg"></div><div class="meg-lt-col meg-u-align-self-center meg-lt-col--1-lg meg-lt-col--8-md meg-lt-col--3-sm meg-u-no-bottom-margin"><div class="meg-lt-row meg-u-align-right"><form class="meg-c-form"><fieldset class="meg-c-form__fieldset"><div class="meg-c-form__switch"><input id="switch-tpl" class="meg-c-switch__input" type="checkbox" checked="checked"> <label class="meg-c-switch__label" data-on="ON" data-off="OFF" for="switch-tpl"></label></div></fieldset></form></div></div><div class="meg-lt-col meg-lt-col--2-lg meg-lt-col--2-md meg-lt-col--9-sm meg-u-no-bottom-margin meg-u-align-right"><a href="https://github.com/savanajs/MEG/archive/master.zip" class="meg-el-btn meg-u-box-shadow meg-el-btn--glass meg-el-btn--radius meg-u-bg-primary meg-u-color-white meg-el-btn--medium meg-el-btn--full-lg meg-el-btn--full-sm" title="Download"><i class="fa fa-download" aria-hidden="true"></i> <span class="meg-s-is-visible-lg">Download</span></a></div></div></div></div></header>
+        <header class="meg-lt-header meg-u-align-items-center meg-u-no-bottom-margin meg-u-bg-light meg-u-border-bottom meg-u-absolute meg-u-position-top meg-u-bring-forward meg-u-width-full" role="banner" aria-label=""><div class="meg-lt-header__content"><div class="meg-lt-shell--flex"><div class="meg-lt-row meg-lt-row--no-margin-bottom meg-u-align-items-center meg-u-no-bottom-margin"><div class="meg-lt-col meg-lt-col--2-lg meg-lt-col--2-md meg-lt-col--12-sm meg-u-no-bottom-margin"><h4 class="meg-lt-logo meg-u-no-bottom-margin"><a href="https://savanajs.github.io/MEG" class="meg-lt-logo__link meg-js-redirect" title="MEG CSS Framework"><span class="meg-lt-link__main"><span class="meg-o-logo"><b>M</b>MEG</span></span></a></h4></div><div class="meg-lt-col meg-lt-col--7-lg meg-lt-col--8-md meg-lt-col--12-sm meg-u-no-bottom-margin meg-s-is-visible-lg"></div><div class="meg-lt-col meg-u-align-self-center meg-lt-col--1-lg meg-lt-col--8-md meg-lt-col--3-sm meg-u-no-bottom-margin"><div class="meg-lt-row meg-u-align-right"><form class="meg-c-form"><fieldset class="meg-c-form__fieldset"><div class="meg-c-form__switch"><input id="switch-tpl" class="meg-c-switch__input" type="checkbox" checked="checked"> <label class="meg-c-switch__label" data-on="ON" data-off="OFF" for="switch-tpl"></label></div></fieldset></form></div></div><div class="meg-lt-col meg-lt-col--2-lg meg-lt-col--2-md meg-lt-col--9-sm meg-u-no-bottom-margin meg-u-align-right"><a href="https://github.com/savanajs/MEG/archive/master.zip" class="meg-el-btn meg-u-box-shadow meg-el-btn--glass meg-el-btn--radius meg-u-bg-primary meg-u-color-white meg-el-btn--full-lg meg-el-btn--full-sm" title="Download"><i class="fa fa-download" aria-hidden="true"></i> <span class="meg-s-is-visible-lg">Download</span></a></div></div></div></div></header>
+
+        <div class="meg-u-bg-primary meg-u-fullheight-vh meg-lt-row meg-u-align-middle">
+            <div class="meg-lt-shell--flex">
+                <div class="presentation">
+                    <hgroup class="meg-el-hgroup meg-u-text-center meg-u-color-white">
+                        <h1 id="get-started" class="meg-el-heading">
+                            MEG CSS Framework
+                        </h1>
+                        <p class="meg-lt--sub-heading meg-u-font-size-x">
+                            
+MEG is an open source HTML, CSS and JS development kit based on Flexbox. <br>Developed with variables, mixins, Sass, responsive grid system<br> for building layouts for ecommerce.
+                        </p>
+                    </hgroup>
+                    <div class="meg-u-text-center">
+                        <a href="#" data-to=".main" class="meg-js-scrolling-to meg-el-btn meg-el-btn--medium meg-u-color-primary meg-u-bg-white meg-u-border-white">
+                            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i> See the documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="main" role="main">
             <div class="meg-lt-shell--flex">
@@ -42,13 +102,12 @@
                             <div class="meg-lt-section__header meg-u-margin-top-x">
 
                                 <hgroup class="meg-el-hgroup">
-                                    <h1 id="get-started" class="meg-el-heading meg-el-heading--1">
+                                    <h2 id="get-started" class="meg-el-heading meg-el-heading--1">
                                         MEG CSS Framework
-                                    </h1>
+                                    </h2>
                                     <p class="meg-lt--sub-heading">
-                                        MEG is an open source HTML, CSS and JS development kit based on Flexbox. 
-                                        Developed with variables, mixins, Sass, responsive grid system for building 
-                                         of your web applications.
+                                        
+MEG is an open source HTML, CSS and JS development kit based on Flexbox. Developed with variables, mixins, Sass, responsive grid system for building layouts for ecommerce.
                                     </p>
                                 </hgroup>
 
@@ -63,34 +122,34 @@
                                     <div class="meg-el-list-normal__lists">
                                         <ul class="meg-el-list-normal__list">
                                             <li class="meg-el-list-normal__item">
-                                                <i class="fa fa-check-circle-o meg-u-color-primary" aria-hidden="true"></i> Compatibility of elements between browsers (Resolves cross browser component issues)
+                                                <i class="fa fa-check-circle meg-u-color-primary" aria-hidden="true"></i> Compatibility of elements between browsers (Resolves cross browser component issues)
                                             </li>
                                             <li class="meg-el-list-normal__item">
-                                                <i class="fa fa-check-circle-o meg-u-color-primary" aria-hidden="true"></i> Grid system with 12 colums
+                                                <i class="fa fa-check-circle meg-u-color-primary" aria-hidden="true"></i> Grid system with 12 colums
                                             </li>
                                             <li class="meg-el-list-normal__item">
-                                                <i class="fa fa-check-circle-o meg-u-color-primary" aria-hidden="true"></i> Over 200 helper classes
+                                                <i class="fa fa-check-circle meg-u-color-primary" aria-hidden="true"></i> Over 200 helper classes
                                             </li>
                                             <li class="meg-el-list-normal__item">
-                                                <i class="fa fa-check-circle-o meg-u-color-primary" aria-hidden="true"></i> Accessibility of the elements with WAI-ARIA
+                                                <i class="fa fa-check-circle meg-u-color-primary" aria-hidden="true"></i> Accessibility of the elements with WAI-ARIA
                                             </li>
                                             <li class="meg-el-list-normal__item">
-                                                <i class="fa fa-check-circle-o meg-u-color-primary" aria-hidden="true"></i> Light and small framework. meg.min.css (99kb) and meg.app.min.js (11kb)
+                                                <i class="fa fa-check-circle meg-u-color-primary" aria-hidden="true"></i> Light and small framework. meg.min.css (99kb) and meg.app.min.js (11kb)
                                             </li>
                                             <li class="meg-el-list-normal__item">
-                                                <i class="fa fa-check-circle-o meg-u-color-primary" aria-hidden="true"></i> Standardization of elements
+                                                <i class="fa fa-check-circle meg-u-color-primary" aria-hidden="true"></i> Standardization of elements
                                             </li>
                                             <li class="meg-el-list-normal__item">
-                                                <i class="fa fa-check-circle-o meg-u-color-primary" aria-hidden="true"></i> Easy customization
+                                                <i class="fa fa-check-circle meg-u-color-primary" aria-hidden="true"></i> Easy customization
                                             </li>
                                             <li class="meg-el-list-normal__item">
-                                                <i class="fa fa-check-circle-o meg-u-color-primary" aria-hidden="true"></i> Uses SASS + Webpack
+                                                <i class="fa fa-check-circle meg-u-color-primary" aria-hidden="true"></i> Uses SASS + Webpack
                                             </li>
                                             <li class="meg-el-list-normal__item">
-                                                <i class="fa fa-check-circle-o meg-u-color-primary" aria-hidden="true"></i> Possibility of placing lazyload in images
+                                                <i class="fa fa-check-circle meg-u-color-primary" aria-hidden="true"></i> Possibility of placing lazyload in images
                                             </li>
                                             <li class="meg-el-list-normal__item">
-                                                <i class="fa fa-check-circle-o meg-u-color-primary" aria-hidden="true"></i> You over write less CSS and create more layouts.
+                                                <i class="fa fa-check-circle meg-u-color-primary" aria-hidden="true"></i> You over write less CSS and create more layouts.
                                             </li>
                                         </ul>
                                     </div>
@@ -225,6 +284,140 @@
 
                         <article role="article" class="meg-lt-article content">
 
+                                <div class="meg-lt-section__main meg-lt-contents">
+    
+                                    <hgroup class="meg-el-hgroup">
+                                        <h2 id="structure-of-the-project" class="meg-el-heading meg-el-heading--3">
+                                            Structure of the project
+                                        </h2>
+                                        <p>
+                                           Mass structure of project files using a BEM methodology.
+                                        </p>
+                                    </hgroup>
+
+                                    <ul class="meg-el-list-normal__list meg-u-margin-bottom-xx">
+                                        <li class="meg-el-list-normal__item">
+                                            <i class="fa fa-folder-o" aria-hidden="true"></i> <b class="meg-u-color-primary">base</b> - Basic styling directly in html tags.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>_all.scss</b> - Importer of base files.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>generic.scss</b> - Here are the structure rules of your html tags.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>resets.scss</b> - Html tags element resets.
+                                        </li>
+                                    </ul>
+
+                                    <ul class="meg-el-list-normal__list meg-u-margin-bottom-xx">
+                                        <li class="meg-el-list-normal__item">
+                                            <i class="fa fa-folder-o" aria-hidden="true"></i> <b class="meg-u-color-primary">components</b> - 
+                                            Modules that make up something bigger, that which goes into the composition of the element.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>_all.scss</b> - Importer of components files.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> Classes with suffix <b>meg-c-</b>.
+                                        </li>
+                                    </ul>
+
+                                    <ul class="meg-el-list-normal__list meg-u-margin-bottom-xx">
+                                        <li class="meg-el-list-normal__item">
+                                            <i class="fa fa-folder-o" aria-hidden="true"></i> <b class="meg-u-color-primary">elements</b> - Basic style of most used HTML elements
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>_all.scss</b> - Importer of elements files.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> Classes with suffix <b>meg-el-</b>.
+                                        </li>
+                                    </ul>
+
+                                    <ul class="meg-el-list-normal__list meg-u-margin-bottom-xx">
+                                        <li class="meg-el-list-normal__item">
+                                            <i class="fa fa-folder-o" aria-hidden="true"></i> <b class="meg-u-color-primary">grid</b> - Structure of your HTML
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>_all.scss</b> - Importer of grid files.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>columns.scss</b> - Rules of grids.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> Classes with suffix <b>meg-lt-</b>.
+                                        </li>
+                                    </ul>
+
+                                    <ul class="meg-el-list-normal__list meg-u-margin-bottom-xx">
+                                        <li class="meg-el-list-normal__item">
+                                            <i class="fa fa-folder-o" aria-hidden="true"></i> <b class="meg-u-color-primary">layout</b> - Layout rules.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>_all.scss</b> - Importer of layout files.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> Classes with suffix <b>meg-lt-</b>.
+                                        </li>
+                                    </ul>
+
+                                    <ul class="meg-el-list-normal__list meg-u-margin-bottom-xx">
+                                        <li class="meg-el-list-normal__item">
+                                            <i class="fa fa-folder-o" aria-hidden="true"></i> <b class="meg-u-color-primary">settings</b> - These are comme basic settings of your architecture.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>_all.scss</b> - Importer of settings files.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>colors-dark.scss</b> - In general, they are the global variables of the colors of the elements.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>colors.scss</b> - In general, they are the global variables of the colors of the elements.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>imports.scss</b> - Importers of internal and external CSS.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>variables.scss</b> - In general, they are the global variables of the elements.
+                                        </li>
+                                    </ul>
+
+                                    <ul class="meg-el-list-normal__list meg-u-margin-bottom-xx">
+                                        <li class="meg-el-list-normal__item">
+                                            <i class="fa fa-folder-o" aria-hidden="true"></i> <b class="meg-u-color-primary">themes</b> - Custom theme.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>_all.scss</b> - Importer of themes files.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>default.scss</b> - Here are the colors and styles of your theme.
+                                        </li>
+                                    </ul>
+                                    <ul class="meg-el-list-normal__list meg-u-margin-bottom-xx">
+                                        <li class="meg-el-list-normal__item">
+                                            <i class="fa fa-folder-o" aria-hidden="true"></i> <b class="meg-u-color-primary">utilities</b> - Helpers and Modifiers
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>_all.scss</b> - Importer of utilities files.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>state.scss</b> - State of a Modifier (Classes with suffix <b>meg-s-</b>).
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>tools.scss</b> - Here are the mixins.
+                                        </li>
+                                        <li class="meg-el-list-normal__item meg-u-padding-left-xx">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i> <b>utils.scss</b> - Assistant classes (Classes with suffix <b>meg-u-</b>).
+                                        </li>
+                                    </ul>
+
+                                </div>
+                        
+                        </article>
+
+                        <article role="article" class="meg-lt-article content">
+
                             <div class="meg-lt-section__main meg-lt-contents">
 
                                 <hgroup class="meg-el-hgroup">
@@ -238,21 +431,147 @@
 
                                 <hgroup class="meg-el-hgroup">
                                     <h3 id="customize--colors" class="meg-el-heading meg-el-heading--5">
-                                        <b>Colors</b>             
+                                        <b>General colors</b>             
                                     </h3>
                                     <p>
                                         Edit the file <b>meg/src/styles/utilities/colors.scss</b>
                                     </p>
                                 </hgroup>
 
+                                <div class="box-code">
+
+<pre class="meg-s-is-hidden-sm language-sass">
+    <code class="language-sass">
+// Images
+$logo: "";
+$image-gif-loading-primary: "../img/meg-before-loading.gif";
+$image-gif-loading-secondary: "../img/meg-loading-bar.gif";
+
+// Colors
+$primary: #00cc99;
+$secondary: #f69311;
+$tertiary: #4996c5;
+$quaternary: #c54958;
+$success: #00cc99;
+$cancel: #c54958;
+$warning: #ffcc00;
+$info: #4996c5;
+$black: #000;
+$white: #fff;
+$light: #f5f5f5;
+$dark-primary: #212121;
+$dark-secondary: #2a2a2b;
+$dark-tertiary: #3d3d3f;
+$gray: #e5e5e5;
+
+// Layout colors
+$layout-primary: $white;
+$layout-secondary: $white;
+$layout-tertiary: $light;
+
+// Colors defined
+$color-font: #333;
+$color-font-o: $color-font;
+$color-column: transparent;
+$color-input: $white;
+$color-input-text: $color-font;
+$color-input-disabled: $gray;
+$color-input-border: #dadce0;
+$color-border: #dadce0;
+$color-link: $primary;
+$color-strong: $color-font;
+$pre-background: $gray;
+$hr-background: $gray;
+$code-background: $light;
+
+// Colors for theme
+$background: $layout-primary;
+$color-lt-primary: $layout-primary;
+$color-lt-secondary: $layout-secondary; 
+$color-lt-tertiary: $layout-tertiary;
+$color-lt-bg-hover: $gray;
+$color-lt-bg-scrolling: $layout-tertiary;
+$color-lt-bg-bar: $primary;
+$color-lt-bg-light: $layout-tertiary;
+$color-lt-bg-content: $layout-secondary;
+$color-lt-bg-content-placeholder-primary: darken($layout-tertiary, 5%);
+$color-lt-bg-content-placeholder-secondary: $layout-tertiary;
+    </code>
+</pre>
+                                </div>
+
                                 <hgroup class="meg-el-hgroup">
                                     <h3 id="customize--styles" class="meg-el-heading meg-el-heading--5">
-                                        <b>Styles</b>            
+                                        <b>General configuration</b>            
                                     </h3>
                                     <p>
                                         Edit the file <b>meg/src/styles/utilities/variables.scss</b>
                                     </p>
                                 </hgroup>
+
+<pre class="meg-s-is-hidden-sm language-sass">
+    <code class="language-sass">      
+// General
+$font-pixel-base: 18;
+$font-calc-base: (13 / $font-pixel-base);
+$font-size-base: 1.2em; //12px
+$line-height-base: 1.5em;
+$shell: 1280px;
+$shell-max-width: 1920px;
+$shell-gutter: 15px;
+$font-family: 'Roboto Condensed', sans-serif;
+$strong-weight: 900;
+$margin-top: 10px;
+$margin-bottom: 10px;
+$margin-right: 10px;
+$margin-left: 10px;
+$letter-spacing: .2px;
+
+// Form input
+$border_radius_primary: 10px;
+$border_radius_input: 10px;
+$border_radius_button: 10px;
+$margin-bottom-field: 20px;
+$border-size: 1px;
+
+// Padding
+$padding-top: 10px;
+$padding-bottom: 10px;
+$padding-right: 10px;
+$padding-left: 10px;
+$padding: $padding-top $padding-right $padding-bottom $padding-left;
+
+// Buttons
+$padding-top-button: .5em;
+$padding-bottom-button: .5em;
+$padding-right-button: .7em;
+$padding-left-button: .7em;
+$margin-bottom-button: 10px;
+$margin-left-button: 10px;
+
+$padding-button: $padding-top-button $padding-right-button $padding-bottom-button $padding-left-button;
+
+// Heading
+$margin-bottom-heading: 20px;
+$line-height-heading: 1.2em;
+
+// HR line
+$hr-height: 1px;
+$hr-margin: $margin-top 0px $margin-bottom 0px;
+
+// List
+$margin-bottom-list: 10px;
+
+// Radius
+$radius: 5px 5px 5px 5px;
+
+// Responsives max.
+$responsive-device: 1024px; // Mobile end tablet
+$responsive-mobile: 767px; // Mobile only
+$responsive-tablet: 1024px; // Tablet only
+$responsive-desktop: 5000px; // Desktop only
+    </code>
+</pre>
 
                                 <hgroup class="meg-el-hgroup">
                                     <h3 id="customize--styles" class="meg-el-heading meg-el-heading--5">
@@ -393,7 +712,7 @@
                                 </hgroup>
 
                                 <a href="https://github.com/savanajs/MEG" target="_blank" class="meg-el-btn meg-u-bg-warning meg-u-color-white" role="button" title="Github">
-                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                    <i class="fa fa-github meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i>
                                     Github
                                 </a>
 
@@ -413,7 +732,7 @@
                                 </hgroup>
 
                                 <a href="https://github.com/savanajs/MEG/archive/master.zip" class="meg-el-btn meg-u-bg-success meg-u-color-white" role="button" title="Download">
-                                    <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                                    <i class="fa fa-cloud-download meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i>
                                     Download
                                 </a>
 
@@ -450,6 +769,67 @@
                                     </div>
                                 </div>
 
+                                <div class="helper meg-u-padding-bottom-x">
+
+                                        <hgroup class="meg-el-hgroup">
+                                            <h5 class="meg-el-heading meg-el-heading--4">
+                                                Exclusive helpers to meg-lt-col
+                                            </h5>
+                                        </hgroup>
+    
+                                        <div class="preview">
+                                            <table class="meg-el-table meg-el-table--center">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Class</th>
+                                                        <th>Description</th>
+                                                        <th>Is Responsivel?</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                        
+                                                    <tr>
+                                                        <th class="text-success meg-u-text-center">meg-no-padding-left</th>
+                                                        <td class="text-success meg-u-text-center">
+                                                            No padding left
+                                                        </td>
+                                                        <td class="text-success meg-u-text-center">
+                                                            yes
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-success meg-u-text-center">meg-no-padding-right</th>
+                                                        <td class="text-success meg-u-text-center">
+                                                            No padding right
+                                                        </td>
+                                                        <td class="text-success meg-u-text-center">
+                                                            yes
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-success meg-u-text-center">meg-no-padding-bottom</th>
+                                                        <td class="text-success meg-u-text-center">
+                                                            No padding bottom
+                                                        </td>
+                                                        <td class="text-success meg-u-text-center">
+                                                            yes
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-success meg-u-text-center">meg-no-padding-top</th>
+                                                        <td class="text-success meg-u-text-center">
+                                                            No padding top
+                                                        </td>
+                                                        <td class="text-success meg-u-text-center">
+                                                            yes
+                                                        </td>
+                                                    </tr>                                            
+                                                </tbody>
+                                            </table>
+                                        </div>
+    
+                                    </div>
+
                             </div>
 
                             <div class="meg-lt-section__main meg-lt-contents">
@@ -458,12 +838,8 @@
                                     <h3 id="shell" class="meg-el-heading meg-el-heading--1">
                                         Shell
                                     </h3>
-                                    <p>To leave your content in the middle of the page use the class meg-lt-shell--flex or meg-lt-shell--flex--flex</p>
+                                    <p>To leave your content in the middle of the page use the class meg-lt-shell or meg-lt-shell--flex</p>
                                 </hgroup>
-
-                                <div class="code meg-u-margin-bottom">
-                                    <pre class="meg-s-is-hidden-sm language-markup"><code class="language-markup"></code></pre>
-                                </div>
 
                                 <hgroup class="meg-el-hgroup">
                                     <h4 class="meg-el-heading meg-el-heading--5">
@@ -471,16 +847,63 @@
                                     </h4>
                                 </hgroup>
 
-                                <div class="preview meg-lt-skeletron dinamic">
-                                    <!-- size: 1280px -->
-                                    <div class="meg-lt-shell--flex">
-                                        ...
+<div class="box-code"><pre class="meg-s-is-hidden-sm language-markup">
+<code class="language-markup">
+&lt;!-- size: 1280px --&gt;
+&lt;div class="meg-lt-shell"&gt;
+    ...
+&lt;/div&gt;
+
+&lt;!-- size: full and max: 1920px --&gt;
+&lt;div class="meg-lt-shell--flex"&gt;
+    ...
+&lt;/div&gt;
+</code>
+</pre></div>
+
+<br>
+
+                                <div class="helper meg-u-padding-bottom-x">
+
+                                    <hgroup class="meg-el-hgroup">
+                                        <h5 class="meg-el-heading meg-el-heading--4">
+                                            Exclusive helpers to meg-lt-shell or meg-lt-shell--flex
+                                        </h5>
+                                    </hgroup>
+
+                                    <div class="preview">
+                                        <table class="meg-el-table meg-el-table--center">
+                                            <thead>
+                                                <tr>
+                                                    <th>Class</th>
+                                                    <th>Description</th>
+                                                    <th>Is Responsivel?</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                    
+                                                <tr>
+                                                    <th class="text-success meg-u-text-center">meg-no-padding-left</th>
+                                                    <td class="text-success meg-u-text-center">
+                                                        No padding left
+                                                    </td>
+                                                    <td class="text-success meg-u-text-center">
+                                                        yes
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-success meg-u-text-center">meg-no-padding-right</th>
+                                                    <td class="text-success meg-u-text-center">
+                                                        No padding right
+                                                    </td>
+                                                    <td class="text-success meg-u-text-center">
+                                                        yes
+                                                    </td>
+                                                </tr>                                                                                    
+                                            </tbody>
+                                        </table>
                                     </div>
 
-                                    <!-- size: full and max: 1920px -->
-                                    <div class="meg-lt-shell--flex--flex">
-                                        ...
-                                    </div>
                                 </div>
 
                             </div>
@@ -756,9 +1179,8 @@
                                     </h2>
                                     <p>Simple helpers for yours elements.</p>
                                     <p>
-                                        <b class="meg-el-heading meg-el-heading--3">Is Responsivel:</b><br>
-                                        You can add a <b>-sm</b>, <b>md</b>, or <b>-lg</b> suffix at the end of the responsive classes. Ex: meg-s-is-visible<b>-lg</b>
-                                        
+                                        <b class="meg-el-heading meg-el-heading--5">Is Responsivel</b><br>
+                                        You can add a <b>-sm</b>, <b>md</b>, or <b>-lg</b> suffix at the end of the responsive classes. Ex: meg-s-is-visible<b>-lg</b>                         
                                     </p>
                                 </hgroup>
 
@@ -3875,30 +4297,30 @@
                                     <div class="meg-lt-row meg-lt-row--space-cols meg-lt-row--wrap-lg">
                                         <div class="end-el-wrap-btns">
                                             <button role="button" class="meg-el-btn meg-u-bg-none meg-el-btn--small">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i> Small
+                                                <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Small
                                             </button>
                                             <button role="button" class="meg-el-btn meg-u-bg-none">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i> Normal
+                                                <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Normal
                                             </button>
                                             <button role="button" class="meg-el-btn meg-u-bg-none meg-el-btn--medium">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i> Medium
+                                                <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Medium
                                             </button>
                                             <button role="button" class="meg-el-btn meg-u-bg-none meg-el-btn--large">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i> Large
+                                                <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Large
                                             </button>
                                         </div>
                                         <div class="end-el-wrap-btns">
                                             <button role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--small">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i> Small
+                                                <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Small
                                             </button>
                                             <button role="button" class="meg-el-btn meg-el-btn--o">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i> Normal
+                                                <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Normal
                                             </button>
                                             <button role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--medium">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i> Medium
+                                                <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Medium
                                             </button>
                                             <button role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--large">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i> Large
+                                                <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Large
                                             </button>
                                         </div>
                                     </div>
@@ -4005,7 +4427,7 @@
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
                                         <button role="button" class="meg-el-btn">
-                                            <i class="fa fa-check-circle" aria-hidden="true"></i> Success
+                                            <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Success
                                         </button>
                                         <button role="button" class="meg-el-btn meg-el-btn--icon">
                                             <i class="fa fa-check-circle" aria-hidden="true"></i>
@@ -4275,7 +4697,7 @@
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
                                         <button role="button" class="meg-el-btn meg-el-btn--full">
-                                            <i class="fa fa-check-circle" aria-hidden="true"></i> Full</button>
+                                            <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Full</button>
                                     </div>
                                 </div>
 
@@ -5391,7 +5813,7 @@
                             
                                                             </span>
                             
-                                                            <span class="meg-c-badge meg-u-bg-success meg-u-color-white meg-s-is-hidden-lg">1</span>
+                                                            <span class="meg-c-badge meg-c-badge--top meg-u-bg-success meg-u-color-white meg-s-is-hidden-lg">1</span>
                             
                                                         </div>
                             
@@ -6585,11 +7007,11 @@
 
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
-                                        <a role="button" class="meg-el-btn" href="#" title="A meg-lt Button">A meg-lt Button
-                                            <span class="meg-c-badge meg-u-bg-success meg-u-color-white">1</span>
-                                        </a>
-                                        <button role="button" class="meg-el-btn">A meg-lt Button
-                                            <span class="meg-c-badge meg-u-bg-success meg-u-color-white">1</span>
+                                        <button role="button" class="meg-el-btn">Top
+                                            <span class="meg-c-badge meg-c-badge--top meg-u-bg-success meg-u-color-white">1</span>
+                                        </button>
+                                        <button role="button" class="meg-el-btn">Middle
+                                            <span class="meg-c-badge meg-c-badge--middle meg-u-bg-success meg-u-color-white">1</span>
                                         </button>
                                     </div>
                                 </div>
@@ -9499,7 +9921,7 @@ meg.loading().hideBeforeLoading();
 
     </div>
 
-    <span data-to="body" class="meg-js-scrolling-to" style="display: block;">
+    <span data-to="body" class="meg-js-scrolling-to meg-js-return-top" style="display: block;">
         <a title="Return to top" href="javascript:void(0)" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-el-btn--circle" role="button">
             <i class="fa fa-arrow-up" aria-hidden="true"></i>
         </a>
@@ -9511,6 +9933,6 @@ meg.loading().hideBeforeLoading();
     <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <![endif]-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="vendors.js?7ca1767a0a5820c7a05a"></script><script type="text/javascript" src="meg.app.min.js?7ca1767a0a5820c7a05a"></script><script type="text/javascript" src="meg.main.min.js?7ca1767a0a5820c7a05a"></script></body>
+<script type="text/javascript" src="vendors.js?334f3c78a7bd44aa72ce"></script><script type="text/javascript" src="meg.app.min.js?334f3c78a7bd44aa72ce"></script><script type="text/javascript" src="meg.main.min.js?334f3c78a7bd44aa72ce"></script></body>
 
 </html>

@@ -64,19 +64,6 @@ input[type=search] {
     appearance: none;
 }
 
-html {
-    box-sizing: border-box;
-}
-
-* {
-    letter-spacing: $letter-spacing;
-}
-
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 img,
 embed,
 iframe,

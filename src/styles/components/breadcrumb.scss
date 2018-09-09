@@ -1,5 +1,5 @@
 .meg-c-breadcrumb {
-    padding: 10px 16px;
+    padding: $padding;
     list-style: none;
     .meg-c-breadcrumb__item {
         display: inline;
@@ -18,8 +18,8 @@
         color: $color-font;
         content: "/\00a0";
     }
-    .meg-c-breadcrumb__item.meg-c-breadcrumb__current .meg-c-item__link {
+    .meg-c-breadcrumb__item.meg-c-breadcrumb__current .meg-c-item__link,
+    .meg-c-breadcrumb__item.meg-c-breadcrumb__current {
         font-weight: bold;
-        color: lighten($color-font, 0%);
     }
 }

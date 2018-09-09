@@ -31,8 +31,8 @@
         font-size: 1em;
     }
     a {
-        margin: 0px !important;
-        padding: 0px !important;
+        margin: 0px;
+        padding: 0px;
         display: block;
         border: none;
         width: auto;
@@ -71,12 +71,16 @@
 
 .meg-el-image--aligning {
     display: flex;
-    -js-display: flex;
     flex-wrap: nowrap;
 }
 
-.meg-el-image--aligning .meg-el-image + .meg-el-image {
-    margin-left: 10px;
+// Device (Desktop)
+@media (min-width: $responsive-mobile) and (min-width: $responsive-tablet) {
+
+    .meg-el-image--aligning .meg-el-image + .meg-el-image {
+        margin-left: 10px;
+    }
+
 }
 
 // Mobile
@@ -87,10 +91,10 @@
         flex-direction: row;
         justify-content: space-between;
         .meg-el-image {
-            margin-left: 0px !important;
+            margin-left: 0px;
             margin-bottom: 20px;
             &:last-child {
-                margin-bottom: 0px !important;
+                margin-bottom: 0px;
             }
         }
     }

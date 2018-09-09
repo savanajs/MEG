@@ -1,4 +1,4 @@
-.meg-js-scrolling-to {
+.meg-js-return-top {
     position: fixed;
     z-index: 5;
     right: 10px;
@@ -108,7 +108,6 @@
     will-change: transform;
     transform: translateY(100%);
     bottom: 0;
-    box-sizing: border-box;
     width: 40%;
     position: fixed;
     right: 0px;

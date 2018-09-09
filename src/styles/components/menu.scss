@@ -58,7 +58,6 @@ body:not(.meg-js-visibled) .meg-lt-nav {
     .meg-c-menu {
         &--inline {
             display: flex;
-            -js-display: flex;
             flex-wrap: nowrap;
             align-content: space-between;
             position: relative;
@@ -291,12 +290,10 @@ body:not(.meg-js-visibled) .meg-lt-nav {
             }
         }
         .meg-el-list {
-            box-sizing: border-box;
             width: 100%;
             margin: 0px;
             background-color: $layout-tertiary;
             .meg-el-list__item {
-                box-sizing: border-box;
                 padding: 15px 0px;
                 border-top: 1px solid $color-border;
                 a {

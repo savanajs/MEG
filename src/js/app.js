@@ -115,6 +115,7 @@ import "babel-polyfill";
 
     return {
       "selector_scrolling_to": ".meg-js-scrolling-to",
+      "selector_return_top": ".meg-js-return-top",
       "scrollingTo": function (target) {
 
         if (!target) {
@@ -132,10 +133,13 @@ import "babel-polyfill";
 
         var _self = this;
 
-        $(this.selector_scrolling_to).find(".meg-el-btn").on("click", function (e) {
+        $("body").on("click", this.selector_scrolling_to, function (e) {
 
           e.preventDefault();
-          _self.scrollingTo("body");
+
+          var goto = $(this).attr("data-to");
+
+          _self.scrollingTo(goto);
 
         });
 
@@ -145,11 +149,11 @@ import "babel-polyfill";
 
           if (scrollTop > 100) {
 
-            $(_self.selector_scrolling_to).fadeIn(500);
+            $(_self.selector_return_top).fadeIn(500);
 
           } else {
 
-            $(_self.selector_scrolling_to).fadeOut();
+            $(_self.selector_return_top).fadeOut();
 
           }
 
@@ -158,6 +162,7 @@ import "babel-polyfill";
       },
       "init": function () {
 
+        $(this.selector_return_top).hide();
         this.events();
 
       }

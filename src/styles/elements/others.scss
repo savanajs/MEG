@@ -1,6 +1,6 @@
 .meg-el-hgroup {
     &:not(.meg-no-margin-bottom) {
-        margin-bottom: $margin-bottom;
+        margin-bottom: $margin-bottom * 2;
     }
 }
 

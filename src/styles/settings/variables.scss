@@ -1,5 +1,5 @@
 
-// Geral
+// General
 $font-pixel-base: 18;
 $font-calc-base: (13 / $font-pixel-base);
 $font-size-base: 1.2em; //12px
@@ -8,12 +8,12 @@ $shell: 1280px;
 $shell-max-width: 1920px;
 $shell-gutter: 15px;
 $font-family: 'Roboto Condensed', sans-serif;
-$strong-weight: 500;
+$strong-weight: 900;
 $margin-top: 10px;
 $margin-bottom: 10px;
 $margin-right: 10px;
 $margin-left: 10px;
-$letter-spacing: .016em;
+$letter-spacing: .2px;
 
 // Form input
 $border_radius_primary: 10px;
@@ -21,6 +21,7 @@ $border_radius_input: 10px;
 $border_radius_button: 10px;
 $margin-bottom-field: 20px;
 $border-size: 1px;
+$padding-input: .5em .6em;
 
 // Padding
 $padding-top: 10px;

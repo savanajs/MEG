@@ -2,7 +2,6 @@
     &--inline {
         margin-bottom: 10px;
         display: flex;
-        -js-display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         -ms-flex-pack: start;
@@ -37,7 +36,6 @@
     &--actions {
         margin-bottom: 10px;
         display: flex;
-        -js-display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         -ms-flex-pack: start;

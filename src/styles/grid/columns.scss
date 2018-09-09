@@ -1,9 +1,7 @@
 .meg-lt-wrap {
     width: 100%;
     .meg-lt-row {
-        box-sizing: border-box;
         display: flex;
-        -js-display: flex;
         flex: 0 1 auto;
         width: 100%;
         flex-direction: row;
@@ -11,6 +9,7 @@
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -webkit-box-flex: 0;
+        position: relative;
         &:not([class*=meg-u-align-]) {
             justify-content: flex-start;
         }
@@ -49,21 +48,9 @@
 
     .meg-lt-shell,
     .meg-lt-shell--flex {
-        box-sizing: border-box;
-
-        .meg-lt-row,
-        .meg-lt-col {
-            box-sizing: border-box;
-        }
-
-        .meg-lt-col {
-            box-sizing: border-box;
-        }
-
         .meg-lt-col__box {
             padding: $padding;
         }
-
     }
 
     .meg-lt-row--full {
@@ -160,8 +147,7 @@
 
     }
 
-    .meg-lt-shell,
-    .meg-lt-shell--flex {
+    .meg-lt-row {
         .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-top-lg) {
             padding-top: $padding-top;
         }
@@ -273,13 +259,12 @@
             }
         }
         .meg-lt-col.meg-lt-col--12-md .meg-lt-col.meg-lt-col--12-md {
-            padding-left: 0 !important;
-            padding-right: 0 !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
         }
     }
 
-    .meg-lt-shell,
-    .meg-lt-shell--flex {
+    .meg-lt-row {
         .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-top-md) {
             padding-top: $padding-top;
         }
@@ -393,8 +378,7 @@
         }
     }
 
-    .meg-lt-shell,
-    .meg-lt-shell--flex {
+    .meg-lt-row {
         .meg-lt-col:not(.meg-c-form__actions):not(.meg-no-padding-top-sm) {
             padding-top: $padding-top;
         }

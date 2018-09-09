@@ -2,7 +2,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    -js-display: flex;
     .meg-el-btn {
         align-self: center;
         &:not(.meg-no-margin-bottom) {
@@ -21,7 +20,6 @@
 .end-el-group-btns {
     width: 100%; 
     display: flex;
-    -js-display: flex;
     flex-wrap: wrap;
 }
  
@@ -51,7 +49,6 @@
     }
 
     position: relative;
-    box-sizing: border-box;
     padding: $padding-button;
     text-decoration: none;
     zoom: 1;
@@ -64,6 +61,7 @@
     opacity: 1;
     font-size: $font-size-base - .1;
     display: inline-block;
+    line-height: $line-height-base;
     &:not(.meg-el-btn--o) {
         border: 1px solid transparent;
     }

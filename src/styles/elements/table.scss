@@ -11,8 +11,12 @@
     }
     > thead {
         text-align: left;
-        vertical-align: bottom;
-        background-color: $color-lt-bg-light;
+        vertical-align: bottom;    
+    }
+    &:not(.meg-el-table--lighted) {
+        > thead {
+            background-color: $color-lt-bg-light;
+        }
     }
     tr {
         border-bottom: 1px solid $color-border;
@@ -35,7 +39,7 @@
     }
     &--lighted {
         thead {
-            background: transparent !important;
+            background: transparent;
         }
     }
 }

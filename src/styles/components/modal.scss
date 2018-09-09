@@ -50,12 +50,10 @@
         z-index: 5;
         border-radius: $border_radius_primary;
         overflow: hidden;
-        box-sizing: border-box;
         .meg-c-modal__header,
         .meg-c-modal__body,
         .meg-c-modal__footer {
             padding: 20px;
-            box-sizing: border-box;
         }
         .meg-c-modal__body {
             max-height: 350px;

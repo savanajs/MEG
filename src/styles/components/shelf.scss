@@ -1,7 +1,6 @@
 .meg-li-shelf {
     &.meg-li-shelf--inline {
         display: flex;
-        -js-display: flex;
         flex-wrap: wrap;
         &.meg-li-shelf--no-margin-left-item-1:nth-child(1n + 0) {
             margin-left: 0px;
@@ -12,7 +11,6 @@
             margin-left: 0px;
         }
         > .meg-li-shelf__item {
-            box-sizing: border-box;
             flex: 0 0 auto;
             color: $color-font;
 
@@ -31,8 +29,7 @@
         display: block;
         > .meg-li-shelf__item {
             width: 100%;
-            display: flex;
-            -js-display: flex;
+            display: flex;            
             align-items: center;
             > .meg-li-shelf__figure,
             > .meg-li-shelf__actions {
@@ -47,7 +44,6 @@
     }
     > .meg-li-shelf__item {
         padding: 10px;
-        box-sizing: border-box;
         > .meg-li-shelf__infos {
             > .meg-li-shelf__title {
                 margin-bottom: 10px;

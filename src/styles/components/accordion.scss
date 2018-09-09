@@ -8,7 +8,6 @@
             cursor: pointer;
             font-size: 1.4rem;
             padding: 10px 20px;
-            box-sizing: border-box;
             border: 1px solid transparent;
             display: block;
             background-color: $layout-secondary;
@@ -30,7 +29,6 @@
         visibility: hidden;
         padding: 20px;
         width: 100%;
-        box-sizing: border-box;
         z-index: 1;
         display: none;
     }
