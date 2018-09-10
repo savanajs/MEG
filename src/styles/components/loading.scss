@@ -146,7 +146,7 @@
     content: "";
     top: 0;
     left: 0;
-    background: url("../img/meg-before-loading.gif") no-repeat center center $layout-primary;
+    background: url($image-gif-loading-primary) no-repeat center center $layout-primary;
     position: fixed;
     width: 100%;
     height: 100%;

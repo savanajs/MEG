@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="25.621605mm"
+   width="10.653175mm"
    height="10.653175mm"
-   viewBox="0 0 25.621605 10.653175"
+   viewBox="0 0 10.653175 10.653175"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="logo-meg.svg">
+   sodipodi:docname="logo-mobile.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -27,7 +27,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
      inkscape:cx="101.84375"
-     inkscape:cy="-6.4951638"
+     inkscape:cy="-6.4951648"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -45,7 +45,7 @@
      fit-margin-right="0"
      fit-margin-bottom="0">
     <sodipodi:guide
-       position="14.043664,2.8366735"
+       position="14.043664,2.8366732"
        orientation="0,1"
        id="guide856"
        inkscape:locked="false" />
@@ -73,18 +73,6 @@
        cx="40.845051"
        cy="79.583366"
        r="5.3265877" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.63202858px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16580072"
-       x="50.240345"
-       y="78.474251"
-       id="text830"
-       transform="scale(0.95623494,1.0457681)"><tspan
-         sodipodi:role="line"
-         id="tspan828"
-         x="50.240345"
-         y="78.474251"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.16580072">MEG</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"

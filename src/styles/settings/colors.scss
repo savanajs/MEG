@@ -1,7 +1,13 @@
 // Images
-$logo: "";
+$logo: "../img/logo.svg";
+$logo-mobile: "../img/logo-mobile.svg";
+$logo-width: 100px;
+$logo-height: 40px;
+$logo-mobile-width: 50px;
+$logo-mobile-height: 40px;
 $image-gif-loading-primary: "../img/meg-before-loading.gif";
 $image-gif-loading-secondary: "../img/meg-loading-bar.gif";
+$image-gif-loading-tertiary: "../img/meg-loader-small.gif";
 
 // Colors
 $primary: #00cc99;

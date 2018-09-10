@@ -11,11 +11,30 @@
 }
 
 // Device (Tablet)
+@media (min-width: $responsive-tablet) {
+
+    .meg-lt-header {
+        .meg-lt-logo {
+            .meg-lt-logo__link {
+                background: url($logo) no-repeat left center;
+                width: $logo-width;
+                height: $logo-height;
+            }
+        }
+    }
+
+}
+
+// Device (Tablet)
 @media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
 
     .meg-lt-header {
         .meg-lt-logo {
-            width: 200px;
+            .meg-lt-logo__link {
+                background: url($logo) no-repeat left center;
+                width: $logo-width;
+                height: $logo-height;
+            }
         }
     }
 
@@ -26,8 +45,11 @@
 
     .meg-lt-header {
         .meg-lt-logo {
-            width: 140px;
-            margin: 0 auto;
+            .meg-lt-logo__link {
+                background: url($logo-mobile) no-repeat left center;
+                width: $logo-mobile-width;
+                height: $logo-mobile-height;
+            }
         }
     }
 

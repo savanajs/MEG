@@ -26,7 +26,7 @@
     height: 30px;
     content: counter(step);
     counter-increment: step;
-    line-height: $line-height-base;
+    line-height: 29px;
     border: 2px solid lighten($color-font, 40%);
     display: block;
     text-align: center;
@@ -77,13 +77,14 @@
 
 .meg-c-progress li {
     list-style: none;
-    line-height: 2; 
     background-color: darken($layout-tertiary, 5%);
     margin: 0 20px 0px 0; 
     padding: 4.5px 0px 4.5px 4px; 
     position: relative;
     display: inline-block;
     color: $color-font;
+    font-size: 15px;
+    height: 31px;
 }
 
 .meg-c-progress li::before {
@@ -153,11 +154,6 @@
     
 .meg-c-progress li.is-active::after {
     border-color: transparent $primary;
-}
-
-.meg-c-progress li {
-    font-size: 15px;
-    line-height: 24px;
 }
 
 .meg-c-progress li a {

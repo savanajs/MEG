@@ -1,6 +1,6 @@
 import Prism from "prismjs";
 import "prismjs/components/prism-sass";
-import "prismjs/themes/prism-coy.css";
+import "prismjs/themes/prism-okaidia.css";
 
 Prism.highlightAll();
 

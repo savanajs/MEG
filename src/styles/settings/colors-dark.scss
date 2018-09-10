@@ -1,15 +1,18 @@
 // Images
-
-$logo: "";
-$image-gif-loading-primary: "../img/meg-before-loading-white.gif";
-$image-gif-loading-secondary: "../img/meg-loading-bar.gif";
+$logo: "../img/logo-dark.svg";
+$logo-mobile: "../img/logo-mobile.svg";
+$logo-width: 100px;
+$logo-height: 40px;
+$logo-mobile-width: 50px;
+$logo-mobile-height: 40px;
+$image-gif-loading-primary: "../img/meg-before-loading-dark.gif";
+$image-gif-loading-secondary: "../img/meg-loading-bar-dark.gif";
+$image-gif-loading-tertiary: "../img/meg-loader-small-dark.gif";
 
 // Colors
-
 $dark-primary: #212121;
 $dark-secondary: #2a2a2b;
 $dark-tertiary: #343435;
-
 $primary: #00cc99;
 $secondary: #f69311;
 $tertiary: #4996c5;

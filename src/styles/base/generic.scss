@@ -122,6 +122,10 @@ fieldset {
     border: none;
 }
 
-p:not(.meg-lt--sub-heading) {
+p:not(.meg-lt--sub-heading):not(.meg-no-margin-bottom) {
     margin-bottom: 10px;
+}
+
+p.meg-no-margin-bottom {
+    margin-bottom: 0px;
 }

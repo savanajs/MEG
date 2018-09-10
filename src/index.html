@@ -18,16 +18,6 @@
             overflow-x: hidden;
         }
 
-        pre[class*="language-"]:before, pre[class*="language-"]:after,
-        :not(pre) > code[class*="language-"]:after, pre[class*="language-"]:after {
-            display: none!important;
-        }
-
-        pre[class*="language-"] > code {
-            border-left-color: #00cc99!important;
-            box-shadow: -1px 0px 0px 0px #00cc99, 0px 0px 0px 1px #dfdfdf!important;
-        }
-
         .presentation .meg-el-heading {
             text-shadow: 5px 4px 0 rgba(0,0,0,0.15);
         }
@@ -99,24 +89,10 @@ MEG is an open source HTML, CSS and JS development kit based on Flexbox. <br />D
 
                         <article role="article" class="meg-lt-article content">
 
-                            <div class="meg-lt-section__header meg-u-margin-top-x">
+                            <div class="meg-lt-section__content meg-u-margin-top-x">
 
                                 <hgroup class="meg-el-hgroup">
-                                    <h2 id="get-started" class="meg-el-heading meg-el-heading--1">
-                                        MEG CSS Framework
-                                    </h2>
-                                    <p class="meg-lt--sub-heading">
-                                        
-MEG is an open source HTML, CSS and JS development kit based on Flexbox. Developed with variables, mixins, Sass, responsive grid system for building layouts for ecommerce.
-                                    </p>
-                                </hgroup>
-
-                            </div>
-
-                            <div class="meg-lt-section__content">
-
-                                <hgroup class="meg-el-hgroup">
-                                    <h2 id="why-use" class="meg-el-heading meg-el-heading--3">
+                                    <h2 id="why-use" class="meg-el-heading meg-el-heading--1">
                                         Why use?
                                     </h2>
                                     <div class="meg-el-list-normal__lists">
@@ -157,7 +133,7 @@ MEG is an open source HTML, CSS and JS development kit based on Flexbox. Develop
 
                             </div>
 
-                            <div class="meg-lt-section__content">
+                            <div class="meg-lt-section__content meg-u-margin-top-xx">
 
                                 <hgroup class="meg-el-hgroup">
                                     <h2 id="template-exemple" class="meg-el-heading meg-el-heading--3">
@@ -173,7 +149,7 @@ MEG is an open source HTML, CSS and JS development kit based on Flexbox. Develop
 
                             </div>
 
-                            <div class="meg-lt-section__content">
+                            <div class="meg-lt-section__content meg-u-margin-top-xx">
 
                                 <hgroup class="meg-el-hgroup">
                                     <h2 id="instalation" class="meg-el-heading meg-el-heading--3">
@@ -272,6 +248,7 @@ MEG is an open source HTML, CSS and JS development kit based on Flexbox. Develop
                                 
                                 <div>
                                     <ul>
+                                        <li>Clone the project in github directory</li>
                                         <li>npm install</li>
                                         <li>npm start</li>
                                         <li>Access: <a href="http://localhost:3000" title="localhost:3000">localhost:3000</a></li>
@@ -443,9 +420,15 @@ MEG is an open source HTML, CSS and JS development kit based on Flexbox. Develop
 <pre class="meg-s-is-hidden-sm language-sass">
     <code class="language-sass">
 // Images
-$logo: "";
+$logo: "../img/logo.svg";
+$logo-mobile: "../img/logo-mobile.svg";
+$logo-width: 100px;
+$logo-height: 40px;
+$logo-mobile-width: 50px;
+$logo-mobile-height: 40px;
 $image-gif-loading-primary: "../img/meg-before-loading.gif";
 $image-gif-loading-secondary: "../img/meg-loading-bar.gif";
+$image-gif-loading-tertiary: "../img/meg-loader-small.gif";
 
 // Colors
 $primary: #00cc99;
@@ -495,7 +478,7 @@ $color-lt-bg-bar: $primary;
 $color-lt-bg-light: $layout-tertiary;
 $color-lt-bg-content: $layout-secondary;
 $color-lt-bg-content-placeholder-primary: darken($layout-tertiary, 5%);
-$color-lt-bg-content-placeholder-secondary: $layout-tertiary;
+$color-lt-bg-content-placeholder-secondary: $layout-tertiary;         
     </code>
 </pre>
                                 </div>
@@ -533,6 +516,7 @@ $border_radius_input: 10px;
 $border_radius_button: 10px;
 $margin-bottom-field: 20px;
 $border-size: 1px;
+$padding-input: .5em .6em;
 
 // Padding
 $padding-top: 10px;
@@ -6300,14 +6284,14 @@ $responsive-desktop: 5000px; // Desktop only
 
                                                 <div class="meg-lt-row">
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--6-lg meg-lt-col--6-md meg-lt-col--12-sm">
-                                                        <label for="id" class="meg-c-form__label">ID</label>
+                                                        <label for="id" class="meg-c-form__label meg-u-margin-bottom-x">ID</label>
                                                         <input id="id-1" type="email" placeholder="Your Email" class="meg-c-field meg-c-field--full" disabled />
                                                     </div>
                                                 </div>
 
                                                 <div class="meg-lt-row">
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--6-lg meg-lt-col--6-md meg-lt-col--12-sm">
-                                                        <label for="name" class="meg-c-form__label">Name
+                                                        <label for="name" class="meg-c-form__label meg-u-margin-bottom-x">Name
                                                             <span class="meg-c-text meg-c-text--cancel meg-c-form__required">*</span>
                                                         </label>
                                                         <input id="name-4" type="text" placeholder="Your name" class="meg-c-field meg-c-field--full" required="required" />
@@ -6317,14 +6301,14 @@ $responsive-desktop: 5000px; // Desktop only
 
                                                 <div class="meg-lt-row">
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--6-lg meg-lt-col--6-md meg-lt-col--12-sm">
-                                                        <label for="email" class="meg-c-form__label">Email Address</label>
+                                                        <label for="email" class="meg-c-form__label meg-u-margin-bottom-x">Email Address</label>
                                                         <input id="email-7" type="email" placeholder="Your Email" class="meg-c-field meg-c-field--full" />
                                                     </div>
                                                 </div>
 
                                                 <div class="meg-lt-row">
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--6-lg meg-lt-col--6-md meg-lt-col--12-sm">
-                                                        <label for="state" class="meg-c-form__label">State</label>
+                                                        <label for="state" class="meg-c-form__label meg-u-margin-bottom-x">State</label>
                                                         <div class="meg-c-field--select-fake">
                                                             <select id="state-2" class="meg-c-field meg-c-field--full">
                                                                 <option>AL</option>
@@ -6337,7 +6321,7 @@ $responsive-desktop: 5000px; // Desktop only
 
                                                 <div class="meg-lt-row">
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--6-lg meg-lt-col--6-md meg-lt-col--12-sm">
-                                                        <label for="state" class="meg-c-form__label">Message</label>
+                                                        <label for="state" class="meg-c-form__label meg-u-margin-bottom-x">Message</label>
                                                         <textarea placeholder="Textareas work too" class="meg-c-field meg-c-field--full"></textarea>
                                                     </div>
                                                 </div>
@@ -6392,7 +6376,7 @@ $responsive-desktop: 5000px; // Desktop only
 
                                                 <div class="meg-lt-row">
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--4-lg meg-lt-col--12-sm">
-                                                        <label for="name" class="meg-c-form__label">Name
+                                                        <label for="name" class="meg-c-form__label meg-u-margin-bottom-x">Name
                                                             <span class="meg-c-text meg-c-text--cancel meg-c-form__required">*</span>
                                                         </label>
                                                         <input id="name-5" type="text" placeholder="Your name" class="meg-c-field meg-c-field--full" required="required" />
@@ -6400,12 +6384,12 @@ $responsive-desktop: 5000px; // Desktop only
                                                     </div>
 
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--4-lg meg-lt-col--12-sm">
-                                                        <label for="email" class="meg-c-form__label">Email Address</label>
+                                                        <label for="email" class="meg-c-form__label meg-u-margin-bottom-x">Email Address</label>
                                                         <input id="email-8" type="email" placeholder="Your Email" class="meg-c-field meg-c-field--full" />
                                                     </div>
 
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--4-lg meg-lt-col--12-sm">
-                                                        <label for="state" class="meg-c-form__label">State</label>
+                                                        <label for="state" class="meg-c-form__label meg-u-margin-bottom-x">State</label>
                                                         <div class="meg-c-field--select-fake">
                                                             <select id="state-3" class="meg-c-field meg-c-field--full">
                                                                 <option>AL</option>
@@ -6418,7 +6402,7 @@ $responsive-desktop: 5000px; // Desktop only
 
                                                 <div class="meg-lt-row">
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--12-lg meg-lt-col--12-sm">
-                                                        <label for="state" class="meg-c-form__label">Message</label>
+                                                        <label for="state" class="meg-c-form__label meg-u-margin-bottom-x">Message</label>
                                                         <textarea placeholder="Textareas work too" class="meg-c-field meg-c-field--full"></textarea>
                                                     </div>
                                                 </div>

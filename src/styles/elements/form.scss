@@ -194,6 +194,11 @@
                 width: auto;
             }
         }
+
+        .meg-c-field + .meg-c-field__message {
+            display: block;
+            margin-top: 5px;
+        }
     }
     .meg-c-form__field:not(.meg-c-form__field--input-medium) {
         .meg-c-field {

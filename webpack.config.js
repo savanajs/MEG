@@ -32,7 +32,7 @@ function generateHtmlPlugins(templateDir) {
         return new HtmlWebpackPlugin({
             filename: `${name}.html`,
             template: resolvePath('src/' + name + '.html'),
-            favicon: './src/favicon.ico',
+            favicon: './src/favicon-store.ico',
             xhtml: true,
             hash: true,
             minify: pkg.minify.html,
@@ -165,7 +165,7 @@ module.exports = (env, options) => {
             }]
         },
         {
-            test: /\.(ttf|eot|woff|woff2|svg|otf)$/,
+            test: /\.(ttf|eot|woff|woff2|otf)$/,
             use: [
                 {
                     loader: 'file-loader',
