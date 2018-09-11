@@ -32,7 +32,7 @@ function generateHtmlPlugins(templateDir) {
         return new HtmlWebpackPlugin({
             filename: `${name}.html`,
             template: resolvePath('src/' + name + '.html'),
-            favicon: './src/favicon-store.ico',
+            favicon: './src/favicon.ico',
             xhtml: true,
             hash: true,
             minify: pkg.minify.html,
