@@ -145,20 +145,7 @@
 // Tablet
 @media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
 
-    .meg-o-store-setings {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        .meg-el-list--icon__item {
-            padding: 0px;
-        }
-    }
-
     .meg-o-open-menu {
-        top: 15px;
-        position: absolute;
-        right: 0px;
-        left: 20px;
         font-size: 2.5em;
     }
 
@@ -186,21 +173,7 @@
 // Mobile
 @media screen and (max-width: $responsive-mobile) {
 
-    .meg-o-store-setings {
-        position: absolute;
-        right: 10px;
-        top: 0px;
-        font-size: .7em;
-        .meg-el-list--icon__item {
-            padding: 0px;
-        }
-    }
-
     .meg-o-open-menu {
-        top: 15px;
-        position: absolute;
-        right: 0px;
-        left: 20px;
         font-size: 1.6em;
     }
 

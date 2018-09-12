@@ -124,7 +124,6 @@
             display: flex;
             align-items: center;
             .meg-el-list--icon {
-                font-size: 2.5em;
                 line-height: 1.3em;
             }
             .meg-el-list--info {
@@ -141,9 +140,6 @@
                 }
             }
         }
-    }
-    > .meg-el-list--icon__item + .meg-el-list--icon__item {
-        margin-left: 10px;
     }
 }
 
@@ -234,8 +230,15 @@
 // Device (Desktop)
 @media (min-width: $responsive-tablet) {
 
-    .meg-el-list--icon {
-        margin-right: 10px;
+    .meg-el-list--icon-desc {
+        > .meg-el-list--icon__item {
+            .meg-el-list--item__link {
+                .meg-el-list--icon {
+                    font-size: 2.5em;
+                    margin-right: 10px;
+                }
+            }
+        }
     }
 
 }
@@ -251,8 +254,14 @@
         flex-wrap: wrap;
     }
 
-    .meg-el-list--icon {
-        margin-right: 10px;
+    .meg-el-list--icon-desc {
+        > .meg-el-list--icon__item {
+            .meg-el-list--item__link {
+                .meg-el-list--icon {
+                    font-size: 2em;
+                }
+            }
+        }
     }
 
 }
@@ -280,6 +289,16 @@
 
     .meg-el-list-normal__list .meg-el-list-normal__item {
         margin-bottom: $margin-bottom;
+    }
+
+    .meg-el-list--icon-desc {
+        > .meg-el-list--icon__item {
+            .meg-el-list--item__link {
+                .meg-el-list--icon {
+                    font-size: 2em;
+                }
+            }
+        }
     }
 
 }
