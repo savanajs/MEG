@@ -1,4 +1,4 @@
-.meg-el-tags {
+.meg-c-tags {
     &--inline {
         margin-bottom: $margin-bottom;
         display: flex;
@@ -9,14 +9,14 @@
         align-content: stretch;
         align-items: center;
     }
-    &:not(.meg-el-tags--space-between) {
-        .meg-el-tag {
+    &:not(.meg-c-tags--space-between) {
+        .meg-c-tag {
             margin-right: $margin-bottom * 2;
         }
     }
 }
 
-.meg-el-tag {
+.meg-c-tag {
     @extend .meg-el-btn;
     
     cursor: default;
@@ -46,7 +46,7 @@
             margin-right: 10px;
             border-radius: 50%;
         }
-        .meg-el-tag__actions {
+        .meg-c-tag__actions {
             margin-left: 10px;
         }
     }

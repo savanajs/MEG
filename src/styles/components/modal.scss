@@ -48,7 +48,7 @@
         width: 80%;
         max-width: 600px;
         z-index: 5;
-        border-radius: $border_radius_primary;
+        border-radius: $border-radius-primary;
         overflow: hidden;
         .meg-c-modal__header,
         .meg-c-modal__body,
@@ -83,9 +83,12 @@
                 left: 0;
                 margin-left: 2%;
                 margin-right: 2%;
-                transform: initial !important;
+                transform: initial;
                 top: 10%;
             }
+        }
+        .meg-c-modal__dialog {
+            transition: none;
         }
     }
 }

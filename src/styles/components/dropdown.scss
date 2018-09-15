@@ -13,7 +13,7 @@
     display: none;
     margin-top: 10px;
     width: 300px;
-    border-radius: $border_radius_primary;
+    border-radius: $border-radius-primary;
     text-align: left;
     &:not(.meg-c-dropdown-box--right) {
         left: 0;
@@ -54,8 +54,7 @@
 
 @media screen and (max-width: $responsive-mobile) {
     .meg-c-dropdown-box {
-        width: 100% !important;
-        left: 0;
+        width: 100%;
     }
     .meg-c-box-notification {
         flex-wrap: wrap;

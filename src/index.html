@@ -49,7 +49,7 @@
     </style>
 </head>
 
-<body>
+<body class="meg-loader">
     ${require('./includes/config.html')}
     <div class="meg-lt-wrap">
 
@@ -511,7 +511,7 @@ $margin-left: 10px;
 $letter-spacing: .2px;
 
 // Form input
-$border_radius_primary: 10px;
+$border-radius-primary: 10px;
 $border_radius_input: 10px;
 $border_radius_button: 10px;
 $margin-bottom-field: 20px;
@@ -5845,7 +5845,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                             <i class="fa fa-envelope" aria-hidden="true"></i>
                                                         </span>
                                                         <input type="email" id="text-email-1" placeholder="Your email" class="meg-c-field" />
-                                                        <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Ok</button>
+                                                        <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-not-min-width">Ok</button>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -6251,11 +6251,11 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </span>
                                             <input class="meg-c-field meg-c-field--auto meg-c-field--search" type="search" name="search" placeholder="Search.." autocomplete="off" />
-                                            <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Search</button>
+                                            <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-not-min-width">Search</button>
                                         </div>
                                     </form>
                                     <!-- Medium -->
-                                    <form class="meg-c-form meg-u-margin-bottom-x">
+                                    <form class="meg-c-form meg-u-margin-bottom-x meg-s-is-hidden-sm">
                                         <div class="meg-c-form__field meg-c-form__field--group meg-c-form__field--action meg-c-form__field--input-medium">
                                             <span class="meg-c-form__icon meg-c-form__icon--join-field">
                                                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -6265,7 +6265,7 @@ $responsive-desktop: 5000px; // Desktop only
                                         </div>
                                     </form>
                                     <!-- Large -->
-                                    <form class="meg-c-form meg-u-margin-bottom-x">
+                                    <form class="meg-c-form meg-u-margin-bottom-x meg-s-is-hidden-sm">
                                         <div class="meg-c-form__field meg-c-form__field--group meg-c-form__field--action meg-c-form__field--input-large">
                                             <span class="meg-c-form__icon meg-c-form__icon--join-field">
                                                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -6603,10 +6603,57 @@ $responsive-desktop: 5000px; // Desktop only
 
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
-                                        <a role="button" class="meg-el-btn meg-c-tooltip meg-c-tooltip--top" href="#" aria-label="Tooltip top" title="Top">Top</a>
-                                        <a role="button" class="meg-el-btn meg-c-tooltip meg-c-tooltip--right" href="#" aria-label="Tooltip right" title="Right">Right</a>
-                                        <button role="button" class="meg-el-btn meg-c-tooltip meg-c-tooltip--bottom" aria-label="Tooltip bottom">Bottom</button>
-                                        <button role="button" class="meg-el-btn meg-c-tooltip meg-c-tooltip--left" aria-label="Tooltip left">Left</button>
+                                        <a role="button" class="meg-el-btn meg-c-tooltip" href="#" aria-label="Tooltip top" title="Top">
+                                            Top 
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--top">
+                                                Tooltip exemple top
+                                            </span>
+                                        </a>
+                                        <a role="button" class="meg-el-btn meg-c-tooltip" href="#" aria-label="Tooltip top" title="Top">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--bottom">
+                                                Tooltip exemple bottom
+                                            </span>
+                                        </a>
+                                        <button role="button" class="meg-el-btn meg-c-tooltip" aria-label="Tooltip bottom">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--top">
+                                                Tooltip exemple top
+                                            </span>
+                                        </button>
+                                        <button role="button" class="meg-el-btn meg-c-tooltip" aria-label="Tooltip bottom">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--bottom">
+                                                Tooltip exemple bottom
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <br /><br /><br /><br />
+                                    <div class="end-el-wrap-btns">
+                                        <a role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" href="#" aria-label="Tooltip top" title="Top">
+                                            Top 
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--top">
+                                                Tooltip exemple top
+                                            </span>
+                                        </a>
+                                        <a role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" href="#" aria-label="Tooltip top" title="Top">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--bottom">
+                                                Tooltip exemple bottom
+                                            </span>
+                                        </a>
+                                        <button role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" aria-label="Tooltip bottom">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--top">
+                                                Tooltip exemple top
+                                            </span>
+                                        </button>
+                                        <button role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" aria-label="Tooltip bottom">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--bottom">
+                                                Tooltip exemple <br />bottom
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
 
@@ -6631,7 +6678,7 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <span class="meg-el-tag meg-el-tag--default">Default</span>
+                                    <span class="meg-c-tag meg-c-tag--default">Default</span>
                                 </div>
 
                             </div>
@@ -6655,10 +6702,10 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <div class="meg-el-tags meg-el-tags--inline">
-                                        <span class="meg-el-tag meg-u-bg-primary meg-u-color-white">Small</span>
-                                        <span class="meg-el-tag meg-el-tag--medium meg-u-bg-primary meg-u-color-white">Medium</span>
-                                        <span class="meg-el-tag meg-el-tag--large meg-u-bg-primary meg-u-color-white">Large</span>
+                                    <div class="meg-c-tags meg-c-tags--inline">
+                                        <span class="meg-c-tag meg-u-bg-primary meg-u-color-white">Small</span>
+                                        <span class="meg-c-tag meg-c-tag--medium meg-u-bg-primary meg-u-color-white">Medium</span>
+                                        <span class="meg-c-tag meg-c-tag--large meg-u-bg-primary meg-u-color-white">Large</span>
                                     </div>
                                 </div>
 
@@ -6683,17 +6730,17 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <div class="meg-el-tags meg-el-tags--inline">
-                                        <span class="meg-el-tag meg-u-bg-primary meg-u-color-white">Primary</span>
-                                        <span class="meg-el-tag meg-u-bg-secondary meg-u-color-white">Secondary</span>
-                                        <span class="meg-el-tag meg-u-bg-tertiary meg-u-color-white">Terniary</span>
-                                        <span class="meg-el-tag meg-u-bg-quaternary meg-u-color-white">Quaternary</span>
-                                        <span class="meg-el-tag meg-u-bg-success meg-u-color-white">Success</span>
-                                        <span class="meg-el-tag meg-u-bg-cancel meg-u-color-white">Cancel</span>
-                                        <span class="meg-el-tag meg-u-bg-info meg-u-color-white">Info</span>
-                                        <span class="meg-el-tag meg-u-bg-warning meg-u-color-white">Warning</span>
-                                        <span class="meg-el-tag meg-u-bg-white meg-u-color-black">White</span>
-                                        <span class="meg-el-tag meg-u-bg-black meg-u-color-white">Black</span>
+                                    <div class="meg-c-tags meg-c-tags--inline">
+                                        <span class="meg-c-tag meg-u-bg-primary meg-u-color-white">Primary</span>
+                                        <span class="meg-c-tag meg-u-bg-secondary meg-u-color-white">Secondary</span>
+                                        <span class="meg-c-tag meg-u-bg-tertiary meg-u-color-white">Terniary</span>
+                                        <span class="meg-c-tag meg-u-bg-quaternary meg-u-color-white">Quaternary</span>
+                                        <span class="meg-c-tag meg-u-bg-success meg-u-color-white">Success</span>
+                                        <span class="meg-c-tag meg-u-bg-cancel meg-u-color-white">Cancel</span>
+                                        <span class="meg-c-tag meg-u-bg-info meg-u-color-white">Info</span>
+                                        <span class="meg-c-tag meg-u-bg-warning meg-u-color-white">Warning</span>
+                                        <span class="meg-c-tag meg-u-bg-white meg-u-color-black">White</span>
+                                        <span class="meg-c-tag meg-u-bg-black meg-u-color-white">Black</span>
                                     </div>
                                 </div>
 
@@ -6718,41 +6765,41 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <div class="meg-el-tags meg-el-tags--inline">
-                                        <span class="meg-el-tag meg-el-tag--actions meg-u-bg-success meg-u-color-white meg-u-radius--50">
+                                    <div class="meg-c-tags meg-c-tags--inline">
+                                        <span class="meg-c-tag meg-c-tag--actions meg-u-bg-success meg-u-color-white meg-u-radius--50">
                                             <img class="meg-el-image meg-c-actions__image" src="https://via.placeholder.com/20x20" alt="Image" />
-                                            <span class="meg-el-tag__content">
+                                            <span class="meg-c-tag__content">
                                                 <a href="#" class="meg-el-link meg-u-color-white" title="Normal">
                                                     Normal
                                                 </a>
                                             </span>
-                                            <span class="meg-el-tag__actions">
+                                            <span class="meg-c-tag__actions">
                                                 <a href="#" class="meg-el-link meg-u-color-white" title="Close">
                                                     <i class="fa fa-times-circle" aria-hidden="true"></i>
                                                 </a>
                                             </span>
                                         </span>
-                                        <span class="meg-el-tag meg-el-tag--actions meg-u-bg-cancel meg-u-color-white meg-el-tag--medium meg-u-radius--50">
+                                        <span class="meg-c-tag meg-c-tag--actions meg-u-bg-cancel meg-u-color-white meg-c-tag--medium meg-u-radius--50">
                                             <img class="meg-el-image meg-c-actions__image" src="https://via.placeholder.com/25x25" alt="Image" />
-                                            <span class="meg-el-tag__content">
+                                            <span class="meg-c-tag__content">
                                                 <a href="#" class="meg-el-link meg-u-color-white" title="Normal">
                                                     Medium
                                                 </a>
                                             </span>
-                                            <span class="meg-el-tag__actions">
+                                            <span class="meg-c-tag__actions">
                                                 <a href="#" class="meg-el-link meg-u-color-white" title="Close">
                                                     <i class="fa fa-times-circle" aria-hidden="true"></i>
                                                 </a>
                                             </span>
                                         </span>
-                                        <span class="meg-el-tag meg-el-tag--actions meg-u-bg-warning meg-u-color-white meg-el-tag--large meg-u-radius--50">
+                                        <span class="meg-c-tag meg-c-tag--actions meg-u-bg-warning meg-u-color-white meg-c-tag--large meg-u-radius--50">
                                             <img class="meg-el-image meg-c-actions__image" src="https://via.placeholder.com/50x50" alt="Image" />
-                                            <span class="meg-el-tag__content">
+                                            <span class="meg-c-tag__content">
                                                 <a href="#" class="meg-el-link meg-u-color-white" title="Normal">
                                                     Large
                                                 </a>
                                             </span>
-                                            <span class="meg-el-tag__actions">
+                                            <span class="meg-c-tag__actions">
                                                 <a href="#" class="meg-el-link meg-u-color-white" title="Close">
                                                     <i class="fa fa-times-circle" aria-hidden="true"></i>
                                                 </a>
@@ -7510,7 +7557,7 @@ meg.loading().hideBeforeLoading();
                                                     <div class="meg-lt-col meg-lt-col--10-lg meg-lt-col--10-md meg-lt-col--10-sm meg-no-margin-bottom">
                                                         <span>Logo</span>
                                                     </div>
-                                                    <div class="meg-lt-col meg-lt-col--1-lg meg-lt-col--1-md meg-lt-col--1-sm meg-no-margin-bottom meg-u-align-right">
+                                                    <div class="meg-lt-col meg-lt-col--1-lg meg-lt-col--1-md meg-lt-col--1-sm meg-no-margin-bottom meg-u-align-right meg-u-text-right">
                                                         <label for="meg-c-slidebox__filter" class="meg-c-slidebox__label">
                                                             <i class="fa fa-filter" aria-hidden="true"></i>
                                                         </label>

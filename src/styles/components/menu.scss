@@ -9,48 +9,18 @@ body:not(.meg-js-visibled) .meg-lt-nav {
 // Desktop 
 @media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
     .meg-lt-nav {
-        &--transparent {
-            .meg-c-menu {
-                .meg-c-menu__item {
-                    text-align: left;
-                    > .meg-el-item__link {
-                        color: rgba(255, 255, 255, .9) !important;
-                        &:hover {
-                            border-bottom-color: #fff;
-                            color: #fff;
-                        }
-                    }
-                    > .meg-c-menu__label {
-                        color: rgba(255, 255, 255, .9);
-                    }
-                    &:hover {
-                        border-bottom-color: #fff;
-                        background: rgba(255, 255, 255, .1);
-                    }
-                }
-            }
-        }
         .meg-c-menu {
             .meg-c-menu__item {
-                > .meg-el-item__link {
-                    color: $color-font;
-                }
                 > .meg-c-menu__label {
-                    color: $color-font;
                     z-index: 2;
                     cursor: pointer;
                 }
                 &:hover,
                 &:active,
                 &:focus {
-                    > .meg-c-menu__label {
-                        color: #fff;
-                    }
                     .meg-c-item__megamenu {
                         display: block;
                     }
-
-                    border-bottom-color: $primary;
                 }
             }
         }

@@ -7,7 +7,7 @@ html {
     text-size-adjust: 100%;
 }
 
-body:not(.meg-js-visibled) {
+body.meg-loader:not(.meg-js-visibled) {
     transition: opacity .5s;
     opacity: 0;
     background: url($image-gif-loading-primary) no-repeat center center $layout-primary;

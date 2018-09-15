@@ -1,13 +1,3 @@
-/*
-Camada responsável pela maior especificidade de todas, 
-inclusive aqui é plausível o uso de !important
-
-Estado é um Modificador
-Estilos de "Estado" em SMACSS servem para ​incrementar/sobrescrever outros estilos.
-- Pode subscreever estilo de elementos
-- Por conversão é utilizado o prefixo is-
-*/
-
 .meg-s-is-hidden {
     display: none;
 }

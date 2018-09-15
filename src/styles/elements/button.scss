@@ -42,7 +42,7 @@
     } 
     &[data-state="disabled"] {
         opacity: .5;
-        pointer-events: none !important;
+        pointer-events: none;
     }
     &:focus {
         box-shadow: 0px 0px 10px rgba($color-font, .4);
@@ -69,6 +69,8 @@
         border-width: 1px;
         border-style: solid;
         background: transparent;
+    }
+    &--o:not([class*="meg-u-color"]) {
         color: $color-font-o;
     }
     &:hover,
@@ -97,8 +99,9 @@
     &--circle {
         line-height: $line-height-base;
     }
-    &:not(.meg-el-btn--circle) {
+    &:not(.meg-el-btn--circle):not(.meg-not-min-width) {
         border-radius: $border_radius_button;
+        min-width: 94px;
     }
 }
 
@@ -113,14 +116,14 @@
     }
     .meg-el-btn {
         border: 1px solid $color-font;
-        border-radius: 0px;
+        border-radius: 0px !important;
     }
     .meg-el-btn:first-child {
-        border-radius: 5px 0px 0px 5px;
+        border-radius: 5px 0px 0px 5px !important;
         border-right: none;
     }
     .meg-el-btn:last-child {
-        border-radius: 0px 5px 5px 0px;
+        border-radius: 0px 5px 5px 0px !important;
         border-left: none;
     }
     &--primary {

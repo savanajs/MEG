@@ -137,7 +137,7 @@
 }
 
 .meg-u-float-none {
-    float: none !important;
+    float: none;
 }
 
 .meg-u-flex {
@@ -380,7 +380,7 @@
 /* Text color */
 
 .meg-u-color {
-    color: $color-font !important;
+    color: $color-font;
 }
 
 .meg-u-color-white {
@@ -391,19 +391,19 @@
 }
 
 .meg-u-color-black {
-    color: $black !important;
+    color: $black;
 }
 
 .meg-u-color-primary {
-    color: $primary !important;
+    color: $primary;
 }
 
 .meg-u-color-secondary {
-    color: $secondary !important;
+    color: $secondary;
 }
 
 .meg-u-color-tertiary {
-    color: $tertiary !important;
+    color: $tertiary;
 }
 
 .meg-u-color-quaternary {
@@ -411,23 +411,23 @@
 }
 
 .meg-u-color-success {
-    color: $success !important;
+    color: $success;
 }
 
 .meg-u-color-cancel {
-    color: $cancel !important;
+    color: $cancel;
 }
 
 .meg-u-color-warning {
-    color: $warning !important;
+    color: $warning;
 }
 
 .meg-u-color-info {
-    color: $info !important;
+    color: $info;
 }
 
 .meg-u-color-gray {
-    color: $gray !important;
+    color: $gray;
 }
 
 /* Margins */
@@ -951,16 +951,16 @@
         order: 2;
     }
     .meg-u-stick-lg {
-        position: sticky !important;
+        position: sticky;
     }
     .meg-u-relative-lg {
-        position: relative !important;
+        position: relative;
     }
     .meg-u-fixed-lg {
-        position: fixed !important;
+        position: fixed;
     }
     .meg-u-absolute-lg {
-        position: absolute !important;
+        position: absolute;
     }
 
     /* Alignment */
@@ -1138,16 +1138,16 @@
         order: 2;
     }
     .meg-u-stick-md {
-        position: sticky !important;
+        position: sticky;
     }
     .meg-u-relative-md {
-        position: relative !important;
+        position: relative;
     }
     .meg-u-fixed-md {
-        position: fixed !important;
+        position: fixed;
     }
     .meg-u-absolute-md {
-        position: absolute !important;
+        position: absolute;
     }
 
     /* Alignment */
@@ -1323,16 +1323,16 @@
         order: 2;
     }
     .meg-u-stick-sm {
-        position: sticky !important;
+        position: sticky;
     }
     .meg-u-relative-sm {
-        position: relative !important;
+        position: relative;
     }
     .meg-u-fixed-sm {
-        position: fixed !important;
+        position: fixed;
     }
     .meg-u-absolute-sm {
-        position: absolute !important;
+        position: absolute;
     }
 
     /* Alignment */

@@ -157,7 +157,7 @@
 .meg-loading {
     .meg-c-loader__overlay {
         &--open {
-            display: flex !important;
+            display: flex;
         }
     }
 }

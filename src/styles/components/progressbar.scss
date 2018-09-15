@@ -5,7 +5,7 @@
     overflow: hidden;
     @include border-radius(50px);
     .meg-c-progress-bar__inner {
-        text-align: center !important;
+        text-align: center;
         padding: 1px;
         color: rgba(255, 255, 255, .8);
         font-size: 1em;

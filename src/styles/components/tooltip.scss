@@ -1,111 +1,52 @@
 .meg-c-tooltip {
-    &::after {
-        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
-        content: attr(aria-label);
-        padding: 5px 10px;
+    position: relative;
+    .meg-c-tooltip__item {
+        position: absolute;
+        min-width: 140px;
+        color: #ffffff;
+        background: #000000;
+        line-height: 16px;
         text-align: center;
-        color: #fff;
-        background: #222;
-        border-radius: 4px;
-        text-shadow: 0 0 5px #000;
-        white-space: nowrap;
-        position: absolute;
-        z-index: 2;
         opacity: 0;
-        height: 22px;
-        overflow: hidden;
-        width: 0px;
-        font-weight: 100;
+        border-radius: $border-radius-primary;
+        transition: opacity .5s;
         font-size: 14px;
+        padding: 10px;
+        visibility: hidden;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            margin-left: -8px;
+            width: 0; height: 0;
+        }
+        &--top {
+            bottom: 110%;
+            left: 50%;
+            margin-left: -76px;
+            &::after {
+                bottom: -8px;
+                border-top: 8px solid #000000;
+                border-right: 8px solid transparent;
+                border-left: 8px solid transparent;
+            }
+        }
+        &--bottom {
+            top: 110%;
+            left: 50%;
+            margin-left: -76px;
+            &::after {
+                top: -8px;
+                border-bottom: 8px solid #000000;
+                border-right: 8px solid transparent;
+                border-left: 8px solid transparent;
+            }
+        }
     }
-    &:hover::after,
-    &:focus::after {
-        opacity: .85 !important;
-        width: auto;
-    }
-    &--top::after {
-        bottom: 130%;
-        left: 0;
-    }
-    &--right::after {
-        bottom: 95%;
-        margin-left: 12px;
-        left: 95%;
-        top: 0;
-        margin-top: 0px;
-    }
-    &--bottom::after {
-        bottom: 95%;
-        margin-left: 10px;
-        left: 0%;
-        top: 110%;
-        margin-top: 0px;
-    }
-    &--left::after {
-        bottom: 95%;
-        margin-left: 12px;
-        right: 120%;
-        top: 0;
-        margin-top: 0px;
-    }
-    &--top::before {
-        content: "";
-        display: block;
-        width: 0px;
-        height: 0px;
-        z-index: 3;
-        border-width: 6px;
-        border-style: solid;
-        border-color: #222 transparent transparent transparent;
-        opacity: 0;
-        position: absolute;
-        left: 15px;
-        margin-top: -19px;
-    }
-    &--right::before {
-        content: "";
-        display: block;
-        width: 0px;
-        height: 0px;
-        z-index: 3;
-        border-width: 6px;
-        border-style: solid;
-        border-color: transparent #222 transparent transparent;
-        opacity: 0;
-        position: absolute;
-        top: 9px;
-        left: 95%;
-    }
-    &--bottom::before {
-        content: "";
-        display: block;
-        width: 0px;
-        height: 0px;
-        z-index: 3;
-        border-width: 6px;
-        border-style: solid;
-        border-color: transparent transparent #222 transparent;
-        opacity: 0;
-        position: absolute;
-        left: 35%;
-        top: 85%;
-    }
-    &--left::before {
-        content: "";
-        display: block;
-        width: 0px;
-        height: 0px;
-        z-index: 3;
-        border-width: 6px;
-        border-style: solid;
-        border-color: transparent transparent transparent #222;
-        opacity: 0;
-        position: absolute;
-        right: 95%;
-        top: 10px;
-    }
-    &:hover::before,
-    &:focus::before {
-        opacity: .85 !important;
+    &:hover {
+        .meg-c-tooltip__item {
+            visibility: visible;
+            opacity: 0.9;
+        }
     }
 }

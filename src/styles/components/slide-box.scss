@@ -100,7 +100,7 @@ body:not(.meg-js-visibled) .meg-c-slidebox.meg-c-slidebox--left {
 .wrap-loader {
     .meg-c-slidebox__overlay,
     .meg-c-slidebox {
-        position: absolute !important;
+        position: absolute;
     }
 }
 
@@ -112,12 +112,12 @@ body:not(.meg-js-visibled) .meg-c-slidebox.meg-c-slidebox--left {
     }
 
     .meg-c-slidebox__content {
-        height: auto !important;
+        height: auto;
         overflow-y: none;
     }
 
     .meg-c-slidebox__footer {
-        position: relative !important;
+        position: relative;
     }
 
     .meg-c-slidebox .meg-c-slidebox__header {
