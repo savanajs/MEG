@@ -30,9 +30,6 @@
     &--medium {
         @extend .meg-el-btn--medium;
     }
-    &--large {
-        @extend .meg-el-btn--large;
-    }
     &--actions {
         margin-bottom: $margin-bottom;
         display: flex;

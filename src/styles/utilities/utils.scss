@@ -383,6 +383,10 @@
     color: $color-font;
 }
 
+.meg-u-color--lighten {
+    color: lighten($color-font, 40%);
+}
+
 .meg-u-color-white {
     color: $white;
     > a {

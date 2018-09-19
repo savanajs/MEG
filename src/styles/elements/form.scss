@@ -33,9 +33,6 @@
             width: auto;
             margin-right: 10px;
         }
-        > .meg-c-label__small {
-            font-size: .9em;
-        }
         > .meg-c-form__label__small {
             display: block;
             color: lighten($color-font, 30%);
@@ -97,7 +94,6 @@
     .meg-c-field {
         background-color: lighten($color-input, 5%);
         color: $color-input-text;
-        font-size: $font-size-base - .1;
         border: $border-size solid $color-input-border;
         &:required:invalid {
             background-image: url("../img/checked-disabled.png");
@@ -146,7 +142,8 @@
                 border-top-left-radius: $border_radius_input;
                 border-bottom-left-radius: $border_radius_input;
                 font-size: $font-size-base - .2;
-                line-height: $line-height-base;
+                display: flex;
+                align-items: center;
             }
             .meg-c-form__icon:not(.meg-c-form__icon--join-field) {
                 background-color: $color-input;
@@ -208,19 +205,11 @@
     .meg-c-form__field.meg-c-form__field--input-medium {
         .meg-c-field {
             padding: .6em .7em;
-            font-size: $font-size-base + .2;
-        }
-        .meg-el-btn {
-            font-size: $font-size-base + .1;
         }
     }
     .meg-c-form__field.meg-c-form__field--input-large {
         .meg-c-field {
             padding: .7em .6em;
-            font-size: $font-size-base + .3;
-        }
-        .meg-el-btn {
-            font-size: $font-size-base + .3;
         }
     }
     .meg-c-form__field.meg-c-form__field--input-medium,
@@ -269,14 +258,12 @@
         text-align: left;
         color: #fff;
         padding: 5px 5px 5px 5px;
-        font-size: $font-size-base - .3;
     }
     .meg-c-switch__input:not(:checked) + .meg-c-switch__label::before {
         content: attr(data-off);
         text-align: right;
         color: #fff;
         padding: 5px 5px 5px 5px;
-        font-size: $font-size-base - .3;
     }
     .meg-c-switch__input + .meg-c-switch__label::before {
         right: 1px;
@@ -313,7 +300,6 @@
         content: "\f078";
         display: inline-block;
         font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         position: absolute;
@@ -331,7 +317,6 @@ select.meg-c-field {
         content: "\f054";
         display: inline-block;
         font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
     }

@@ -5,10 +5,6 @@
     > i {
         margin-right: 5px;
     }
-    &--large {
-        font-size: 1.8em;
-        padding: $padding;
-    }
     &--success {
         background-color: $success;
         color: #fff;
@@ -32,7 +28,6 @@
 }
 
 .meg-c-text {
-    font-size: 1em;
     > i {
         margin-right: 5px;
     }

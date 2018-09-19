@@ -3,7 +3,6 @@
     list-style: none;
     .meg-c-breadcrumb__item {
         display: inline;
-        font-size: $font-size-base - .2;
         .meg-c-item__link {
             color: lighten($color-font, 10%);
             text-decoration: none;

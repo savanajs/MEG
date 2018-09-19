@@ -10,11 +10,6 @@
             top: 40%;
         }
     }
-    .meg-c-modal__header {
-        .meg-c-modal__header--title {
-            font-size: 1.6em;
-        }
-    }
     .meg-c-modal__wrap::before {
         content: '';
         display: none;
@@ -68,9 +63,10 @@
         cursor: pointer;
         font-size: 3rem;
         position: absolute;
-        top: 20px;
+        top: 35px;
         right: 20px;
         text-decoration: none;
+        line-height: 0px;
     }
 }
 

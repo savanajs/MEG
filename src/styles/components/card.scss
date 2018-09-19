@@ -73,9 +73,6 @@
         .meg-c-media__content {
             flex: 1 1 auto;
             width: auto;
-            .meg-el-content__title {
-                font-size: 1.4em;
-            }
             .meg-el-content__subtitle {
                 color: lighten($color-font, 30%);
             }
@@ -95,7 +92,6 @@
         }
     }
     .meg-c-content__time {
-        font-size: .9em;
         color: lighten($color-font, 50%);
     }
 }

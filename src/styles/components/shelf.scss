@@ -71,8 +71,7 @@
                 text-decoration: line-through;
             }
             > .meg-li-shelf__best-price {
-                font-size: 1.4em;
-                font-weight: 900;
+                font-weight: 600;
                 margin-bottom: 10px;
                 > span {
                     display: inline-block;
@@ -143,9 +142,6 @@
                     margin-bottom: 10px;
                 }
             }
-        }
-        .meg-li-shelf__best-price {
-            font-size: 1.5em !important;
         }
     }
 }

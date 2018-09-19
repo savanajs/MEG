@@ -22,14 +22,12 @@
                 display: block;
             }
             .md-c-list-item__sub-title {
-                font-size: .9em;
                 color: lighten($color-font, 20%);
             }
         }
         .md-c-list-item__actions {
             text-align: center;
             a {
-                font-size: 1.6em;
                 cursor: pointer;
             }
         }
