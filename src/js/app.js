@@ -1,5 +1,4 @@
 import "styles/meg";
-import "babel-polyfill";
 
 (function ($) {
 
@@ -179,14 +178,14 @@ import "babel-polyfill";
                               <div class="meg-c-modal__wrap" aria-hidden="true" role="dialog">
                                   <div class="meg-c-modal__overlay" for="meg-c-alert__1"></div>
                                   <div class="meg-c-modal__dialog meg-u-box-shadow">
-                                      <div class="meg-c-modal__header">
+                                      <div class="meg-c-modal__header meg-u-font-size-xx">
                                       <span class="meg-c-modal__header--title"></span>
                                       <a href="#" class="meg-c-modal__btn-close meg-js-modal--close" title="Close">×</a>
                                       </div>
                                       <div class="meg-c-modal__body">
                                       </div>
                                       <div class="meg-c-modal__footer">
-                                      <a href="#" title="Close" class="meg-el-btn meg-js-modal--close meg-el-btn--sized meg-el-btn--success meg-el-btn--medium">
+                                      <a href="#" title="Close" class="meg-el-btn meg-js-modal--close meg-el-btn--sized meg-u-color-white meg-u-bg-success">
                                           OK
                                       </a>
                                       </div>

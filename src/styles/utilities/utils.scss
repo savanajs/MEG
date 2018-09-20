@@ -272,10 +272,6 @@
     font-weight: bold;
 }
 
-.meg-u-bolder {
-    font-weight: bolder;
-}
-
 .meg-u-lighter {
     font-weight: lighter;
 }
@@ -383,7 +379,7 @@
     color: $color-font;
 }
 
-.meg-u-color--lighten {
+.meg-u-color-lighten {
     color: lighten($color-font, 40%);
 }
 
@@ -820,26 +816,18 @@
     height: 100%;
 }
 
-.meg-u-fullheight-vh {
+.meg-u-full-height-vh {
     height: 100vh;
+}
+
+.meg-u-full-height {
+    height: 100%;
 }
 
 /* Radius */
 
 .meg-u-radius--50 {
     border-radius: 50px;
-}
-
-.meg-u-radius--40 {
-    border-radius: 40px;
-}
-
-.meg-u-radius--30 {
-    border-radius: 30px;
-}
-
-.meg-u-radius--25 {
-    border-radius: 25px;
 }
 
 .meg-u-radius--20 {

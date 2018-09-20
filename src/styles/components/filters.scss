@@ -5,15 +5,14 @@
     .md-c-filters__block {
         margin-bottom: 10px;
         .md-c-filters__title {
-            font-size: 1.2em;
             padding: 10px 0px;
+            font-weight: 600;
         }
         .md-c-filters__checkboxes {
             .md-c-filters__checkbox {
                 display: block;
                 margin-top: 10px;
                 margin-bottom: 10px;
-                font-size: 1.1em;
                 position: relative;
                 cursor: pointer;
             }

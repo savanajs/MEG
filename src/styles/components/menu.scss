@@ -78,6 +78,10 @@ body:not(.meg-js-visibled) .meg-lt-nav {
                     z-index: 4;
                     border: 1px solid $color-border;
                     border-radius: $radius;
+                    font-size: .8em;
+                    .meg-el-list {
+                        margin-bottom: $margin-bottom;
+                    }
                 }
             }
         }
@@ -97,7 +101,6 @@ body:not(.meg-js-visibled) .meg-lt-nav {
                     display: block;
                     padding: 15px 0px 12px 15px;
                     text-decoration: none;
-                    font-size: 1.2em;
                     position: relative;
                     > i {
                         position: absolute;
@@ -123,6 +126,10 @@ body:not(.meg-js-visibled) .meg-lt-nav {
                     z-index: 4;
                     right: 1.6%;
                     margin-top: -46px;
+                    font-size: .8em;
+                    .meg-el-list {
+                        margin-bottom: $margin-bottom;
+                    }
                 }
                 &:hover {
                     background-color: $color-lt-bg-hover;

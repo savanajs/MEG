@@ -22,7 +22,7 @@
             background-color: $gray;
         }
         & + .meg-c-tab__painel {
-            margin-left: 5px;
+            margin-left: 1px;
         }
     }
     .meg-c-tab__contents {
@@ -30,7 +30,9 @@
             margin-right: 0px;
         }
     }
-    .meg-c-tab__nav:hover,
+    .meg-c-tab__nav:hover {
+        background-color: darken($gray, 5%);
+    }
     .meg-c-tab__nav.actived {
         background-color: $color-lt-bg-content;
         z-index: 1;

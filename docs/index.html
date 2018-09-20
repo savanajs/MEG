@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meg | Make more layouts, write less css</title>
-    <meta http-equiv="expires" content="Tue, 05 Jan 2019 12:12:12 GMT"><meta http-equiv="cache-control" content="public"><meta http-equiv="Pragma" content="public"><link rel="preload" as="font" href="fonts/RobotoCondensed-Regular.ttf" type="font/ttf" crossorigin>
+    
     <style>
         html {
             overflow-x: hidden;
@@ -47,15 +47,15 @@
         }
 
     </style>
-<link rel="shortcut icon" href="favicon.ico"><link href="meg.min.css?d52409fc31a36cf40a09" rel="stylesheet"></head>
+<link rel="shortcut icon" href="favicon.ico"><link href="meg.min.css?433ee6a567ae8d471bf9" rel="stylesheet"></head>
 
-<body>
+<body class="meg-loader">
     <div style="display:none">https://savanajs.github.io/MEG</div>
     <div class="meg-lt-wrap">
 
         <header class="meg-lt-header meg-u-align-items-center meg-u-no-bottom-margin meg-u-bg-light meg-u-border-bottom meg-u-absolute meg-u-position-top meg-u-bring-forward meg-u-width-full" role="banner" aria-label=""><div class="meg-lt-header__content"><div class="meg-lt-shell--flex"><div class="meg-lt-row meg-lt-row--no-margin-bottom meg-u-align-items-center meg-u-no-bottom-margin"><div class="meg-lt-col meg-lt-col--2-lg meg-lt-col--2-md meg-lt-col--2-sm meg-u-no-bottom-margin"><h4 class="meg-lt-logo meg-u-no-bottom-margin"><a href="https://savanajs.github.io/MEG" class="meg-lt-logo__link meg-js-redirect" title="MEG CSS Framework"></a></h4></div><div class="meg-lt-col meg-lt-col--7-lg meg-lt-col--8-md meg-lt-col--12-sm meg-u-no-bottom-margin meg-s-is-visible-lg"></div><div class="meg-lt-col meg-u-align-self-center meg-lt-col--1-lg meg-lt-col--8-md meg-lt-col--3-sm meg-u-no-bottom-margin"><div class="meg-lt-row meg-u-align-right"><form class="meg-c-form"><fieldset class="meg-c-form__fieldset"><div class="meg-c-form__switch"><input id="switch-tpl" class="meg-c-switch__input" type="checkbox" checked="checked"> <label class="meg-c-switch__label" data-on="ON" data-off="OFF" for="switch-tpl"></label></div></fieldset></form></div></div><div class="meg-lt-col meg-lt-col--2-lg meg-lt-col--2-md meg-lt-col--7-sm meg-u-no-bottom-margin meg-u-align-right"><a href="https://github.com/savanajs/MEG/archive/master.zip" class="meg-el-btn meg-u-box-shadow meg-el-btn--glass meg-el-btn--radius meg-u-bg-primary meg-u-color-white meg-el-btn--full-lg meg-el-btn--full-sm" title="Download"><i class="fa fa-download" aria-hidden="true"></i> <span class="meg-s-is-visible-lg">Download</span></a></div></div></div></div></header>
 
-        <div class="meg-u-bg-primary meg-u-fullheight-vh meg-lt-row meg-u-align-middle">
+        <div class="meg-u-bg-primary meg-u-full-height-vh meg-lt-row meg-u-align-middle">
             <div class="meg-lt-shell--flex">
                 <div class="presentation">
                     <hgroup class="meg-el-hgroup meg-u-text-center meg-u-color-white">
@@ -1206,6 +1206,18 @@ $responsive-desktop: 5000px; // Desktop only
                                                         </td>
                                                     </tr>
                                                     <tr>
+                                                        <th class="text-success meg-u-text-center">meg-u-bg-secondary</th>
+                                                        <td class="text-success meg-u-text-center">
+                                                            Background color secondary
+                                                        </td>
+                                                        <td class="text-success meg-u-text-center">
+                                                            nda
+                                                        </td>
+                                                        <td class="meg-u-bg-secondary meg-u-text-center">
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
                                                         <th class="text-success meg-u-text-center">meg-u-bg-tertiary</th>
                                                         <td class="text-success meg-u-text-center">
                                                             Background color tertiary
@@ -1377,6 +1389,12 @@ $responsive-desktop: 5000px; // Desktop only
                                                         </td>
                                                     </tr>
                                                     <tr>
+                                                        <th class="text-success meg-u-text-center meg-u-color-secondary">meg-u-color-secondary</th>
+                                                        <td class="text-success meg-u-text-center">
+                                                            Font color secondary
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
                                                         <th class="text-success meg-u-text-center meg-u-color-tertiary">meg-u-color-tertiary</th>
                                                         <td class="text-success meg-u-text-center">
                                                             Font color tertiary
@@ -1421,7 +1439,13 @@ $responsive-desktop: 5000px; // Desktop only
                                                     <tr>
                                                         <th class="text-success meg-u-text-center meg-u-color">meg-u-color</th>
                                                         <td class="text-success meg-u-text-center">
-                                                            Font color
+                                                            Font color default
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-success meg-u-text-center meg-u-color-lighten">meg-u-color-lighten</th>
+                                                        <td class="text-success meg-u-text-center">
+                                                            Font color default with 40% lighten
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1452,7 +1476,7 @@ $responsive-desktop: 5000px; // Desktop only
     
                                     <hgroup class="meg-el-hgroup">
                                         <h4 class="meg-el-heading meg-el-heading--5">
-                                            Size
+                                            Size of text
                                         </h4>
                                     </hgroup>
     
@@ -1699,20 +1723,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                 </tr>
                                                 <tr>
                                                     <th class="text-success meg-u-text-center">
-                                                        meg-u-bolder
-                                                    </th>
-                                                    <td class="text-success meg-u-text-center">
-                                                        Text bolder
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center">
-                                                        no
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center meg-u-bolder">
-                                                        Dog and cat
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-success meg-u-text-center">
                                                         meg-u-lighter
                                                     </th>
                                                     <td class="text-success meg-u-text-center">
@@ -1821,8 +1831,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <tr>
                                                     <th>Class</th>
                                                     <th>Description</th>
-                                                    <th>Is Responsivel?</th>
-                                                    <th></th>
+                                                    <th colspan="2">Is Responsivel?</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1834,9 +1843,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     <td class="text-success meg-u-text-center">
                                                         yes
                                                     </td>
-                                                    <td class="text-success meg-u-text-center meg-u-align-left">
-                                                        Dog and cat
-                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <th class="text-success meg-u-text-center">meg-u-align-center</th>
@@ -1846,9 +1852,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     <td class="text-success meg-u-text-center">
                                                         yes
                                                     </td>
-                                                    <td class="text-success meg-u-text-center meg-u-align-center">
-                                                        Dog and cat
-                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <th class="text-success meg-u-align-right">meg-u-align-right</th>
@@ -1857,9 +1860,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     </td>
                                                     <td class="text-success meg-u-text-center">
                                                         yes
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center meg-u-align-right">
-                                                        Dog and cat
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -1880,8 +1880,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <tr>
                                                     <th>Class</th>
                                                     <th>Description</th>
-                                                    <th>Is Responsivel?</th>
-                                                    <th></th>
+                                                    <th colspan="2">Is Responsivel?</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1893,9 +1892,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     <td class="text-success meg-u-text-center">
                                                         yes
                                                     </td>
-                                                    <td class="text-success meg-u-text-center meg-u-align-top">
-                                                        Dog and cat
-                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <th class="text-success meg-u-text-center">meg-u-align-middle</th>
@@ -1905,9 +1901,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     <td class="text-success meg-u-text-center">
                                                         yes
                                                     </td>
-                                                    <td class="text-success meg-u-text-center meg-u-align-middle">
-                                                        Dog and cat
-                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <th class="text-success meg-u-align-right">meg-u-align-bottom</th>
@@ -1916,9 +1909,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     </td>
                                                     <td class="text-success meg-u-text-center">
                                                         yes
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center meg-u-align-bottom">
-                                                        Dog and cat
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -1939,8 +1929,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <tr>
                                                     <th>Class</th>
                                                     <th>Description</th>
-                                                    <th>Is Responsivel?</th>
-                                                    <th></th>
+                                                    <th colspan="2">Is Responsivel?</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1952,9 +1941,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     <td class="text-success meg-u-text-center">
                                                         no
                                                     </td>
-                                                    <td class="text-success meg-u-text-center meg-u-align-self-auto">
-                                                        Dog and cat
-                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <th class="text-success meg-u-text-center">meg-u-align-self-center</th>
@@ -1963,9 +1949,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     </td>
                                                     <td class="text-success meg-u-text-center">
                                                         no
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center meg-u-align-self-center">
-                                                        Dog and cat
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1976,9 +1959,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     <td class="text-success meg-u-text-center">
                                                         no
                                                     </td>
-                                                    <td class="text-success meg-u-text-center meg-u-align-self-start">
-                                                        Dog and cat
-                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <th class="text-success meg-u-align-right">meg-u-align-self-end</th>
@@ -1987,9 +1967,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     </td>
                                                     <td class="text-success meg-u-text-center">
                                                         no
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center meg-u-align-self-end">
-                                                        Dog and cat
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -2004,6 +1981,7 @@ $responsive-desktop: 5000px; // Desktop only
                                         <h3 id="helpers--margins" class="meg-el-heading meg-el-heading--3">
                                             Margins
                                         </h3>
+                                        <p class="meg-lt--sub-heading">Margins for elements</p>
                                     </hgroup>
     
                                     <div class="preview">
@@ -2253,6 +2231,7 @@ $responsive-desktop: 5000px; // Desktop only
                                         <h3 id="helpers--paddings" class="meg-el-heading meg-el-heading--3">
                                             Paddings
                                         </h3>
+                                        <p class="meg-lt--sub-heading">Paddings for elements</p>
                                     </hgroup>
                                 
                                     <div class="preview">
@@ -2502,6 +2481,7 @@ $responsive-desktop: 5000px; // Desktop only
                                         <h3 id="helpers--position" class="meg-el-heading meg-el-heading--3">
                                             Position
                                         </h3>
+                                        <p class="meg-lt--sub-heading">Position for elements</p>
                                     </hgroup>
                                 
                                     <div class="preview">
@@ -2608,6 +2588,7 @@ $responsive-desktop: 5000px; // Desktop only
                                         <h3 id="helpers--display" class="meg-el-heading meg-el-heading--3">
                                             Display
                                         </h3>
+                                        <p class="meg-lt--sub-heading">Display for elements</p>
                                     </hgroup>
                                 
                                     <div class="preview">
@@ -2801,6 +2782,7 @@ $responsive-desktop: 5000px; // Desktop only
                                         <h3 id="helpers--border" class="meg-el-heading meg-el-heading--3">
                                             Border
                                         </h3>
+                                        <p class="meg-lt--sub-heading">Border for elements</p>
                                     </hgroup>
 
                                     <hgroup class="meg-el-hgroup">
@@ -3050,36 +3032,18 @@ $responsive-desktop: 5000px; // Desktop only
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th class="text-success meg-u-text-center">meg-c-field--25</th>
-                                                    <td class="text-success meg-u-text-center">
-                                                         Fields 25% size width
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center">
-                                                        no
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-success meg-u-text-center">meg-c-field--50</th>
-                                                    <td class="text-success meg-u-text-center">
-                                                         Fields 50% size width
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center">
-                                                        no
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-success meg-u-text-center">meg-c-field--75</th>
-                                                    <td class="text-success meg-u-text-center">
-                                                         Fields 75% size width
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center">
-                                                        no
-                                                    </td>
-                                                </tr>
-                                                <tr>
                                                     <th class="text-success meg-u-text-center">meg-c-field--full</th>
                                                     <td class="text-success meg-u-text-center">
                                                          Fields 100% size width
+                                                    </td>
+                                                    <td class="text-success meg-u-text-center">
+                                                        no
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-success meg-u-text-center">meg-c-field--auto</th>
+                                                    <td class="text-success meg-u-text-center">
+                                                         Fields auto size width
                                                     </td>
                                                     <td class="text-success meg-u-text-center">
                                                         no
@@ -3116,23 +3080,32 @@ $responsive-desktop: 5000px; // Desktop only
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th class="text-success meg-u-text-center">meg-u-order-first</th>
+                                                    <th class="text-success meg-u-text-center">meg-u-order-back</th>
                                                     <td class="text-success meg-u-text-center">
-                                                        Order first element (order: 1;)
+                                                        Order first element (order: -1;)
                                                     </td>
                                                     <td class="text-success meg-u-text-center">
-                                                        no
+                                                        Yes
                                                     </td>
                                                 </tr>   
                                                 <tr>
-                                                    <th class="text-success meg-u-text-center">meg-u-order-last</th>
+                                                    <th class="text-success meg-u-text-center">meg-u-order-first</th>
                                                     <td class="text-success meg-u-text-center">
-                                                        Order last element (order: -1;)
+                                                        Order last element (order: 1;)
                                                     </td>
                                                     <td class="text-success meg-u-text-center">
-                                                        no
+                                                        Yes
                                                     </td>
-                                                </tr>                                                                                           
+                                                </tr>  
+                                                <tr>
+                                                    <th class="text-success meg-u-text-center">meg-u-order-second</th>
+                                                    <td class="text-success meg-u-text-center">
+                                                        Order last element (order: 2;)
+                                                    </td>
+                                                    <td class="text-success meg-u-text-center">
+                                                        Yes
+                                                    </td>
+                                                </tr>                                                                                         
                                             </tbody>
                                         </table>
                                     </div>
@@ -3601,9 +3574,18 @@ $responsive-desktop: 5000px; // Desktop only
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="text-success meg-u-text-center">meg-u-fullheight-vh</th>
+                                                    <th class="text-success meg-u-text-center">meg-u-full-height-vh</th>
                                                     <td class="text-success meg-u-text-center">
                                                         Element with the height size of 100vh
+                                                    </td>
+                                                    <td class="text-success meg-u-text-center">
+                                                        no
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-success meg-u-text-center">meg-u-full-height</th>
+                                                    <td class="text-success meg-u-text-center">
+                                                        Element with the height size of 100%
                                                     </td>
                                                     <td class="text-success meg-u-text-center">
                                                         no
@@ -3644,42 +3626,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                         <span style="width: 50px; height: 50px;" class="meg-u-bg-primary meg-u-radius--50 meg-u-inline-block"></span>                                                   
                                                     </td>
                                                 </tr>   
-                                                <tr>
-                                                    <th class="text-success meg-u-text-center">meg-u-radius--40</th>
-                                                    <td class="text-success meg-u-text-center">
-                                                        Inserts a border on the 40px element
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center">
-                                                        no
-                                                    </td>
-                                                    <td class="meg-u-text-center"> 
-                                                        <span style="width: 50px; height: 50px;" class="meg-u-bg-primary meg-u-radius--40 meg-u-inline-block"></span>                                                   
-                                                    </td>
-                                                </tr> 
-                                                <tr>
-                                                    <th class="text-success meg-u-text-center">meg-u-radius--30</th>
-                                                    <td class="text-success meg-u-text-center">
-                                                        Inserts a border on the 30px element
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center">
-                                                        no
-                                                    </td>
-                                                    <td class="meg-u-text-center"> 
-                                                        <span style="width: 50px; height: 50px;" class="meg-u-bg-primary meg-u-radius--30 meg-u-inline-block"></span>                                                   
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-success meg-u-text-center">meg-u-radius--25</th>
-                                                    <td class="text-success meg-u-text-center">
-                                                        Inserts a border on the 25px element
-                                                    </td>
-                                                    <td class="text-success meg-u-text-center">
-                                                        no
-                                                    </td>
-                                                    <td class="meg-u-text-center"> 
-                                                        <span style="width: 50px; height: 50px;" class="meg-u-bg-primary meg-u-radius--25 meg-u-inline-block"></span>                                                   
-                                                    </td>
-                                                </tr>
                                                 <tr>
                                                     <th class="text-success meg-u-text-center">meg-u-radius--20</th>
                                                     <td class="text-success meg-u-text-center">
@@ -3918,31 +3864,31 @@ $responsive-desktop: 5000px; // Desktop only
                                         <h1 class="meg-el-heading meg-el-heading--1">
                                             Heading 1
                                         </h1>
-                                        <p class="meg-lt--sub-heading">Sub-title</p>
+                                        <p class="meg-lt--sub-heading meg-u-color-lighten">Sub-title</p>
                                     </hgroup>
                                     <hgroup class="meg-el-hgroup">
                                         <h2 class="meg-el-heading meg-el-heading--2">
                                             Heading 2
                                         </h2>
-                                        <p class="meg-lt--sub-heading">Sub-title</p>
+                                        <p class="meg-lt--sub-heading meg-u-color-lighten">Sub-title</p>
                                     </hgroup>
                                     <hgroup class="meg-el-hgroup">
                                         <h3 class="meg-el-heading meg-el-heading--3">
                                             Heading 3
                                         </h3>
-                                        <p class="meg-lt--sub-heading">Sub-title</p>
+                                        <p class="meg-lt--sub-heading meg-u-color-lighten">Sub-title</p>
                                     </hgroup>
                                     <hgroup class="meg-el-hgroup">
                                         <h4 class="meg-el-heading meg-el-heading--4">
                                             Heading 4
                                         </h4>
-                                        <p class="meg-lt--sub-heading">Sub-title</p>
+                                        <p class="meg-lt--sub-heading meg-u-color-lighten">Sub-title</p>
                                     </hgroup>
                                     <hgroup class="meg-el-hgroup">
                                         <h5 class="meg-el-heading meg-el-heading--5">
                                             Heading 5
                                         </h5>
-                                        <p class="meg-lt--sub-heading">Sub-title</p>
+                                        <p class="meg-lt--sub-heading meg-u-color-lighten">Sub-title</p>
                                     </hgroup>
                                 </div>
 
@@ -5153,7 +5099,7 @@ $responsive-desktop: 5000px; // Desktop only
                                             <li class="meg-el-list__item meg-el-list__item--avatar">
                                                 <div class="meg-el-item__content">
                                                     <span class="meg-el-content__title">Carlos Chavez</span>
-                                                    <span class="meg-el-content__subtitle">62 Episodes</span>
+                                                    <span class="meg-el-content__subtitle meg-u-color-lighten">62 Episodes</span>
                                                 </div>
                                                 <div class="meg-el-item__actions">
 
@@ -5165,7 +5111,7 @@ $responsive-desktop: 5000px; // Desktop only
                                             <li class="meg-el-list__item meg-el-list__item--avatar">
                                                 <div class="meg-el-item__content">
                                                     <span class="meg-el-content__title">Carlos Chavez</span>
-                                                    <span class="meg-el-content__subtitle">62 Episodes</span>
+                                                    <span class="meg-el-content__subtitle meg-u-color-lighten">62 Episodes</span>
                                                 </div>
                                                 <div class="meg-el-item__actions">
 
@@ -5210,7 +5156,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 </div>
                                                 <div class="meg-el-item__content">
                                                     <span class="meg-el-content__title">Carlos Chavez</span>
-                                                    <span class="meg-el-content__subtitle">62 Episodes</span>
+                                                    <span class="meg-el-content__subtitle meg-u-color-lighten">62 Episodes</span>
                                                 </div>
                                                 <div class="meg-el-item__actions">
 
@@ -5227,7 +5173,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 </div>
                                                 <div class="meg-el-item__content">
                                                     <span class="meg-el-content__title">Carlos Chavez</span>
-                                                    <span class="meg-el-content__subtitle">62 Episodes</span>
+                                                    <span class="meg-el-content__subtitle meg-u-color-lighten">62 Episodes</span>
                                                 </div>
                                                 <div class="meg-el-item__actions">
 
@@ -5244,7 +5190,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 </div>
                                                 <div class="meg-el-item__content">
                                                     <span class="meg-el-content__title">Carlos Chavez</span>
-                                                    <span class="meg-el-content__subtitle">62 Episodes</span>
+                                                    <span class="meg-el-content__subtitle meg-u-color-lighten">62 Episodes</span>
                                                 </div>
                                                 <div class="meg-el-item__actions">
 
@@ -5290,7 +5236,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <div class="meg-el-item__content">
                                                     <span class="meg-el-content__pretitle">Category</span>
                                                     <span class="meg-el-content__title">Carlos Chavez</span>
-                                                    <span class="meg-el-content__subtitle">62 Episodes</span>
+                                                    <span class="meg-el-content__subtitle meg-u-color-lighten">62 Episodes</span>
                                                 </div>
                                                 <div class="meg-el-item__actions">
 
@@ -5308,7 +5254,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <div class="meg-el-item__content">
                                                     <span class="meg-el-content__pretitle">Category</span>
                                                     <span class="meg-el-content__title">Carlos Chavez</span>
-                                                    <span class="meg-el-content__subtitle">62 Episodes</span>
+                                                    <span class="meg-el-content__subtitle meg-u-color-lighten">62 Episodes</span>
                                                 </div>
                                                 <div class="meg-el-item__actions">
 
@@ -5326,7 +5272,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <div class="meg-el-item__content">
                                                     <span class="meg-el-content__pretitle">Category</span>
                                                     <span class="meg-el-content__title">Carlos Chavez</span>
-                                                    <span class="meg-el-content__subtitle">62 Episodes</span>
+                                                    <span class="meg-el-content__subtitle meg-u-color-lighten">62 Episodes</span>
                                                 </div>
                                                 <div class="meg-el-item__actions">
 
@@ -5845,7 +5791,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                             <i class="fa fa-envelope" aria-hidden="true"></i>
                                                         </span>
                                                         <input type="email" id="text-email-1" placeholder="Your email" class="meg-c-field">
-                                                        <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Ok</button>
+                                                        <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-not-min-width">Ok</button>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -5880,7 +5826,7 @@ $responsive-desktop: 5000px; // Desktop only
                                             <fieldset class="meg-c-form__fieldset">
                                                 <div class="meg-lt-row">
                                                     <div class="meg-c-form__field meg-c-form__field--group meg-c-form__field--action meg-lt-col meg-lt-col--12-lg meg-lt-col--12-md meg-lt-col--12-sm">
-                                                        <input type="email" id="text-email-3" placeholder="Your email" class="meg-c-field">
+                                                        <input type="email" id="text-email-33" placeholder="Your email" class="meg-c-field">
                                                         <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Ok</button>
                                                     </div>
                                                 </div>
@@ -6250,28 +6196,28 @@ $responsive-desktop: 5000px; // Desktop only
                                             <span class="meg-c-form__icon meg-c-form__icon--join-field">
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </span>
-                                            <input class="meg-c-field meg-c-field--auto meg-c-field--search" type="search" name="search" placeholder="Search.." autocomplete="off">
-                                            <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Search</button>
+                                            <input class="meg-c-field meg-c-field--auto meg-c-field--search meg-u-font-size-x" type="search" name="search" placeholder="Search.." autocomplete="off">
+                                            <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-not-min-width">Search</button>
                                         </div>
                                     </form>
                                     <!-- Medium -->
-                                    <form class="meg-c-form meg-u-margin-bottom-x">
+                                    <form class="meg-c-form meg-u-margin-bottom-x meg-s-is-hidden-sm">
                                         <div class="meg-c-form__field meg-c-form__field--group meg-c-form__field--action meg-c-form__field--input-medium">
                                             <span class="meg-c-form__icon meg-c-form__icon--join-field">
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </span>
-                                            <input class="meg-c-field meg-c-field--auto meg-c-field--search" type="search" name="search" placeholder="Search.." autocomplete="off">
-                                            <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Search</button>
+                                            <input class="meg-c-field meg-c-field--auto meg-c-field--search meg-u-font-size-xx" type="search" name="search" placeholder="Search.." autocomplete="off">
+                                            <button role="button" type="submit" class="meg-el-btn meg-el-btn--medium meg-u-bg-primary meg-u-color-white">Search</button>
                                         </div>
                                     </form>
                                     <!-- Large -->
-                                    <form class="meg-c-form meg-u-margin-bottom-x">
+                                    <form class="meg-c-form meg-u-margin-bottom-x meg-s-is-hidden-sm">
                                         <div class="meg-c-form__field meg-c-form__field--group meg-c-form__field--action meg-c-form__field--input-large">
                                             <span class="meg-c-form__icon meg-c-form__icon--join-field">
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </span>
-                                            <input class="meg-c-field meg-c-field--auto meg-c-field--search" type="search" name="search" placeholder="Search.." autocomplete="off">
-                                            <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Search</button>
+                                            <input class="meg-c-field meg-c-field--auto meg-c-field--search meg-u-font-size-xxx" type="search" name="search" placeholder="Search.." autocomplete="off">
+                                            <button role="button" type="submit" class="meg-el-btn meg-el-btn--large meg-u-bg-primary meg-u-color-white">Search</button>
                                         </div>
                                     </form>
                                 </div>
@@ -6602,10 +6548,57 @@ $responsive-desktop: 5000px; // Desktop only
 
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
-                                        <a role="button" class="meg-el-btn meg-c-tooltip meg-c-tooltip--top" href="#" aria-label="Tooltip top" title="Top">Top</a>
-                                        <a role="button" class="meg-el-btn meg-c-tooltip meg-c-tooltip--right" href="#" aria-label="Tooltip right" title="Right">Right</a>
-                                        <button role="button" class="meg-el-btn meg-c-tooltip meg-c-tooltip--bottom" aria-label="Tooltip bottom">Bottom</button>
-                                        <button role="button" class="meg-el-btn meg-c-tooltip meg-c-tooltip--left" aria-label="Tooltip left">Left</button>
+                                        <a role="button" class="meg-el-btn meg-c-tooltip" href="#" aria-label="Tooltip top" title="Top">
+                                            Top 
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--top">
+                                                Tooltip exemple top
+                                            </span>
+                                        </a>
+                                        <a role="button" class="meg-el-btn meg-c-tooltip" href="#" aria-label="Tooltip top" title="Top">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--bottom">
+                                                Tooltip exemple bottom
+                                            </span>
+                                        </a>
+                                        <button role="button" class="meg-el-btn meg-c-tooltip" aria-label="Tooltip bottom">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--top">
+                                                Tooltip exemple top
+                                            </span>
+                                        </button>
+                                        <button role="button" class="meg-el-btn meg-c-tooltip" aria-label="Tooltip bottom">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--bottom">
+                                                Tooltip exemple bottom
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <br><br><br><br>
+                                    <div class="end-el-wrap-btns">
+                                        <a role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" href="#" aria-label="Tooltip top" title="Top">
+                                            Top 
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--top">
+                                                Tooltip exemple top
+                                            </span>
+                                        </a>
+                                        <a role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" href="#" aria-label="Tooltip top" title="Top">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--bottom">
+                                                Tooltip exemple bottom
+                                            </span>
+                                        </a>
+                                        <button role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" aria-label="Tooltip bottom">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--top">
+                                                Tooltip exemple top
+                                            </span>
+                                        </button>
+                                        <button role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" aria-label="Tooltip bottom">
+                                            Bottom
+                                            <span class="meg-c-tooltip__item meg-c-tooltip__item--bottom">
+                                                Tooltip exemple <br>bottom
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
 
@@ -6657,7 +6650,6 @@ $responsive-desktop: 5000px; // Desktop only
                                     <div class="meg-c-tags meg-c-tags--inline">
                                         <span class="meg-c-tag meg-u-bg-primary meg-u-color-white">Small</span>
                                         <span class="meg-c-tag meg-c-tag--medium meg-u-bg-primary meg-u-color-white">Medium</span>
-                                        <span class="meg-c-tag meg-c-tag--large meg-u-bg-primary meg-u-color-white">Large</span>
                                     </div>
                                 </div>
 
@@ -6736,19 +6728,6 @@ $responsive-desktop: 5000px; // Desktop only
                                             <span class="meg-c-tag__content">
                                                 <a href="#" class="meg-el-link meg-u-color-white" title="Normal">
                                                     Medium
-                                                </a>
-                                            </span>
-                                            <span class="meg-c-tag__actions">
-                                                <a href="#" class="meg-el-link meg-u-color-white" title="Close">
-                                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
-                                                </a>
-                                            </span>
-                                        </span>
-                                        <span class="meg-c-tag meg-c-tag--actions meg-u-bg-warning meg-u-color-white meg-c-tag--large meg-u-radius--50">
-                                            <img class="meg-el-image meg-c-actions__image" src="https://via.placeholder.com/50x50" alt="Image">
-                                            <span class="meg-c-tag__content">
-                                                <a href="#" class="meg-el-link meg-u-color-white" title="Normal">
-                                                    Large
                                                 </a>
                                             </span>
                                             <span class="meg-c-tag__actions">
@@ -6845,7 +6824,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                         
                                                             <div class="meg-c-form__field meg-c-form__field--group meg-c-form__field--action">
                                                                 <input type="email" id="text-email-3" placeholder="Search" class="meg-c-field meg-c-field--full">
-                                                                <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">
+                                                                <button role="button" type="submit" class="meg-el-btn meg-not-min-width meg-u-bg-primary meg-u-color-white">
                                                                     <i class="fa fa-search" aria-hidden="true"></i>
                                                                 </button>
                                                             </div>
@@ -7014,7 +6993,7 @@ meg.notify().hide();</code>
                                             <div class="meg-c-modal__overlay" for="meg-c-modal__1"></div>
                                             <div class="meg-c-modal__dialog meg-u-box-shadow">
                                                 <div class="meg-c-modal__header">
-                                                    <span class="meg-c-modal__header--title">Modal with CSS</span>
+                                                    <span class="meg-c-modal__header--title meg-u-font-size-xx">Modal with CSS</span>
                                                     <a href="#modal-1" class="meg-c-modal__btn-close meg-js-modal--close" title="Close">×</a>
                                                 </div>
                                                 <div class="meg-c-modal__body">
@@ -7057,7 +7036,7 @@ meg.notify().hide();</code>
                                                     </p>
                                                 </div>
                                                 <div class="meg-c-modal__footer">
-                                                    <a role="button" title="Close" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-el-btn--medium meg-js-modal--close">
+                                                    <a role="button" title="Close" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-js-modal--close">
                                                         Close modal
                                                     </a>
                                                 </div>
@@ -7509,7 +7488,7 @@ meg.loading().hideBeforeLoading();
                                                     <div class="meg-lt-col meg-lt-col--10-lg meg-lt-col--10-md meg-lt-col--10-sm meg-no-margin-bottom">
                                                         <span>Logo</span>
                                                     </div>
-                                                    <div class="meg-lt-col meg-lt-col--1-lg meg-lt-col--1-md meg-lt-col--1-sm meg-no-margin-bottom meg-u-align-right">
+                                                    <div class="meg-lt-col meg-lt-col--1-lg meg-lt-col--1-md meg-lt-col--1-sm meg-no-margin-bottom meg-u-align-right meg-u-text-right">
                                                         <label for="meg-c-slidebox__filter" class="meg-c-slidebox__label">
                                                             <i class="fa fa-filter" aria-hidden="true"></i>
                                                         </label>
@@ -8018,7 +7997,7 @@ meg.loading().hideBeforeLoading();
                                                             </figure>
                                                         </div>
                                                         <div class="meg-c-media__content">
-                                                            <p class="meg-el-content__title">John Smith</p>
+                                                            <p class="meg-el-content__title meg-u-font-size-x">John Smith</p>
                                                             <p class="meg-el-content__subtitle">@johnsmith</p>
                                                         </div>
                                                         <div class="meg-c-media__actions">
@@ -8084,7 +8063,7 @@ meg.loading().hideBeforeLoading();
                                                             </figure>
                                                         </div>
                                                         <div class="meg-c-media__content">
-                                                            <p class="meg-el-content__title">John Smith</p>
+                                                            <p class="meg-el-content__title meg-u-font-size-x">John Smith</p>
                                                             <p class="meg-el-content__subtitle">@johnsmith</p>
                                                         </div>
                                                         <div class="meg-c-media__actions">
@@ -8157,7 +8136,7 @@ meg.loading().hideBeforeLoading();
                                                             </figure>
                                                         </div>
                                                         <div class="meg-c-media__content">
-                                                            <p class="meg-el-content__title">John Smith</p>
+                                                            <p class="meg-el-content__title meg-u-font-size-x">John Smith</p>
                                                             <p class="meg-el-content__subtitle">@johnsmith</p>
                                                         </div>
                                                         <div class="meg-c-media__actions">
@@ -8237,7 +8216,7 @@ meg.loading().hideBeforeLoading();
                                                             </figure>
                                                         </div>
                                                         <div class="meg-c-media__content">
-                                                            <p class="meg-el-content__title">John Smith</p>
+                                                            <p class="meg-el-content__title meg-u-font-size-x">John Smith</p>
                                                             <p class="meg-el-content__subtitle">@johnsmith</p>
                                                         </div>
                                                         <div class="meg-c-media__actions">
@@ -8303,7 +8282,7 @@ meg.loading().hideBeforeLoading();
                                                             </figure>
                                                         </div>
                                                         <div class="meg-c-media__content">
-                                                            <p class="meg-el-content__title">John Smith</p>
+                                                            <p class="meg-el-content__title meg-u-font-size-x">John Smith</p>
                                                             <p class="meg-el-content__subtitle">@johnsmith</p>
                                                         </div>
                                                         <div class="meg-c-media__actions">
@@ -8378,7 +8357,7 @@ meg.loading().hideBeforeLoading();
                                                             </figure>
                                                         </div>
                                                         <div class="meg-c-media__content">
-                                                            <p class="meg-el-content__title">John Smith</p>
+                                                            <p class="meg-el-content__title meg-u-font-size-x">John Smith</p>
                                                             <p class="meg-el-content__subtitle">@johnsmith</p>
                                                         </div>
                                                         <div class="meg-c-media__actions">
@@ -9135,7 +9114,7 @@ meg.loading().hideBeforeLoading();
                                             </div>
                                             <div class="meg-li-shelf__actions">
                                                 <span class="meg-li-shelf__list-price">R$ 99,90</span>
-                                                <div class="meg-li-shelf__best-price">R$ 89,90</div>
+                                                <div class="meg-li-shelf__best-price meg-u-font-size-xx meg-u-color-primary">R$ 89,90</div>
                                                 <div class="meg-li-shelf__installment">
                                                     ou
                                                     <strong>2x</strong> de
@@ -9708,6 +9687,6 @@ meg.loading().hideBeforeLoading();
     <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <![endif]-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="vendors.js?d52409fc31a36cf40a09"></script><script type="text/javascript" src="meg.app.min.js?d52409fc31a36cf40a09"></script><script type="text/javascript" src="meg.main.min.js?d52409fc31a36cf40a09"></script></body>
+<script type="text/javascript" src="meg.app.min.js?433ee6a567ae8d471bf9"></script><script type="text/javascript" src="vendors.js?433ee6a567ae8d471bf9"></script><script type="text/javascript" src="meg.main.min.js?433ee6a567ae8d471bf9"></script></body>
 
 </html>
