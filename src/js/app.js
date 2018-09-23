@@ -174,7 +174,7 @@ import "styles/meg";
     "selector_modal_trigger": ".meg-js-modal--alert-trigger",
     "setHmlt": function () {
 
-      var html = `<div class="meg-c-modal meg-js-modal meg-js-modal--alert" role="dialog" aria-labelledby="dialog-alert_label" aria-modal="true" tabindex="-1">
+      var html = `<div class="meg-c-modal meg-js-modal meg-js-modal--alert" role="dialog" aria-modal="true" tabindex="-1">
                               <div class="meg-c-modal__wrap" aria-hidden="true" role="dialog">
                                   <div class="meg-c-modal__overlay" for="meg-c-alert__1"></div>
                                   <div class="meg-c-modal__dialog meg-u-box-shadow">

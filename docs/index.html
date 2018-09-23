@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meg | Make more layouts, write less css</title>
-    
+    <meta name="Description" content="MEG is an open source HTML, CSS and JS development kit based on Flexbox for ecommerce">
     <style>
         html {
             overflow-x: hidden;
@@ -47,7 +47,7 @@
         }
 
     </style>
-<link rel="shortcut icon" href="favicon.ico"><link href="meg.min.css?433ee6a567ae8d471bf9" rel="stylesheet"></head>
+<link rel="shortcut icon" href="favicon.ico"><link href="meg.min.css?11ea0f745240a50904ae" rel="stylesheet"></head>
 
 <body class="meg-loader">
     <div style="display:none">https://savanajs.github.io/MEG</div>
@@ -3728,7 +3728,7 @@ $responsive-desktop: 5000px; // Desktop only
                                     <br>
 
                                     <hgroup class="meg-el-hgroup">
-                                        <h4 id="helpers--others--hidden-show" class="meg-el-heading meg-el-heading--5">
+                                        <h4 id="helpers--others--cancelers" class="meg-el-heading meg-el-heading--5">
                                             Cancelers
                                         </h4>
                                     </hgroup>
@@ -3820,6 +3820,35 @@ $responsive-desktop: 5000px; // Desktop only
                                     </div>
 
                                     <br>
+
+                                    <hgroup class="meg-el-hgroup">
+                                        <h4 id="helpers--others--hidden-show" class="meg-el-heading meg-el-heading--5">
+                                            Button
+                                        </h4>
+                                    </hgroup>
+                                
+                                    <div class="preview">
+                                        <table class="meg-el-table meg-el-table--center">
+                                            <thead>
+                                                <tr>
+                                                    <th>Class</th>
+                                                    <th>Description</th>
+                                                    <th>Is Responsivel?</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="text-success meg-u-text-center">meg-not-min-width</th>
+                                                    <td class="text-success meg-u-text-center">
+                                                        Remove the min-width of 94px
+                                                    </td>
+                                                    <td class="text-success meg-u-text-center">
+                                                        no
+                                                    </td>
+                                                </tr>  
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 
                                 </div>
 
@@ -3988,7 +4017,7 @@ $responsive-desktop: 5000px; // Desktop only
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
                                         <a class="meg-el-btn meg-u-bg-none meg-u-color-font" href="#" role="button" title="A meg-lt Button">A meg-lt Button</a>
-                                        <button role="button" class="meg-el-btn meg-u-bg-none meg-u-color-font">A meg-lt Button</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-none meg-u-color-font">A meg-lt Button</button>
                                     </div>
                                 </div>
 
@@ -4017,30 +4046,30 @@ $responsive-desktop: 5000px; // Desktop only
                                 <div class="preview dinamic">
                                     <div class="meg-lt-row meg-lt-row--space-cols meg-lt-row--wrap-lg">
                                         <div class="end-el-wrap-btns">
-                                            <button role="button" class="meg-el-btn meg-u-bg-none meg-el-btn--small">
+                                            <button name="button" role="button" class="meg-el-btn meg-u-bg-none meg-el-btn--small">
                                                 <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Small
                                             </button>
-                                            <button role="button" class="meg-el-btn meg-u-bg-none">
+                                            <button name="button" role="button" class="meg-el-btn meg-u-bg-none">
                                                 <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Normal
                                             </button>
-                                            <button role="button" class="meg-el-btn meg-u-bg-none meg-el-btn--medium">
+                                            <button name="button" role="button" class="meg-el-btn meg-u-bg-none meg-el-btn--medium">
                                                 <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Medium
                                             </button>
-                                            <button role="button" class="meg-el-btn meg-u-bg-none meg-el-btn--large">
+                                            <button name="button" role="button" class="meg-el-btn meg-u-bg-none meg-el-btn--large">
                                                 <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Large
                                             </button>
                                         </div>
                                         <div class="end-el-wrap-btns">
-                                            <button role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--small">
+                                            <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--small">
                                                 <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Small
                                             </button>
-                                            <button role="button" class="meg-el-btn meg-el-btn--o">
+                                            <button name="button" role="button" class="meg-el-btn meg-el-btn--o">
                                                 <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Normal
                                             </button>
-                                            <button role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--medium">
+                                            <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--medium">
                                                 <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Medium
                                             </button>
-                                            <button role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--large">
+                                            <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--large">
                                                 <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Large
                                             </button>
                                         </div>
@@ -4070,30 +4099,30 @@ $responsive-desktop: 5000px; // Desktop only
 
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
-                                        <button role="button" class="meg-el-btn meg-u-color-white meg-u-bg-success">Success</button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-cancel meg-u-color-white">Cancel</button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-warning meg-u-color-white">Warning</button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-info meg-u-color-white">Info</button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Primary</button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-secondary meg-u-color-white">Secondary</button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-tertiary meg-u-color-white">Tertiary</button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-quaternary meg-u-color-white">Quaternary</button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-light meg-u-color-black">Light</button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-black meg-u-color-white">Black</button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-white meg-u-color-black">White</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-color-white meg-u-bg-success">Success</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-cancel meg-u-color-white">Cancel</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-warning meg-u-color-white">Warning</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-info meg-u-color-white">Info</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Primary</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-secondary meg-u-color-white">Secondary</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-tertiary meg-u-color-white">Tertiary</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-quaternary meg-u-color-white">Quaternary</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-light meg-u-color-black">Light</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-black meg-u-color-white">Black</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-white meg-u-color-black">White</button>
                                     </div>
                                     <div class="end-el-wrap-btns">
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-success meg-u-border-success">Success</button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-cancel meg-u-border-cancel">Cancel</button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-warning meg-u-border-warning">Warning</button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-info meg-u-border-info">Info</button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-primary meg-u-border-primary">Primary</button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-secondary meg-u-border-secondary">Secondary</button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-tertiary meg-u-border-tertiary">Tertiary</button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-quaternary meg-u-border-quaternary">Quaternary</button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-light meg-u-border-light">Light</button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-black meg-u-border-black">Black</button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--o meg-u-color-white meg-u-border-white">White</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-success meg-u-border-success">Success</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-cancel meg-u-border-cancel">Cancel</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-warning meg-u-border-warning">Warning</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-info meg-u-border-info">Info</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-primary meg-u-border-primary">Primary</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-secondary meg-u-border-secondary">Secondary</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-tertiary meg-u-border-tertiary">Tertiary</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-quaternary meg-u-border-quaternary">Quaternary</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-light meg-u-border-light">Light</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-black meg-u-border-black">Black</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-u-color-white meg-u-border-white">White</button>
                                     </div>
                                 </div>
 
@@ -4120,7 +4149,7 @@ $responsive-desktop: 5000px; // Desktop only
 
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
-                                        <button role="button" class="meg-el-btn">Success</button>
+                                        <button name="button" role="button" class="meg-el-btn">Success</button>
                                     </div>
                                 </div>
 
@@ -4147,16 +4176,16 @@ $responsive-desktop: 5000px; // Desktop only
 
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
-                                        <button role="button" class="meg-el-btn">
+                                        <button name="button" role="button" class="meg-el-btn">
                                             <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Success
                                         </button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--icon">
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--icon">
                                             <i class="fa fa-check-circle" aria-hidden="true"></i>
                                         </button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--sized meg-el-btn--icon">
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--sized meg-el-btn--icon">
                                             <i class="fa fa-check-circle" aria-hidden="true"></i>
                                         </button>
-                                        <button role="button" class="meg-el-btn meg-u-bg-none">
+                                        <button name="button" role="button" class="meg-el-btn meg-u-bg-none">
                                             <i class="fa fa-check-circle" aria-hidden="true"></i> None
                                         </button>
                                     </div>
@@ -4186,7 +4215,7 @@ $responsive-desktop: 5000px; // Desktop only
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
                                         <a role="button" class="meg-el-btn meg-el-btn--disabled" href="#" title="A meg-lt Button">A meg-lt Button</a>
-                                        <button role="button" class="meg-el-btn meg-el-btn--disabled">A meg-lt Button</button>
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--disabled">A meg-lt Button</button>
                                     </div>
                                 </div>
 
@@ -4417,7 +4446,7 @@ $responsive-desktop: 5000px; // Desktop only
 
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
-                                        <button role="button" class="meg-el-btn meg-el-btn--full">
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--full">
                                             <i class="fa fa-check-circle meg-u-margin-right-half-lg meg-u-margin-right-half-md meg-u-margin-right-half-sm" aria-hidden="true"></i> Full</button>
                                     </div>
                                 </div>
@@ -4446,10 +4475,10 @@ $responsive-desktop: 5000px; // Desktop only
                                 <div class="preview dinamic">
                                     <div class="meg-lt-row meg-lt-row--space-cols meg-lt-row--wrap-lg">
                                         <div class="end-el-wrap-btns">
-                                            <button role="button" class="meg-el-btn meg-el-btn--large meg-el-btn--circle">
+                                            <button name="button" role="button" class="meg-el-btn meg-el-btn--large meg-el-btn--circle">
                                                 <i class="fa fa-plus" aria-hidden="true"></i>
                                             </button>
-                                            <button role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--large meg-el-btn--circle">
+                                            <button name="button" role="button" class="meg-el-btn meg-el-btn--o meg-el-btn--large meg-el-btn--circle">
                                                 <i class="fa fa-plus" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -5691,6 +5720,55 @@ $responsive-desktop: 5000px; // Desktop only
                             <div class="meg-lt-section__main meg-lt-contents">
 
                                 <hgroup class="meg-el-hgroup">
+                                    <h3 id="form-sizes" class="meg-el-heading meg-el-heading--3">
+                                        Size
+                                    </h3>
+                                    <p>Simple CSS for size inputs</p>
+                                </hgroup>
+
+                                <div class="code meg-u-margin-bottom">
+                                    <pre class="meg-s-is-hidden-sm language-markup"><code class="language-markup"></code></pre>
+                                </div>
+
+                                <hgroup class="meg-el-hgroup">
+                                    <h4 class="meg-el-heading meg-el-heading--5">
+                                        Preview
+                                    </h4>
+                                </hgroup>
+
+                                <div class="preview dinamic">
+                                    <article role="article" class="meg-lt-article">
+                                        <form class="meg-c-form">
+                                            <fieldset class="meg-c-form__fieldset">
+
+                                                <div class="meg-lt-row">
+                                                    <div class="meg-c-form__field meg-lt-col meg-lt-col--12-lg meg-lt-col--12-md meg-lt-col--12-sm">
+                                                        <input id="name-22" type="text" placeholder="Input small" class="meg-c-field meg-c-field--small meg-c-field--full" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="meg-lt-row">
+                                                    <div class="meg-c-form__field meg-lt-col meg-lt-col--12-lg meg-lt-col--12-md meg-lt-col--12-sm">
+                                                        <input id="name-222" type="text" placeholder="Input medium" class="meg-c-field meg-c-field--medium meg-c-field--full" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="meg-lt-row">
+                                                    <div class="meg-c-form__field meg-lt-col meg-lt-col--12-lg meg-lt-col--12-md meg-lt-col--12-sm">
+                                                        <input id="name-2222" type="text" placeholder="Input large" class="meg-c-field meg-c-field--large meg-c-field--full" required>
+                                                    </div>
+                                                </div>
+
+                                            </fieldset>
+                                        </form>
+                                    </article>
+                                </div>
+
+                            </div>
+
+                            <div class="meg-lt-section__main meg-lt-contents">
+
+                                <hgroup class="meg-el-hgroup">
                                     <h3 id="form-switch-button" class="meg-el-heading meg-el-heading--3">
                                         Switch Button
                                     </h3>
@@ -5791,7 +5869,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                             <i class="fa fa-envelope" aria-hidden="true"></i>
                                                         </span>
                                                         <input type="email" id="text-email-1" placeholder="Your email" class="meg-c-field">
-                                                        <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-not-min-width">Ok</button>
+                                                        <button name="button" role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-not-min-width">Ok</button>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -5827,7 +5905,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <div class="meg-lt-row">
                                                     <div class="meg-c-form__field meg-c-form__field--group meg-c-form__field--action meg-lt-col meg-lt-col--12-lg meg-lt-col--12-md meg-lt-col--12-sm">
                                                         <input type="email" id="text-email-33" placeholder="Your email" class="meg-c-field">
-                                                        <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Ok</button>
+                                                        <button name="button" role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Ok</button>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -5884,7 +5962,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                         </label>
                                                     </div>
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--2-lg meg-lt-col--2-md meg-lt-col--12-sm">
-                                                        <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Sign in</button>
+                                                        <button name="button" role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Sign in</button>
                                                     </div>
                                                 </div>
 
@@ -5984,7 +6062,7 @@ $responsive-desktop: 5000px; // Desktop only
 
                                                     </div>
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--4-lg meg-lt-col--4-md meg-lt-col--12-sm">
-                                                        <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Send</button>
+                                                        <button name="button" role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Send</button>
                                                     </div>
                                                 </div>
 
@@ -6077,7 +6155,7 @@ $responsive-desktop: 5000px; // Desktop only
 
                                                 <div class="meg-lt-row">
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--6-lg meg-lt-col--6-md meg-lt-col--12-sm">
-                                                        <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Send</button>
+                                                        <button name="button" role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Send</button>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -6159,7 +6237,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <div class="meg-lt-row">
 
                                                     <div class="meg-c-form__field meg-lt-col meg-lt-col--12-lg meg-lt-col--12-sm">  
-                                                        <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Send</button>
+                                                        <button name="button" role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white">Send</button>
                                                     </div>
 
                                                 </div>
@@ -6197,7 +6275,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </span>
                                             <input class="meg-c-field meg-c-field--auto meg-c-field--search meg-u-font-size-x" type="search" name="search" placeholder="Search.." autocomplete="off">
-                                            <button role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-not-min-width">Search</button>
+                                            <button name="button" role="button" type="submit" class="meg-el-btn meg-u-bg-primary meg-u-color-white meg-not-min-width">Search</button>
                                         </div>
                                     </form>
                                     <!-- Medium -->
@@ -6207,7 +6285,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </span>
                                             <input class="meg-c-field meg-c-field--auto meg-c-field--search meg-u-font-size-xx" type="search" name="search" placeholder="Search.." autocomplete="off">
-                                            <button role="button" type="submit" class="meg-el-btn meg-el-btn--medium meg-u-bg-primary meg-u-color-white">Search</button>
+                                            <button name="button" role="button" type="submit" class="meg-el-btn meg-el-btn--medium meg-u-bg-primary meg-u-color-white">Search</button>
                                         </div>
                                     </form>
                                     <!-- Large -->
@@ -6217,7 +6295,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </span>
                                             <input class="meg-c-field meg-c-field--auto meg-c-field--search meg-u-font-size-xxx" type="search" name="search" placeholder="Search.." autocomplete="off">
-                                            <button role="button" type="submit" class="meg-el-btn meg-el-btn--large meg-u-bg-primary meg-u-color-white">Search</button>
+                                            <button name="button" role="button" type="submit" class="meg-el-btn meg-el-btn--large meg-u-bg-primary meg-u-color-white">Search</button>
                                         </div>
                                     </form>
                                 </div>
@@ -6560,13 +6638,13 @@ $responsive-desktop: 5000px; // Desktop only
                                                 Tooltip exemple bottom
                                             </span>
                                         </a>
-                                        <button role="button" class="meg-el-btn meg-c-tooltip" aria-label="Tooltip bottom">
+                                        <button name="button" role="button" class="meg-el-btn meg-c-tooltip" aria-label="Tooltip bottom">
                                             Bottom
                                             <span class="meg-c-tooltip__item meg-c-tooltip__item--top">
                                                 Tooltip exemple top
                                             </span>
                                         </button>
-                                        <button role="button" class="meg-el-btn meg-c-tooltip" aria-label="Tooltip bottom">
+                                        <button name="button" role="button" class="meg-el-btn meg-c-tooltip" aria-label="Tooltip bottom">
                                             Bottom
                                             <span class="meg-c-tooltip__item meg-c-tooltip__item--bottom">
                                                 Tooltip exemple bottom
@@ -6587,13 +6665,13 @@ $responsive-desktop: 5000px; // Desktop only
                                                 Tooltip exemple bottom
                                             </span>
                                         </a>
-                                        <button role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" aria-label="Tooltip bottom">
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" aria-label="Tooltip bottom">
                                             Bottom
                                             <span class="meg-c-tooltip__item meg-c-tooltip__item--top">
                                                 Tooltip exemple top
                                             </span>
                                         </button>
-                                        <button role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" aria-label="Tooltip bottom">
+                                        <button name="button" role="button" class="meg-el-btn meg-el-btn--large meg-c-tooltip" aria-label="Tooltip bottom">
                                             Bottom
                                             <span class="meg-c-tooltip__item meg-c-tooltip__item--bottom">
                                                 Tooltip exemple <br>bottom
@@ -6761,10 +6839,10 @@ $responsive-desktop: 5000px; // Desktop only
 
                                 <div class="preview dinamic">
                                     <div class="end-el-wrap-btns">
-                                        <button role="button" class="meg-el-btn">Top
+                                        <button name="button" role="button" class="meg-el-btn">Top
                                             <span class="meg-c-badge meg-c-badge--top meg-u-bg-success meg-u-color-white">1</span>
                                         </button>
-                                        <button role="button" class="meg-el-btn">Middle
+                                        <button name="button" role="button" class="meg-el-btn">Middle
                                             <span class="meg-c-badge meg-c-badge--middle meg-u-bg-success meg-u-color-white">1</span>
                                         </button>
                                     </div>
@@ -6824,7 +6902,7 @@ $responsive-desktop: 5000px; // Desktop only
                                                         
                                                             <div class="meg-c-form__field meg-c-form__field--group meg-c-form__field--action">
                                                                 <input type="email" id="text-email-3" placeholder="Search" class="meg-c-field meg-c-field--full">
-                                                                <button role="button" type="submit" class="meg-el-btn meg-not-min-width meg-u-bg-primary meg-u-color-white">
+                                                                <button name="button" role="button" type="submit" class="meg-el-btn meg-not-min-width meg-u-bg-primary meg-u-color-white">
                                                                     <i class="fa fa-search" aria-hidden="true"></i>
                                                                 </button>
                                                             </div>
@@ -9168,7 +9246,8 @@ meg.loading().hideBeforeLoading();
                                                         <div class="md-c-quantity-block">
                                                             <a class="md-c-quantity-block__plus" title="Add">+</a>
                                                             <a class="md-c-quantity-block__minus" title="Remove">-</a>
-                                                            <input type="text" class="md-c-quantity-block__quantity" value="2">
+                                                            <label for="md-c-quantity-block__quantity-1" class="meg-s-is-hidden"></label>
+                                                            <input id="md-c-quantity-block__quantity-1" type="text" class="md-c-quantity-block__quantity" value="2">
                                                         </div>
                                                     </td>
                                                     <td class="md-c-list-item__actions">
@@ -9191,7 +9270,8 @@ meg.loading().hideBeforeLoading();
                                                         <div class="md-c-quantity-block">
                                                             <a class="md-c-quantity-block__plus" title="Add">+</a>
                                                             <a class="md-c-quantity-block__minus" title="Remove">-</a>
-                                                            <input type="text" class="md-c-quantity-block__quantity" value="2">
+                                                            <label for="md-c-quantity-block__quantity-2" class="meg-s-is-hidden"></label>
+                                                            <input id="md-c-quantity-block__quantity-2" type="text" class="md-c-quantity-block__quantity" value="2">
                                                         </div>
                                                     </td>
                                                     <td class="md-c-list-item__actions">
@@ -9687,6 +9767,6 @@ meg.loading().hideBeforeLoading();
     <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <![endif]-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="meg.app.min.js?433ee6a567ae8d471bf9"></script><script type="text/javascript" src="vendors.js?433ee6a567ae8d471bf9"></script><script type="text/javascript" src="meg.main.min.js?433ee6a567ae8d471bf9"></script></body>
+<script type="text/javascript" src="meg.app.min.js?11ea0f745240a50904ae"></script><script type="text/javascript" src="vendors.js?11ea0f745240a50904ae"></script><script type="text/javascript" src="meg.main.min.js?11ea0f745240a50904ae"></script></body>
 
 </html>

@@ -25,6 +25,7 @@
         margin-bottom: 10px;
     }
     .meg-c-form__label {
+        font-size: $font-size-base - .1;
         display: block;
         > .meg-c-form__required {
             display: inline-block;
@@ -56,7 +57,8 @@
                 position: absolute;
                 left: 0;
                 top: 0px;
-                color: $color-input-border;
+                color: $color-checked-radio;
+                font-size: $font-size-base;
             }
             &:hover {
                 .meg-c-checkbox_fake::before {
@@ -82,7 +84,8 @@
                 position: absolute;
                 left: 0px;
                 top: 0px;
-                color: $color-input-border;
+                color: $color-checked-radio;
+                font-size: $font-size-base;
             }
             &:hover {
                 .meg-c-radio_fake::before {
@@ -141,7 +144,7 @@
                 padding: .5em .6em;
                 border-top-left-radius: $border_radius_input;
                 border-bottom-left-radius: $border_radius_input;
-                font-size: $font-size-base - .2;
+                font-size: $font-size-base;
                 display: flex;
                 align-items: center;
             }
@@ -175,11 +178,18 @@
 
         width: 100%;
         .meg-c-field {
+            font-size: $font-size-base - .1;
             &--full {
                 width: 100%;
             }
             &--auto {
                 width: auto;
+            }
+            &--medium {
+                padding: .7em .8em;
+            }
+            &--large {
+                padding: .9em 1em;
             }
         }
 
@@ -189,18 +199,8 @@
         }
     }
     .meg-c-form__field:not(.meg-c-form__field--input-medium) {
-        .meg-c-field {
+        .meg-c-field:not(.meg-c-field--medium):not(.meg-c-field--large) {
             padding: .5em .6em;
-        }
-    }
-    .meg-c-form__field.meg-c-form__field--input-medium {
-        .meg-c-field {
-            padding: .6em .7em;
-        }
-    }
-    .meg-c-form__field.meg-c-form__field--input-large {
-        .meg-c-field {
-            padding: .7em .6em;
         }
     }
     .meg-c-form__field.meg-c-form__field--input-medium,
