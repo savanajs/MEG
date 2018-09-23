@@ -7,7 +7,12 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 const path = require('path');
 const pkg = require('./package.json');
 const fs = require('fs');
-const resolvePath = (pathToResolve = '') => path.resolve(__dirname, pathToResolve)
+const WebpackPwaManifest = require('webpack-pwa-manifest');
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+const resolvePath = (pathToResolve = '') => path.resolve(__dirname, pathToResolve);
+
+const PUBLIC_PATH = pkg.public_path;  // webpack needs the trailing slash for output.publicPath
+const date = new Date();
 
 function generateHtmlPlugins(templateDir) {
 
@@ -34,7 +39,7 @@ function generateHtmlPlugins(templateDir) {
             template: resolvePath('src/' + name + '.html'),
             favicon: './src/favicon.ico',
             xhtml: true,
-            hash: true,
+            hash: pkg.config.html_params_hash || false,
             minify: pkg.minify.html,
             showErrors: false
         })
@@ -74,6 +79,59 @@ module.exports = (env, options) => {
             syntax: 'scss'
         })
     ];
+
+    var pwa = [];
+
+    if(pkg.config.has_pwa){
+
+        pwa = [
+            new WebpackPwaManifest({
+                start_url: "index.html",
+                name: pkg.pwa_manifest.name,
+                orientation: "portrait",
+                display: "standalone",
+                crossorigin: "use-credentials",
+                inject: true,
+                fingerprints: true,
+                ios: true,
+                publicPath: null,
+                includeDirectory: true,
+                short_name: pkg.pwa_manifest.short_name,
+                description: pkg.pwa_manifest.description,
+                background_color: pkg.pwa_manifest.background_color,
+                theme_color: pkg.pwa_manifest.theme_color,
+                inject: true,
+                'theme-color': pkg.pwa_manifest.theme_color,
+                icons: [
+                  {
+                    src: path.resolve('src/img/icon-512.png'),
+                    sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+                    destination: path.join('img', 'icons')
+                  },
+                  {
+                    src: path.resolve('src/img/icon-1024.png'),
+                    size: '1024x1024', // you can also use the specifications pattern
+                    destination: path.join('img', 'icons')
+                  }
+                ],
+                ios: {
+                    'apple-mobile-web-app-title': pkg.pwa_manifest.name,
+                    'apple-mobile-web-app-status-bar-style': pkg.pwa_manifest.background_color
+                }
+            }),
+            new SWPrecacheWebpackPlugin(
+                {
+                  cacheId: pkg.name + "-" + "-cache-id-" + date.getTime(),
+                  dontCacheBustUrlsMatching: /\.\w{8}\./,
+                  filename: 'service-worker.js',
+                  minify: false,
+                  navigateFallback: PUBLIC_PATH + 'index.html',
+                  staticFileGlobsIgnorePatterns: [/\.map$/]
+                }
+            )
+        ];
+
+    }
 
     if (pkg.entry == "ts") {
 
@@ -249,7 +307,8 @@ module.exports = (env, options) => {
         output: {
             path: resolvePath('docs'),
             filename: pkg.name + '.[name].min.js',
-            chunkFilename: '[name].js'
+            chunkFilename: '[name].js',
+            publicPath: PUBLIC_PATH
         },
         devtool: 'source-map',
         module: {
@@ -290,7 +349,8 @@ module.exports = (env, options) => {
         },
         plugins: [
             ...plugins_developers,
-            ...plugins_production
+            ...plugins_production,
+            ...pwa
         ]
     }
 };

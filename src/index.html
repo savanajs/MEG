@@ -433,12 +433,12 @@ $image-gif-loading-tertiary: "../img/meg-loader-small.gif";
 // Colors
 $primary: #00cc99;
 $secondary: #f69311;
-$tertiary: #4996c5;
-$quaternary: #c54958;
+$tertiary: #c25400;
+$quaternary: #008560;
 $success: #00cc99;
-$cancel: #c54958;
+$cancel: #cc3300;
 $warning: #ffcc00;
-$info: #4996c5;
+$info: #0099cc;
 $black: #000;
 $white: #fff;
 $light: #f5f5f5;
@@ -466,6 +466,7 @@ $color-strong: $color-font;
 $pre-background: $gray;
 $hr-background: $gray;
 $code-background: $light;
+$color-checked-radio: #dadce0;
 
 // Colors for theme
 $background: $layout-primary;
@@ -478,7 +479,7 @@ $color-lt-bg-bar: $primary;
 $color-lt-bg-light: $layout-tertiary;
 $color-lt-bg-content: $layout-secondary;
 $color-lt-bg-content-placeholder-primary: darken($layout-tertiary, 5%);
-$color-lt-bg-content-placeholder-secondary: $layout-tertiary;         
+$color-lt-bg-content-placeholder-secondary: $layout-tertiary;   
     </code>
 </pre>
                                 </div>
@@ -496,14 +497,14 @@ $color-lt-bg-content-placeholder-secondary: $layout-tertiary;
     <code class="language-sass">      
 // General
 $font-pixel-base: 18;
-$font-calc-base: (13 / $font-pixel-base);
+$font-calc-base: (12 / $font-pixel-base);
 $font-size-base: 1.2em; //12px
 $line-height-base: 1.5em;
 $shell: 1280px;
 $shell-max-width: 1920px;
 $shell-gutter: 15px;
-$font-family: 'Roboto Condensed', sans-serif;
-$strong-weight: 900;
+$font-family: 'tahoma', sans-serif;
+$strong-weight: 400;
 $margin-top: 10px;
 $margin-bottom: 10px;
 $margin-right: 10px;
@@ -9247,8 +9248,7 @@ meg.loading().hideBeforeLoading();
                                                         <div class="md-c-quantity-block">
                                                             <a class="md-c-quantity-block__plus" title="Add">+</a>
                                                             <a class="md-c-quantity-block__minus" title="Remove">-</a>
-                                                            <label for="md-c-quantity-block__quantity-1" class="meg-s-is-hidden">Quantidade</label>
-                                                            <input id="md-c-quantity-block__quantity-1" type="text" class="md-c-quantity-block__quantity" value="2" />
+                                                            <div class="md-c-quantity-block__quantity">2</div>
                                                         </div>
                                                     </td>
                                                     <td class="md-c-list-item__actions">
@@ -9271,8 +9271,7 @@ meg.loading().hideBeforeLoading();
                                                         <div class="md-c-quantity-block">
                                                             <a class="md-c-quantity-block__plus" title="Add">+</a>
                                                             <a class="md-c-quantity-block__minus" title="Remove">-</a>
-                                                            <label for="md-c-quantity-block__quantity-2" class="meg-s-is-hidden">Quantidade</label>
-                                                            <input id="md-c-quantity-block__quantity-2" type="text" class="md-c-quantity-block__quantity" value="2" />
+                                                            <div class="md-c-quantity-block__quantity">2</div>
                                                         </div>
                                                     </td>
                                                     <td class="md-c-list-item__actions">
