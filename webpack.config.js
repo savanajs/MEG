@@ -308,7 +308,7 @@ module.exports = (env, options) => {
             path: resolvePath('docs'),
             filename: pkg.name + '.[name].min.js',
             chunkFilename: '[name].js',
-            publicPath: PUBLIC_PATH
+            //publicPath: PUBLIC_PATH
         },
         devtool: 'source-map',
         module: {

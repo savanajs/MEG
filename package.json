@@ -2,7 +2,7 @@
   "name": "meg",
   "version": "0.0.2",
   "description": "Make more layouts, write less css",
-  "public_path": "https://savanajs.github.io/MEG/",
+  "public_path": "",
   "private": true,
   "browserslist": [
     "> 10%",

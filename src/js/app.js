@@ -696,7 +696,7 @@ import "styles/meg";
 
   if ("serviceWorker" in navigator) {
 
-      navigator.serviceWorker.register("/service-worker.js", { "scope": "/" }).then(() => {
+      navigator.serviceWorker.register("./service-worker.js", { "scope": "./" }).then(() => {
 
           console.log("Service Worker registered successfully.");
 
