@@ -193,7 +193,11 @@ import "styles/meg";
                               </div>
                       </div>`;
 
-      $("body").append(html);
+      if (!$(".meg-js-modal--alert").length) {
+
+        $("body").append(html);
+
+      }
 
     },
     "setInfosAlert": function (data) {
@@ -210,6 +214,8 @@ import "styles/meg";
 
     },
     "open": function (data) {
+
+      this.setHmlt();
 
       this.setInfosAlert(data);
       $(this.selector_modal).addClass("actived");
@@ -239,7 +245,6 @@ import "styles/meg";
     },
     "init": function () {
 
-      this.setHmlt();
       this.events();
 
     }
@@ -404,7 +409,11 @@ import "styles/meg";
                   <div class="meg-c-loader meg-c-loader--medium meg-c-loader--primary"></div>
               </div>`;
 
-        $("body").append(html);
+        if (!$(".meg-c-loader").length) {
+
+          $("body").append(html);
+
+        }
 
       },
       "setHtmlWaitLoading": function () {
@@ -420,10 +429,16 @@ import "styles/meg";
                   </div>
               </div>`;
 
-        $("body").append(html);
+        if (!$(".meg-c-loader__waiting").length) {
+
+          $("body").append(html);
+
+        }
 
       },
       "showLoading": function () {
+
+        this.setHtmlLoading();
 
         $("body").addClass("meg-loading");
 
@@ -451,6 +466,8 @@ import "styles/meg";
 
       },
       "showWaitLoading": function (title) {
+
+        this.setHtmlWaitLoading();
 
         this.setTitleWaitLoading(title);
 
@@ -508,8 +525,6 @@ import "styles/meg";
       "init": function () {
 
         this.events();
-        this.setHtmlLoading();
-        this.setHtmlWaitLoading();
 
       }
 
@@ -568,6 +583,8 @@ import "styles/meg";
       },
 
       "showed": function () {
+
+        this.add();
 
         $(".meg-o-notify").addClass("meg-o-notify--open");
 
@@ -630,15 +647,11 @@ import "styles/meg";
 
       "add": function () {
 
-        $("body").append("<div class='meg-o-notify'></div>");
+        if (!$(".meg-o-notify").length) {
 
-        return true;
+          $("body").append("<div class='meg-o-notify'></div>");
 
-      },
-
-      "init": function() {
-
-        this.add();
+        }
 
         return true;
 
@@ -656,7 +669,6 @@ import "styles/meg";
     this.alert.init();
     this.loading().init();
     this.scrolling().init();
-    this.notify().init();
 
   };
 
@@ -696,15 +708,15 @@ import "styles/meg";
 
   if ("serviceWorker" in navigator) {
 
-      navigator.serviceWorker.register("./service-worker.js", { "scope": "./" }).then(() => {
+    navigator.serviceWorker.register("./service-worker.js", { "scope": "./" }).then(() => {
 
-          console.log("Service Worker registered successfully.");
+      console.log("Service Worker registered successfully.");
 
-      }).catch(error => {
+    }).catch(error => {
 
-          console.log("Service Worker registration failed:", error);
+      console.log("Service Worker registration failed:", error);
 
-      });
+    });
 
   }
 

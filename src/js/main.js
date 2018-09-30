@@ -10,104 +10,104 @@ Prism.highlightAll();
     "selector": ".dinamic",
     "definedCode": function (code) {
 
-        if (!code) {
+      if (!code) {
 
-            return;
+        return;
 
-        }
+      }
 
-        code = code.replace(/</g, "&lt;");
-        code = code.replace(/>/g, "&gt");
+      code = code.replace(/</g, "&lt;");
+      code = code.replace(/>/g, "&gt");
 
-        var lines = code.split("\n");
-        var line = lines[1];
-        var leadingSpaces = 1;
+      var lines = code.split("\n");
+      var line = lines[1];
+      var leadingSpaces = 1;
 
-        while (line.charAt(leadingSpaces) == " ") {
+      while (line.charAt(leadingSpaces) == " ") {
 
-            leadingSpaces++;
+        leadingSpaces++;
 
-        }
+      }
 
-        for (var i = 1, len = lines.length; i < len; i++) {
+      for (var i = 1, len = lines.length; i < len; i++) {
 
-            lines[i] = lines[i].slice(leadingSpaces);
+        lines[i] = lines[i].slice(leadingSpaces);
 
-        }
+      }
 
-        lines.splice(0, 1);
+      lines.splice(0, 1);
 
-        return code = lines.join("\n");
+      return code = lines.join("\n");
 
     },
     "getCodePreviews": function () {
 
-        var _this = this;
-        var target;
+      var _this = this;
+      var target;
 
-        $(this.selector).each(function () {
+      $(this.selector).each(function () {
 
-            target = $(this).parents(".meg-lt-section__main").find(".code pre code");
-            target.html(_this.definedCode($(this).html()));
+        target = $(this).parents(".meg-lt-section__main").find(".code pre code");
+        target.html(_this.definedCode($(this).html()));
 
-        });
+      });
 
     },
     "init": function () {
 
-        this.getCodePreviews();
+      this.getCodePreviews();
 
     }
   };
 
   var Tpl = {
-      "data": {
-          "dark": "meg-dark.min.css",
-          "light": "meg.min.css",
-      },
-      "link": function(file){
+    "data": {
+      "dark": "meg-dark.min.css",
+      "light": "meg.min.css",
+    },
+    "link": function (file) {
 
-        if (!file) {
-            
-            return;
+      if (!file) {
+
+        return;
+
+      }
+
+      var date = new Date();
+
+      $("head > link[rel=stylesheet]").attr("href", file + "?v=" + date.getTime());
+
+      return true;
+
+    },
+    "events": function () {
+
+      var self = this;
+
+      $("#switch-tpl").on("change", function () {
+
+        if ($(this).is(":checked")) {
+
+          self.link(self.data.light);
+
+        } else {
+
+          self.link(self.data.dark);
 
         }
 
-        var date = new Date();
+      });
 
-        $("head > link[rel=stylesheet]").attr("href", file + "?v=" + date.getTime());
+      return true;
 
-        return true;
+    },
+    "init": function () {
 
-      },
-      "events": function() {
+      this.events();
 
-        var self = this;
+      return true;
 
-        $("#switch-tpl").on("change", function(){
-
-            if ($(this).is(":checked")) {
-
-                self.link(self.data.light);
-
-            } else {
-
-                self.link(self.data.dark);
-
-            }
-
-        });
-
-        return true;
-
-      },
-      "init": function() {
-
-        this.events();
-
-        return true;
-
-      }
+    }
   };
 
   Code.init();

@@ -11,7 +11,7 @@
   ],
   "config": {
     "html_params_hash": false,
-    "has_pwa": false
+    "has_pwa": true
   },
   "is_style_loader": false,
   "minify": {

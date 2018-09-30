@@ -180,6 +180,7 @@
             font-size: $font-size-base - .1;
             &--full {
                 width: 100%;
+                flex: 1;
             }
             &--auto {
                 width: auto;
