@@ -1,11 +1,11 @@
 // Desktop 
 @media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
 
-    .md-c-pitbar {
+    .meg-c-pitbar {
         display: flex;
         align-content: space-around;
         margin-bottom: 5px;
-        > .md-c-pitbar__item {
+        > .meg-c-pitbar__item {
             flex: 1 1 auto;
             display: flex;
             align-items: center;
@@ -14,11 +14,11 @@
             margin-right: 2px;
             justify-content: center;
             position: relative;
-            > .md-c-item__image {
+            > .meg-c-item__image {
                 margin-right: 20px;
                 font-size: 2.5em;
             }
-            > .md-c-item__title {
+            > .meg-c-item__title {
                 font-weight: 600;
                 > span {
                     display: block;
@@ -49,22 +49,22 @@
 // Tablet
 @media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
 
-    .md-c-pitbar {
+    .meg-c-pitbar {
         display: flex;
         align-content: space-around;
         margin-bottom: 5px;
-        > .md-c-pitbar__item {
+        > .meg-c-pitbar__item {
             flex: 1 1 auto;
             display: flex;
             align-items: center;
             padding: 10px 10px;
             background-color: $color-lt-bg-content;
             margin-right: 2px;
-            > .md-c-item__image {
+            > .meg-c-item__image {
                 margin-right: 20px;
                 font-size: 30px;
             }
-            > .md-c-item__title {
+            > .meg-c-item__title {
                 font-weight: 900;
                 font-size: 1em;
                 > span {
@@ -88,23 +88,23 @@
 
 // Mobile
 @media screen and (max-width: $responsive-mobile) {
-    .md-c-pitbar {
+    .meg-c-pitbar {
         display: block;
         align-content: center;
         text-align: center;
-        > .md-c-pitbar__item {
+        > .meg-c-pitbar__item {
             text-align: center;
             display: block;
             align-content: center;
             margin-bottom: 20px;
-            > .md-c-item__title {
+            > .meg-c-item__title {
                 font-size: 1.1em;
                 > span {
                     display: block;
                     font-size: .9em;
                 }
             }
-            > .md-c-item__image {
+            > .meg-c-item__image {
                 margin-right: 0px;
                 margin-bottom: 10px;
                 font-size: 30px;
