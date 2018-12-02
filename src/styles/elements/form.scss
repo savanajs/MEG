@@ -104,7 +104,7 @@
             background-position: 98% center;
         }
         &::placeholder {
-            color: lighten($color-font, 50%);
+            color: lighten($color-font, 20%);
         }
         &:focus {
             outline: 0;

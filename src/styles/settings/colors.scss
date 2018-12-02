@@ -11,7 +11,7 @@ $image-gif-loading-tertiary: "../img/meg-loader-small.gif";
 
 // Colors
 $primary: #00cc99;
-$secondary: #f69311;
+$secondary: #ffb347;
 $tertiary: #c25400;
 $quaternary: #008560;
 $success: #00cc99;
@@ -27,19 +27,19 @@ $dark-tertiary: #3d3d3f;
 $gray: #e5e5e5;
 
 // Layout colors
-$layout-primary: $white;
+$layout-primary: $light;
 $layout-secondary: $white;
 $layout-tertiary: $light;
 
 // Colors defined
-$color-font: #333;
+$color-font: #757575;
 $color-font-o: $color-font;
 $color-column: transparent;
 $color-input: $white;
 $color-input-text: $color-font;
 $color-input-disabled: $gray;
 $color-input-border: #dadce0;
-$color-border: #dadce0;
+$color-border: #e3e3e3;
 $color-link: $primary;
 $color-strong: $color-font;
 $pre-background: $gray;

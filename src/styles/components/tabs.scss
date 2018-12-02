@@ -11,7 +11,7 @@
         .meg-c-tab__nav {
             cursor: pointer;
             display: inline-block;
-            padding: $padding-top $padding-right * 2 $padding-bottom $padding-left * 2;
+            padding: $padding-top $padding-right $padding-bottom $padding-left;
             margin-right: 0px;
             text-decoration: none;
             color: $color-font;
@@ -60,5 +60,9 @@
 @media screen and (max-width: $responsive-mobile) {
     .meg-c-tab__inner {
         padding: 20px 0px;
+    }
+    .meg-c-tab__nav {
+        height: 100%;
+        text-align: center;
     }
 }

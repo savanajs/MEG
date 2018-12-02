@@ -49,7 +49,10 @@
     }
 
     position: relative;
-    padding: $padding-button;
+    &:not(.meg-el-btn--circle) {
+        padding: $padding-button;
+    }
+
     text-decoration: none;
     zoom: 1;
     white-space: nowrap;
@@ -102,6 +105,9 @@
     &:not(.meg-el-btn--circle):not(.meg-not-min-width) {
         border-radius: $border_radius_button;
         min-width: 94px;
+    }
+    .meg-el-btn--circle {
+        justify-content: center;
     }
 }
 
@@ -242,9 +248,10 @@
     &--circle {
         width: 62px;
         height: 62px;
-        display: block;
+        display: flex;
         @extend .meg-u-radius--50;
-
+        
+        justify-content: center;
         font-size: $font-size-base + .55;
     }
 
