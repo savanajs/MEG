@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="25.621605mm"
+   height="10.653175mm"
+   viewBox="0 0 25.621605 10.653175"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="logo-meg-dark.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient9958"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop9956" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9916"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#070000;stop-opacity:1;"
+         offset="0"
+         id="stop9914" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="-9.584821"
+     inkscape:cy="-20.780878"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="false"
+     borderlayer="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <sodipodi:guide
+       position="14.043664,2.8366735"
+       orientation="0,1"
+       id="guide856"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-35.518463,-74.256779)">
+    <circle
+       style="opacity:1;fill:#00cc99;fill-opacity:1;stroke:none;stroke-width:0.25334731;stroke-opacity:1"
+       id="path826"
+       cx="40.845051"
+       cy="79.583366"
+       r="5.3265877" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.63202858px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4b4b4b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.16580071;stroke-miterlimit:4;stroke-dasharray:0.16580071, 0.16580070999999999;stroke-dashoffset:0;"
+       x="49.686958"
+       y="78.474251"
+       id="text830"
+       transform="scale(0.95623494,1.0457681)"><tspan
+         sodipodi:role="line"
+         id="tspan828"
+         x="49.686958"
+         y="78.474251"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';fill:#ffffff;fill-opacity:0.94117647;fill-rule:nonzero;stroke-width:0.16580071;stroke:none;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.16580071, 0.16580070999999999;stroke-dashoffset:0">MEG</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="64.066963"
+       y="76.072914"
+       id="text834"><tspan
+         sodipodi:role="line"
+         id="tspan832"
+         x="64.066963"
+         y="85.728409"
+         style="stroke-width:0.26458332" /><tspan
+         sodipodi:role="line"
+         x="64.066963"
+         y="98.957573"
+         style="stroke-width:0.26458332"
+         id="tspan836" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.63202858px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16580072"
+       x="39.812939"
+       y="78.41497"
+       id="text830-4"
+       transform="scale(0.95623494,1.0457681)"><tspan
+         sodipodi:role="line"
+         id="tspan828-5"
+         x="39.812939"
+         y="78.41497"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';fill:#ffffff;stroke-width:0.16580072">M</tspan></text>
+  </g>
+</svg>
