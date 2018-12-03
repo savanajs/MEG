@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -15,9 +16,26 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="logo-dark.svg">
+   sodipodi:docname="logo-meg-dark.svg">
   <defs
-     id="defs2" />
+     id="defs2">
+    <linearGradient
+       id="linearGradient9958"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop9956" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9916"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#070000;stop-opacity:1;"
+         offset="0"
+         id="stop9914" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,8 +44,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="35.950893"
-     inkscape:cy="-6.4951638"
+     inkscape:cx="-9.584821"
+     inkscape:cy="-20.780878"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -58,7 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -73,24 +91,18 @@
        cx="40.845051"
        cy="79.583366"
        r="5.3265877" />
-    <g
-       aria-label="MEG"
-       transform="scale(0.95623494,1.0457681)"
-       style="font-style:normal;font-weight:normal;font-size:6.63202858px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.16580072"
-       id="text830">
-      <path
-         d="m 51.930735,73.759293 1.211123,3.41964 1.204645,-3.41964 h 1.275889 v 4.714958 h -0.974727 v -1.288842 l 0.09715,-2.224709 -1.27265,3.513551 h -0.667089 l -1.269412,-3.510312 0.09715,2.22147 v 1.288842 h -0.971489 v -4.714958 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#ffffff;stroke-width:0.16580072"
-         id="path841" />
-      <path
-         d="M 59.314048,76.430887 H 57.44879 v 1.262935 h 2.189088 v 0.780429 h -3.160577 v -4.714958 h 3.1541 v 0.786906 H 57.44879 v 1.123688 h 1.865258 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#ffffff;stroke-width:0.16580072"
-         id="path843" />
-      <path
-         d="m 63.938333,77.878404 q -0.262302,0.314115 -0.74157,0.488983 -0.479267,0.17163 -1.06216,0.17163 -0.612038,0 -1.075114,-0.265541 -0.459838,-0.268778 -0.712425,-0.77719 -0.249349,-0.508413 -0.255826,-1.194931 v -0.320592 q 0,-0.705948 0.236396,-1.220837 0.239634,-0.518127 0.686518,-0.790144 0.450123,-0.275255 1.052446,-0.275255 0.838719,0 1.31151,0.401549 0.472791,0.39831 0.560225,1.162548 h -0.945582 q -0.06477,-0.404787 -0.288208,-0.592608 -0.220205,-0.187821 -0.6088,-0.187821 -0.495459,0 -0.754523,0.372403 -0.259063,0.372404 -0.262302,1.107497 v 0.301162 q 0,0.741569 0.281732,1.12045 0.281732,0.378881 0.825765,0.378881 0.547272,0 0.780429,-0.233158 V 76.712618 H 62.08279 v -0.715663 h 1.855543 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#ffffff;stroke-width:0.16580072"
-         id="path845" />
-    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.63202858px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4b4b4b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.16580071;stroke-miterlimit:4;stroke-dasharray:0.16580071, 0.16580070999999999;stroke-dashoffset:0;"
+       x="49.686958"
+       y="78.474251"
+       id="text830"
+       transform="scale(0.95623494,1.0457681)"><tspan
+         sodipodi:role="line"
+         id="tspan828"
+         x="49.686958"
+         y="78.474251"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';fill:#ffffff;fill-opacity:0.94117647;fill-rule:nonzero;stroke-width:0.16580071;stroke:none;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.16580071, 0.16580070999999999;stroke-dashoffset:0">MEG</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -107,25 +119,17 @@
          y="98.957573"
          style="stroke-width:0.26458332"
          id="tspan836" /></text>
-    <g
-       aria-label="M"
-       transform="scale(0.95623494,1.0457681)"
-       style="font-style:normal;font-weight:normal;font-size:6.63202858px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16580072"
-       id="text830-4">
-      <path
-         d="m 41.503329,73.74292 1.211122,3.41964 1.204646,-3.41964 h 1.275888 v 4.714958 h -0.974727 v -1.288841 l 0.09715,-2.224709 -1.27265,3.51355 h -0.667089 l -1.269411,-3.510312 0.09715,2.221471 v 1.288841 H 40.233917 V 73.74292 Z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#ffffff;stroke-width:0.16580072"
-         id="path848" />
-    </g>
-    <flowRoot
+    <text
        xml:space="preserve"
-       id="flowRoot833"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
-         id="flowRegion835"><rect
-           id="rect837"
-           width="162.85715"
-           height="68.214287"
-           x="-37.857143"
-           y="-18.664602" /></flowRegion><flowPara
-         id="flowPara839"></flowPara></flowRoot>  </g>
+       style="font-style:normal;font-weight:normal;font-size:6.63202858px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16580072"
+       x="39.812939"
+       y="78.41497"
+       id="text830-4"
+       transform="scale(0.95623494,1.0457681)"><tspan
+         sodipodi:role="line"
+         id="tspan828-5"
+         x="39.812939"
+         y="78.41497"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';fill:#ffffff;stroke-width:0.16580072">M</tspan></text>
+  </g>
 </svg>
