@@ -30,6 +30,7 @@
         width: 100%;
         z-index: 1;
         display: none;
+        background-color: $layout-tertiary;
     }
     .meg-c-accordion__open:checked ~ .meg-c-accordion__inner {
         visibility: visible;

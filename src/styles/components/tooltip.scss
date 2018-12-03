@@ -4,7 +4,7 @@
         position: absolute;
         min-width: 140px;
         color: #ffffff;
-        background: #000000;
+        background: $color-font;
         line-height: 16px;
         text-align: center;
         opacity: 0;
@@ -26,7 +26,7 @@
             margin-left: -76px;
             &::after {
                 bottom: -8px;
-                border-top: 8px solid #000000;
+                border-top: 8px solid $color-font;
                 border-right: 8px solid transparent;
                 border-left: 8px solid transparent;
             }
@@ -37,7 +37,7 @@
             margin-left: -76px;
             &::after {
                 top: -8px;
-                border-bottom: 8px solid #000000;
+                border-bottom: 8px solid $color-font;
                 border-right: 8px solid transparent;
                 border-left: 8px solid transparent;
             }
