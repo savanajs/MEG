@@ -101,7 +101,6 @@ gulp.task('default',
     function () {
         runSequence(
             'getCSSMINToFolderLib',
-            'getCSSMINAndRenameToDark',
             'getCSSDarkMINToFolderLib',
             'getJSMINToFolderLib',
             'getImagesSrcToBuild',

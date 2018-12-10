@@ -27,7 +27,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "gulp setFileCssDarkName && webpack -p && gulp setFileCssDefaultName && webpack -p && gulp default",
+    "docs": "gulp setFileCssDarkName && webpack -p && gulp getCSSMINAndRenameToDark &&  gulp setFileCssDefaultName && webpack -p && gulp default",
     "start": "webpack-dev-server --content-base src --inline --mode development --port 3000"
   },
   "keywords": [
