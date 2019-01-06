@@ -10,7 +10,6 @@
     }
     
     display: inline-block;
-    background: url($image-gif-loading-primary) no-repeat center center;
     &--slider {
         img {
             width: 100%;
@@ -66,6 +65,9 @@
         img {
             border-radius: 50%;
         }
+    }
+    &--loader {
+        background: url($image-gif-loading-primary) no-repeat center center;
     }
 }
 
