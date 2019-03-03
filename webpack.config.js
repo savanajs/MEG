@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
@@ -10,6 +12,7 @@ const fs = require('fs');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const resolvePath = (pathToResolve = '') => path.resolve(__dirname, pathToResolve);
+var LiveReloadPlugin = require('webpack-livereload-plugin');
 
 const PUBLIC_PATH = pkg.public_path;  // webpack needs the trailing slash for output.publicPath
 const date = new Date();
@@ -60,7 +63,8 @@ module.exports = (env, options) => {
             // both options are optional
             filename: pkg.name + '.min.css',
             chunkFilename: pkg.name + ".css"
-        })
+        }),
+        new LiveReloadPlugin()
     ];
 
     if (devMode) {

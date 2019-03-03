@@ -6,7 +6,7 @@ Prism.highlightAll();
 
 (function ($) {
 
-  var Code = {
+  const Code = {
     "selector": ".dinamic",
     "definedCode": function (code) {
 
@@ -19,9 +19,9 @@ Prism.highlightAll();
       code = code.replace(/</g, "&lt;");
       code = code.replace(/>/g, "&gt");
 
-      var lines = code.split("\n");
-      var line = lines[1];
-      var leadingSpaces = 1;
+      const lines = code.split("\n");
+      const line = lines[1];
+      let leadingSpaces = 1;
 
       while (line.charAt(leadingSpaces) == " ") {
 
@@ -29,7 +29,7 @@ Prism.highlightAll();
 
       }
 
-      for (var i = 1, len = lines.length; i < len; i++) {
+      for (let i = 1, len = lines.length; i < len; i++) {
 
         lines[i] = lines[i].slice(leadingSpaces);
 
@@ -42,8 +42,8 @@ Prism.highlightAll();
     },
     "getCodePreviews": function () {
 
-      var _this = this;
-      var target;
+      const _this = this;
+      let target;
 
       $(this.selector).each(function () {
 
@@ -60,7 +60,7 @@ Prism.highlightAll();
     }
   };
 
-  var Tpl = {
+  const Tpl = {
     "data": {
       "dark": "meg-dark.min.css",
       "light": "meg.min.css",
@@ -73,7 +73,7 @@ Prism.highlightAll();
 
       }
 
-      var date = new Date();
+      const date = new Date();
 
       $("head > link[rel=stylesheet]").attr("href", file + "?v=" + date.getTime());
 
@@ -82,7 +82,7 @@ Prism.highlightAll();
     },
     "events": function () {
 
-      var self = this;
+      const self = this;
 
       $("#switch-tpl").on("change", function () {
 

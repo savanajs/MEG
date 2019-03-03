@@ -153,9 +153,9 @@
             .meg-c-form__icon:first-child {
                 border-top-right-radius: 0px;
                 border-bottom-right-radius: 0px;
-                border-left: 1px solid $color-input-border;
-                border-top: 1px solid $color-input-border;
-                border-bottom: 1px solid $color-input-border;
+                border-left: $border-size solid $color-input-border;
+                border-top: $border-size solid $color-input-border;
+                border-bottom: $border-size solid $color-input-border;
                 & + .meg-c-field {
                     border-top-left-radius: 0px;
                     border-bottom-left-radius: 0px;

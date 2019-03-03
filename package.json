@@ -16,7 +16,7 @@
   "is_style_loader": false,
   "minify": {
     "html": true,
-    "exclude": "src/index.html"
+    "exclude": "src/docs.html"
   },
   "pwa_manifest": {
     "name": "MEG CSS Framework",
@@ -28,7 +28,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs": "gulp setFileCssDarkName && webpack -p && gulp getCSSMINAndRenameToDark &&  gulp setFileCssDefaultName && webpack -p && gulp default",
-    "start": "webpack-dev-server --content-base src --inline --mode development --port 3000"
+    "start": "webpack-dev-server --content-base src --watch --open --progress --colors --inline --mode development --port 3000"
   },
   "keywords": [
     "framework",
@@ -84,6 +84,7 @@
     "webpack-cli": "^3.0.8",
     "webpack-concat-plugin": "^3.0.0",
     "webpack-dev-server": "^3.1.4",
+    "webpack-livereload-plugin": "^2.2.0",
     "webpack-pwa-manifest": "^3.7.1"
   },
   "dependencies": {

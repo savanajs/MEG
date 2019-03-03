@@ -2,10 +2,10 @@ import "styles/meg";
 
 (function ($) {
 
-  var $win = $(window);
-  var $doc = $(document);
+  const $win = $(window);
+  const $doc = $(document);
 
-  var Meg = function () {
+  const Meg = function () {
 
     console.info("%cMEG CSS Framework - You are working on your project! Thanks:) | See documentation: http://savanajs.github.io/meg", "color:#00cc99;font-weight:bold;font-size:11px");
 
@@ -43,27 +43,27 @@ import "styles/meg";
       "selector": ".meg-js-lazy-img",
       "isOnScreen": function (element) {
 
-        var win = $(window);
-        var screenTop = win.scrollTop();
-        var screenBottom = screenTop + win.height();
-        var elementTop = element.offset().top;
-        var elementBottom = elementTop + element.height();
+        const win = $(window);
+        const screenTop = win.scrollTop();
+        const screenBottom = screenTop + win.height();
+        const elementTop = element.offset().top;
+        const elementBottom = elementTop + element.height();
 
         return elementBottom > screenTop && elementTop < screenBottom;
 
       },
       "loadImages": function () {
 
-        var _self = this;
+        const _self = this;
 
         $.each($(this.selector), function () {
 
-          var block = $(this);
-          var image = block.find("img");
+          const block = $(this);
+          const image = block.find("img");
 
           if (_self.isOnScreen(block)) {
 
-            var url = image.attr("url");
+            const url = image.attr("url");
 
             if (image.attr("src") != url) {
 
@@ -78,7 +78,7 @@ import "styles/meg";
       },
       "events": function () {
 
-        var _self = this;
+        const _self = this;
 
         $(document).on("scroll", function () {
 
@@ -89,7 +89,7 @@ import "styles/meg";
       },
       "load": function () {
 
-        var selector = $(this.selector);
+        const selector = $(this.selector);
 
         selector.find("img").on("load", function () {
 
@@ -130,13 +130,13 @@ import "styles/meg";
       },
       "events": function () {
 
-        var _self = this;
+        const _self = this;
 
         $("body").on("click", this.selector_scrolling_to, function (e) {
 
           e.preventDefault();
 
-          var goto = $(this).attr("data-to");
+          const goto = $(this).attr("data-to");
 
           _self.scrollingTo(goto);
 
@@ -144,7 +144,7 @@ import "styles/meg";
 
         $(window).on("scroll", function () {
 
-          var scrollTop = $(window).scrollTop();
+          const scrollTop = $(window).scrollTop();
 
           if (scrollTop > 100) {
 
@@ -174,7 +174,7 @@ import "styles/meg";
     "selector_modal_trigger": ".meg-js-modal--alert-trigger",
     "setHmlt": function () {
 
-      var html = `<div class="meg-c-modal meg-js-modal meg-js-modal--alert" role="dialog" aria-modal="true" tabindex="-1">
+      const html = `<div class="meg-c-modal meg-js-modal meg-js-modal--alert" role="dialog" aria-modal="true" tabindex="-1">
                               <div class="meg-c-modal__wrap" aria-hidden="true" role="dialog">
                                   <div class="meg-c-modal__overlay" for="meg-c-alert__1"></div>
                                   <div class="meg-c-modal__dialog meg-u-box-shadow">
@@ -228,7 +228,7 @@ import "styles/meg";
     },
     "events": function () {
 
-      var _self = this;
+      const _self = this;
 
       $(this.selector_modal_trigger).on("click", function (e) {
 
@@ -265,7 +265,7 @@ import "styles/meg";
 
         }
 
-        var target = $this.attr("href");
+        const target = $this.attr("href");
 
         if (!target) {
 
@@ -285,7 +285,7 @@ import "styles/meg";
       },
       "events": function () {
 
-        var _self = this;
+        const _self = this;
 
         $(this.selector_open_modal).on("click", function (e) {
 
@@ -363,7 +363,7 @@ import "styles/meg";
 
         }
 
-        var target = $this.attr("href");
+        const target = $this.attr("href");
 
         $(target).addClass("actived");
 
@@ -375,7 +375,7 @@ import "styles/meg";
       },
       "events": function () {
 
-        var _self = this;
+        const _self = this;
 
         $(this.selector_link).on("click", function (e) {
 
@@ -405,7 +405,7 @@ import "styles/meg";
     return {
       "setHtmlLoading": function () {
 
-        var html = `<div class="meg-c-loader__overlay meg-c-loader__overlay--open meg-c-loader__overlay--absolute">
+        const html = `<div class="meg-c-loader__overlay meg-c-loader__overlay--open meg-c-loader__overlay--absolute">
                   <div class="meg-c-loader meg-c-loader--medium meg-c-loader--primary"></div>
               </div>`;
 
@@ -418,7 +418,7 @@ import "styles/meg";
       },
       "setHtmlWaitLoading": function () {
 
-        var html = `<div class="meg-c-loader__waiting-overlay meg-c-loader__waiting-overlay--open meg-c-loader__waiting-overlay--absolute">
+        const html = `<div class="meg-c-loader__waiting-overlay meg-c-loader__waiting-overlay--open meg-c-loader__waiting-overlay--absolute">
                   <div class="meg-c-loader__waiting">
                       <div class="meg-c-waiting__warp-loader">
                           <div class="meg-c-loader meg-c-loader--medium meg-c-loader--primary"></div>
@@ -485,7 +485,7 @@ import "styles/meg";
       },
       "showBeforeLoading": function (element_target) {
 
-        var el = (!element_target) ? $("body") : $(element_target);
+        const el = (!element_target) ? $("body") : $(element_target);
 
         el.addClass("meg-before-loading");
 
@@ -494,7 +494,7 @@ import "styles/meg";
       },
       "hideBeforeLoading": function (element_target) {
 
-        var el = (!element_target) ? $("body") : $(element_target);
+        const el = (!element_target) ? $("body") : $(element_target);
 
         el.removeClass("meg-before-loading");
 
@@ -503,7 +503,7 @@ import "styles/meg";
       },
       "events": function () {
 
-        var _self = this;
+        const _self = this;
 
         $(".trigger-showWaitLoading").on("click", function (e) {
 
@@ -538,7 +538,7 @@ import "styles/meg";
 
       "getMessage": function (text, type) {
 
-        var msg_html;
+        let msg_html;
 
         switch (type) {
 
@@ -616,8 +616,8 @@ import "styles/meg";
 
         }
 
-        var cb = (typeof callback === "function");
-        var _this = this;
+        const cb = (typeof callback === "function");
+        const _this = this;
 
         time = time || 5000;
 
