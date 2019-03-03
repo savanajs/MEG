@@ -25,10 +25,16 @@
     top: 0px;
     width: 400px;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    > div {
+        width: 100%;
+    }
     .meg-c-slidebox__header {
         padding: 0px 10px;
         border-bottom: 1px solid $color_border;
-        height: 6vh;
+        min-height: 42px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -43,7 +49,8 @@
         }
     }
     .meg-c-slidebox__content {
-        height: 53vh;
+        height: 20%;
+        flex-grow: 1;
         overflow-y: auto;
 
         &:not(.meg-no-padding) {
@@ -55,9 +62,10 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
-        position: absolute;
         bottom: 0;
         width: 100%;
+        background-color: $color-lt-secondary;
+        position: relative;
     }
     &--left {
         left: 0;
