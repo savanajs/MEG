@@ -1,0 +1,226 @@
+.c-loader__overlay {
+    display: none;
+    &--absolute {
+        position: absolute;
+    }
+    &--fixed {
+        position: fixed;
+    }
+
+    text-align: center;
+    top: 0;
+    z-index: 4;
+    background: rgba($layout-primary, .6);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    .c-loader {
+        margin: 0 auto;
+    }
+}
+
+.c-loader {
+    border-radius: 50%;
+    animation: spin .6s linear infinite;
+    display: inline-block;
+    &--small {
+        border: 3px solid $color-l-bg-light;
+        border-top: 3px solid transparent;
+        width: 20px;
+        height: 20px;
+    }
+    &--medium {
+        border: 6px solid $color-l-bg-light;
+        border-top: 6px solid transparent;
+        width: 40px;
+        height: 40px;
+    }
+    &--large {
+        border: 8px solid $color-l-bg-light;
+        border-top: 8px solid transparent;
+        width: 80px;
+        height: 80px;
+    }
+    &--primary {
+        border-top-color: $primary;
+    }
+    &--success {
+        border-top-color: $success;
+    }
+    &--dark {
+        border-top-color: #333;
+    }
+    &--warning {
+        border-top-color: $warning;
+    }
+    &--info {
+        border-top-color: $info;
+    }
+    &--cancel {
+        border-top-color: $cancel;
+    }
+}
+
+.c-loader-bar {
+    height: 4px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: $color-l-bg-light;
+    &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        left: -200px;
+        width: 200px;
+        height: 4px;
+        animation: loading 2s linear infinite;
+    }
+    &--primary::before {
+        background-color: $primary;
+    }
+    &--success::before {
+        background-color: $success;
+    }
+    &--warning::before {
+        background-color: $warning;
+    }
+    &--cancel::before {
+        background-color: $cancel;
+    }
+    &--info::before {
+        background-color: $info;
+    }
+    &--dark::before {
+        background-color: #333;
+    }
+}
+
+.c-loader__waiting-overlay {
+    background: rgba($layout-primary, .7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: none;
+    &--absolute {
+        position: absolute;
+    }
+    &--fixed {
+        position: fixed;
+    }
+    .c-loader__waiting {
+        display: flex;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 100px;
+        background: $layout-secondary;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+        border: 1px solid $color-border;
+        > .c-waiting__warp-loader {
+            margin-right: 15px;
+        }
+        > .c-waiting__content {
+            flex: 1 1 auto;
+            > .c-waiting__title {
+                font-size: 16px;
+                text-align: center;
+                align-content: center;
+            }
+        }
+    }
+}
+
+.before-loading {
+    position: relative;
+}
+
+.before-loading::before {
+    content: "";
+    top: 0;
+    left: 0;
+    background: url($image-gif-loading-primary) no-repeat center center $layout-primary;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    z-index: 4;
+}
+
+.loading {
+    .c-loader__overlay {
+        &--open {
+            display: flex;
+        }
+    }
+}
+
+.wait-loading {
+    .c-loader__waiting-overlay {
+        &--open {
+            display: block;
+        }
+    }
+}
+
+body.wait-loading,
+body.loading {
+    .c-loader__waiting-overlay,
+    .c-loader__overlay {
+        position: fixed;
+    }
+}
+
+.c-loading--bar {
+    background: url($image-gif-loading-secondary) no-repeat center center $layout-tertiary;
+    border: 1px solid $color-border;
+    width: 100%;
+    height: 40px;
+}
+
+@keyframes loading {
+    from {
+        left: -200px;
+        width: 30%;
+    }
+    50% {
+        width: 30%;
+    }
+    70% {
+        width: 70%;
+    }
+    80% {
+        left: 50%;
+    }
+    95% {
+        left: 120%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

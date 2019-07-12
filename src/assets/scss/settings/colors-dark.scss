@@ -1,0 +1,64 @@
+// Images
+$logo: "../images/logo-dark.svg";
+$logo-mobile: "../images/logo-mobile.svg";
+$logo-width: 100px;
+$logo-height: 40px;
+$logo-mobile-width: 50px;
+$logo-mobile-height: 40px;
+$image-gif-loading-primary: "../images/before-loading-dark.gif";
+$image-gif-loading-secondary: "../images/loading-bar-dark.gif";
+$image-gif-loading-tertiary: "../images/loader-small-dark.gif";
+
+// Colors
+$dark-primary: #212121;
+$dark-secondary: #2a2a2b;
+$dark-tertiary: #343435;
+$primary: #00cc99;
+$secondary: #f69311;
+$tertiary: #c25400;
+$quaternary: #008560;
+$success: #00cc99;
+$cancel: #cc3300;
+$warning: #ffcc00;
+$info: #0099cc;
+$black: #000;
+$white: #fff;
+$gray: #c5c5c5;
+$light: $dark-tertiary;
+
+// Layout colors
+
+$layout-primary: $dark-primary;
+$layout-secondary: $dark-secondary;
+$layout-tertiary: $dark-tertiary;
+
+// Colors defined
+
+$color-font: $white;
+$color-font-o: $white;
+$color-column: transparent;
+$color-input: $layout-tertiary;
+$color-input-text: $color-font;
+$color-input-disabled: darken($layout-tertiary, 5%);
+$color-input-border: $layout-primary;
+$color-border: $layout-primary;
+$color-link: $primary;
+$color-strong: $color-font;
+$pre-background: $gray;
+$hr-background: $gray;
+$code-background: $light;
+$color-checked-radio: $layout-tertiary;
+
+// Colors for theme
+
+$background: $layout-primary;
+$color-l-primary: $layout-primary;
+$color-l-secondary: $layout-secondary; 
+$color-l-tertiary: $layout-tertiary;
+$color-l-bg-hover: $layout-tertiary;
+$color-l-bg-scrolling: $layout-tertiary;
+$color-l-bg-bar: $primary;
+$color-l-bg-light: $layout-tertiary;
+$color-l-bg-content: $layout-secondary;
+$color-l-bg-content-placeholder-primary: darken($layout-tertiary, 5%);
+$color-l-bg-content-placeholder-secondary: $layout-tertiary;

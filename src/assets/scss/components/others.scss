@@ -1,0 +1,203 @@
+.js-return-top {
+    position: fixed;
+    z-index: 5;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+
+.js-lazy-img img {
+    opacity: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.js-lazy-img img.js-loaded {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.c-iterartions--fade-out {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.c-iterartions--fade-out.visible-element,
+.c-iterartions--fade-out:hover {
+    opacity: 1;
+}
+
+.c-filters--content {
+    height: 200px;
+    overflow-y: auto;
+}
+
+.social {
+    font-size: 1.6em;
+    padding: 0 .3em;
+    &.facebook {
+        color: #3b5999;
+    }
+    &.twitter {
+        color: #55acee;
+    }
+    &.g-plus {
+        color: #dd4b39;
+    }
+    &.youtube {
+        color: #cd201f;
+    }
+}
+
+.payment {
+    padding: 0 .3em;
+    background: url($img_dir + "/payment-flags.gif") no-repeat center center;
+    text-indent: 99px;
+    font-size: 0px;
+    overflow: hidden;
+    height: 27px;
+    width: 50px;
+    display: block;
+    &.visa {
+        background-position: -116px -108px;
+    }
+    &.mastercard {
+        background-position: -174px -36px;
+    }
+    &.diners {
+        background-position: -174px -108px;
+    }
+    &.elo {
+        background-position: -58px -72px;
+    }
+    &.amex {
+        background-position: 0 0;
+    }
+    &.hipercard {
+        background-position: -116px 0;
+    }
+    &.cabal {
+        background-position: 0 -179px;
+    }
+    &.boleto {
+        background-position: -58px -36px;
+    }
+    &.itau {
+        background-position: -116px -36px;
+    }
+    &.bradesco {
+        background-position: 0 -72px;
+    }
+    &.banrisul {
+        background-position: 0 -36px;
+    }
+    &.brasil {
+        background-position: -58px -145px;
+    }
+    &.santander {
+        background-position: -174px -145px;
+    }
+}
+
+.block-content {
+    margin-bottom: $margin-bottom;
+}
+
+.o-notify {
+    transition: transform .2s;
+    will-change: transform;
+    transform: translateY(100%);
+    bottom: 0;
+    width: 40%;
+    position: fixed;
+    right: 0px;
+    opacity: .8;
+    padding: 0px 10px;
+    z-index: 6;
+}
+
+.o-notify {
+    &.o-notify--open {
+        transform: translateY(0);
+    }
+}
+
+.o-logo {
+    font-size: 1.9em;
+    color: $color-font;
+    font-weight: 900;
+    > b {
+        color: $white;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        background-color: $primary;
+        border-radius: 50px;
+        display: inline-block;
+        line-height: 1.5em;
+        margin-right: 10px;
+    }
+    > span {
+        color: $primary;
+    }
+}
+
+// Tablet
+@media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
+
+    .o-open-menu {
+        font-size: 2.5em;
+    }
+
+    .o-notify {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .o-notify > div {
+        margin-bottom: 0px;
+    }
+
+    .l-logo {
+        padding-top: 5px;
+    }
+
+    .o-logo {
+        > b {
+            line-height: 1.4em;
+        }
+    }
+
+}
+
+// Mobile
+@media screen and (max-width: $responsive-mobile) {
+
+    .o-open-menu {
+        font-size: 1.6em;
+    }
+
+    .o-notify {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .o-notify > div {
+        margin-bottom: 0px;
+    }
+    
+    .o-logo {
+        font-size: 1.8em;
+        line-height: 1.4em;
+        > b {
+            line-height: 1.35em;
+        }
+    }
+
+    .o-logo {
+        > span {
+            display: none;
+        }
+    }
+
+}

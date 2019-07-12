@@ -1,0 +1,138 @@
+
+@import "colors.scss";
+
+// General
+$font-pixel-base: 18;
+$font-calc-base: (12 / $font-pixel-base);
+$font-size-base: 1.2em; //12px
+$line-height-base: 1.5em;
+$shell: 1280px;
+$shell-max-width: 1920px;
+$shell-gutter: 15px;
+$font-family: 'Poppins', sans-serif;
+$strong-weight: 600;
+$margin-top: 10px;
+$margin-bottom: 10px;
+$margin-right: 10px;
+$margin-left: 10px;
+$letter-spacing: .2px;
+$sides: (top, bottom, left, right); // Leave this variable alone
+$spaceamounts: (
+  0,
+  5,
+  10,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  55,
+  60,
+  65,
+  70,
+  75,
+  80,
+  85,
+  90,
+  95,
+  100
+); // Adjust this to include the pixel amounts you need.
+$widths: (
+  50,
+  100,
+  150,
+  200,
+  250,
+  300,
+  350,
+  400,
+  450,
+  500,
+  550,
+  600,
+  650,
+  700,
+  750,
+  800,
+  850,
+  900,
+  1000,
+  1050,
+  1100,
+  1150,
+  1200,
+  1250,
+  1300,
+  1350,
+  1400,
+  1450
+); // Adjust this to include the pixel amounts you need.
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+  "light" : $light, 
+  "white" : $white, 
+  "black" : $black, 
+  "primary" : $primary, 
+  "secondary" : $secondary, 
+  "tertiary" : $tertiary, 
+  "quaternary" : $quaternary, 
+  "success" : $success,
+  "cancel" : $cancel,
+  "warning" : $warning,
+  "info" : $info,
+  "gray" : $gray,
+  "layout-primary": $layout-primary,
+  "layout-secondary": $layout-secondary,
+  "layout-tertiary": $layout-tertiary,
+),
+$theme-colors
+);
+
+// Form input
+$border-radius-primary: 10px;
+$border_radius_input: 10px;
+$border_radius_button: 5px;
+$margin-bottom-field: 20px;
+$border-size: 2px;
+$padding-input: .5em .6em;
+
+// Padding
+$padding-top: 10px;
+$padding-bottom: 10px;
+$padding-right: 10px;
+$padding-left: 10px;
+$padding: $padding-top $padding-right $padding-bottom $padding-left;
+
+// Buttons
+$padding-top-button: .5em;
+$padding-bottom-button: .5em;
+$padding-right-button: .7em;
+$padding-left-button: .7em;
+$margin-bottom-button: 10px;
+$margin-left-button: 10px;
+
+$padding-button: $padding-top-button $padding-right-button $padding-bottom-button $padding-left-button;
+
+// Heading
+$margin-bottom-heading: 20px;
+$line-height-heading: 1.2em;
+
+// HR line
+$hr-height: 1px;
+$hr-margin: $margin-top 0px $margin-bottom 0px;
+
+// List
+$margin-bottom-list: 10px;
+
+// Radius
+$radius: 5px 5px 5px 5px;
+
+// Responsives max.
+$responsive-device: 1024px; // Mobile end tablet
+$responsive-mobile: 767px; // Mobile only
+$responsive-tablet: 1024px; // Tablet only
+$responsive-desktop: 5000px; // Desktop only

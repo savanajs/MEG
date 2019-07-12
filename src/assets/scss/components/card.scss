@@ -1,0 +1,124 @@
+.c-card {
+    border: 1px solid $color-border;
+    background: $color-l-bg-content;
+    &--image-left {
+        display: flex;
+        .c-card__image {
+            order: 0;
+            flex: 0 1 50%;
+            width: 50%;
+        }
+        .c-card__content {
+            order: 1;
+            flex: 0 1 50%;
+            width: 50%;
+        }
+    }
+    &--image-right {
+        display: flex;
+        .c-card__image {
+            order: 1;
+            flex: 0 1 50%;
+            width: 50%;
+        }
+        .c-card__content {
+            order: 0;
+            flex: 0 1 50%;
+            width: 50%;
+        }
+    }
+    &--image-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        .c-card__image {
+            order: 1;
+            flex: 0 1 100%;
+            width: 100%;
+        }
+        .c-card__content {
+            order: 0;
+            flex: 0 1 100%;
+            width: 100%;
+        }
+    }
+    &--image-middle {
+        display: flex;
+        flex-wrap: wrap;
+        .c-card__image {
+            order: 1;
+            flex: 0 1 100%;
+            width: 100%;
+        }
+        .c-card__content {
+            order: 0;
+            flex: 0 1 100%;
+            width: 100%;
+        }
+    }
+    .c-card__image {
+        display: block;
+        position: relative;
+    }
+    .c-content {
+        padding: 15px;
+    }
+    .c-content__media {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 15px 15px 0px 15px;
+        .c-media__avatar {
+            margin-right: 20px;
+        }
+        .c-media__content {
+            flex: 1 1 auto;
+            width: auto;
+            .el-content__subtitle {
+                color: lighten($color-font, 30%);
+            }
+        }
+        .c-media__actions {
+            margin-left: 20px;
+        }
+    }
+}
+
+.c-content {
+    .c-content__description {
+        display: block;
+        margin-bottom: 15px;
+        a {
+            color: $primary;
+        }
+    }
+    .c-content__time {
+        color: lighten($color-font, 50%);
+    }
+}
+
+@media screen and (max-width: $responsive-tablet) {
+    .c-card {
+        &--image-left {
+            flex-wrap: wrap;
+            .c-card__image {
+                flex: 0 1 100%;
+                width: 100%;
+            }
+            .c-card__content {
+                flex: 0 1 100%;
+                width: 100%;
+            }
+        }
+        &--image-right {
+            flex-wrap: wrap;
+            .c-card__image {         
+                flex: 0 1 100%;
+                width: 100%;
+            }
+            .c-card__content {
+                flex: 0 1 100%;
+                width: 100%;
+            }
+        }
+    }
+}

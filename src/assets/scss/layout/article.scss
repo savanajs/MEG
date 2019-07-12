@@ -1,0 +1,5 @@
+.l-article {
+    &:not(.no-margin-bottom) {
+        margin-bottom: $margin-bottom;
+    }
+}

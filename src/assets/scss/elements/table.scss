@@ -1,0 +1,45 @@
+.el-table {
+    empty-cells: show;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    &--center {
+        text-align: center;
+        th {
+            text-align: center;
+        }
+    }
+    > thead {
+        text-align: left;
+        vertical-align: bottom;    
+    }
+    &:not(.el-table--lighted) {
+        > thead {
+            background-color: $color-l-bg-light;
+        }
+    }
+    tr {
+        border-bottom: 1px solid $color-border;
+    }
+    th,
+    td {
+        padding: $padding;
+        vertical-align: middle;
+    }
+    &--bordered {
+        th,
+        td {
+            border: 1px solid $color-border;
+        }
+    }
+    &--striped {
+        tbody tr:nth-child(2n+1) {
+            background-color: lighten($color-font, 20%);
+        }
+    }
+    &--lighted {
+        thead {
+            background: transparent;
+        }
+    }
+}

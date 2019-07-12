@@ -1,0 +1,96 @@
+.l-table-list {
+    width: 100%;
+    background-color: $color-l-bg-content;
+    .el-table-list__item {
+        border-bottom: 1px solid $color-border;
+        > td {
+            padding: 10px 10px;
+            vertical-align: middle;
+        }
+        > .c-list-item__wrap-image {
+            > a {
+                display: block;
+            }
+            img {
+                width: auto;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        > .c-list-item__infos {
+            .c-list-item__title {
+                display: block;
+            }
+            .c-list-item__sub-title {
+                color: lighten($color-font, 20%);
+            }
+        }
+        .c-list-item__actions {
+            text-align: center;
+            a {
+                cursor: pointer;
+            }
+        }
+        .c-list-item__wrap-image {
+            width: 70px;
+        }
+    }
+}
+
+.c-quantity-block {
+    width: 90px;
+    position: relative;
+    margin: 0 auto;
+    .c-quantity-block__plus,
+    .c-quantity-block__minus {
+        border: 0;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        height: 24px;
+        width: 24px;
+        background-color: $layout-secondary;
+        border-radius: $border-radius-primary;
+        text-align: center;
+        padding-top: 1px;
+        font-size: 16px;
+        color: #1e88e5;
+        cursor: pointer;
+        line-height: 22px;
+    }
+    .c-quantity-block__plus {
+        left: auto !important;
+        right: 3px;
+    }
+    .c-quantity-block__quantity {
+        display: flex;
+        width: 100%;
+        height: 30px;
+        border-radius: $border-radius-primary;
+        border: none;
+        text-align: center;
+        font-size: 12px;
+        pointer-events: none;
+        background-color: $layout-tertiary;
+        color: $color-font;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: $responsive-mobile) {
+
+    .l-table-list--actions {
+        > thead {
+            display: none;
+        }
+        .el-table-list__item {
+            > td {
+                display: block;
+                text-align: center;
+                width: 100% !important;
+            }
+        }
+    }   
+
+}

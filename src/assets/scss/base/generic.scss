@@ -1,0 +1,124 @@
+html {
+    font-size: $font-calc-base + em;
+    line-height: $font-calc-base + em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+}
+
+body {
+    background-color: $background;
+    font-size: $font-size-base;
+    color: $color-font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    opacity: 1;
+    letter-spacing: $letter-spacing;
+}
+
+html * {
+    font-family: $font-family;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .05);
+    line-height: $line-height-base;
+}
+
+strong {
+    font-weight: 900;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+    display: block;
+}
+
+a {
+    color: $color-link;
+    cursor: pointer;
+    text-decoration: none;
+
+    strong {
+        color: currentColor;
+    }
+}
+
+code {
+    background-color: $code-background;
+    font-weight: $strong-weight;
+    padding: $padding-top;
+}
+
+hr {
+    background-color: $hr-background;
+    border: none;
+    display: block;
+    height: $hr-height;
+    margin: $hr-margin;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    vertical-align: baseline;
+}
+
+small {
+    font-size: 0.875em;
+}
+
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+pre {
+    background-color: $pre-background;
+    font-size: 0.875em;
+    overflow-x: auto;
+    padding: 1.25rem 1.5rem;
+    white-space: pre;
+    word-wrap: normal;
+
+    code {
+        background-color: transparent;
+        color: currentColor;
+        padding: 0;
+    }
+}
+
+pre * {
+    font-weight: 100;
+}
+
+table {
+    td,
+    th {
+        text-align: left;
+        vertical-align: top;
+    }
+}
+
+fieldset {
+    border: none;
+}
+
+p:not(.l--sub-heading):not(.no-margin-bottom) {
+    margin-bottom: 10px;
+}
+
+p.no-margin-bottom {
+    margin-bottom: 0px;
+}

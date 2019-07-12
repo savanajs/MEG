@@ -1,0 +1,27 @@
+.c-pagination {
+    margin: $margin-top 0px $margin-bottom 0px;
+    display: inline-block;
+    .c-pagination__item {
+        float: left;
+        padding: 10px 15px;
+        text-decoration: none;
+        background-color: $layout-secondary;
+        color: $color-font;
+        border: 1px solid $color-border;
+        &:hover,
+        &--active {
+            background-color: $primary;
+            color: #fff;
+            border: 1px solid $primary;
+            border-left-color: $color-border;
+        }
+        &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.l-footer {
+    background-color: $color-l-bg-content;
+    padding-top: $padding-top * 2.5;
+    > .l-footer--info,
+    > .l-footer--credits {
+        font-size: $font-size-base - .4;
+    }
+}

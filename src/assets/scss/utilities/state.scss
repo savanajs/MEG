@@ -1,0 +1,49 @@
+.s-is-hidden {
+    display: none;
+}
+
+.s-is-show {
+    display: block;
+}
+
+.s-is-clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+// Desktop 
+@media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
+    .s-is-visible-lg {
+        display: inline-block;
+    }
+    .s-is-hidden-lg,
+    .s-is-visible-md,
+    .s-is-visible-sm {
+        display: none;
+    }
+}
+
+// Tablet
+@media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
+    .s-is-visible-md {
+        display: inline-block;
+    }
+    .s-is-visible-lg,
+    .s-is-hidden-md,
+    .s-is-visible-sm {
+        display: none;
+    }
+}
+
+// Mobile
+@media screen and (max-width: $responsive-mobile) {
+    .s-is-visible-sm {
+        display: inline-block;
+    }
+    .s-is-visible-lg,
+    .s-is-hidden-sm,
+    .s-is-visible-md {
+        display: none;
+    }
+}

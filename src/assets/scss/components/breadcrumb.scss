@@ -1,0 +1,24 @@
+.c-breadcrumb {
+    padding: $padding;
+    list-style: none;
+    .c-breadcrumb__item {
+        display: inline;
+        .c-item__link {
+            color: lighten($color-font, 10%);
+            text-decoration: none;
+        }
+        .c-item__link:hover {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+    .c-breadcrumb__item + .c-breadcrumb__item::before {
+        padding: 8px;
+        color: $color-font;
+        content: "/\00a0";
+    }
+    .c-breadcrumb__item.c-breadcrumb__current .c-item__link,
+    .c-breadcrumb__item.c-breadcrumb__current {
+        font-weight: bold;
+    }
+}

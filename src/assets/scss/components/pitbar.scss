@@ -1,0 +1,114 @@
+// Desktop 
+@media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
+
+    .c-pitbar {
+        display: flex;
+        align-content: space-around;
+        margin-bottom: 5px;
+        > .c-pitbar__item {
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: $color-l-bg-content;
+            margin-right: 2px;
+            justify-content: center;
+            position: relative;
+            > .c-item__image {
+                margin-right: 20px;
+                font-size: 2.5em;
+            }
+            > .c-item__title {
+                font-weight: 600;
+                > span {
+                    display: block;
+                    font-weight: 100;
+                    color: $color-font;
+                }
+            }
+            &:last-child {
+                margin-right: 0px;
+                &::before {
+                    display: none;
+                }
+            }
+            &::before {
+                content: "";
+                width: 1px;
+                height: 100%;
+                right: 0px;
+                position: absolute;
+                top: 0;
+                background: $color-border;
+            }
+        }
+    }
+
+}
+
+// Tablet
+@media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
+
+    .c-pitbar {
+        display: flex;
+        align-content: space-around;
+        margin-bottom: 5px;
+        > .c-pitbar__item {
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+            padding: 10px 10px;
+            background-color: $color-l-bg-content;
+            margin-right: 2px;
+            > .c-item__image {
+                margin-right: 20px;
+                font-size: 30px;
+            }
+            > .c-item__title {
+                font-weight: 900;
+                font-size: 1em;
+                > span {
+                    display: block;
+                    font-size: 1em;
+                    font-weight: 100;
+                    color: $color-font;
+                }
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+}
+
+// Mobile
+@media screen and (max-width: $responsive-mobile) {
+    .c-pitbar {
+        display: block;
+        align-content: center;
+        text-align: center;
+        > .c-pitbar__item {
+            text-align: center;
+            display: block;
+            align-content: center;
+            margin-bottom: 20px;
+            > .c-item__title {
+                font-size: 1.1em;
+                > span {
+                    display: block;
+                    font-size: .9em;
+                }
+            }
+            > .c-item__image {
+                margin-right: 0px;
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+        }
+    }
+}

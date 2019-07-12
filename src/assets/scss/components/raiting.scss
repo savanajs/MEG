@@ -1,0 +1,34 @@
+.c-raiting-stars {
+    &--large {
+        font-size: 1.4em;
+    }
+    &--small {
+        margin: 10px 0px;
+    }
+}
+
+.c-reviews {
+    .c-review {
+        position: relative;
+        padding-top: 10px;
+        color: $color-font;
+        .c-review__review-title {
+            font-weight: bold;
+        }
+        .c-review__review-date {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            opacity: .5;
+            font-size: .9em;
+        }
+        .c-review__author {
+            display: block;
+            margin-top: 10px;
+        }
+    }
+    .c-review + .c-review {
+        border-top: 1px solid $color-border;
+        margin-top: 10px;
+    }
+}

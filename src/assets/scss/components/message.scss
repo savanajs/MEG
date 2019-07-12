@@ -1,0 +1,57 @@
+.c-message {
+    margin-bottom: $margin-bottom;
+    width: 100%;
+    padding: 10px;
+    > i {
+        margin-right: 5px;
+    }
+    &--success {
+        background-color: $success;
+        color: #fff;
+        width: 100%;
+    }
+    &--warning {
+        background-color: $warning;
+        color: #fff;
+        width: 100%;
+    }
+    &--cancel {
+        background-color: $cancel;
+        color: #fff;
+        width: 100%;
+    }
+    &--info {
+        background-color: $info;
+        color: #fff;
+        width: 100%;
+    }
+}
+
+.c-text {
+    > i {
+        margin-right: 5px;
+    }
+    &--success {
+        color: $success;
+    }
+    &--cancel {
+        color: $cancel;
+    }
+    &--info {
+        color: $info;
+    }
+    &--warning {
+        color: $warning;
+    }
+}
+
+// Device (Mobile and tablet)
+@media screen and (max-width: $responsive-tablet) {
+    .c-message {
+        text-align: center;
+        > i {
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+}

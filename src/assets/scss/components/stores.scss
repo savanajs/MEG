@@ -1,0 +1,35 @@
+.c-stores {
+    padding: 15px;
+    background-color: $color-l-bg-content;
+    .c-stores__title {
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    > .c-stores__list {
+        display: flex;
+        overflow-y: auto;
+        width: 100%;
+        > .c-store {
+            text-align: center;
+            > .c-store__title {
+                display: block;
+                text-align: center;
+                margin-top: 5px;
+            }
+            img {
+                padding: 3px;
+                background: $color-l-bg-light;
+                border: 2px solid $color_border;
+            }
+        }
+        > .c-store + .c-store {
+            margin-left: 1.5%;
+        }
+        > .c-store.actived,
+        > .c-store:hover {
+            img {
+                border: 2px solid $primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.c-modal {
+    &.actived {
+        .c-modal__wrap::before,
+        .c-modal__wrap .c-modal__overlay {
+            display: block;
+        }
+        .c-modal__wrap .c-modal__dialog {
+            transform: translate(-50%, -50%) scale(2);
+            zoom: 0.5;
+            position: fixed;
+            top: 40%;
+        }
+    }
+    .c-modal__wrap::before {
+        content: '';
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 4;
+        cursor: pointer;
+    }
+    .c-modal__overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 5;
+        cursor: pointer;
+    }
+    .c-modal__dialog {
+        background: $color-l-bg-content;
+        border: 1px solid $color-border;
+        position: fixed;
+        left: 50%;
+        top: -100%;
+        transform: translate(-50%, -150%) scale(2);
+        transition: transform .2s ease-out;
+        -webkit-font-smoothing: subpixel-antialiased;
+        width: 80%;
+        max-width: 600px;
+        z-index: 5;
+        border-radius: $border-radius-primary;
+        overflow: hidden;
+        .c-modal__header,
+        .c-modal__body,
+        .c-modal__footer {
+            padding: 20px;
+        }
+        .c-modal__body {
+            max-height: 350px;
+            overflow-y: auto;
+        }
+        .c-modal__footer {
+            background: $color-l-bg-light;
+        }
+    }
+    .c-modal__btn-close {
+        color: lighten($color-font, 20%);
+        cursor: pointer;
+        font-size: 3rem;
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        text-decoration: none;
+        line-height: 0px;
+    }
+}
+
+@media screen and (max-width: $responsive-mobile) {
+    .c-modal {
+        &.actived {
+            .c-modal__wrap .c-modal__dialog {
+                width: 96%;
+                height: auto;
+                left: 0;
+                margin-left: 2%;
+                margin-right: 2%;
+                transform: initial;
+                top: 10%;
+            }
+        }
+        .c-modal__dialog {
+            transition: none;
+        }
+    }
+}

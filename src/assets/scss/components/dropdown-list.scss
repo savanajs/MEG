@@ -1,0 +1,44 @@
+.l-arrow__button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+
+    > i {
+        transform: rotate(90deg);
+        margin-right: 5px;
+    }
+
+    &.l-arrow__button--large {
+        font-size: 1.6em;
+    }
+}
+
+.l-arrow__checkbox {
+    display: none;
+}
+
+.l-arrow__header {
+    position: relative;
+}
+
+.l-arrow__checkbox:checked + .l-arrow__header {
+    .l-arrow__button > i {
+        transform: rotate(-90deg);
+    }
+}
+
+.l-arrow__checkbox--force:not(:checked) + .l-arrow__header + .l-arrow__target {
+    display: none;
+}
+
+.l-arrow__checkbox:checked + .l-arrow__header + .l-arrow__target {
+    display: block;
+    height: auto;
+}
+
+@media screen and (max-width: $responsive-tablet) {
+    .l-arrow__target {
+        display: none;
+    }
+}

@@ -6,46 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Meg | Make more layouts, write less css</title>
-    ${require('./includes/head.html')}
+    <include src="head.html"></include>
 </head>
 
 <body>
 
-    ${require('./includes/config.html')}
+    <div class="l-wrap">
 
-    <div class="meg-lt-wrap">
+        <div class="l-shell">
 
-        ${require('./includes/header.html')}
+            <section class="l-section" role="main" aria-label="">
 
-        <div class="meg-lt-shell">
+                <div class="l-row u-text-center u-align-center u-align-middle u-full-height-vh">
+                    <div class="l-col">
+                        <div class="l-col__box">
 
-            <section class="meg-lt-section" role="main" aria-label="">
-
-                <div class="meg-lt-row meg-u-text-center meg-u-align-center meg-u-align-middle meg-u-full-height-vh">
-                    <div class="meg-lt-col">
-                        <div class="meg-lt-col__box">
-
-                            <hgroup class="meg-el-hgroup">
-                                <h1 class="meg-el-heading meg-el-heading--1">
-                                    Welcome to <span class="meg-u-color-primary">MEG CSS Framework!</span>
+                            <hgroup class="el-hgroup">
+                                <h1 class="el-heading el-heading--1">
+                                    Welcome to <span class="u-color-primary">MEG CSS Framework!</span>
                                 </h1>
-                                <p class="meg-lt--sub-heading">Make more layouts, write less css</p>
+                                <p class="l--sub-heading">Make more layouts, write less css</p>
                             </hgroup>
 
-                            <div class="meg-el-list-normal">
-                                <div class="meg-el-list-normal__lists">
-                                    <ul class="meg-el-list-normal__list meg-el-list-normal__list--inline meg-u-align-center">
-                                        <li class="meg-el-list-normal__item">
-                                            <a class="meg-el-list-normal__link meg-u-color-primary meg-u-underline"
-                                                href="${host}/docs.html" title="Docs">Docs</a>
+                            <div class="el-list-normal">
+                                <div class="el-list-normal__lists">
+                                    <ul class="el-list-normal__list el-list-normal__list--inline u-align-center">
+                                        <li class="el-list-normal__item">
+                                            <a class="el-list-normal__link u-color-primary u-underline"
+                                                href="/docs.html" title="Docs">Docs</a>
                                         </li>
-                                        <li class="meg-el-list-normal__item">
-                                            <a class="meg-el-list-normal__link meg-u-color-primary meg-u-underline"
+                                        <li class="el-list-normal__item">
+                                            <a class="el-list-normal__link u-color-primary u-underline"
                                                 href="https://github.com/savanajs/MEG" title="Github" target="_blank">Github</a>
                                         </li>
-                                        <li class="meg-el-list-normal__item">
-                                            <a class="meg-el-list-normal__link meg-u-color-primary meg-u-underline"
-                                                href="${host}/store.html" title="Template">Template</a>
+                                        <li class="el-list-normal__item">
+                                            <a class="el-list-normal__link u-color-primary u-underline"
+                                                href="/store.html" title="Template">Template</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -59,11 +55,9 @@
 
         </div>
 
-        ${require('./includes/footer.html')}
-
     </div>
 
-    ${require('./includes/scripts.html')}
+    <include src="scripts.html"></include>
 
 </body>
 

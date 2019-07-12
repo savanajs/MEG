@@ -1,0 +1,21 @@
+.c-filters {
+    .c-filters__head {
+        position: relative;
+    }
+    .c-filters__block {
+        margin-bottom: 10px;
+        .c-filters__title {
+            padding: 10px 0px;
+            font-weight: 600;
+        }
+        .c-filters__checkboxes {
+            .c-filters__checkbox {
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                position: relative;
+                cursor: pointer;
+            }
+        }
+    }
+}
