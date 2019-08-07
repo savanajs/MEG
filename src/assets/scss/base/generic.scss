@@ -11,17 +11,23 @@ body {
     background-color: $background;
     font-size: $font-size-base;
     color: $color-font;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
     opacity: 1;
     letter-spacing: $letter-spacing;
+}
+
+html,
+body,
+#root {
+  height: 100%;
 }
 
 html * {
     font-family: $font-family;
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .05);
     line-height: $line-height-base;
 }

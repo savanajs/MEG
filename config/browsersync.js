@@ -29,6 +29,7 @@ const config = {
 	},
 	server: {
         baseDir: utils.buildPath(),
+        // directory: false, // Open index.html by default
         directory: package.browsersync.server.directory
     },
     proxy: package.browsersync.proxy,
