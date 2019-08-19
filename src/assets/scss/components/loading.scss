@@ -180,9 +180,9 @@ body.loading {
 
 .c-loading--bar {
     background: url($image-gif-loading-secondary) no-repeat center center $layout-tertiary;
-    border: 1px solid $color-border;
     width: 100%;
     height: 40px;
+    background-color: $layout-secondary;
 }
 
 @keyframes loading {
