@@ -86,3 +86,4 @@ typings/
 # Build folder
 build
 package-lock.json
+.min.css

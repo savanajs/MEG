@@ -1,13 +1,14 @@
 // Images
+$img_dir: '../images';
 $logo: "../images/logo-dark.svg";
 $logo-mobile: "../images/logo-mobile.svg";
 $logo-width: 100px;
 $logo-height: 40px;
 $logo-mobile-width: 50px;
 $logo-mobile-height: 40px;
-$image-gif-loading-primary: "../images/before-loading-dark.gif";
-$image-gif-loading-secondary: "../images/loading-bar-dark.gif";
-$image-gif-loading-tertiary: "../images/loader-small-dark.gif";
+$image-gif-loading-primary: $img_dir + "/before-loading-dark.gif";
+$image-gif-loading-secondary: $img_dir + "/loading-bar-dark.gif";
+$image-gif-loading-tertiary: $img_dir + "/loader-small-dark.gif";
 
 // Colors
 $dark-primary: #212121;
