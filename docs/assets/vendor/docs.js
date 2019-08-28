@@ -71,7 +71,7 @@ Prism.highlightAll();
 
       const date = new Date();
 
-      $("head > link[rel=stylesheet]").attr("href", file + "?v=" + date.getTime());
+      $("head > link[rel=stylesheet]").attr("href", "assets/css/" + file + "?v=" + date.getTime());
 
       return true;
 
