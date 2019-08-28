@@ -64,7 +64,7 @@ Prism.highlightAll();
 
   const Tpl = {
     "data": {
-      "dark": "meg-dark.min.css",
+      "dark": "dark.min.css",
       "light": "meg.min.css",
     },
     "link": function (file) {
