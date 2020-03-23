@@ -1,6 +1,6 @@
 .l-wrap {
     width: 100%;
-    .l-row {
+    .row {
         display: flex;
         flex: 0 1 auto;
         width: 100%;
@@ -16,14 +16,14 @@
     }
 
     .l-skeletron {
-        .l-row {
+        .row {
             margin-bottom: 10px;
         }
-        .l-col {
-            &.l-col--reverse {
+        .col {
+            &.col--reverse {
                 flex-direction: column-reverse;
             }
-            > .l-col__box {
+            > .col__box {
                 background: $light;
                 border: 1px solid $color-border;
                 border-radius: 4px;
@@ -34,26 +34,26 @@
         }
     }
 
-    .l-shell {
+    .shell {
         width: $shell;
         max-width: $shell-max-width;
         margin: 0 auto;
     }
 
-    .l-shell--flex {
+    .shell--flex {
         width: 100%;
         max-width: $shell-max-width;
         margin: 0 auto;
     }
 
-    .l-shell,
-    .l-shell--flex {
-        .l-col__box {
+    .shell,
+    .shell--flex {
+        .col__box {
             padding: $padding;
         }
     }
 
-    .l-row--full {
+    .row--full {
         width: 100%;
         display: block;
     }
@@ -77,66 +77,66 @@
 // Desktop 
 @media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
     .l-wrap {
-        .l-row {
-            &.l-row--wrap-lg {
+        .row {
+            &.row--wrap-lg {
                 flex-wrap: wrap;
             }
 
-            .l-col--1-lg {
+            .col--1-lg {
                 width: 8.33333333%;
             }
 
-            .l-col--2-lg {
+            .col--2-lg {
                 width: 16.66666667%;
             }
 
-            .l-col--3-lg {
+            .col--3-lg {
                 width: 25%;
             }
 
-            .l-col--4-lg {
+            .col--4-lg {
                 width: 33.33333333%;
             }
 
-            .l-col--5-lg {
+            .col--5-lg {
                 width: 41.66666667%;
             }
 
-            .l-col--6-lg {
+            .col--6-lg {
                 width: 50%;
             }
 
-            .l-col--7-lg {
+            .col--7-lg {
                 width: 58.33333333%;
             }
 
-            .l-col--8-lg {
+            .col--8-lg {
                 width: 66.66666667%;
             }
 
-            .l-col--9-lg {
+            .col--9-lg {
                 width: 75%;
             }
 
-            .l-col--10-lg {
+            .col--10-lg {
                 width: 83.33333333%;
             }
 
-            .l-col--11-lg {
+            .col--11-lg {
                 width: 91.66666667%;
             }
 
-            .l-col--12-lg {
+            .col--12-lg {
                 width: 100%;
             }
 
-            &.l-row--no-margin-left-cols-1:nth-child(1n + 0) {
+            &.row--no-margin-left-cols-1:nth-child(1n + 0) {
                 margin-left: 0em;
             }
 
-            &.l-row--no-margin-left-cols-2n-1-lg > .l-col:nth-child(2n+1),
-            &.l-row--no-margin-left-cols-3n-1-lg > .l-col:nth-child(3n+1),
-            &.l-row--no-margin-left-cols-4n-1-lg > .l-col:nth-child(4n+1) {
+            &.row--no-margin-left-cols-2n-1-lg > .col:nth-child(2n+1),
+            &.row--no-margin-left-cols-3n-1-lg > .col:nth-child(3n+1),
+            &.row--no-margin-left-cols-4n-1-lg > .col:nth-child(4n+1) {
                 margin-left: 0em;
             }  
         }
@@ -147,26 +147,26 @@
 
     }
 
-    .l-row {
-        .l-col:not(.c-form__actions):not(.no-padding-top-lg) {
+    .row {
+        .col:not(.c-form__actions):not(.no-padding-top-lg) {
             padding-top: $padding-top;
         }
 
-        .l-col:not(.c-form__actions):not(.no-padding-right-lg) {
+        .col:not(.c-form__actions):not(.no-padding-right-lg) {
             padding-right: $padding-right;
         }
 
-        .l-col:not(.c-form__actions):not(.no-padding-bottom-lg) {
+        .col:not(.c-form__actions):not(.no-padding-bottom-lg) {
             padding-bottom: $padding-bottom;
         }
 
-        .l-col:not(.c-form__actions):not(.no-padding-left-lg) {
+        .col:not(.c-form__actions):not(.no-padding-left-lg) {
             padding-left: $padding-left;
         }
     }
 
-    .l-shell,
-    .l-shell--flex {
+    .shell,
+    .shell--flex {
         &:not(.no-padding-right-lg) {
             padding-right: $padding-right;
         }
@@ -183,67 +183,67 @@
     .l-wrap {
         font-size: 1.1em;
 
-        .l-row {
+        .row {
 
-            &.l-row--sm-childs-full {
+            &.row--sm-childs-full {
                 flex-wrap: wrap;
             }
 
-            &.l-row--wrap-md {
+            &.row--wrap-md {
                 flex-wrap: wrap;
             }
 
-            .l-col--1-md {
+            .col--1-md {
                 width: 8.33333333%;
             }
 
-            .l-col--2-md {
+            .col--2-md {
                 width: 16.66666667%;
             }
 
-            .l-col--3-md {
+            .col--3-md {
                 width: 25%;
             }
 
-            .l-col--4-md {
+            .col--4-md {
                 width: 33.33333333%;
             }
 
-            .l-col--5-md {
+            .col--5-md {
                 width: 41.66666667%;
             }
 
-            .l-col--6-md {
+            .col--6-md {
                 width: 50%;
             }
 
-            .l-col--7-md {
+            .col--7-md {
                 width: 58.33333333%;
             }
 
-            .l-col--8-md {
+            .col--8-md {
                 width: 66.66666667%;
             }
 
-            .l-col--9-md {
+            .col--9-md {
                 width: 75%;
             }
 
-            .l-col--10-md {
+            .col--10-md {
                 width: 83.33333333%;
             }
 
-            .l-col--11-md {
+            .col--11-md {
                 width: 91.66666667%;
             }
 
-            .l-col--12-md {
+            .col--12-md {
                 width: 100%;
             }
 
-            &.l-row--no-margin-left-cols-2n-1-md > .l-col:nth-child(2n+1),
-            &.l-row--no-margin-left-cols-3n-1-md > .l-col:nth-child(3n+1),
-            &.l-row--no-margin-left-cols-4n-1-md > .l-col:nth-child(4n+1) {
+            &.row--no-margin-left-cols-2n-1-md > .col:nth-child(2n+1),
+            &.row--no-margin-left-cols-3n-1-md > .col:nth-child(3n+1),
+            &.row--no-margin-left-cols-4n-1-md > .col:nth-child(4n+1) {
                 margin-left: 0em;
             }
         }
@@ -258,32 +258,32 @@
                 overflow: hidden;
             }
         }
-        .l-col.l-col--12-md .l-col.l-col--12-md {
+        .col.col--12-md .col.col--12-md {
             padding-left: 0px !important;
             padding-right: 0px !important;
         }
     }
 
-    .l-row {
-        .l-col:not(.c-form__actions):not(.no-padding-top-md) {
+    .row {
+        .col:not(.c-form__actions):not(.no-padding-top-md) {
             padding-top: $padding-top;
         }
 
-        .l-col:not(.c-form__actions):not(.no-padding-right-md) {
+        .col:not(.c-form__actions):not(.no-padding-right-md) {
             padding-right: $padding-right;
         }
 
-        .l-col:not(.c-form__actions):not(.no-padding-bottom-md) {
+        .col:not(.c-form__actions):not(.no-padding-bottom-md) {
             padding-bottom: $padding-bottom;
         }
 
-        .l-col:not(.c-form__actions):not(.no-padding-left-md) {
+        .col:not(.c-form__actions):not(.no-padding-left-md) {
             padding-left: $padding-left;
         }
     }
 
-    .l-shell,
-    .l-shell--flex {
+    .shell,
+    .shell--flex {
         &:not(.no-padding-right-md) {
             padding-right: $padding-right;
         }
@@ -299,64 +299,64 @@
     .l-wrap {
         font-size: 1.2em;
 
-        .l-row {
+        .row {
             flex-wrap: wrap;
 
-            .l-col--1-sm {
+            .col--1-sm {
                 width: 8.33333333%;
             }
 
-            .l-col--2-sm {
+            .col--2-sm {
                 width: 16.66666667%;
             }
 
-            .l-col--3-sm {
+            .col--3-sm {
                 width: 25%;
             }
 
-            .l-col--4-sm {
+            .col--4-sm {
                 width: 33.33333333%;
             }
 
-            .l-col--5-sm {
+            .col--5-sm {
                 width: 41.66666667%;
             }
 
-            .l-col--6-sm {
+            .col--6-sm {
                 width: 50%;
             }
 
-            .l-col--7-sm {
+            .col--7-sm {
                 width: 58.33333333%;
             }
 
-            .l-col--8-sm {
+            .col--8-sm {
                 width: 66.66666667%;
             }
 
-            .l-col--9-sm {
+            .col--9-sm {
                 width: 75%;
             }
 
-            .l-col--10-sm {
+            .col--10-sm {
                 width: 83.33333333%;
             }
 
-            .l-col--11-sm {
+            .col--11-sm {
                 width: 91.66666667%;
             }
 
-            .l-col--12-sm {
+            .col--12-sm {
                 width: 100%;
             }
 
-            .l-col--12-sm + .l-col--12-sm {
+            .col--12-sm + .col--12-sm {
                 margin-left: 0em !important;
             }
 
-            &.l-row--no-margin-left-cols-2n-1-sm > .l-col:nth-child(2n+1),
-            &.l-row--no-margin-left-cols-3n-1-sm > .l-col:nth-child(3n+1),
-            &.l-row--no-margin-left-cols-4n-1-sm > .l-col:nth-child(4n+1) {
+            &.row--no-margin-left-cols-2n-1-sm > .col:nth-child(2n+1),
+            &.row--no-margin-left-cols-3n-1-sm > .col:nth-child(3n+1),
+            &.row--no-margin-left-cols-4n-1-sm > .col:nth-child(4n+1) {
                 margin-left: 0em;
             }
         }
@@ -374,26 +374,26 @@
         }
     }
 
-    .l-row {
-        .l-col:not(.c-form__actions):not(.no-padding-top-sm) {
+    .row {
+        .col:not(.c-form__actions):not(.no-padding-top-sm) {
             padding-top: $padding-top;
         }
 
-        .l-col:not(.c-form__actions):not(.no-padding-right-sm) {
+        .col:not(.c-form__actions):not(.no-padding-right-sm) {
             padding-right: $padding-right;
         }
 
-        .l-col:not(.c-form__actions):not(.no-padding-bottom-sm) {
+        .col:not(.c-form__actions):not(.no-padding-bottom-sm) {
             padding-bottom: $padding-bottom;
         }
 
-        .l-col:not(.c-form__actions):not(.no-padding-left-sm) {
+        .col:not(.c-form__actions):not(.no-padding-left-sm) {
             padding-left: $padding-left;
         }
     }
 
-    .l-shell,
-    .l-shell--flex {
+    .shell,
+    .shell--flex {
         &:not(.no-padding-right-sm) {
             padding-right: $padding-right;
         }
@@ -406,7 +406,7 @@
 
 // Device (Mobile and tablet)
 @media screen and (max-width: $responsive-tablet) {
-    .l-shell {
+    .shell {
         width: 100% !important;
     }
 }

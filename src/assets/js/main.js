@@ -183,7 +183,7 @@
                                       <div class="c-modal__body">
                                       </div>
                                       <div class="c-modal__footer">
-                                      <a href="#" title="Close" class="el-btn js-modal--close el-btn--sized u-color-white u-bg-success">
+                                      <a href="#" title="Close" class="btn js-modal--close btn--sized u-color-white u-bg-success">
                                           OK
                                       </a>
                                       </div>
@@ -208,7 +208,7 @@
 
       $(this.selector_modal).find(".c-modal__header--title").text(data.title);
       $(this.selector_modal).find(".c-modal__body").html(data.body);
-      $(this.selector_modal).find(".el-btn--success").text(data.button_text);
+      $(this.selector_modal).find(".btn--success").text(data.button_text);
 
     },
     "open": function (data) {

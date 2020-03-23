@@ -367,3 +367,26 @@ Aqui ficam os mixins e funções necessárias para a construção do layout.
 @mixin animation($str) {
     @include css3-prefix('animation', $str);
 }
+
+// Media Queries
+
+@mixin mq($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+  @if $width == 'desktop' {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @if $width == 'tablet' {
+    @media (min-width: 768px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $width == 'mobile' {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+}

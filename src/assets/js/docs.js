@@ -49,7 +49,7 @@ Prism.highlightAll();
 
         console.log("1111")
 
-        target = $(this).parents(".l-section__main").find(".code pre code");
+        target = $(this).parents(".section__main").find(".code pre code");
         target.html(_this.definedCode($(this).html()));
 
       });

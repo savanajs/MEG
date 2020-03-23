@@ -1,58 +1,5 @@
-.end-el-wrap-btns {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    .el-btn {
-        align-self: center;
-        &:not(.no-margin-bottom) {
-            margin-bottom: $margin-bottom-button;
-        }
-    }
-    .el-btn:not(.el-btn--full) + .el-btn {
-        margin-left: $margin-left-button;
-    }
-}
-
-.l-row--space-cols {
-    margin-bottom: 10px;
-}
-
-.end-el-group-btns {
-    width: 100%; 
-    display: flex;
-    flex-wrap: wrap;
-}
- 
-.el-btn {
-    &--glass {
-        overflow: hidden;
-    }
-    &--glass::before {
-        content: "";
-        width: 110%;
-        height: 110%;
-        background: -webkit-linear-gradient(top, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 100%);
-        display: block;
-        position: absolute;
-        left: -2px;
-        top: -2px;
-    }
-    &[data-state="default"] {
-        color: #333;
-    } 
-    &[data-state="disabled"] {
-        opacity: .5;
-        pointer-events: none;
-    }
-    &:focus {
-        box-shadow: 0px 0px 10px rgba($color-font, .4);
-    }
-
+.btn {
     position: relative;
-    &:not(.el-btn--circle) {
-        padding: $padding-button;
-    }
-
     text-decoration: none;
     zoom: 1;
     white-space: nowrap;
@@ -65,201 +12,116 @@
     font-size: $font-size-base - .1;
     display: inline-block;
     line-height: $line-height-base;
-    &:not(.el-btn--o) {
+    opacity: .85;
+
+    &:disabled {
+      opacity: .5;
+      pointer-events: none;
+    }
+
+    &:focus {
+        box-shadow: 0px 0px 10px rgba($color-font, .2);
+    }
+
+    &:not(.btn--circle) {
+        padding: $padding-button;
+    }
+
+    &:not(.btn--o) {
         border: 1px solid transparent;
     }
+
     &--o {
         border-width: 1px;
         border-style: solid;
         background: transparent;
     }
+
     &--o:not([class*="u-color"]) {
         color: $color-font-o;
     }
+
     &:hover,
     &[data-state="pressed"] {
-        opacity: .9;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, .1) inset;
-        z-index: 1;
-        &.el-btn--glass::before {
-            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .2) 100%);
-        }
+        opacity: 1;
     }
+
     &--full {
         display: block;
         width: 100%;
     }
+
     &:disabled,
     &--disabled {
         opacity: .4;
     }
+
     &--icon i {
         margin: 0px;
     }
+
     &--sized {
         min-width: 90px;
     }
+
     &--circle {
         line-height: $line-height-base;
     }
-    &:not(.el-btn--circle):not(.not-min-width) {
+
+    &:not(.btn--circle):not(.not-min-width) {
         border-radius: $border_radius_button;
         min-width: 94px;
     }
-    .el-btn--circle {
+
+    .btn--circle {
         justify-content: center;
     }
-}
 
-.end-el-join-btns {
-    display: flex;
-    align-content: space-between;
-    &--full {
-        width: 100%;
+    &--small:not(.btn--circle) {
+      font-size: $font-size-base - .2;
     }
-    > .el-btn {
-        flex: 1 1 auto;
-    }
-    .el-btn {
-        border: 1px solid $color-font;
-        border-radius: 0px !important;
-    }
-    .el-btn:first-child {
-        border-radius: 5px 0px 0px 5px !important;
-        border-right: none;
-    }
-    .el-btn:last-child {
-        border-radius: 0px 5px 5px 0px !important;
-        border-left: none;
-    }
-    &--primary {
-        .el-btn {
-            border-color: $primary;
-            color: $primary;
-            &.el-btn--actived {
-                background-color: $primary;
-                color: #fff;
-            }
-        }
-    }
-    &--secondary {
-        .el-btn {
-            border-color: $secondary;
-            color: $secondary;
-            &.el-btn--actived {
-                background-color: $secondary;
-                color: #fff;
-            }
-        }
-    }
-    &--tertiary {
-        .el-btn {
-            border-color: $tertiary;
-            color: $tertiary;
-            &.el-btn--actived {
-                background-color: $tertiary;
-                color: #fff;
-            }
-        }
-    }
-    &--quaternary {
-        .el-btn {
-            border-color: $quaternary;
-            color: $quaternary;
-            &.el-btn--actived {
-                background-color: $quaternary;
-                color: #fff;
-            }
-        }
-    }
-    &--success {
-        .el-btn {
-            border-color: $success;
-            color: $success;
-            &.el-btn--actived {
-                background-color: $success;
-                color: #fff;
-            }
-        }
-    }
-    &--warning {
-        .el-btn {
-            border-color: $warning;
-            color: $warning;
-            &.el-btn--actived {
-                background-color: $warning;
-                color: #fff;
-            }
-        }
-    }
-    &--info {
-        .el-btn {
-            border-color: $info;
-            color: $info;
-            &.el-btn--actived {
-                background-color: $info;
-                color: #fff;
-            }
-        }
-    }
-    &--cancel {
-        .el-btn {
-            border-color: $cancel;
-            color: $cancel;
-            &.el-btn--actived {
-                background-color: $cancel;
-                color: #fff;
-            }
-        }
-    }
-    &--black {
-        .el-btn {
-            border-color: $black;
-            color: $black;
-            &.el-btn--actived {
-                background-color: $black;
-                color: #fff;
-            }
-        }
-    }
-    &--white {
-        .el-btn {
-            border-color: $white;
-            color: $white;
-            &.el-btn--actived {
-                background-color: $white;
-                color: $color-font;
-            }
-        }
-    }
-}
 
-.el-btn {
+    &--medium:not(.btn--circle) {
+        font-size: $font-size-base + .3;
+    }
 
-    &--small:not(.el-btn--circle) {
-        font-size: $font-size-base - .2;
-    }
-    &--medium:not(.el-btn--circle) {
-        font-size: $font-size-base  + .2;
-    }
-    &--large:not(.el-btn--circle) {
+    &--large:not(.btn--circle) {
         font-size: $font-size-base + .6;
     }
+
     &--circle {
         width: 62px;
         height: 62px;
         display: flex;
-        @extend .u-radius--50;
-        
         justify-content: center;
         font-size: $font-size-base + .55;
-    }
 
+        @extend .u-radius--50;
+    }
 }
 
-// Desktop 
-@media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
-    .el-btn {
+.btns--join {
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+    > .btn {
+        flex: 1 1 auto;
+    }
+    .btn {
+        border-radius: 0px !important;
+    }
+    .btn:first-child {
+        border-radius: 5px 0px 0px 5px !important;
+        border-right: none;
+    }
+    .btn:last-child {
+        border-radius: 0px 5px 5px 0px !important;
+        border-left: none;
+    }
+}
+
+@include mq('desktop') {
+    .btn {
         &--full-lg {
             display: block;
             width: 100%;
@@ -267,9 +129,8 @@
     }
 }
 
-// Tablet
-@media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
-    .el-btn {
+@include mq('tablet') {
+    .btn {
         &--full-md {
             display: block;
             width: 100%;
@@ -277,9 +138,8 @@
     }
 }
 
-// Mobile
-@media screen and (max-width: $responsive-mobile) {
-    .el-btn {
+@include mq('mobile') {
+    .btn {
         &--full-sm {
             display: block;
             width: 100%;

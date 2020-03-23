@@ -2,13 +2,13 @@
     display: none;
 }
 
-body:not(.js-visibled) .l-nav {
+body:not(.js-visibled) .nav {
     left: -100%;
 }
 
 // Desktop 
 @media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
-    .l-nav {
+    .nav {
         .c-menu {
             .c-menu__item {
                 > .c-menu__label {
@@ -157,10 +157,10 @@ body:not(.js-visibled) .l-nav {
     .c-menu__input:checked + .c-nav__overlay {
         display: block;
     }
-    .c-menu__input:checked + .c-nav__overlay + .l-nav {
+    .c-menu__input:checked + .c-nav__overlay + .nav {
         transform: translateX(0);
     }
-    .l-nav {
+    .nav {
         overflow-y: auto;
         left: 0px;
         transition: transform .3s;
@@ -207,21 +207,21 @@ body:not(.js-visibled) .l-nav {
                     padding: 0px !important;
                     width: 100%;
                     margin-bottom: 0px;
-                    > .l-row {
+                    > .row {
                         flex-wrap: wrap !important;
                         margin-bottom: 0px;
-                        .l-col {
+                        .col {
                             padding: 0px;
                             width: 100%;
                             margin: 0px;
                             .el-list {
                                 display: none;
                             }
-                            .el-heading {
+                            .heading {
                                 padding-top: 15px;
                                 margin-bottom: 15px;
                                 border-top: 1px solid $color-border;
-                                .el-heading__link {
+                                .heading__link {
                                     padding-left: 10px;
                                     font-weight: 100;
                                 }
@@ -250,11 +250,11 @@ body:not(.js-visibled) .l-nav {
                 .c-menu__input {
                     display: none;
                     &:checked + .el-item__link + .c-menu__label + .c-item__megamenu,
-                    &:checked + .el-heading + .el-list {
+                    &:checked + .heading + .el-list {
                         display: block;
                     }
                     &:checked + .el-item__link + .c-menu__label,
-                    &:checked + .el-heading > .c-menu__label {
+                    &:checked + .heading > .c-menu__label {
                         transform: rotate(180deg);
                     }
                 }

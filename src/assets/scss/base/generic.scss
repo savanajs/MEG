@@ -5,6 +5,7 @@ html {
     overflow-y: scroll;
     text-rendering: optimizeLegibility;
     text-size-adjust: 100%;
+    font-size: 62.5%;
 }
 
 body {
@@ -15,21 +16,13 @@ body {
     -moz-osx-font-smoothing: grayscale !important;
     opacity: 1;
     letter-spacing: $letter-spacing;
+    line-height: $line-height-base;
 }
 
 html,
 body,
 #root {
-  height: 100%;
-}
-
-html * {
-    font-family: $font-family;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .05);
-    line-height: $line-height-base;
+  min-height: 100%;
 }
 
 strong {
@@ -121,7 +114,7 @@ fieldset {
     border: none;
 }
 
-p:not(.l--sub-heading):not(.no-margin-bottom) {
+p:not(.sub-heading):not(.no-margin-bottom) {
     margin-bottom: 10px;
 }
 

@@ -17,7 +17,7 @@
 }
 
 .c-tag {
-    @extend .el-btn;
+    @extend .btn;
     
     cursor: default;
     margin-bottom: $margin-bottom;
@@ -25,10 +25,10 @@
         margin-right: 0px;
     }
     &--small {
-        @extend .el-btn--small;
+        @extend .btn--small;
     }
     &--medium {
-        @extend .el-btn--medium;
+        @extend .btn--medium;
     }
     &--actions {
         margin-bottom: $margin-bottom;

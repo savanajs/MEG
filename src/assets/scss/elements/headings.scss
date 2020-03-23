@@ -1,42 +1,43 @@
-.el-heading {
-    line-height: $line-height-heading;
-    &:not(.no-strong-weight) {
-        font-weight: $strong-weight;
-    }
-    
-    &:not(.no-margin-bottom) {
-        margin-bottom: $margin-bottom-heading / 2;
-    }
-
-    &.el-heading--plus-left {
-        padding-left: $padding-left;
-    }
-    .el-heading__link {
+.heading {
+    .heading__link {
         text-decoration: none;
         &:hover {
             text-decoration: underline;
         }
-        &--font-color {
-            color: $color-font;
-        }
+
     }
+
     &--1 {
-        font-size: $font-size-base + 1.2;
+        font-size: $heading-1;
+        margin-bottom: $heading-1-margin-bottom;
+        line-height: $heading-1;
     }
+
     &--2 {
-        font-size: $font-size-base + .8;
+        font-size: $heading-2;
+        margin-bottom: $heading-2-margin-bottom;
+        line-height: $heading-2;
     }
+
     &--3 {
-        font-size: $font-size-base + .6;
+        font-size: $heading-3;
+        margin-bottom: $heading-3-margin-bottom;
+        line-height: $heading-3;
     }
+
     &--4 {
-        font-size: $font-size-base + .4;
+        font-size: $heading-4;
+        margin-bottom: $heading-4-margin-bottom;
+        line-height: $heading-4;
     }
+
     &--5 {
         font-size: $font-size-base;
+        margin-bottom: $heading-5-margin-bottom;
+        line-height: $heading-4;
     }
 }
 
-.l--sub-heading {
+.sub-heading {
     margin-bottom: 0px; 
 }

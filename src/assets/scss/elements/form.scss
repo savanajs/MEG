@@ -132,7 +132,7 @@
     .c-form__field {
         &--group {
             display: flex;
-            .el-btn {
+            .btn {
                 margin-left: 0px;
             }
             .c-form__icon {
@@ -164,7 +164,7 @@
                 border-top-right-radius: 0px;
                 border-bottom-right-radius: 0px;
             }
-            .el-btn {
+            .btn {
                 border-top-left-radius: 0px;
                 border-bottom-left-radius: 0px;
                 border-top-right-radius: $border_radius_input;
@@ -314,7 +314,7 @@ select.c-field {
 // Device (Mobile and tablet)
 @media screen and (max-width: $responsive-tablet) {
     .c-form {
-        .l-row {
+        .row {
             justify-content: flex-start;
         }
         .c-form__field {
@@ -332,7 +332,7 @@ select.c-field {
         text-align: left;
     }
 
-    .el-btn {
+    .btn {
         &--full-md {
             width: 100%;
             margin-left: 0px;

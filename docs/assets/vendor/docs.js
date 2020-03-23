@@ -43,7 +43,7 @@ Prism.highlightAll();
 
       $(this.selector).each(function () {
 
-        target = $(this).parents(".l-section__main").find(".code pre code");
+        target = $(this).parents(".section__main").find(".code pre code");
         target.html(_this.definedCode($(this).html()));
 
       });
