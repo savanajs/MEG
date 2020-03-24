@@ -1,6 +1,6 @@
-.c-tooltip {
+.tooltip {
     position: relative;
-    .c-tooltip__item {
+    .tooltip__item {
         position: absolute;
         min-width: 140px;
         color: #ffffff;
@@ -44,7 +44,7 @@
         }
     }
     &:hover {
-        .c-tooltip__item {
+        .tooltip__item {
             visibility: visible;
             opacity: 0.9;
         }

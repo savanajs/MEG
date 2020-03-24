@@ -1,10 +1,10 @@
-.c-accordion {
+.drawer {
     position: relative;
     margin: $margin-top 0px $margin-bottom 0px;
     display: block;
-    .c-accordion__painel {
+    .drawer__painel {
         margin-bottom: 5px;
-        .c-accordion__nav {
+        .drawer__nav {
             cursor: pointer;
             padding: 10px 20px;
             border: 1px solid transparent;
@@ -15,8 +15,8 @@
             display: none;
         }
     }
-    .c-accordion__nav:hover,
-    .c-accordion__open:checked + .c-accordion__nav {
+    .drawer__nav:hover,
+    .drawer__open:checked + .drawer__nav {
         background-color: $primary;
         color: #fff;
         border: 1px solid $color-border;
@@ -24,7 +24,7 @@
         position: relative;
         font-weight: bold;
     }
-    .c-accordion__inner {
+    .drawer__inner {
         visibility: hidden;
         padding: 20px;
         width: 100%;
@@ -32,7 +32,7 @@
         display: none;
         background-color: $layout-tertiary;
     }
-    .c-accordion__open:checked ~ .c-accordion__inner {
+    .drawer__open:checked ~ .drawer__inner {
         visibility: visible;
         display: block;
     }
