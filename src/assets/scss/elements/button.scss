@@ -1,59 +1,18 @@
 .btn {
     position: relative;
     text-decoration: none;
-    zoom: 1;
     white-space: nowrap;
     vertical-align: middle;
     text-align: center;
-    align-items: center;
     cursor: pointer;
-    user-select: none;
-    opacity: 1;
     font-size: $font-size-base - .1;
     display: inline-block;
     line-height: $line-height-base;
-    opacity: .85;
-
-    &:disabled {
-      opacity: .5;
-      pointer-events: none;
-    }
-
-    &:focus {
-        box-shadow: 0px 0px 10px rgba($color-font, .2);
-    }
-
-    &:not(.btn--circle) {
-        padding: $padding-button;
-    }
-
-    &:not(.btn--o) {
-        border: 1px solid transparent;
-    }
-
-    &--o {
-        border-width: 1px;
-        border-style: solid;
-        background: transparent;
-    }
-
-    &--o:not([class*="u-color"]) {
-        color: $color-font-o;
-    }
-
-    &:hover,
-    &[data-state="pressed"] {
-        opacity: 1;
-    }
-
-    &--full {
-        display: block;
-        width: 100%;
-    }
 
     &:disabled,
     &--disabled {
         opacity: .4;
+        pointer-events: none;
     }
 
     &--icon i {
@@ -66,19 +25,11 @@
 
     &--circle {
         line-height: $line-height-base;
-    }
-
-    &:not(.btn--circle):not(.not-min-width) {
-        border-radius: $border_radius_button;
-        min-width: 94px;
-    }
-
-    .btn--circle {
-        justify-content: center;
+        align-items: center;
     }
 
     &--small:not(.btn--circle) {
-      font-size: $font-size-base - .2;
+      font-size: $font-size-base - .4;
     }
 
     &--medium:not(.btn--circle) {
@@ -98,6 +49,60 @@
 
         @extend .u-radius--50;
     }
+
+    &--o {
+      border-width: 1px;
+      border-style: solid;
+      background: transparent;
+    }
+
+    &--o:not([class*="u-color"]) {
+        color: $color-font-o;
+    }
+
+    &--full {
+        display: block;
+        width: 100%;
+    }
+
+    &[data-state="pressed"],
+    &:focus {
+        box-shadow: 0px 0px 5px 3px rgba(0,0,0,.1) inset;
+    }
+
+    &:not(:disabled):hover:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: rgba(0,0,0,.05);
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        border-radius: $border_radius_button;
+    }
+
+    &:not(.btn--circle) {
+        padding: $padding-button;
+    }
+
+    &:not(.btn--o) {
+        border: 1px solid transparent;
+    }
+
+    &:not(.btn--circle) {
+        border-radius: $border_radius_button;
+    }
+
+    &:not(&--width-auto):not(.btn--circle) {
+      min-width: 124px;
+    }
+
+    .btn--circle {
+        justify-content: center;
+    }
+
 }
 
 .btns--join {

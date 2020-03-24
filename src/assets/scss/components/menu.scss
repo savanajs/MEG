@@ -79,7 +79,7 @@ body:not(.js-visibled) .nav {
                     border: 1px solid $color-border;
                     border-radius: $radius;
                     font-size: .8em;
-                    .el-list {
+                    .list {
                         margin-bottom: $margin-bottom;
                     }
                 }
@@ -127,7 +127,7 @@ body:not(.js-visibled) .nav {
                     right: 1.6%;
                     margin-top: -46px;
                     font-size: .8em;
-                    .el-list {
+                    .list {
                         margin-bottom: $margin-bottom;
                     }
                 }
@@ -214,7 +214,7 @@ body:not(.js-visibled) .nav {
                             padding: 0px;
                             width: 100%;
                             margin: 0px;
-                            .el-list {
+                            .list {
                                 display: none;
                             }
                             .heading {
@@ -250,7 +250,7 @@ body:not(.js-visibled) .nav {
                 .c-menu__input {
                     display: none;
                     &:checked + .el-item__link + .c-menu__label + .c-item__megamenu,
-                    &:checked + .heading + .el-list {
+                    &:checked + .heading + .list {
                         display: block;
                     }
                     &:checked + .el-item__link + .c-menu__label,
@@ -263,11 +263,11 @@ body:not(.js-visibled) .nav {
                 border-top: 1px solid $color-border;
             }
         }
-        .el-list {
+        .list {
             width: 100%;
             margin: 0px;
             background-color: $layout-tertiary;
-            .el-list__item {
+            .list__item {
                 padding: 15px 0px;
                 border-top: 1px solid $color-border;
                 a {

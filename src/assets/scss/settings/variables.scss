@@ -91,11 +91,11 @@ $theme-colors
 
 // Form input
 $border-radius-primary: 10px;
-$border_radius_input: 10px;
+$border_radius_input: 5px;
 $border_radius_button: 5px;
 $margin-bottom-field: 20px;
-$border-size: 2px;
-$padding-input: .5em .6em;
+$border-size: 1px;
+$padding-input: 1.2rem 1.2rem;
 
 // Padding
 $padding-top: 10px;
@@ -116,7 +116,7 @@ $padding-button: $padding-top-button $padding-right-button $padding-bottom-butto
 
 // HR line
 $hr-height: 1px;
-$hr-margin: $margin-top 0px $margin-bottom 0px;
+$hr-margin: 0px;
 
 // List
 $margin-bottom-list: 10px;

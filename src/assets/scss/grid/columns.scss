@@ -148,19 +148,19 @@
     }
 
     .row {
-        .col:not(.c-form__actions):not(.no-padding-top-lg) {
+        .col:not(.form__actions):not(.no-padding-top-lg) {
             padding-top: $padding-top;
         }
 
-        .col:not(.c-form__actions):not(.no-padding-right-lg) {
+        .col:not(.form__actions):not(.no-padding-right-lg) {
             padding-right: $padding-right;
         }
 
-        .col:not(.c-form__actions):not(.no-padding-bottom-lg) {
+        .col:not(.form__actions):not(.no-padding-bottom-lg) {
             padding-bottom: $padding-bottom;
         }
 
-        .col:not(.c-form__actions):not(.no-padding-left-lg) {
+        .col:not(.form__actions):not(.no-padding-left-lg) {
             padding-left: $padding-left;
         }
     }
@@ -265,19 +265,19 @@
     }
 
     .row {
-        .col:not(.c-form__actions):not(.no-padding-top-md) {
+        .col:not(.form__actions):not(.no-padding-top-md) {
             padding-top: $padding-top;
         }
 
-        .col:not(.c-form__actions):not(.no-padding-right-md) {
+        .col:not(.form__actions):not(.no-padding-right-md) {
             padding-right: $padding-right;
         }
 
-        .col:not(.c-form__actions):not(.no-padding-bottom-md) {
+        .col:not(.form__actions):not(.no-padding-bottom-md) {
             padding-bottom: $padding-bottom;
         }
 
-        .col:not(.c-form__actions):not(.no-padding-left-md) {
+        .col:not(.form__actions):not(.no-padding-left-md) {
             padding-left: $padding-left;
         }
     }
@@ -375,19 +375,19 @@
     }
 
     .row {
-        .col:not(.c-form__actions):not(.no-padding-top-sm) {
+        .col:not(.form__actions):not(.no-padding-top-sm) {
             padding-top: $padding-top;
         }
 
-        .col:not(.c-form__actions):not(.no-padding-right-sm) {
+        .col:not(.form__actions):not(.no-padding-right-sm) {
             padding-right: $padding-right;
         }
 
-        .col:not(.c-form__actions):not(.no-padding-bottom-sm) {
+        .col:not(.form__actions):not(.no-padding-bottom-sm) {
             padding-bottom: $padding-bottom;
         }
 
-        .col:not(.c-form__actions):not(.no-padding-left-sm) {
+        .col:not(.form__actions):not(.no-padding-left-sm) {
             padding-left: $padding-left;
         }
     }
