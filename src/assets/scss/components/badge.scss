@@ -1,4 +1,4 @@
-.c-badge {
+.badge {
     width: 20px;
     height: 20px;
     @extend .u-radius--50;
@@ -27,7 +27,7 @@
 // Device (Mobile)
 @media screen and (max-width: $responsive-mobile) {
     .btn {
-        .c-badge {
+        .badge {
             top: -8px;
             right: -8px; 
         }

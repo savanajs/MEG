@@ -1,14 +1,14 @@
-.c-card {
+.card {
     border: 1px solid $color-border;
     background: $color-l-bg-content;
     &--image-left {
         display: flex;
-        .c-card__image {
+        .card__image {
             order: 0;
             flex: 0 1 50%;
             width: 50%;
         }
-        .c-card__content {
+        .card__content {
             order: 1;
             flex: 0 1 50%;
             width: 50%;
@@ -16,12 +16,12 @@
     }
     &--image-right {
         display: flex;
-        .c-card__image {
+        .card__image {
             order: 1;
             flex: 0 1 50%;
             width: 50%;
         }
-        .c-card__content {
+        .card__content {
             order: 0;
             flex: 0 1 50%;
             width: 50%;
@@ -30,12 +30,12 @@
     &--image-bottom {
         display: flex;
         flex-wrap: wrap;
-        .c-card__image {
+        .card__image {
             order: 1;
             flex: 0 1 100%;
             width: 100%;
         }
-        .c-card__content {
+        .card__content {
             order: 0;
             flex: 0 1 100%;
             width: 100%;
@@ -44,25 +44,25 @@
     &--image-middle {
         display: flex;
         flex-wrap: wrap;
-        .c-card__image {
+        .card__image {
             order: 1;
             flex: 0 1 100%;
             width: 100%;
         }
-        .c-card__content {
+        .card__content {
             order: 0;
             flex: 0 1 100%;
             width: 100%;
         }
     }
-    .c-card__image {
+    .card__image {
         display: block;
         position: relative;
     }
-    .c-content {
+    .content {
         padding: 15px;
     }
-    .c-content__media {
+    .content__media {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
@@ -83,39 +83,39 @@
     }
 }
 
-.c-content {
-    .c-content__description {
+.content {
+    .content__description {
         display: block;
         margin-bottom: 15px;
         a {
             color: $primary;
         }
     }
-    .c-content__time {
+    .content__time {
         color: lighten($color-font, 50%);
     }
 }
 
 @media screen and (max-width: $responsive-tablet) {
-    .c-card {
+    .card {
         &--image-left {
             flex-wrap: wrap;
-            .c-card__image {
+            .card__image {
                 flex: 0 1 100%;
                 width: 100%;
             }
-            .c-card__content {
+            .card__content {
                 flex: 0 1 100%;
                 width: 100%;
             }
         }
         &--image-right {
             flex-wrap: wrap;
-            .c-card__image {         
+            .card__image {         
                 flex: 0 1 100%;
                 width: 100%;
             }
-            .c-card__content {
+            .card__content {
                 flex: 0 1 100%;
                 width: 100%;
             }

@@ -1,11 +1,11 @@
 // Desktop 
 @media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
 
-    .c-pitbar {
+    .pitbar {
         display: flex;
         align-content: space-around;
         margin-bottom: 5px;
-        > .c-pitbar__item {
+        > .pitbar__item {
             flex: 1 1 auto;
             display: flex;
             align-items: center;
@@ -49,11 +49,11 @@
 // Tablet
 @media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
 
-    .c-pitbar {
+    .pitbar {
         display: flex;
         align-content: space-around;
         margin-bottom: 5px;
-        > .c-pitbar__item {
+        > .pitbar__item {
             flex: 1 1 auto;
             display: flex;
             align-items: center;
@@ -88,11 +88,11 @@
 
 // Mobile
 @media screen and (max-width: $responsive-mobile) {
-    .c-pitbar {
+    .pitbar {
         display: block;
         align-content: center;
         text-align: center;
-        > .c-pitbar__item {
+        > .pitbar__item {
             text-align: center;
             display: block;
             align-content: center;

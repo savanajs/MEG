@@ -172,17 +172,17 @@
     "selector_modal_trigger": ".js-modal--alert-trigger",
     "setHmlt": function () {
 
-      const html = `<div class="c-modal js-modal js-modal--alert" role="dialog" aria-modal="true" tabindex="-1">
-                              <div class="c-modal__wrap" aria-hidden="true" role="dialog">
-                                  <div class="c-modal__overlay" for="c-alert__1"></div>
-                                  <div class="c-modal__dialog u-box-shadow">
-                                      <div class="c-modal__header u-font-size-xx">
-                                      <span class="c-modal__header--title"></span>
-                                      <a href="#" class="c-modal__btn-close js-modal--close" title="Close">×</a>
+      const html = `<div class="modal js-modal js-modal--alert" role="dialog" aria-modal="true" tabindex="-1">
+                              <div class="modal__wrap" aria-hidden="true" role="dialog">
+                                  <div class="modal__overlay" for="c-alert__1"></div>
+                                  <div class="modal__dialog u-box-shadow">
+                                      <div class="modal__header u-font-size-xx">
+                                      <span class="modal__header--title"></span>
+                                      <a href="#" class="modal__btn-close js-modal--close" title="Close">×</a>
                                       </div>
-                                      <div class="c-modal__body">
+                                      <div class="modal__body">
                                       </div>
-                                      <div class="c-modal__footer">
+                                      <div class="modal__footer">
                                       <a href="#" title="Close" class="btn js-modal--close btn--sized u-color-white u-bg-success">
                                           OK
                                       </a>
@@ -206,8 +206,8 @@
 
       }
 
-      $(this.selector_modal).find(".c-modal__header--title").text(data.title);
-      $(this.selector_modal).find(".c-modal__body").html(data.body);
+      $(this.selector_modal).find(".modal__header--title").text(data.title);
+      $(this.selector_modal).find(".modal__body").html(data.body);
       $(this.selector_modal).find(".btn--success").text(data.button_text);
 
     },
@@ -403,11 +403,11 @@
     return {
       "setHtmlLoading": function () {
 
-        const html = `<div class="c-loader__overlay c-loader__overlay--open c-loader__overlay--absolute">
-                  <div class="c-loader c-loader--medium c-loader--primary"></div>
+        const html = `<div class="loader__overlay loader__overlay--open loader__overlay--absolute">
+                  <div class="loader loader--medium loader--primary"></div>
               </div>`;
 
-        if (!$(".c-loader").length) {
+        if (!$(".loader").length) {
 
           $("body").append(html);
 
@@ -416,10 +416,10 @@
       },
       "setHtmlWaitLoading": function () {
 
-        const html = `<div class="c-loader__waiting-overlay c-loader__waiting-overlay--open c-loader__waiting-overlay--absolute">
-                  <div class="c-loader__waiting">
+        const html = `<div class="loader__waiting-overlay loader__waiting-overlay--open loader__waiting-overlay--absolute">
+                  <div class="loader__waiting">
                       <div class="c-waiting__warp-loader">
-                          <div class="c-loader c-loader--medium c-loader--primary"></div>
+                          <div class="loader loader--medium loader--primary"></div>
                       </div>
                       <div class="c-waiting__content">
                           <span class="c-waiting__title">Please wait...</span>
@@ -427,7 +427,7 @@
                   </div>
               </div>`;
 
-        if (!$(".c-loader__waiting").length) {
+        if (!$(".loader__waiting").length) {
 
           $("body").append(html);
 
@@ -458,7 +458,7 @@
 
         }
 
-        $(".c-loader__waiting .c-waiting__title").text(title);
+        $(".loader__waiting .c-waiting__title").text(title);
 
         return true;
 
@@ -541,28 +541,28 @@
         switch (type) {
 
         case "success":
-          msg_html = `<div class="c-message c-message--success">
+          msg_html = `<div class="message message--success">
             <i class="fa fa-check-circle" aria-hidden="true"></i>
             ${text}
             </div>`;
           break;
 
         case "warning":
-          msg_html = `<div class="c-message c-message--warning">
+          msg_html = `<div class="message message--warning">
             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
             ${text}
             </div>`;
           break;
 
         case "cancel":
-          msg_html = `<div class="c-message c-message--cancel">
+          msg_html = `<div class="message message--cancel">
             <i class="fa fa-ban" aria-hidden="true"></i>
             ${text}
             </div>`;
           break;
 
         case "info":
-          msg_html = `<div class="c-message c-message--info">
+          msg_html = `<div class="message message--info">
             '<i class="fa fa-info-circle" aria-hidden="true"></i>
             ${text}
             </div>`;

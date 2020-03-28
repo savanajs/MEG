@@ -1,7 +1,7 @@
 .l-table-list {
     width: 100%;
     background-color: $color-l-bg-content;
-    .el-table-list__item {
+    .table-list__item {
         border-bottom: 1px solid $color-border;
         > td {
             padding: 10px 10px;
@@ -84,7 +84,7 @@
         > thead {
             display: none;
         }
-        .el-table-list__item {
+        .table-list__item {
             > td {
                 display: block;
                 text-align: center;

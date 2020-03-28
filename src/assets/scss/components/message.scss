@@ -1,4 +1,4 @@
-.c-message {
+.message {
     margin-bottom: $margin-bottom;
     width: 100%;
     padding: 10px;
@@ -27,7 +27,7 @@
     }
 }
 
-.c-text {
+.text {
     > i {
         margin-right: 5px;
     }
@@ -47,7 +47,7 @@
 
 // Device (Mobile and tablet)
 @media screen and (max-width: $responsive-tablet) {
-    .c-message {
+    .message {
         text-align: center;
         > i {
             display: block;

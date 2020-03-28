@@ -26,6 +26,10 @@
     &--circle {
         line-height: $line-height-base;
         align-items: center;
+
+        &:not(:disabled):hover:before {
+          border-radius: 50% !important;
+        }
     }
 
     &--small:not(.btn--circle) {

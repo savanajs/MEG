@@ -1,15 +1,15 @@
-.c-steps-line {
+.steps-line {
     counter-reset: step;
     padding: 15px;
     overflow: hidden;
 }
 
-.c-steps-line .c-steps-line__list {
+.steps-line .steps-line__list {
     display: flex;
     align-content: space-between;
 }
 
-.c-steps-line .c-steps-line__list .c-step {
+.steps-line .steps-line__list .c-step {
     list-style-type: none;
     font-size: $font-size-base;
     position: relative;
@@ -21,7 +21,7 @@
     }
 }
 
-.c-steps-line .c-step::before {
+.steps-line .c-step::before {
     width: 30px;
     height: 30px;
     content: counter(step);
@@ -37,7 +37,7 @@
     position: relative;
 }
 
-.c-steps-line .c-step::after {
+.steps-line .c-step::after {
     width: 100%;
     height: 2px;
     content: '';
@@ -48,151 +48,25 @@
     z-index: 1;
 }
 
-.c-steps-line .c-step:first-child::after {
+.steps-line .c-step:first-child::after {
     content: none;
 }
 
-.c-steps-line .c-step.active {
+.steps-line .c-step.active {
     color: $success;    
     a {
         color: $success;
     }
 }
 
-.c-steps-line .c-step.active::before {
+.steps-line .c-step.active::before {
     border-color: $success;
 }
 
-.c-steps-line .c-step.active + .c-step::after {
+.steps-line .c-step.active + .c-step::after {
     background-color: $success;
 }
 
-.c-steps-line .c-step.active + .c-step:not(.active)::after {
+.steps-line .c-step.active + .c-step:not(.active)::after {
     background-color: #7d7d7d;
-}
-
-.c-progress {
-    overflow: hidden;
-}
-
-.c-progress li {
-    list-style: none;
-    background-color: darken($layout-tertiary, 5%);
-    margin: 0 20px 0px 0; 
-    padding: 6px 0px 6px 4px; 
-    position: relative;
-    display: inline-block;
-    color: $color-font;
-    font-size: 12px;
-    height: 31px;
-}
-
-.c-progress li::before {
-    content: "";
-    font-weight: 700;
-    border: solid;
-    border-color: #f6f6f6 transparent;
-    border-width: 16.5px 0 16.5px 17px; /* 20px 0 20px 20px */
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -16px; /* -20px */
-}
-
-.c-progress li:first-child {
-    padding-left: 10px;
-}
-
-.c-progress li:first-child::before {
-    display: none;
-}
-
-.c-progress li::after {
-    content: "";
-    border: solid;
-    border-color: transparent $color-border;
-    border-width: 16.5px 0 16.5px 17px; /* 20px 0 20px 20px */
-    display: block;
-    position: absolute;
-    right: -17px; /* -20px */
-    top: 0;
-}
-
-.c-progress li.completed {
-    background-color: darken($layout-tertiary, 5%);
-}
-
-.c-progress li.completed:hover {
-    background-color: darken($layout-tertiary, 5%);
-}
-
-.c-progress li.completed::before {
-    border-color: darken($layout-tertiary, 5%) transparent;
-}
-
-.c-progress li.completed:hover::before {
-    border-color: darken($layout-tertiary, 5%) transparent;
-}
-
-.c-progress li.completed::after {
-    border-color: transparent darken($layout-tertiary, 5%);
-}
-
-.c-progress li.completed:hover::after {
-    border-color: transparent darken($layout-tertiary, 5%);
-}
-
-.c-progress li.is-active,
-.c-progress li.is-active a {
-    color: #fff;
-    background-color: $primary;
-}
-
-.c-progress li.is-active::before {
-    border-color: $primary transparent;
-}
-    
-.c-progress li.is-active::after {
-    border-color: transparent $primary;
-}
-
-.c-progress li a {
-    border: 0;
-    display: inline-block;
-    color: $color-font;
-    text-decoration: none;
-}
-
-.c-progress li:not(.is-active):hover a {
-    color: $primary;
-}
-
-.c-progress li i {
-    margin-right: 5px;
-}
-
-// Tablet
-@media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
-    .c-progress li {
-        padding: 1.5px 10px;
-        font-size: 15px;
-        line-height: 30px;
-    }
-
-    .c-progress li i {
-        margin-right: 0px;
-    }
-}
-
-// Mobile
-@media screen and (max-width: $responsive-mobile) {
-    .c-progress li {
-        padding: 0px 5px;
-        font-size: 15px;
-        line-height: 33px;
-    }
-
-    .c-progress li i {
-        margin-right: 0px;
-    }
 }

@@ -1,4 +1,4 @@
-.c-ribbon {
+.ribbon {
     padding: $padding-top 0px $padding-bottom 0px;
     display: flex;
     align-items: center;
@@ -9,8 +9,8 @@
     text-align: center;
     flex-wrap: wrap;
     margin-bottom: $margin-bottom;
-    > .c-ribbon__discount,
-    > .c-ribbon__off {
+    > .ribbon__discount,
+    > .ribbon__off {
         flex: 1 1 100%;
         display: block;
         color: #fff;

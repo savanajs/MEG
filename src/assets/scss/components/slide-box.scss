@@ -1,12 +1,12 @@
-.c-slidebox__input {
+.drawer__input {
     display: none;
 }
 
-.c-slidebox__label {
+.drawer__label {
     cursor: pointer;
 }
 
-.c-slidebox__overlay {
+.drawer__overlay {
     background: transparent;
     position: fixed;
     top: 0;
@@ -18,7 +18,7 @@
     display: none;
 }
 
-.c-slidebox {
+.drawer {
     background: $color-l-secondary;
     position: fixed;
     z-index: 5;
@@ -31,14 +31,14 @@
     > div {
         width: 100%;
     }
-    .c-slidebox__header {
+    .drawer__header {
         padding: 0px 10px;
         border-bottom: 1px solid $color_border;
         min-height: 42px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        .c-slidebox__close {
+        .drawer__close {
             color: #c54958;
             cursor: pointer;
             font-size: 2em;
@@ -48,7 +48,7 @@
             text-decoration: none;
         }
     }
-    .c-slidebox__content {
+    .drawer__content {
         height: 20%;
         flex-grow: 1;
         overflow-y: auto;
@@ -57,7 +57,7 @@
             padding: 10px;
         }
     }
-    .c-slidebox__footer {
+    .drawer__footer {
         padding: 10px;
         display: flex;
         flex-wrap: wrap;
@@ -83,52 +83,52 @@
     }
 }
 
-body:not(.js-visibled) .c-slidebox.c-slidebox--right {
+body:not(.js-visibled) .drawer.drawer--right {
     right: -100%;
 }
 
-body:not(.js-visibled) .c-slidebox.c-slidebox--left {
+body:not(.js-visibled) .drawer.drawer--left {
     left: -100%;
 }
 
-.c-slidebox__input:checked + .c-slidebox__overlay {
+.drawer__input:checked + .drawer__overlay {
     background: rgba(0, 0, 0, .6);
     z-index: 5;
     display: block;
 }
 
-.c-slidebox__input:checked + .c-slidebox__overlay + .c-slidebox.c-slidebox--left {
+.drawer__input:checked + .drawer__overlay + .drawer.drawer--left {
     transform: translateX(0);
 }
 
-.c-slidebox__input:checked + .c-slidebox__overlay + .c-slidebox.c-slidebox--right {
+.drawer__input:checked + .drawer__overlay + .drawer.drawer--right {
     transform: translateX(0);
 }
 
 .wrap-loader {
-    .c-slidebox__overlay,
-    .c-slidebox {
+    .drawer__overlay,
+    .drawer {
         position: absolute;
     }
 }
 
 @media screen and (max-width: $responsive-mobile) {
 
-    .c-slidebox {
+    .drawer {
         width: 100%;
         overflow-y: auto;
     }
 
-    .c-slidebox__content {
+    .drawer__content {
         height: auto;
         overflow-y: none;
     }
 
-    .c-slidebox__footer {
+    .drawer__footer {
         position: relative;
     }
 
-    .c-slidebox .c-slidebox__header {
+    .drawer .drawer__header {
         height: 60px;
     }
 

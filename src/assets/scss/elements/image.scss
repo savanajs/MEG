@@ -2,20 +2,24 @@
     &--block {
         display: block;
     }
+    
     &:not(&--block) {
         display: inline-block;
     }
+
     &--full {
         width: 100%;
     }
     
     display: inline-block;
+
     &--slider {
         img {
             width: 100%;
         }
     }
-    .image__caption {
+
+    &__caption {
         padding: $padding;
         border-left: 1px solid $color-border;
         border-right: 1px solid $color-border;
@@ -25,10 +29,12 @@
             color: $color-font;
         }
     }
-    .image__about {
+
+    &__about {
         display: block;
         font-size: 1em;
     }
+
     a {
         margin: 0px;
         padding: 0px;
@@ -42,16 +48,19 @@
         margin: 0;
         display: block;
     }
-    .image__figure {
+
+    &__figure {
         display: block;
         position: relative;
     }
+
     &--responsive {
         img {
             width: 100%;
             height: auto;
         }
     }
+
     &--thumb {
         width: auto;
         height: auto;
@@ -61,19 +70,22 @@
             padding: 2px;
         }
     }
+
     &--radius {
         img {
             border-radius: 50%;
         }
     }
+
     &--loader {
         background: url($image-gif-loading-primary) no-repeat center center;
     }
-}
 
-.image--aligning {
-    display: flex;
-    flex-wrap: nowrap;
+    &--aligning {
+      display: flex;
+      flex-wrap: nowrap;
+   }
+  
 }
 
 // Device (Desktop)

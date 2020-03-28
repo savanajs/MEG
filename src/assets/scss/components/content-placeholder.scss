@@ -1,5 +1,5 @@
-.c-cp-loading {
-    .c-cp {
+.cp-loading {
+    .cp {
         position: relative;
         overflow: hidden;
         &::before {
@@ -31,17 +31,17 @@
     }
 }
 
-.c-cp-loading .c-cp--line {
-    &.c-cp--full {
+.cp-loading .cp--line {
+    &.cp--full {
         width: 100%;
     }
-    &.c-cp--middle {
+    &.cp--middle {
         width: 50%;
     }
-    &.c-cp--small {
+    &.cp--small {
         width: 20%;
     }
-    &.c-cp--small-x {
+    &.cp--small-x {
         width: 35%;
     }
 
@@ -61,15 +61,15 @@
     text-indent: -999px;
     overflow: hidden;
     line-height: 1.3em;
-    & + .c-cp--line:last-child {
+    & + .cp--line:last-child {
         width: 70%;
         margin-bottom: 0px;
     }
 }
 
-.c-cp-loading {
-    .c-cp__text {
-        .c-cp--line {
+.cp-loading {
+    .cp__text {
+        .cp--line {
             margin-bottom: 3px;
         }
     }

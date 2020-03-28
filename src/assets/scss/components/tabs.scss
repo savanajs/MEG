@@ -1,14 +1,14 @@
-.c-tab {
+.tab {
     position: relative;
     margin: 0px 0px;
-    .c-tabs {
+    .tabs {
         display: flex;
         -js-display: flex;
         border-bottom: 1px solid $color-border;
     }
-    .c-tab__painel {
+    .tab__painel {
         margin-bottom: 0px;
-        .c-tab__nav {
+        .tab__nav {
             cursor: pointer;
             display: inline-block;
             padding: $padding-top $padding-right $padding-bottom $padding-left;
@@ -21,19 +21,19 @@
             opacity: .7;
             background-color: $gray;
         }
-        & + .c-tab__painel {
+        & + .tab__painel {
             margin-left: 1px;
         }
     }
-    .c-tab__contents {
-        &:last-child .c-tab__nav {
+    .tab__contents {
+        &:last-child .tab__nav {
             margin-right: 0px;
         }
     }
-    .c-tab__nav:hover {
+    .tab__nav:hover {
         background-color: darken($gray, 5%);
     }
-    .c-tab__nav.actived {
+    .tab__nav.actived {
         background-color: $color-l-bg-content;
         z-index: 1;
         position: relative;
@@ -42,7 +42,7 @@
         border-right: 1px solid $color-border;
         opacity: 1;
     }
-    .c-tab__inner {
+    .tab__inner {
         background: $color-l-bg-content;
         margin-top: -2px;
         padding: 10px;
@@ -51,17 +51,17 @@
         overflow-y: auto;
         display: none;
     }
-    .c-tab__inner.actived {
+    .tab__inner.actived {
         display: block;
     }
 }
 
 // Mobile
 @media screen and (max-width: $responsive-mobile) {
-    .c-tab__inner {
+    .tab__inner {
         padding: 20px 0px;
     }
-    .c-tab__nav {
+    .tab__nav {
         height: 100%;
         text-align: center;
     }

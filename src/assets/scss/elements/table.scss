@@ -1,4 +1,4 @@
-.el-table {
+.table {
     empty-cells: show;
     border-collapse: collapse;
     border-spacing: 0;
@@ -17,7 +17,7 @@
         vertical-align: bottom;    
     }
 
-    &:not(.el-table--lighted) {
+    &:not(.table--lighted) {
         > thead {
             background-color: $color-l-bg-light;
         }

@@ -1,4 +1,4 @@
-.c-loader__overlay {
+.loader__overlay {
     display: none;
     &--absolute {
         position: absolute;
@@ -15,12 +15,12 @@
     height: 100%;
     align-items: center;
     align-content: center;
-    .c-loader {
+    .loader {
         margin: 0 auto;
     }
 }
 
-.c-loader {
+.loader {
     border-radius: 50%;
     animation: spin .6s linear infinite;
     display: inline-block;
@@ -62,7 +62,7 @@
     }
 }
 
-.c-loader-bar {
+.loader-bar {
     height: 4px;
     width: 100%;
     position: relative;
@@ -97,7 +97,7 @@
     }
 }
 
-.c-loader__waiting-overlay {
+.loader__waiting-overlay {
     background: rgba($layout-primary, .7);
     top: 0;
     left: 0;
@@ -111,7 +111,7 @@
     &--fixed {
         position: fixed;
     }
-    .c-loader__waiting {
+    .loader__waiting {
         display: flex;
         align-items: center;
         top: 50%;
@@ -155,7 +155,7 @@
 }
 
 .loading {
-    .c-loader__overlay {
+    .loader__overlay {
         &--open {
             display: flex;
         }
@@ -163,7 +163,7 @@
 }
 
 .wait-loading {
-    .c-loader__waiting-overlay {
+    .loader__waiting-overlay {
         &--open {
             display: block;
         }
@@ -172,8 +172,8 @@
 
 body.wait-loading,
 body.loading {
-    .c-loader__waiting-overlay,
-    .c-loader__overlay {
+    .loader__waiting-overlay,
+    .loader__overlay {
         position: fixed;
     }
 }

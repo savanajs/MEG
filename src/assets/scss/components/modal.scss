@@ -1,17 +1,17 @@
-.c-modal {
+.modal {
     &.actived {
-        .c-modal__wrap::before,
-        .c-modal__wrap .c-modal__overlay {
+        .modal__wrap::before,
+        .modal__wrap .modal__overlay {
             display: block;
         }
-        .c-modal__wrap .c-modal__dialog {
+        .modal__wrap .modal__dialog {
             transform: translate(-50%, -50%) scale(2);
             zoom: 0.5;
             position: fixed;
             top: 40%;
         }
     }
-    .c-modal__wrap::before {
+    .modal__wrap::before {
         content: '';
         display: none;
         background: rgba(0, 0, 0, 0.6);
@@ -23,7 +23,7 @@
         z-index: 4;
         cursor: pointer;
     }
-    .c-modal__overlay {
+    .modal__overlay {
         display: none;
         position: fixed;
         top: 0;
@@ -33,7 +33,7 @@
         z-index: 5;
         cursor: pointer;
     }
-    .c-modal__dialog {
+    .modal__dialog {
         background: $color-l-bg-content;
         border: 1px solid $color-border;
         position: fixed;
@@ -47,20 +47,20 @@
         z-index: 5;
         border-radius: $border-radius-primary;
         overflow: hidden;
-        .c-modal__header,
-        .c-modal__body,
-        .c-modal__footer {
+        .modal__header,
+        .modal__body,
+        .modal__footer {
             padding: 20px;
         }
-        .c-modal__body {
+        .modal__body {
             max-height: 350px;
             overflow-y: auto;
         }
-        .c-modal__footer {
+        .modal__footer {
             background: $color-l-bg-light;
         }
     }
-    .c-modal__btn-close {
+    .modal__btn-close {
         color: lighten($color-font, 20%);
         cursor: pointer;
         font-size: 3rem;
@@ -73,9 +73,9 @@
 }
 
 @media screen and (max-width: $responsive-mobile) {
-    .c-modal {
+    .modal {
         &.actived {
-            .c-modal__wrap .c-modal__dialog {
+            .modal__wrap .modal__dialog {
                 width: 96%;
                 height: auto;
                 left: 0;
@@ -85,7 +85,7 @@
                 top: 10%;
             }
         }
-        .c-modal__dialog {
+        .modal__dialog {
             transition: none;
         }
     }

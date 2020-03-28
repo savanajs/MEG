@@ -3,12 +3,12 @@
       min-height: 200px;
     }
 
-    .form__label {
+    &__label {
         font-size: $font-size-base;
         display: block;
     }
 
-    .form__field {
+    &__field {
         padding: $padding-input;
         display: block;
         vertical-align: middle;
@@ -16,6 +16,7 @@
         background-color: lighten($color-input, 5%);
         color: $color-input-text;
         border: $border-size solid $color-input-border;
+        box-shadow: 0 1px 2px rgba(0,0,0,.1);
 
         &--full {
           width: 100%;
@@ -38,25 +39,35 @@
         }
     }
 
-    .form__field:disabled {
+    &__field:disabled {
         cursor: not-allowed;
         background-color: $color-input-disabled;
     }
 
-    .form__field:readonly {
+    &__field:readonly {
         cursor: not-allowed;
         background-color: $color-input-disabled;
     }
 
-    .form__field.required:required:focus:invalid {
+    &__field.required:required:focus:invalid {
         border-color: $cancel;
         background-repeat: no-repeat;
         background-position: 98% center;
     }
     
-    .form__field.required:required:valid {
+    &__field.required:required:valid {
         border-color: $success;
         background-repeat: no-repeat;
         background-position: 98% center;
+    }
+
+    &--aligned {
+      .form__label {
+        @include mq('desktop') {
+          &:not(.form__label--checkbox) {
+            text-align: right;
+          }   
+        }
+      }
     }
 }

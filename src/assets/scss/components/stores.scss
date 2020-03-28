@@ -1,11 +1,11 @@
-.c-stores {
+.stores {
     padding: 15px;
     background-color: $color-l-bg-content;
-    .c-stores__title {
+    .stores__title {
         font-weight: 400;
         margin-bottom: 10px;
     }
-    > .c-stores__list {
+    > .stores__list {
         display: flex;
         overflow-y: auto;
         width: 100%;
