@@ -14,8 +14,9 @@
         padding-bottom: $padding-bottom * 2;
         padding-left: $padding-left * 2;
         background: $color-l-secondary;
-        border: 1px solid $color-border;
         border-radius: $radius;
+        box-shadow: 0 1px 4px rgba(0,0,0,.1);
+
         &::before {
             content: "";
             background-position: 0 -15px;
@@ -27,7 +28,7 @@
             z-index: 20;
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
-            border-bottom: 10px solid $color-border;
+            border-bottom: 10px solid $color-l-secondary;
         }
     }
 
