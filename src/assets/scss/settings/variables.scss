@@ -1,7 +1,6 @@
-// General
 $font-pixel-base: 18;
 $font-calc-base: (12 / $font-pixel-base);
-$font-size-base: 1.4rem; //12px
+$font-size-base: 1.4rem;
 $line-height-base: 1.5em;
 $shell: 1280px;
 $shell-max-width: 1920px;
@@ -13,7 +12,7 @@ $margin-bottom: 10px;
 $margin-right: 10px;
 $margin-left: 10px;
 $letter-spacing: .05rem;
-$sides: (top, bottom, left, right); // Leave this variable alone
+$sides: (top, bottom, left, right);
 $spaceamounts: (
   0,
   5,
@@ -36,7 +35,7 @@ $spaceamounts: (
   90,
   95,
   100
-); // Adjust this to include the pixel amounts you need.
+);
 $widths: (
   50,
   100,
@@ -66,7 +65,7 @@ $widths: (
   1350,
   1400,
   1450
-); // Adjust this to include the pixel amounts you need.
+);
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (

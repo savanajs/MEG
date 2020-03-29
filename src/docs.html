@@ -52,7 +52,7 @@
 
 <body class="loaded">
 
-    <div class="l-wrap">
+    <div class="wrapper">
 
         <div class="main" role="main">
             <div class="shell--flex">
@@ -179,20 +179,22 @@
                                 </div>
 
                                 <div class="preview dinamic" style="display: none!important">
-                                    <div class="shell">
-                                        <header class="header" role="banner" aria-label=""></header>
-                                        <!--/header-->
-                                        <nav class="nav" role="navigation" aria-label=""></nav>
-                                        <!--/nav-->
-                                        <aside class="aside" role="complementary" aria-label=""></aside>
-                                        <!--/aside-->
-                                        <section class="section" role="main" aria-label="">
-                                            <article class="article u-p-10" role="article" aria-label=""></article>
-                                            <!--/article-->
-                                        </section>
-                                        <!--/section-->
-                                        <footer class="footer" role="footer" aria-label=""></footer>
-                                        <!--/footer-->
+                                    <div class="wrapper">
+                                        <div class="shell">
+                                            <header class="header" role="banner" aria-label=""></header>
+                                            <!--/header-->
+                                            <nav class="nav" role="navigation" aria-label=""></nav>
+                                            <!--/nav-->
+                                            <aside class="aside" role="complementary" aria-label=""></aside>
+                                            <!--/aside-->
+                                            <section class="section" role="main" aria-label="">
+                                                <article class="article u-p-10" role="article" aria-label=""></article>
+                                                <!--/article-->
+                                            </section>
+                                            <!--/section-->
+                                            <footer class="footer" role="footer" aria-label=""></footer>
+                                            <!--/footer-->
+                                        </div>
                                     </div>
                                 </div>
 
@@ -227,34 +229,6 @@
                                     <div class="shell--flex">
                                         ...
                                     </div>
-                                </div>
-
-                            </div>
-
-                        </article>
-
-                        <article role="article" class="article u-p-10 content">
-
-                            <div class="section__main l-contents">
-
-                                <hgroup class="hgroup">
-                                    <h2 id="webpack" class="heading heading--3">
-                                        Webpack
-                                    </h2>
-                                    <p>
-                                        Through our webpack you can modify the colors and standard features of elements such as margins, padding etc.
-                                    </p>
-                                </hgroup>
-                                
-                                <div>
-                                    <ul>
-                                        <li>Clone the project in github directory</li>
-                                        <li>&nbsp;</li>
-                                        <li>npm install</li>
-                                        <li>npm run dev</li>
-                                        <li>&nbsp;</li>
-                                        <li>Access: <a href="http://10.0.75.1:8000" title="http://10.0.75.1:8000">http://10.0.75.1:8000</a></li>
-                                    </ul>
                                 </div>
 
                             </div>
@@ -425,184 +399,6 @@
                             </div>
                     
                     </article>
-
-                        <article role="article" class="article u-p-10 content">
-
-                            <div class="section__main l-contents">
-
-                                <hgroup class="hgroup">
-                                    <h2 id="customize" class="heading heading--3">
-                                        Customize
-                                    </h2>
-                                    <p>
-                                        Modify and customize your behavior variables before using MEG.
-                                    </p>
-                                </hgroup>
-
-                                <hgroup class="hgroup">
-                                    <h3 id="customize--colors" class="heading heading--5">
-                                        <b>General colors</b>             
-                                    </h3>
-                                    <p>
-                                        Edit the file <b>meg/src/styles/utilities/colors.scss</b>
-                                    </p>
-                                </hgroup>
-
-                                <div class="box-code">
-
-<pre class="s-is-hidden-sm language-sass">
-    <code class="language-sass">
-// Images
-$logo: "../images/logo.svg";
-$logo-mobile: "../images/logo-mobile.svg";
-$logo-width: 100px;
-$logo-height: 40px;
-$logo-mobile-width: 50px;
-$logo-mobile-height: 40px;
-$image-gif-loading-primary: "../images/before-loading.gif";
-$image-gif-loading-secondary: "../images/loading-bar.gif";
-$image-gif-loading-tertiary: "../images/loader-small.gif";
-
-// Colors
-$primary: #00cc99;
-$secondary: #ffb347;
-$tertiary: #c25400;
-$quaternary: #008560;
-$success: #00cc99;
-$cancel: #cc3300;
-$warning: #ffcc00;
-$info: #0099cc;
-$black: #000;
-$white: #fff;
-$light: #f5f5f5;
-$dark-primary: #212121;
-$dark-secondary: #2a2a2b;
-$dark-tertiary: #3d3d3f;
-$gray: #e5e5e5;
-
-// Layout colors
-$layout-primary: $light;
-$layout-secondary: $white;
-$layout-tertiary: $light;
-
-// Colors defined
-$color-font: #757575;
-$color-font-o: $color-font;
-$color-column: transparent;
-$color-input: $white;
-$color-input-text: $color-font;
-$color-input-disabled: $gray;
-$color-input-border: #dadce0;
-$color-border: #e3e3e3;
-$color-link: $primary;
-$color-strong: $color-font;
-$pre-background: $gray;
-$hr-background: $gray;
-$code-background: $light;
-$color-checked-radio: #dadce0;
-
-// Colors for theme
-$background: $layout-primary;
-$color-l-primary: $layout-primary;
-$color-l-secondary: $layout-secondary; 
-$color-l-tertiary: $layout-tertiary;
-$color-l-bg-hover: $gray;
-$color-l-bg-scrolling: $layout-tertiary;
-$color-l-bg-bar: $primary;
-$color-l-bg-light: $layout-tertiary;
-$color-l-bg-content: $layout-secondary;
-$color-l-bg-content-placeholder-primary: darken($layout-tertiary, 5%);
-$color-l-bg-content-placeholder-secondary: $layout-tertiary;        
-    </code>
-</pre>
-                                </div>
-
-                                <hgroup class="hgroup u-m-t-30">
-                                    <h3 id="customize--styles" class="heading heading--5">
-                                        <b>General configuration</b>            
-                                    </h3>
-                                    <p>
-                                        Edit the file <b>meg/src/styles/utilities/variables.scss</b>
-                                    </p>
-                                </hgroup>
-
-<pre class="s-is-hidden-sm language-sass">
-    <code class="language-sass">      
-// General
-$font-pixel-base: 18;
-$font-calc-base: (12 / $font-pixel-base);
-$font-size-base: 1.2em; //12px
-$line-height-base: 1.5em;
-$shell: 1280px;
-$shell-max-width: 1920px;
-$shell-gutter: 15px;
-$font-family: 'Poppins', sans-serif;
-$strong-weight: 600;
-$margin-top: 10px;
-$margin-bottom: 10px;
-$margin-right: 10px;
-$margin-left: 10px;
-$letter-spacing: .2px;
-
-// Form input
-$border-radius-primary: 10px;
-$border_radius_input: 10px;
-$border_radius_button: 5px;
-$margin-bottom-field: 20px;
-$border-size: 1px;
-$padding-input: .5em .6em;
-
-// Padding
-$padding-top: 10px;
-$padding-bottom: 10px;
-$padding-right: 10px;
-$padding-left: 10px;
-$padding: $padding-top $padding-right $padding-bottom $padding-left;
-
-// Buttons
-$padding-top-button: .5em;
-$padding-bottom-button: .5em;
-$padding-right-button: .7em;
-$padding-left-button: .7em;
-$margin-bottom-button: 10px;
-$margin-left-button: 10px;
-
-$padding-button: $padding-top-button $padding-right-button $padding-bottom-button $padding-left-button;
-
-// Heading
-$margin-bottom-heading: 20px;
-$line-height-heading: 1.2em;
-
-// HR line
-$hr-height: 1px;
-$hr-margin: $margin-top 0px $margin-bottom 0px;
-
-// List
-$margin-bottom-list: 10px;
-
-// Radius
-$radius: 5px 5px 5px 5px;
-
-// Responsives max.
-$responsive-device: 1024px; // Mobile end tablet
-$responsive-mobile: 767px; // Mobile only
-$responsive-tablet: 1024px; // Tablet only
-$responsive-desktop: 5000px; // Desktop only
-    </code>
-</pre>
-
-                                <hgroup class="hgroup u-m-t-30">
-                                    <h3 id="customize--styles" class="heading heading--5">
-                                        <b>Default</b>            
-                                    </h3>
-                                    <p>
-                                        Put your custom css in <b>meg/src/styles/themes/default.scss</b>
-                                    </p>
-                                </hgroup>
-
-                            </div>
-
-                        </article>
 
                         <article role="article" class="article u-p-10 content s-is-hidden-sm">
 
@@ -2443,12 +2239,11 @@ $responsive-desktop: 5000px; // Desktop only
                                         <h3 id="helpers--border" class="heading heading--3">
                                             Border
                                         </h3>
-                                        <p class="sub-heading">Border for elements</p>
                                     </hgroup>
 
                                     <hgroup class="hgroup u-m-t-10x">
                                         <h4 id="helpers--border--borders" class="heading heading--5">
-                                           Borders
+                                           Border position
                                         </h4>
                                     </hgroup>
 
@@ -2660,54 +2455,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                     </td>
                                                     <td class="u-bg-info u-text-center">
                                                             
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                
-                                </div>
-
-                                <div class="helper u-p-b-10 u-m-t-30">
-
-                                    <hgroup class="hgroup">
-                                        <h3 id="helpers--form" class="heading heading--3">
-                                            Form
-                                        </h3>
-                                    </hgroup>
-
-                                    <hgroup class="hgroup">
-                                        <h4 class="heading heading--5">
-                                           Size
-                                        </h4>
-                                    </hgroup>
-
-                                    <div class="preview">
-                                        <table class="table table--center">
-                                            <thead>
-                                                <tr>
-                                                    <th>Class</th>
-                                                    <th>Description</th>
-                                                    <th>Is Responsivel?</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th class="text-success u-text-center">form__field--full</th>
-                                                    <td class="text-success u-text-center">
-                                                         Fields 100% size width
-                                                    </td>
-                                                    <td class="text-success u-text-center">
-                                                        no
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-success u-text-center">form__field--auto</th>
-                                                    <td class="text-success u-text-center">
-                                                         Fields auto size width
-                                                    </td>
-                                                    <td class="text-success u-text-center">
-                                                        no
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -3313,37 +3060,6 @@ $responsive-desktop: 5000px; // Desktop only
                                             </tbody>
                                         </table>
                                     </div>
-
-                                    <br />
-
-                                    <hgroup class="hgroup">
-                                        <h4 id="helpers--others--hidden-show" class="heading heading--5">
-                                            Button
-                                        </h4>
-                                    </hgroup>
-                                
-                                    <div class="preview">
-                                        <table class="table table--center">
-                                            <thead>
-                                                <tr>
-                                                    <th>Class</th>
-                                                    <th>Description</th>
-                                                    <th>Is Responsivel?</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th class="text-success u-text-center">not-min-width</th>
-                                                    <td class="text-success u-text-center">
-                                                        Remove the min-width of 94px
-                                                    </td>
-                                                    <td class="text-success u-text-center">
-                                                        no
-                                                    </td>
-                                                </tr>  
-                                            </tbody>
-                                        </table>
-                                    </div>
                                 
                                 </div>
 
@@ -3475,16 +3191,16 @@ $responsive-desktop: 5000px; // Desktop only
 
                                 <div class="preview dinamic">
                                     <hr />
-                                    <hr class="u-bg-primary" />
-                                    <hr class="u-bg-secondary" />
-                                    <hr class="u-bg-tertiary" />
-                                    <hr class="u-bg-quaternary" />
-                                    <hr class="u-bg-success" />
-                                    <hr class="u-bg-cancel" />
-                                    <hr class="u-bg-warning" />
-                                    <hr class="u-bg-info" />
-                                    <hr class="u-bg-light" />
-                                    <hr class="u-bg-black" />
+                                    <hr class="u-bg-primary" /><br />
+                                    <hr class="u-bg-secondary" /><br />
+                                    <hr class="u-bg-tertiary" /><br />
+                                    <hr class="u-bg-quaternary" /><br />
+                                    <hr class="u-bg-success" /><br />
+                                    <hr class="u-bg-cancel" /><br />
+                                    <hr class="u-bg-warning" /><br />
+                                    <hr class="u-bg-info" /><br />
+                                    <hr class="u-bg-light" /><br />
+                                    <hr class="u-bg-black" /><br />
                                     <hr class="u-bg-white" />
                                 </div>
 
@@ -3593,7 +3309,7 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <div class="end-el-wrap-btns u-m-b-10">
+                                    <div class="end-ewrapper-btns u-m-b-10">
                                         <button name="button" role="button" class="btn u-color-white u-bg-success">Success</button><br /><br />
                                         <button name="button" role="button" class="btn u-bg-cancel u-color-white">Cancel</button><br /><br />
                                         <button name="button" role="button" class="btn u-bg-warning u-color-white">Warning</button><br /><br />
@@ -3606,7 +3322,7 @@ $responsive-desktop: 5000px; // Desktop only
                                         <button name="button" role="button" class="btn u-bg-black u-color-white">Black</button><br /><br />
                                         <button name="button" role="button" class="btn u-bg-white u-color-black">White</button>
                                     </div>
-                                    <div class="end-el-wrap-btns">
+                                    <div class="end-ewrapper-btns">
                                         <button name="button" role="button" class="btn btn--o u-color-success u-border-success">Success</button><br /><br />
                                         <button name="button" role="button" class="btn btn--o u-color-cancel u-border-cancel">Cancel</button><br /><br />
                                         <button name="button" role="button" class="btn btn--o u-color-warning u-border-warning">Warning</button><br /><br />
@@ -3643,7 +3359,7 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <div class="end-el-wrap-btns">
+                                    <div class="end-ewrapper-btns">
                                         <button name="button" role="button" class="btn">Success</button>
                                     </div>
                                 </div>
@@ -3670,7 +3386,7 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <div class="end-el-wrap-btns">
+                                    <div class="end-ewrapper-btns">
                                         <button name="button" role="button" class="btn">
                                             <i class="fa fa-check-circle u-m-r-half-lg u-m-r-half-md u-m-r-half-sm" aria-hidden="true"></i> Success
                                         </button>
@@ -3708,7 +3424,7 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <div class="end-el-wrap-btns">
+                                    <div class="end-ewrapper-btns">
                                         <a role="button" class="btn btn--disabled" href="#" title="A lt Button">A lt Button</a>
                                         <button name="button" role="button" class="btn btn--disabled">A lt Button</button>
                                     </div>
@@ -3786,7 +3502,7 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <div class="end-el-wrap-btns">
+                                    <div class="end-ewrapper-btns">
                                         <button name="button" role="button" class="btn btn--full">
                                             <i class="fa fa-check-circle u-m-r-half-lg u-m-r-half-md u-m-r-half-sm" aria-hidden="true"></i> Full</button>
                                     </div>
@@ -3815,7 +3531,7 @@ $responsive-desktop: 5000px; // Desktop only
 
                                 <div class="preview dinamic">
                                     <div class="row row--space-cols row--wrap-lg">
-                                        <div class="end-el-wrap-btns">
+                                        <div class="end-ewrapper-btns">
                                             <button name="button" role="button" class="btn btn--large btn--circle">
                                                 <i class="fa fa-plus" aria-hidden="true"></i>
                                             </button>
@@ -4556,82 +4272,6 @@ $responsive-desktop: 5000px; // Desktop only
                                                 </div>
                                                 <div class="list__actions">
 
-                                                    <a class="list__link" href="#get-started--instalation" title="Settings">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </article>
-                                </div>
-
-                            </div>
-
-                            <div class="section__main l-contents">
-
-                                <hgroup class="hgroup">
-                                    <h3 id="list-avatar" class="heading heading--3">
-                                        Avatar
-                                    </h3>
-                                    <p>Simple CSS for avatar</p>
-                                </hgroup>
-
-                                <div class="code u-m-b-10">
-                                    <pre class="s-is-hidden-sm language-markup"><code class="language-markup"></code></pre>
-                                </div>
-
-                                <hgroup class="hgroup">
-                                    <h4 class="heading heading--5">
-                                        Preview
-                                    </h4>
-                                </hgroup>
-
-                                <div class="preview dinamic">
-                                    <article role="article" class="article u-p-10">
-                                        <ul class="list list--actions">
-                                            <li class="list__item u-p-10">
-                                                <div class="list__avatar">
-                                                    <a href="https://placeholder.com" title="Image">
-                                                        <img src="https://via.placeholder.com/100x100" alt="Image" />
-                                                    </a>
-                                                </div>
-                                                <div class="list__content">
-                                                    <span class="list__title">Carlos Chavez</span><br />
-                                                    <span class="list__subtitle">62 Episodes</span>
-                                                </div>
-                                                <div class="list__actions">
-                                                    <a class="list__link" href="#get-started--instalation" title="Settings">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="list__item u-p-10">
-                                                <div class="list__avatar">
-                                                    <a href="https://placeholder.com" title="Image">
-                                                        <img src="https://via.placeholder.com/100x100" alt="Image" />
-                                                    </a>
-                                                </div>
-                                                <div class="list__content">
-                                                    <span class="list__title">Carlos Chavez</span><br />
-                                                    <span class="list__subtitle">62 Episodes</span>
-                                                </div>
-                                                <div class="list__actions">
-                                                    <a class="list__link" href="#get-started--instalation" title="Settings">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="list__item u-p-10">
-                                                <div class="list__avatar">
-                                                    <a href="https://placeholder.com" title="Image">
-                                                        <img src="https://via.placeholder.com/100x100" alt="Image" />
-                                                    </a>
-                                                </div>
-                                                <div class="list__content">
-                                                    <span class="list__title">Carlos Chavez</span><br />
-                                                    <span class="list__subtitle">62 Episodes</span>
-                                                </div>
-                                                <div class="list__actions">
                                                     <a class="list__link" href="#get-started--instalation" title="Settings">
                                                         <i class="fa fa-star" aria-hidden="true"></i>
                                                     </a>
@@ -5441,7 +5081,7 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <div class="end-el-wrap-btns">
+                                    <div class="end-ewrapper-btns">
                                         <a role="button" class="btn tooltip" href="#" aria-label="Tooltip top" title="Top">
                                             Top 
                                             <span class="tooltip__item tooltip__item--top">
@@ -5453,46 +5093,7 @@ $responsive-desktop: 5000px; // Desktop only
                                             <span class="tooltip__item tooltip__item--bottom">
                                                 Tooltip exemple bottom
                                             </span>
-                                        </a>
-                                        <button name="button" role="button" class="btn tooltip" aria-label="Tooltip bottom">
-                                            Bottom
-                                            <span class="tooltip__item tooltip__item--top">
-                                                Tooltip exemple top
-                                            </span>
-                                        </button>
-                                        <button name="button" role="button" class="btn tooltip" aria-label="Tooltip bottom">
-                                            Bottom
-                                            <span class="tooltip__item tooltip__item--bottom">
-                                                Tooltip exemple bottom
-                                            </span>
-                                        </button>
-                                    </div>
-                                    <br /><br /><br /><br />
-                                    <div class="end-el-wrap-btns">
-                                        <a role="button" class="btn btn--large tooltip" href="#" aria-label="Tooltip top" title="Top">
-                                            Top 
-                                            <span class="tooltip__item tooltip__item--top">
-                                                Tooltip exemple top
-                                            </span>
-                                        </a>
-                                        <a role="button" class="btn btn--large tooltip" href="#" aria-label="Tooltip top" title="Top">
-                                            Bottom
-                                            <span class="tooltip__item tooltip__item--bottom">
-                                                Tooltip exemple bottom
-                                            </span>
-                                        </a>
-                                        <button name="button" role="button" class="btn btn--large tooltip" aria-label="Tooltip bottom">
-                                            Bottom
-                                            <span class="tooltip__item tooltip__item--top">
-                                                Tooltip exemple top
-                                            </span>
-                                        </button>
-                                        <button name="button" role="button" class="btn btn--large tooltip" aria-label="Tooltip bottom">
-                                            Bottom
-                                            <span class="tooltip__item tooltip__item--bottom">
-                                                Tooltip exemple <br />bottom
-                                            </span>
-                                        </button>
+                                        </a>                                     
                                     </div>
                                 </div>
 
@@ -5517,7 +5118,7 @@ $responsive-desktop: 5000px; // Desktop only
                                 </hgroup>
 
                                 <div class="preview dinamic">
-                                    <div class="end-el-wrap-btns">
+                                    <div class="end-ewrapper-btns">
                                         <button name="button" role="button" class="btn">Top
                                             <span class="badge badge--top u-bg-success u-color-white">1</span>
                                         </button>
@@ -5643,7 +5244,7 @@ meg.notify().hide();</code>
 
                                 <div class="preview dinamic">
                                     <div class="row row--space-cols row--wrap-lg">
-                                        <div class="end-el-wrap-btns">
+                                        <div class="end-ewrapper-btns">
                                             <a role="button" href="#modal-1" class="btn js-modal--open" title="Open Modal">Open Modal</a>
                                         </div>
                                     </div>
@@ -5756,7 +5357,7 @@ meg.alert.open({
                                 </hgroup>
 
                                 <div class="preview">
-                                    <div class="end-el-wrap-btns">
+                                    <div class="end-ewrapper-btns">
                                         <a role="button" href="#" class="btn js-modal--alert-trigger" title="Open alert">Open alert</a>
                                     </div>
                                 </div>
@@ -6594,7 +6195,7 @@ meg.loading().hideBeforeLoading();
                                                             <a href="/" title="@bulmaio">@bulmaio</a>.
                                                         </span>
                                                         <div class="row row--space-cols row--wrap-lg">
-                                                            <div class="end-el-wrap-btns">
+                                                            <div class="end-ewrapper-btns">
                                                                 <a role="button" class="btn btn--small no-margin-bottom" href="#" title="Go to website">Go to website</a>
                                                                 <a role="button" class="btn btn--small no-margin-bottom" title="Send message">Send message</a>
                                                             </div>
@@ -6660,7 +6261,7 @@ meg.loading().hideBeforeLoading();
                                                             <a href="/" title="@bulmaio">@bulmaio</a>.
                                                         </span>
                                                         <div class="row row--space-cols row--wrap-lg">
-                                                            <div class="end-el-wrap-btns">
+                                                            <div class="end-ewrapper-btns">
                                                                 <a role="button" class="btn btn--small no-margin-bottom" href="#" title="Go to website">Go to website</a>
                                                                 <a role="button" class="btn btn--small no-margin-bottom" title="Send message">Send message</a>
                                                             </div>
@@ -6740,7 +6341,7 @@ meg.loading().hideBeforeLoading();
                                                             <a href="/" title="@bulmaio">@bulmaio</a>.
                                                         </span>
                                                         <div class="row row--space-cols row--wrap-lg">
-                                                            <div class="end-el-wrap-btns">
+                                                            <div class="end-ewrapper-btns">
                                                                 <a role="button" class="btn btn--small no-margin-bottom" href="#" title="Go to website">Go to website</a>
                                                                 <a role="button" class="btn btn--small no-margin-bottom" title="Send message">Send message</a>
                                                             </div>
@@ -6813,7 +6414,7 @@ meg.loading().hideBeforeLoading();
                                                             <a href="/" title="@bulmaio">@bulmaio</a>.
                                                         </span>
                                                         <div class="row row--space-cols row--wrap-lg">
-                                                            <div class="end-el-wrap-btns">
+                                                            <div class="end-ewrapper-btns">
                                                                 <a role="button" class="btn btn--small no-margin-bottom" href="#" title="Go to website">Go to website</a>
                                                                 <a role="button" class="btn btn--small no-margin-bottom" title="Send message">Send message</a>
                                                             </div>
@@ -6879,7 +6480,7 @@ meg.loading().hideBeforeLoading();
                                                             <a href="/" title="@bulmaio">@bulmaio</a>.
                                                         </span>
                                                         <div class="row row--space-cols row--wrap-lg">
-                                                            <div class="end-el-wrap-btns">
+                                                            <div class="end-ewrapper-btns">
                                                                 <a role="button" class="btn btn--small no-margin-bottom" href="#" title="Go to website">Go to website</a>
                                                                 <a role="button" class="btn btn--small no-margin-bottom" title="Send message">Send message</a>
                                                             </div>
@@ -6954,7 +6555,7 @@ meg.loading().hideBeforeLoading();
                                                             <a href="#" title="@bulmaio">@bulmaio</a>.
                                                         </span>
                                                         <div class="row row--space-cols row--wrap-lg">
-                                                            <div class="end-el-wrap-btns">
+                                                            <div class="end-ewrapper-btns">
                                                                 <a role="button" class="btn btn--small no-margin-bottom" href="#" title="Go to website">Go to website</a>
                                                                 <a role="button" class="btn btn--small no-margin-bottom" title="Send message">Send message</a>
                                                             </div>

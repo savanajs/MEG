@@ -1,4 +1,4 @@
-.l-wrap {
+.wrapper {
     width: 100%;
     .row {
         display: flex;
@@ -76,7 +76,7 @@
 
 // Desktop 
 @media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
-    .l-wrap {
+    .wrapper {
         .row {
             &.row--wrap-lg {
                 flex-wrap: wrap;
@@ -180,7 +180,7 @@
 
 // Tablet
 @media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
-    .l-wrap {
+    .wrapper {
         font-size: 1.1em;
 
         .row {
@@ -296,7 +296,7 @@
 
 // Mobile
 @media screen and (max-width: $responsive-mobile) {
-    .l-wrap {
+    .wrapper {
         font-size: 1.2em;
 
         .row {

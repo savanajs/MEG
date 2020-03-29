@@ -54,6 +54,7 @@ body:not(.js-visibled) .nav {
                     padding: 15px 0px 12px 0px;
                     text-decoration: none;
                     position: relative;
+                    font-size: $font-size-base;
                     > i {
                         position: absolute;
                         right: 10px;
@@ -78,7 +79,7 @@ body:not(.js-visibled) .nav {
                     z-index: 4;
                     border: 1px solid $color-border;
                     border-radius: $radius;
-                    font-size: .8em;
+                    font-size: $font-size-base;
                     .list {
                         margin-bottom: $margin-bottom;
                     }
@@ -102,6 +103,7 @@ body:not(.js-visibled) .nav {
                     padding: 15px 0px 12px 15px;
                     text-decoration: none;
                     position: relative;
+                    font-size: $font-size-base;
                     > i {
                         position: absolute;
                         right: 10px;
@@ -113,7 +115,7 @@ body:not(.js-visibled) .nav {
                     position: absolute;
                     right: 10px;
                     top: 14px;
-                    font-size: 1.4em;
+                    font-size: $font-size-base;
                     display: none;
                 }
                 .c-item__megamenu {
@@ -125,8 +127,8 @@ body:not(.js-visibled) .nav {
                     border-left: 1px solid $color-border;
                     z-index: 4;
                     right: 1.6%;
-                    margin-top: -46px;
-                    font-size: .8em;
+                    margin-top: -48px;
+                    font-size: $font-size-base;
                     .list {
                         margin-bottom: $margin-bottom;
                     }
@@ -152,7 +154,7 @@ body:not(.js-visibled) .nav {
         display: none;
     }
     .c-menu-nav__label {
-        font-size: 2.5em;
+        font-size: $font-size-base;
     }
     .c-menu__input:checked + .c-nav__overlay {
         display: block;
@@ -176,7 +178,7 @@ body:not(.js-visibled) .nav {
             padding: 20px 0px;
             position: relative;
             .c-nav__header--title {
-                font-size: 1.2em;
+                font-size: $font-size-base;
             }
             > .c-nav__close {
                 position: absolute;
@@ -186,7 +188,7 @@ body:not(.js-visibled) .nav {
             .c-nav__close {
                 color: $cancel;
                 cursor: pointer;
-                font-size: 2em;
+                font-size: $font-size-base;
                 position: absolute;
                 top: 15px;
                 right: 0px;
@@ -200,7 +202,7 @@ body:not(.js-visibled) .nav {
                 > .c-menu__label {
                     position: absolute;
                     right: 10px;
-                    font-size: 1.6em;
+                    font-size: $font-size-base;
                 }
                 .c-item__megamenu {
                     display: none;
@@ -243,6 +245,7 @@ body:not(.js-visibled) .nav {
                     padding-left: 10px;
                     display: inline-block;
                     margin-bottom: 15px;
+                    font-size: $font-size-base;
                     > i {
                         display: none;
                     }

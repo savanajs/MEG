@@ -23,12 +23,19 @@
     }
 
     &__item {
-      &:hover {
-        background-color: rgba($color-l-bg-hover, .4);
-      }
+      font-size: $font-size-base;
+      line-height: $font-size-base + 1.4rem;
 
       &:not([class*=u-color]) {
           color: $color-font;
+      }
+
+      &:not(.not-hover):hover {
+        background-color: rgba($color-l-bg-hover, .4);
+      }
+
+      &.not-hover:hover {
+        text-decoration: underline;
       }
 
       &--flex {
