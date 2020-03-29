@@ -2,10 +2,6 @@
     &--block {
         display: block;
     }
-    
-    &:not(&--block) {
-        display: inline-block;
-    }
 
     &--full {
         width: 100%;
@@ -58,6 +54,7 @@
         img {
             width: 100%;
             height: auto;
+            display: block;
         }
     }
 

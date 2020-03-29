@@ -1,4 +1,4 @@
-.c-menu__input {
+.menu__input {
     display: none;
 }
 
@@ -9,9 +9,9 @@ body:not(.js-visibled) .nav {
 // Desktop 
 @media (min-width: $responsive-tablet) and (max-width: $responsive-desktop) {
     .nav {
-        .c-menu {
-            .c-menu__item {
-                > .c-menu__label {
+        .menu {
+            .menu__item {
+                > .menu__label {
                     z-index: 2;
                     cursor: pointer;
                 }
@@ -25,13 +25,13 @@ body:not(.js-visibled) .nav {
             }
         }
     }
-    .c-menu {
+    .menu {
         &--inline {
             display: flex;
             flex-wrap: nowrap;
             align-content: space-between;
             position: relative;
-            .c-menu__item {
+            .menu__item {
                 &::before {
                     content: "";
                     width: 1px;
@@ -47,7 +47,7 @@ body:not(.js-visibled) .nav {
                 display: block;
                 flex: 1 1 auto;
                 border-bottom: 3px solid transparent;
-                > .el-item__link {
+                > .item__link {
                     align-content: center;
                     text-align: center;
                     display: block;
@@ -61,7 +61,7 @@ body:not(.js-visibled) .nav {
                         top: 20px;
                     }
                 }
-                .c-menu__label {
+                .menu__label {
                     position: absolute;
                     right: 10px;
                     top: 14px;
@@ -86,17 +86,17 @@ body:not(.js-visibled) .nav {
                 }
             }
         }
-        .c-menu__item {
-            .c-menu__input {
+        .menu__item {
+            .menu__input {
                 display: none;
             }
         }
         &--block {
-            .c-menu__item {
+            .menu__item {
                 display: block;
                 flex: 1 1 auto;
                 border-bottom: 1px solid $color-border;
-                > .el-item__link {
+                > .item__link {
                     align-content: center;
                     text-align: left;
                     display: block;
@@ -111,7 +111,7 @@ body:not(.js-visibled) .nav {
                         transform: rotate(-90deg);
                     }
                 }
-                .c-menu__label {
+                .menu__label {
                     position: absolute;
                     right: 10px;
                     top: 14px;
@@ -143,7 +143,7 @@ body:not(.js-visibled) .nav {
 
 // Device (Mobile and tablet)
 @media screen and (max-width: $responsive-tablet) {
-    .c-nav__overlay {
+    .nav__overlay {
         background: rgba(0, 0, 0, .6);
         position: fixed;
         top: 0px;
@@ -153,13 +153,13 @@ body:not(.js-visibled) .nav {
         height: 100%;
         display: none;
     }
-    .c-menu-nav__label {
+    .menu-nav__label {
         font-size: $font-size-base;
     }
-    .c-menu__input:checked + .c-nav__overlay {
+    .menu__input:checked + .nav__overlay {
         display: block;
     }
-    .c-menu__input:checked + .c-nav__overlay + .nav {
+    .menu__input:checked + .nav__overlay + .nav {
         transform: translateX(0);
     }
     .nav {
@@ -174,18 +174,18 @@ body:not(.js-visibled) .nav {
         width: 300px;
         height: 100%;
         z-index: 4;
-        .c-nav__header {
+        .nav__header {
             padding: 20px 0px;
             position: relative;
-            .c-nav__header--title {
+            .nav__header--title {
                 font-size: $font-size-base;
             }
-            > .c-nav__close {
+            > .nav__close {
                 position: absolute;
                 right: 15px;
                 top: 15px;
             }
-            .c-nav__close {
+            .nav__close {
                 color: $cancel;
                 cursor: pointer;
                 font-size: $font-size-base;
@@ -195,11 +195,11 @@ body:not(.js-visibled) .nav {
                 text-decoration: none;
             }
         }
-        .c-menu {
-            > .c-menu__item {
+        .menu {
+            > .menu__item {
                 position: relative;
                 padding: 15px 0px 0px 0px;
-                > .c-menu__label {
+                > .menu__label {
                     position: absolute;
                     right: 10px;
                     font-size: $font-size-base;
@@ -227,7 +227,7 @@ body:not(.js-visibled) .nav {
                                     padding-left: 10px;
                                     font-weight: 100;
                                 }
-                                .c-menu__label {
+                                .menu__label {
                                     position: absolute;
                                     right: 10px;
                                     font-size: 1.2em;
@@ -235,11 +235,11 @@ body:not(.js-visibled) .nav {
                             }
                         }
                     }
-                    .c-menu__item--image {
+                    .menu__item--image {
                         display: none;
                     }
                 }
-                .el-item__link {
+                .item__link {
                     color: $color-font;
                     text-decoration: none;
                     padding-left: 10px;
@@ -250,19 +250,19 @@ body:not(.js-visibled) .nav {
                         display: none;
                     }
                 }
-                .c-menu__input {
+                .menu__input {
                     display: none;
-                    &:checked + .el-item__link + .c-menu__label + .c-item__megamenu,
+                    &:checked + .item__link + .menu__label + .c-item__megamenu,
                     &:checked + .heading + .list {
                         display: block;
                     }
-                    &:checked + .el-item__link + .c-menu__label,
-                    &:checked + .heading > .c-menu__label {
+                    &:checked + .item__link + .menu__label,
+                    &:checked + .heading > .menu__label {
                         transform: rotate(180deg);
                     }
                 }
             }
-            > .c-menu__item + .c-menu__item {
+            > .menu__item + .menu__item {
                 border-top: 1px solid $color-border;
             }
         }

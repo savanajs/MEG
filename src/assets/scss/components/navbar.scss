@@ -1,4 +1,4 @@
-.c-navbar {
+.navbar {
     .navbar__brand {
         display: block;
     }
@@ -8,14 +8,14 @@
 }
 
 @media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
-    .c-navbar {
+    .navbar {
         padding-left: $padding-left;
         padding-right: $padding-right;
     }
 }
 
 @media screen and (max-width: $responsive-mobile) {
-    .c-navbar {
+    .navbar {
         padding-left: $padding-left;
         padding-right: $padding-right;
     }
